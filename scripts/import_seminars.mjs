@@ -1,0 +1,169 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import { SpreadsheetFile, Workbook } from '@oai/artifact-tool';
+
+const columns = ['Date', 'Speaker', 'Institution', 'Speaker URL', 'Title', 'Paper URL', 'Status', 'Special start time', 'Special end time', 'Special location'];
+const args = new Map(process.argv.slice(2).map((value, index, all) => value.startsWith('--') ? [value, all[index + 1]?.startsWith('--') ? true : all[index + 1]] : [value, value]));
+const root = path.resolve(String(args.get('--project-root') || process.cwd()));
+const outputDir = path.resolve(String(args.get('--output-dir') || path.join(root, 'outputs', 'seminars')));
+const offline = args.has('--offline');
+const selectedSeries = args.get('--series') ? new Set(String(args.get('--series')).split(',').map(value => value.trim())) : null;
+
+function parseCsvMatrix(text) {
+  const rows = []; let row = []; let value = ''; let quoted = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i], next = text[i + 1];
+    if (c === '"' && quoted && next === '"') { value += '"'; i++; }
+    else if (c === '"') quoted = !quoted;
+    else if (c === ',' && !quoted) { row.push(value); value = ''; }
+    else if ((c === '\n' || c === '\r') && !quoted) { if (c === '\r' && next === '\n') i++; row.push(value); if (row.some(Boolean)) rows.push(row); row = []; value = ''; }
+    else value += c;
+  }
+  if (value || row.length) { row.push(value); rows.push(row); }
+  return rows;
+}
+
+function parseCsv(text) {
+  const rows = parseCsvMatrix(text);
+  const headers = rows.shift()?.map(x => x.trim()) || [];
+  return rows.map(values => Object.fromEntries(headers.map((header, i) => [header, (values[i] || '').trim()])));
+}
+
+function splitSpeaker(text='') {
+  const match = text.match(/^(.+?)\s*\(([^)]+)\)\s*$/);
+  return match ? [match[1].trim(), match[2].trim()] : [text.trim(), ''];
+}
+
+function normaliseDate(value='') {
+  const clean = value.trim();
+  if (/^\d{4}-\d{2}-\d{2}$/.test(clean)) return clean;
+  const match = clean.match(/^(\d{1,2})[- ]([A-Za-z]{3})[- ](\d{4})$/);
+  if (!match) return clean;
+  const month = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'].indexOf(match[2].slice(0,3)) + 1;
+  return `${match[3]}-${String(month).padStart(2,'0')}-${match[1].padStart(2,'0')}`;
+}
+
+function standardise(rows) {
+  return rows.map(row => {
+    const [speaker, inferredInstitution] = splitSpeaker(row.Speaker || row['Speaker suggestion'] || '');
+    return {
+      Date: normaliseDate(row.Date || row.date || ''), Speaker: speaker,
+      Institution: row.Institution || row.Affiliation || row['speaker-affiliation'] || inferredInstitution,
+      'Speaker URL': row['Speaker URL'] || row.SpeakerURL || row['speaker-website'] || '', Title: row.Title || row.title || '',
+      'Paper URL': row['Paper URL'] || row.PaperURL || row['paper-link'] || '', Status: row.Status || (row.Date || row.date ? 'Scheduled' : ''),
+      'Special start time': row['Special start time'] || '', 'Special end time': row['Special end time'] || '',
+      'Special location': row['Special location'] || (/^Not at/i.test(row.Location || '') ? row.Location : ''),
+      _time: row.Time || row.time || '', _location: row.location || '',
+    };
+  }).filter(row => row.Speaker);
+}
+
+function macroDate(value, term) {
+  const match = value.trim().match(/^(\d{1,2})\s+([A-Za-z]+)$/);
+  if (!match) return '';
+  const month = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'].indexOf(match[2].slice(0,3).toLowerCase()) + 1;
+  const year = term === 1 ? 2026 : 2027;
+  return month ? `${year}-${String(month).padStart(2,'0')}-${match[1].padStart(2,'0')}` : '';
+}
+
+function parseMacroPlanningSheet(text) {
+  const institutions = {Exeter:'University of Exeter',PSE:'Paris School of Economics',NYU:'New York University',Cemfi:'CEMFI',Duke:'Duke University',Princeton:'Princeton University',CREI:'CREI','Chicago Booth':'Chicago Booth','Fed Atlanta':'Federal Reserve Bank of Atlanta',EIEF:'Einaudi Institute for Economics and Finance','Stanford GSB':'Stanford Graduate School of Business',Columbia:'Columbia University',Emory:'Emory University',Esade:'ESADE',Bocconi:'Bocconi University',Kellog:'Kellogg School of Management',Berkeley:'University of California Berkeley',Geneve:'University of Geneva','Columbia Business School':'Columbia Business School'};
+  const speakerCorrections = {'John Grisby':'John Grigsby','Johannes Boem':'Johannes Boehm'};
+  let term = 1; const rows = [];
+  for (const cells of parseCsvMatrix(text)) {
+    const first = (cells[0] || '').trim();
+    const termMatch = first.match(/^TERM\s*(\d)/i); if (termMatch) { term = Number(termMatch[1]); continue; }
+    const date = macroDate(first, term), rawSpeaker = (cells[1] || '').trim();
+    if (!date || !rawSpeaker) continue;
+    const rawInstitution = (cells[2] || '').trim();
+    rows.push({Date:date,Speaker:speakerCorrections[rawSpeaker] || rawSpeaker,Institution:institutions[rawInstitution] || rawInstitution,Status:'Scheduled'});
+  }
+  return rows;
+}
+
+async function readSource(item) {
+  const source = item.source;
+  if (source.type === 'unconfigured') return [];
+  if (offline) {
+    if (!source.offlineFile) return [];
+    return standardise(parseCsv(await fs.readFile(path.join(root, source.offlineFile), 'utf8')));
+  }
+  if (source.type === 'google-sheet') {
+    const url = `https://docs.google.com/spreadsheets/d/${source.spreadsheetId}/export?format=csv&gid=${source.gid}`;
+    const response = await fetch(url); if (!response.ok) throw new Error(`${item.name}: ${response.status}`);
+    const text = await response.text();
+    return standardise(source.adapter === 'macro-planning-sheet' ? parseMacroPlanningSheet(text) : parseCsv(text));
+  }
+  if (source.type === 'html') {
+    const response = await fetch(source.url); if (!response.ok) throw new Error(`${item.name}: ${response.status}`);
+    const html = await response.text();
+    const embeddedData = html.match(/const data = (\{.*?\});\s*\n\s*\/\/ Function/s);
+    if (embeddedData) {
+      const rows = JSON.parse(embeddedData[1]).seminars || [];
+      return standardise(rows.filter(row => (!source.dateFrom || row.date >= source.dateFrom) && (!source.dateTo || row.date <= source.dateTo)));
+    }
+    const rows = [...html.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/gi)].map(match => [...match[1].matchAll(/<t[dh][^>]*>([\s\S]*?)<\/t[dh]>/gi)].map(cell => cell[1].replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim()));
+    return standardise(rows.slice(1).map(cells => ({Date:cells[0],Speaker:cells[1],Title:cells[2],Status:'Scheduled'})));
+  }
+  return [];
+}
+
+async function createWorkbook(item, records) {
+  const workbook = Workbook.create(); const sheet = workbook.worksheets.add('Seminars');
+  const data = records.length ? records : [Object.fromEntries(columns.map(column => [column, '']))];
+  sheet.getRange(`A1:J${data.length + 1}`).values = [columns, ...data.map(record => columns.map(column => column === 'Date' && record[column] ? new Date(`${record[column]}T00:00:00Z`) : record[column] || ''))];
+  sheet.showGridLines = false; sheet.freezePanes.freezeRows(1);
+  const header = sheet.getRange('A1:J1'); header.format.fill = '#001B44'; header.format.font = { bold:true, color:'#FFFFFF' }; header.format.rowHeight = 42; header.format.horizontalAlignment = 'center'; header.format.verticalAlignment = 'center'; header.format.wrapText = true;
+  sheet.getRange('H1:J1').format.fill = '#7A4E00';
+  const body = sheet.getRange(`A2:J${data.length + 1}`); body.format.font = { name:'Arial', size:10 }; body.format.verticalAlignment = 'center'; body.format.wrapText = true; body.format.borders = { insideHorizontal:{style:'thin',color:'#D8DEE3'} };
+  sheet.getRange(`A2:A${data.length + 1}`).setNumberFormat('yyyy-mm-dd');
+  [110,180,190,220,260,220,100,125,125,190].forEach((width, i) => sheet.getRangeByIndexes(0,i,data.length+1,1).format.columnWidthPx = width);
+  body.format.autofitRows();
+  sheet.getRange(`H2:J${data.length + 1}`).format.fill = '#EAF2F8';
+  for (let r = 0; r < data.length; r++) {
+    for (let c = 0; c < 7; c++) if (!data[r][columns[c]] || String(data[r][columns[c]]).trim().toUpperCase() === 'TBA') sheet.getCell(r + 1, c).format.fill = '#FFF2CC';
+    for (let c = 7; c < 10; c++) if (data[r][columns[c]]) { sheet.getCell(r + 1, c).format.fill = '#F6BE00'; sheet.getCell(r + 1, c).format.font = {name:'Arial',size:10,bold:true,color:'#17212B'}; }
+  }
+  sheet.getRange(`G2:G${data.length + 1}`).dataValidation = { rule:{ type:'list', values:['Scheduled','JMC','Cancelled','Postponed','TBA'] } };
+  const table = sheet.tables.add(`A1:J${data.length + 1}`, true, `${item.id.replaceAll('-','_')}_seminars`); table.style = 'TableStyleMedium2'; table.showBandedRows = false;
+  const noteRow = data.length + 3;
+  sheet.getRange(`A${noteRow}:B${noteRow}`).values = [['Overrides', 'Blue columns are optional. A gold value replaces the series default for that seminar.']];
+  sheet.getRange(`A${noteRow}`).format.font = { name:'Arial', size:9, bold:true, color:'#4B5563' };
+  sheet.getRange(`B${noteRow}`).format.font = { name:'Arial', size:9, italic:true, color:'#4B5563' };
+  if (item.source.url) {
+    const sourceRow = data.length + 4;
+    sheet.getRange(`A${sourceRow}:B${sourceRow}`).values = [['Source', item.source.url]];
+    sheet.getRange(`A${sourceRow}`).format.font = { name:'Arial', size:9, bold:true, color:'#4B5563' };
+    sheet.getRange(`B${sourceRow}`).format.font = { name:'Arial', size:9, italic:true, color:'#4B5563' };
+    sheet.getRange(`B${sourceRow}`).format.columnWidthPx = 180;
+  }
+  await fs.mkdir(outputDir, { recursive:true }); const out = await SpreadsheetFile.exportXlsx(workbook); const file = path.join(outputDir, `${item.id}-2026-27.xlsx`); await out.save(file);
+  const inspect = await workbook.inspect({kind:'table',range:`Seminars!A1:J${Math.min(data.length+1,8)}`,include:'values,formulas',tableMaxRows:8,tableMaxCols:10});
+  const errors = await workbook.inspect({kind:'match',searchTerm:'#REF!|#DIV/0!|#VALUE!|#NAME\\?|#N/A|#NUM!|#NULL!|#SPILL!|#CALC!',options:{useRegex:true,maxResults:50},summary:'formula error scan'});
+  const previewEndRow = data.length + (item.source.url ? 4 : 3);
+  const preview = await workbook.render({sheetName:'Seminars',range:`A1:J${previewEndRow}`,scale:1.5}); await fs.writeFile(path.join(outputDir, `${item.id}-preview.png`), new Uint8Array(await preview.arrayBuffer()));
+  console.log(JSON.stringify({file,rows:records.length,inspect:inspect.ndjson,errorScan:errors.ndjson}));
+}
+
+const config = JSON.parse(await fs.readFile(path.join(root, 'seminars/config/series.json'), 'utf8'));
+const siteSeriesIds = {'applied-economics':'applied','econometrics':'econometrics','economic-theory':'theory','finance':'finance','macroeconomics':'macro','ifs-seminars':'ifs'};
+const siteDataFile = path.join(root,'site/data/seminars.json');
+let siteRecords = [];
+if (selectedSeries) { try { siteRecords = JSON.parse(await fs.readFile(siteDataFile, 'utf8')); } catch {} }
+for (const item of config) {
+  if (selectedSeries && !selectedSeries.has(item.id)) continue;
+  let records=[]; try { records=await readSource(item); } catch(error) { console.error(String(error)); if (item.source.offlineFile) records=standardise(parseCsv(await fs.readFile(path.join(root,item.source.offlineFile),'utf8'))); }
+  await createWorkbook(item, records);
+  siteRecords = siteRecords.filter(record => record.series !== siteSeriesIds[item.id]);
+  for (const record of records) {
+    const override=item.overrides?.[record.Date]||{};
+    const defaultParts = String(override.time || record._time || item.defaultTime).split(/[–-]/).map(value => value.trim());
+    const hasSpecialTime = Boolean(record['Special start time'] || record['Special end time']);
+    const start = record['Special start time'] || (hasSpecialTime ? '' : defaultParts[0]) || 'TBA';
+    const finish = record['Special end time'] || (hasSpecialTime ? '' : defaultParts[1]) || '';
+    siteRecords.push({id:`${item.id}-${record.Date}`,series:siteSeriesIds[item.id],date:record.Date,speaker:record.Speaker,institution:record.Institution,speakerUrl:record['Speaker URL']||undefined,title:record.Title||undefined,paperUrl:record['Paper URL']||undefined,status:record.Status||'Scheduled',time:finish ? `${start}–${finish}` : start,location:record['Special location']||override.location||record._location||item.defaultLocation});
+  }
+}
+siteRecords.sort((a,b) => a.date.localeCompare(b.date) || a.series.localeCompare(b.series));
+await fs.mkdir(path.join(root,'site/data'),{recursive:true});
+await fs.writeFile(siteDataFile,JSON.stringify(siteRecords,null,2)+'\n');

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "cemmap-phd-research-day",
+    "type": "Research day",
+    "title": "CeMMAP PhD Research Day",
+    "eventUrl": "",
+    "dates": "25 September 2026",
+    "startDate": "2026-09-25",
+    "endDate": "2026-09-25",
+    "location": "UCL",
+    "locationUrl": "https://www.ucl.ac.uk/maps",
+    "organisers": [
+      "Liyang Sun"
+    ],
+    "bookingUrl": ""
+  },
+  {
+    "id": "thebes-optimal-taxation-conference",
+    "type": "Conference",
+    "title": "THEBES Optimal Taxation Conference",
+    "eventUrl": "",
+    "dates": "December 2026",
+    "startDate": "",
+    "endDate": "",
+    "location": "TBA",
+    "locationUrl": "",
+    "organisers": [
+      "TBA"
+    ],
+    "bookingUrl": ""
+  },
+  {
+    "id": "ifs-empirical-industrial-organisation-conference",
+    "type": "Conference",
+    "title": "IFS Empirical Industrial Organisation Conference",
+    "eventUrl": "",
+    "dates": "Spring 2027",
+    "startDate": "",
+    "endDate": "",
+    "location": "Institute for Fiscal Studies",
+    "locationUrl": "https://ifs.org.uk/about/contact",
+    "organisers": [
+      "Joao Granja (UCL)",
+      "Lars Nesheim (UCL)",
+      "Jakob Schneebacher (IFS)",
+      "Alessandro Iaria (Bristol University)"
+    ],
+    "bookingUrl": ""
+  }
+]
