@@ -29,6 +29,7 @@ maintaining two hosting configurations.
 
 ### Initial shared review site
 
+- [] Not sure firebase is allowed yet so starting with Pages
 - [ ] Confirm or create an institutionally owned Firebase project and identify
   its UCL administrators.
 - [ ] Confirm whether the review site may be publicly accessible to anyone with
