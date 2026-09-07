@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { sitePath } from '@/lib/site-path';
 
 const links = [
   ['/', 'Seminars'],
@@ -16,9 +16,9 @@ export function SiteNav({ active }: { active: string }) {
     <nav className="primary" aria-label="Primary navigation">
       <div>
         {links.map(([href, label]) => (
-          <Link className={active === href ? 'active' : undefined} href={href} key={href}>
+          <a className={active === href ? 'active' : undefined} href={sitePath(href === '/' ? '/' : `${href}/`)} key={href}>
             {label}
-          </Link>
+          </a>
         ))}
       </div>
     </nav>

@@ -1,8 +1,8 @@
 'use client';
 
-import Link from 'next/link';
 import { Fragment } from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { sitePath } from '@/lib/site-path';
 
 type Publication = { id: string; title: string; year: number; date: string; authors: string[]; venue: string; url: string; type: string };
 type PersonPublicationPage = {
@@ -42,7 +42,7 @@ export function PersonPublications({ person }: { person: PersonPublicationPage }
   return (
     <>
       <header className="person-publications-heading">
-        <Link href="/people">← People</Link>
+        <a href={sitePath('/people/')}>← People</a>
         <h1>{person.name}</h1>
         <p>{person.title}</p>
       </header>

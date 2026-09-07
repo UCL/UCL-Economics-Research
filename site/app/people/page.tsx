@@ -1,10 +1,10 @@
 'use client';
 
-import Link from 'next/link';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { SiteNav } from '@/components/site-nav';
 import peopleData from '@/data/people.json';
 import publicationIndexData from '@/data/people-publication-index.json';
+import { sitePath } from '@/lib/site-path';
 
 type Person = { name: string; title: string; email: string; profileUrl: string; personalUrl: string; surnameInitial: string };
 const people = peopleData as Person[];
@@ -27,7 +27,7 @@ function PeopleGrid({ letters }: { letters: string }) {
             {person.profileUrl && <a href={person.profileUrl} target="_blank" rel="noreferrer">UCL profile</a>}
             <a href={`mailto:${person.email}`}>{person.email}</a>
             {person.personalUrl && <a href={person.personalUrl} target="_blank" rel="noreferrer">Webpage</a>}
-            {publicationIndex.has(person.name) && <Link href={`/people/${publicationIndex.get(person.name)!.slug}`}>Publications</Link>}
+            {publicationIndex.has(person.name) && <a href={sitePath(`/people/${publicationIndex.get(person.name)!.slug}/`)}>Publications</a>}
           </div>
         </article>
       ))}

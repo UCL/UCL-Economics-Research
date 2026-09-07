@@ -19,6 +19,7 @@ type Publication = {
 };
 
 const currentYear = new Date().getFullYear();
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const years = Array.from({ length: 15 }, (_, index) => currentYear - index);
 const fields = ['Applied', 'Econometrics', 'Theory', 'Macroeconomics', 'Finance'];
 
@@ -101,7 +102,7 @@ export default function PublicationsPage() {
   const [selectedField, setSelectedField] = useState('Applied');
   const [selectedYear, setSelectedYear] = useState(currentYear);
   useEffect(() => {
-    void fetch('/publications.json')
+    void fetch(`${basePath}/publications.json`)
       .then((response) => response.json() as Promise<Publication[]>)
       .then((records) => setPublications(records))
       .catch(() => setPublications([]))
@@ -120,8 +121,14 @@ export default function PublicationsPage() {
       <SiteNav active="/publications" />
       <main>
         <header className="publications-heading">
-          <p className="eyebrow">UCL Economics</p>
-          <h1>Recent publications</h1>
+          <div>
+            <p className="eyebrow">UCL Economics</p>
+            <h1>Recent publications</h1>
+          </div>
+          <a className="econ-brief-link" href="https://ucleconbrief.co.uk" target="_blank" rel="noreferrer">
+            <strong>Econ Brief</strong>
+            <span>Executive summaries of recent publications</span>
+          </a>
         </header>
         <div className="publication-filter">
           <p>Field</p>

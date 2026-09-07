@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import Link from 'next/link';
 import {
   addWeeks,
   endOfWeek,
@@ -29,6 +28,7 @@ import {
 } from '@/components/ui/table';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { SiteNav } from '@/components/site-nav';
+import { sitePath } from '@/lib/site-path';
 import seminarData from '@/data/seminars.json';
 import organiserData from '@/data/series-organisers.json';
 
@@ -184,9 +184,9 @@ function Next({ s, label }: { s: Seminar; label: string }) {
           </div>
         </dl>
       </div>
-      <Link className="signup" href={`/sign-up?seminar=${s.id}`}>
+      <a className="signup" href={sitePath(`/sign-up/?seminar=${s.id}`)}>
         Sign up to meet the speaker <ArrowRight />
-      </Link>
+      </a>
     </section>
   );
 }

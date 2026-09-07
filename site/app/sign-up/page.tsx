@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { sitePath } from '@/lib/site-path';
 
 export default function SignUpPage() {
   return (
@@ -12,7 +12,7 @@ export default function SignUpPage() {
           the sign-up process is confirmed.
         </p>
         <p style={{ marginTop: '1.25rem' }}>
-          <Link href="/">Return to seminars</Link>
+          <a href={sitePath('/')}>Return to seminars</a>
         </p>
       </div>
     </main>
