@@ -111,6 +111,59 @@ function parseFinancePlanningSheet(text) {
   return rows;
 }
 
+function parseAppliedPlanningSheet(text) {
+  let term = 1;
+  const rows = [];
+  const monthNumbers = {
+    jan: 1, feb: 2, mar: 3, apr: 4, may: 5, jun: 6,
+    jul: 7, aug: 8, sep: 9, oct: 10, nov: 11, dec: 12,
+  };
+
+  for (const cells of parseCsvMatrix(text)) {
+    const dateCell = (cells[0] || '').trim();
+    if (/^term\s*1/i.test(dateCell)) { term = 1; continue; }
+    if (/^term\s*2/i.test(dateCell)) { term = 2; continue; }
+    if (/^term\s*3/i.test(dateCell)) { term = 3; continue; }
+
+    const dateMatch = dateCell.match(/^([A-Za-z]+)\s+(\d{1,2})$/);
+    if (!dateMatch) continue;
+    const month = monthNumbers[dateMatch[1].slice(0, 3).toLowerCase()];
+    if (!month) continue;
+
+    let speaker = (cells[1] || '').trim();
+    if (!speaker || /reading week|practice job talks/i.test(speaker)) continue;
+
+    const planningNotes = [cells[3], cells[4]].filter(Boolean).join(' ');
+    const cancelled = /cancelled|canceled/i.test(`${speaker} ${planningNotes}`);
+    speaker = speaker.replace(/\s*\((?:cancelled|canceled)\)\s*$/i, '').trim();
+    if (!speaker) continue;
+
+    const year = term === 1 || month >= 9 ? 2026 : 2027;
+    rows.push({
+      Date: `${year}-${String(month).padStart(2, '0')}-${dateMatch[2].padStart(2, '0')}`,
+      Speaker: speaker,
+      Status: cancelled ? 'Cancelled' : 'Scheduled',
+    });
+  }
+  return rows;
+}
+
+function csvCell(value = '') {
+  const text = String(value ?? '');
+  return /[",\n\r]/.test(text) ? `"${text.replaceAll('"', '""')}"` : text;
+}
+
+async function saveOfflineSource(item, records) {
+  if (!item.source.offlineFile) return;
+  const file = path.join(root, item.source.offlineFile);
+  const text = [
+    columns.join(','),
+    ...records.map((record) => columns.map((column) => csvCell(record[column] || '')).join(',')),
+  ].join('\n') + '\n';
+  await fs.mkdir(path.dirname(file), { recursive: true });
+  await fs.writeFile(file, text);
+}
+
 function parseIfsDate(value='') {
   const match = value.trim().match(/^(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})$/);
   if (!match) return '';
@@ -158,6 +211,8 @@ async function readSource(item) {
       ? parseMacroPlanningSheet(text)
       : source.adapter === 'finance-planning-sheet'
         ? parseFinancePlanningSheet(text)
+        : source.adapter === 'applied-planning-sheet'
+          ? parseAppliedPlanningSheet(text)
         : parseCsv(text);
     return standardise(parsed);
   }
@@ -221,9 +276,11 @@ if (selectedSeries) { try { siteRecords = JSON.parse(await fs.readFile(siteDataF
 for (const item of config) {
   if (selectedSeries && !selectedSeries.has(item.id)) continue;
   let records=[]; try { records=await readSource(item); } catch(error) { console.error(String(error)); if (item.source.offlineFile) records=standardise(parseCsv(await fs.readFile(path.join(root,item.source.offlineFile),'utf8'))); }
+  if (!offline) await saveOfflineSource(item, records);
   await createWorkbook(item, records);
   siteRecords = siteRecords.filter(record => record.series !== siteSeriesIds[item.id]);
   for (const record of records) {
+    if (/^cancelled$/i.test(record.Status || '')) continue;
     const override=item.overrides?.[record.Date]||{};
     const defaultParts = String(override.time || record._time || item.defaultTime).split(/[–-]/).map(value => value.trim());
     const hasSpecialTime = Boolean(record['Special start time'] || record['Special end time']);
