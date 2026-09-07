@@ -24,4 +24,8 @@ for (const file of pages) {
   await fs.rename(file, path.join(directory, 'index.html'));
 }
 
-console.log(`Prepared ${pages.length} extensionless routes for GitHub Pages.`);
+// GitHub Pages otherwise treats the output as a Jekyll site and does not
+// publish vinext's `_next` directory, which contains the CSS and JavaScript.
+await fs.writeFile(path.join(output, '.nojekyll'), '');
+
+console.log(`Prepared ${pages.length} extensionless routes and disabled Jekyll.`);
