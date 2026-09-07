@@ -4,10 +4,11 @@ const links = [
   ['/', 'Seminars'],
   ['/visitors', 'Visitors'],
   ['/events', 'Events'],
-  ['/publications', 'Recent publications'],
+  ['/publications', 'Publications'],
   ['/people', 'People'],
-  ['/research-computing', 'Research Computing'],
+  ['/research-computing', 'Computing'],
   ['/data', 'Data'],
+  ['/resources', 'Resources'],
   ['/academic-partners', 'Academic Partners'],
 ] as const;
 
