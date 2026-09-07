@@ -46,6 +46,7 @@ const events = eventRows.map((row) => ({
   id: String(row['Title']).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''),
   type: String(row['Event type']),
   title: String(row['Title']),
+  ...(row['Speaker'] ? { speaker: String(row['Speaker']) } : {}),
   eventUrl: String(row['Event URL']),
   dates: String(row['Date display']),
   startDate: isoDate(row['Start date']),

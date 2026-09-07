@@ -4,13 +4,14 @@ import { SiteNav } from '@/components/site-nav';
 
 export const metadata: Metadata = {
   title: 'Events | UCL Economics Research',
-  description: 'Conferences and special research events at UCL Economics in 2026–27.',
+  description: 'Conferences, lectures and special research events at UCL Economics.',
 };
 
 type Event = {
   id: string;
   type: string;
   title: string;
+  speaker?: string;
   eventUrl: string;
   dates: string;
   startDate: string;
@@ -39,12 +40,12 @@ export default function EventsPage() {
       <SiteNav active="/events" />
       <main>
         <header className="events-heading">
-          <p className="eyebrow">2026–27 academic year</p>
+          <p className="eyebrow">Upcoming programme</p>
           <h1>Events</h1>
           <p>Conferences, lectures and other special research events.</p>
         </header>
 
-        <section className="events-list" aria-label="Events in 2026–27">
+        <section className="events-list" aria-label="Research events">
           {events.map((event) => (
             <article className="event-item" key={event.id}>
               <p className="event-type">{event.type}</p>
@@ -54,6 +55,7 @@ export default function EventsPage() {
                     <ExternalLink href={event.eventUrl}>{event.title}</ExternalLink>
                   ) : event.title}
                 </h2>
+                {event.speaker && <p>{event.speaker}</p>}
                 <dl className="event-details">
                   <div>
                     <dt>Dates</dt>

@@ -11,7 +11,7 @@ const workbook = Workbook.create();
 const sheet = workbook.worksheets.add('Research staff');
 const headers = [
   'Name', 'Title', 'Email address', 'Personal webpage', 'Primary field', 'Secondary field', 'UCL profile',
-  'Google Scholar search', 'Google Scholar status', 'Classification status',
+  'Google Scholar search', 'Google Scholar status', 'Classification status', 'Mother tongue',
 ];
 const rows = staff.map((person) => [
   person.name,
@@ -24,12 +24,13 @@ const rows = staff.map((person) => [
   person.googleScholarSearch,
   person.googleScholarStatus,
   person.classificationStatus,
+  person.motherTongue || 'UNSURE',
 ]);
 
-sheet.getRange(`A1:J${rows.length + 1}`).values = [headers, ...rows];
+sheet.getRange(`A1:K${rows.length + 1}`).values = [headers, ...rows];
 sheet.showGridLines = false;
 sheet.freezePanes.freezeRows(1);
-const header = sheet.getRange('A1:J1');
+const header = sheet.getRange('A1:K1');
 header.format = {
   fill: '#001B44',
   font: { name: 'Arial', size: 10, bold: true, color: '#FFFFFF' },
@@ -38,7 +39,7 @@ header.format = {
   wrapText: true,
 };
 header.format.rowHeight = 36;
-const body = sheet.getRange(`A2:J${rows.length + 1}`);
+const body = sheet.getRange(`A2:K${rows.length + 1}`);
 body.format.font = { name: 'Arial', size: 10, color: '#17212B' };
 body.format.verticalAlignment = 'center';
 body.format.wrapText = true;
@@ -54,8 +55,13 @@ sheet.getRange(`J2:J${rows.length + 1}`).conditionalFormats.add('containsText', 
 [185, 220, 210, 260, 125, 125, 260, 290, 220, 200].forEach((width, column) => {
   sheet.getRangeByIndexes(0, column, rows.length + 1, 1).format.columnWidthPx = width;
 });
+sheet.getRange(`K1:K${rows.length + 1}`).format.columnWidthPx = 130;
+sheet.getRange(`K2:K${rows.length + 1}`).conditionalFormats.add('containsText', {
+  text: 'UNSURE',
+  format: { fill: '#FFF2CC', font: { bold: true, color: '#7A4F00' } },
+});
 body.format.autofitRows();
-const table = sheet.tables.add(`A1:J${rows.length + 1}`, true, 'Research_Staff');
+const table = sheet.tables.add(`A1:K${rows.length + 1}`, true, 'Research_Staff');
 table.style = 'TableStyleMedium2';
 table.showBandedRows = false;
 
@@ -73,10 +79,10 @@ sheet.getRange(`B${noteRow}:B${noteRow + 4}`).format.columnWidthPx = 640;
 
 const check = await workbook.inspect({
   kind: 'table',
-  range: 'Research staff!A1:J15',
+  range: 'Research staff!A1:K15',
   include: 'values,formulas',
   tableMaxRows: 15,
-  tableMaxCols: 10,
+  tableMaxCols: 11,
 });
 const errors = await workbook.inspect({
   kind: 'match',

@@ -32,7 +32,7 @@ owner or, where no separate owner has been appointed, by the project owner.
 
 ## Seminars
 
-The Seminars page will have an **All seminars** tab followed by six subject
+The Seminars page will have an **All seminars** tab followed by eight series
 tabs:
 
 - All seminars
@@ -41,7 +41,13 @@ tabs:
 - Economic Theory
 - Finance
 - Macroeconomics
-- IFS Seminars
+- IFS Seminar
+- IFS/UCL/LSE Development Seminar
+- IFS/UCL Labour Seminar
+
+The IFS schedule is imported from the IFS seminars webpage. Rows labelled
+CeMMAP on that page are excluded because the same programme is already supplied
+by the dedicated CeMMAP source.
 
 Seminar information will be refreshed daily. Each series may be populated from
 either an approved online source or a spreadsheet placed in the `seminars/`

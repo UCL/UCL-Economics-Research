@@ -1,0 +1,277 @@
+[
+  {
+    "name": "Beatriz Armendariz",
+    "slug": "beatriz-armendariz",
+    "count": 21
+  },
+  {
+    "name": "Mark Armstrong",
+    "slug": "mark-armstrong",
+    "count": 48
+  },
+  {
+    "name": "Saleem Bahaj",
+    "slug": "saleem-bahaj",
+    "count": 29
+  },
+  {
+    "name": "Richard Blundell",
+    "slug": "richard-blundell",
+    "count": 495
+  },
+  {
+    "name": "Wendy Carlin",
+    "slug": "wendy-carlin",
+    "count": 72
+  },
+  {
+    "name": "Pedro Carneiro",
+    "slug": "pedro-carneiro",
+    "count": 139
+  },
+  {
+    "name": "Parama Chaudhury",
+    "slug": "parama-chaudhury",
+    "count": 17
+  },
+  {
+    "name": "Andrew Chesher",
+    "slug": "andrew-chesher",
+    "count": 75
+  },
+  {
+    "name": "Gabriella Conti",
+    "slug": "gabriella-conti",
+    "count": 117
+  },
+  {
+    "name": "Lucas Conwell",
+    "slug": "lucas-conwell",
+    "count": 1
+  },
+  {
+    "name": "Martin Cripps",
+    "slug": "martin-cripps",
+    "count": 36
+  },
+  {
+    "name": "Wei Cui",
+    "slug": "wei-cui",
+    "count": 21
+  },
+  {
+    "name": "Aureo De Paula Neto",
+    "slug": "aureo-de-paula-neto",
+    "count": 106
+  },
+  {
+    "name": "Benjamin Deaner",
+    "slug": "benjamin-deaner",
+    "count": 1
+  },
+  {
+    "name": "Christian Dustmann",
+    "slug": "christian-dustmann",
+    "count": 225
+  },
+  {
+    "name": "François Gerard",
+    "slug": "francois-gerard",
+    "count": 22
+  },
+  {
+    "name": "Raffaella Giacomini",
+    "slug": "raffaella-giacomini",
+    "count": 51
+  },
+  {
+    "name": "Alexander Gorbenko",
+    "slug": "alexander-gorbenko",
+    "count": 9
+  },
+  {
+    "name": "Antonio Guarino",
+    "slug": "antonio-guarino",
+    "count": 68
+  },
+  {
+    "name": "Stephen Hansen",
+    "slug": "stephen-hansen",
+    "count": 22
+  },
+  {
+    "name": "Jonas Hjort",
+    "slug": "jonas-hjort",
+    "count": 5
+  },
+  {
+    "name": "Philippe Jehiel",
+    "slug": "philippe-jehiel",
+    "count": 94
+  },
+  {
+    "name": "Deniz Kattwinkel",
+    "slug": "deniz-kattwinkel",
+    "count": 22
+  },
+  {
+    "name": "Dennis Kristensen",
+    "slug": "dennis-kristensen",
+    "count": 77
+  },
+  {
+    "name": "Hyejin Ku",
+    "slug": "hyejin-ku",
+    "count": 26
+  },
+  {
+    "name": "Daniel Lewis",
+    "slug": "daniel-lewis",
+    "count": 27
+  },
+  {
+    "name": "Attila Lindner",
+    "slug": "attila-lindner",
+    "count": 17
+  },
+  {
+    "name": "Frederic Malherbe",
+    "slug": "frederic-malherbe",
+    "count": 15
+  },
+  {
+    "name": "Kalina Manova",
+    "slug": "kalina-manova",
+    "count": 48
+  },
+  {
+    "name": "Marta Morrazoni",
+    "slug": "marta-morrazoni",
+    "count": 1
+  },
+  {
+    "name": "Ramin Nassehi",
+    "slug": "ramin-nassehi",
+    "count": 4
+  },
+  {
+    "name": "Lars Nesheim",
+    "slug": "lars-nesheim",
+    "count": 59
+  },
+  {
+    "name": "Alan Olivi",
+    "slug": "alan-olivi",
+    "count": 1
+  },
+  {
+    "name": "Duygu Ozdemir",
+    "slug": "duygu-ozdemir",
+    "count": 1
+  },
+  {
+    "name": "Suphanit Piyapromdee",
+    "slug": "suphanit-piyapromdee",
+    "count": 11
+  },
+  {
+    "name": "Franck Portier",
+    "slug": "franck-portier",
+    "count": 48
+  },
+  {
+    "name": "Fabien Postel-Vinay",
+    "slug": "fabien-postel-vinay",
+    "count": 72
+  },
+  {
+    "name": "Peter Postl",
+    "slug": "peter-postl",
+    "count": 7
+  },
+  {
+    "name": "Ian Preston",
+    "slug": "ian-preston",
+    "count": 101
+  },
+  {
+    "name": "Lukasz Rachel",
+    "slug": "lukasz-rachel",
+    "count": 15
+  },
+  {
+    "name": "Imran Rasul",
+    "slug": "imran-rasul",
+    "count": 140
+  },
+  {
+    "name": "Morten Ravn",
+    "slug": "morten-ravn",
+    "count": 54
+  },
+  {
+    "name": "Jose-Victor Rios-Rull",
+    "slug": "jose-victor-rios-rull",
+    "count": 69
+  },
+  {
+    "name": "Vasiliki Skreta",
+    "slug": "vasiliki-skreta",
+    "count": 35
+  },
+  {
+    "name": "Ran Spiegler",
+    "slug": "ran-spiegler",
+    "count": 91
+  },
+  {
+    "name": "Vincent Sterk",
+    "slug": "vincent-sterk",
+    "count": 24
+  },
+  {
+    "name": "Liyang Sun",
+    "slug": "liyang-sun",
+    "count": 16
+  },
+  {
+    "name": "Michael Thaler",
+    "slug": "michael-thaler",
+    "count": 14
+  },
+  {
+    "name": "Michela Tincani",
+    "slug": "michela-tincani",
+    "count": 12
+  },
+  {
+    "name": "Gabriel Ulyssea",
+    "slug": "gabriel-ulyssea",
+    "count": 27
+  },
+  {
+    "name": "Marcos Angel Vera-Hernandez",
+    "slug": "marcos-angel-vera-hernandez",
+    "count": 66
+  },
+  {
+    "name": "Ming Yang",
+    "slug": "ming-yang",
+    "count": 9
+  },
+  {
+    "name": "Xiao Yin",
+    "slug": "xiao-yin",
+    "count": 5
+  },
+  {
+    "name": "Ji Hee Yoon",
+    "slug": "ji-hee-yoon",
+    "count": 20
+  },
+  {
+    "name": "Andrei Zeleneev",
+    "slug": "andrei-zeleneev",
+    "count": 6
+  }
+]

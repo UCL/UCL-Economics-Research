@@ -1,5 +1,35 @@
 [
   {
+    "id": "ifs-development-2026-09-17",
+    "series": "ifs-development",
+    "date": "2026-09-17",
+    "speaker": "Jack Thiemel",
+    "institution": "LSE",
+    "status": "TBA",
+    "time": "2:00–3:00pm",
+    "location": "IFS / online"
+  },
+  {
+    "id": "ifs-seminars-2026-09-21",
+    "series": "ifs",
+    "date": "2026-09-21",
+    "speaker": "Krishna Pendakur",
+    "institution": "Simon Fraser University",
+    "status": "TBA",
+    "time": "12:15–1:30pm",
+    "location": "IFS / online"
+  },
+  {
+    "id": "ifs-development-2026-09-24",
+    "series": "ifs-development",
+    "date": "2026-09-24",
+    "speaker": "Sujata Visaria",
+    "institution": "City St Georges",
+    "status": "TBA",
+    "time": "2:00–3:00pm",
+    "location": "IFS / online"
+  },
+  {
     "id": "econometrics-2026-09-29",
     "series": "econometrics",
     "date": "2026-09-29",
@@ -22,6 +52,16 @@
     "location": "Gordon House, rm 106"
   },
   {
+    "id": "ifs-seminars-2026-09-30",
+    "series": "ifs",
+    "date": "2026-09-30",
+    "speaker": "Apostolos Davillas",
+    "institution": "Heidelberg University",
+    "status": "TBA",
+    "time": "12:15–1:30pm",
+    "location": "IFS / online"
+  },
+  {
     "id": "macroeconomics-2026-09-30",
     "series": "macro",
     "date": "2026-09-30",
@@ -30,6 +70,16 @@
     "status": "Scheduled",
     "time": "TBA",
     "location": "TBA"
+  },
+  {
+    "id": "ifs-development-2026-10-01",
+    "series": "ifs-development",
+    "date": "2026-10-01",
+    "speaker": "Kartik Srivastava",
+    "institution": "University of Warwick",
+    "status": "TBA",
+    "time": "2:00–3:00pm",
+    "location": "IFS / online"
   },
   {
     "id": "econometrics-2026-10-06",
@@ -54,6 +104,26 @@
     "location": "Darwin Building, rm B15"
   },
   {
+    "id": "finance-2026-10-07",
+    "series": "finance",
+    "date": "2026-10-07",
+    "speaker": "Jonathan Payne",
+    "institution": "Princeton University",
+    "status": "Scheduled",
+    "time": "16:00",
+    "location": "Drayton 321"
+  },
+  {
+    "id": "ifs-seminars-2026-10-07",
+    "series": "ifs",
+    "date": "2026-10-07",
+    "speaker": "James Ziliak",
+    "institution": "University of Kentucky",
+    "status": "TBA",
+    "time": "12:15–1:30pm",
+    "location": "IFS / online"
+  },
+  {
     "id": "macroeconomics-2026-10-07",
     "series": "macro",
     "date": "2026-10-07",
@@ -62,6 +132,16 @@
     "status": "Scheduled",
     "time": "TBA",
     "location": "TBA"
+  },
+  {
+    "id": "ifs-development-2026-10-08",
+    "series": "ifs-development",
+    "date": "2026-10-08",
+    "speaker": "Nick Cerkez",
+    "institution": "Oxford",
+    "status": "TBA",
+    "time": "2:00–3:00pm",
+    "location": "IFS / online"
   },
   {
     "id": "econometrics-2026-10-13",
@@ -86,6 +166,16 @@
     "location": "Darwin Building, rm B15"
   },
   {
+    "id": "finance-2026-10-14",
+    "series": "finance",
+    "date": "2026-10-14",
+    "speaker": "Quentin Vandeweyer",
+    "institution": "London Business School",
+    "status": "Scheduled",
+    "time": "16:00",
+    "location": "Drayton 321"
+  },
+  {
     "id": "macroeconomics-2026-10-14",
     "series": "macro",
     "date": "2026-10-14",
@@ -94,6 +184,16 @@
     "status": "Scheduled",
     "time": "TBA",
     "location": "TBA"
+  },
+  {
+    "id": "ifs-development-2026-10-15",
+    "series": "ifs-development",
+    "date": "2026-10-15",
+    "speaker": "Rocco Macchiavello",
+    "institution": "LSE",
+    "status": "TBA",
+    "time": "2:00–3:00pm",
+    "location": "IFS / online"
   },
   {
     "id": "econometrics-2026-10-20",
@@ -118,6 +218,16 @@
     "location": "Darwin Building, rm B15"
   },
   {
+    "id": "finance-2026-10-21",
+    "series": "finance",
+    "date": "2026-10-21",
+    "speaker": "Arthur Taburet",
+    "institution": "Duke University",
+    "status": "Scheduled",
+    "time": "16:00",
+    "location": "Drayton 321"
+  },
+  {
     "id": "macroeconomics-2026-10-21",
     "series": "macro",
     "date": "2026-10-21",
@@ -138,6 +248,16 @@
     "status": "Scheduled",
     "time": "TBD",
     "location": "TBD"
+  },
+  {
+    "id": "ifs-development-2026-10-22",
+    "series": "ifs-development",
+    "date": "2026-10-22",
+    "speaker": "Justine Knebelmann",
+    "institution": "Sciences Po",
+    "status": "TBA",
+    "time": "2:00–3:00pm",
+    "location": "IFS / online"
   },
   {
     "id": "econometrics-2026-10-27",
@@ -162,6 +282,16 @@
     "location": "Darwin Building, rm B15"
   },
   {
+    "id": "finance-2026-10-28",
+    "series": "finance",
+    "date": "2026-10-28",
+    "speaker": "Ali Uppal",
+    "institution": "Imperial College London",
+    "status": "Scheduled",
+    "time": "16:00",
+    "location": "Drayton 321"
+  },
+  {
     "id": "macroeconomics-2026-10-28",
     "series": "macro",
     "date": "2026-10-28",
@@ -170,6 +300,16 @@
     "status": "Scheduled",
     "time": "TBA",
     "location": "TBA"
+  },
+  {
+    "id": "ifs-development-2026-10-29",
+    "series": "ifs-development",
+    "date": "2026-10-29",
+    "speaker": "Yasuka Tateishi",
+    "institution": "UCL",
+    "status": "TBA",
+    "time": "2:00–3:00pm",
+    "location": "IFS / online"
   },
   {
     "id": "econometrics-2026-11-03",
@@ -194,6 +334,26 @@
     "location": "Darwin Building, rm B15"
   },
   {
+    "id": "finance-2026-11-04",
+    "series": "finance",
+    "date": "2026-11-04",
+    "speaker": "Kenneth Rogoff",
+    "institution": "Harvard (former chief economist at the IMF)",
+    "status": "Scheduled",
+    "time": "16:00",
+    "location": "Drayton 321"
+  },
+  {
+    "id": "ifs-seminars-2026-11-04",
+    "series": "ifs",
+    "date": "2026-11-04",
+    "speaker": "Samantha Burn",
+    "institution": "Imperial",
+    "status": "TBA",
+    "time": "12:15–1:30pm",
+    "location": "IFS / online"
+  },
+  {
     "id": "macroeconomics-2026-11-04",
     "series": "macro",
     "date": "2026-11-04",
@@ -202,6 +362,16 @@
     "status": "Scheduled",
     "time": "TBA",
     "location": "TBA"
+  },
+  {
+    "id": "ifs-development-2026-11-05",
+    "series": "ifs-development",
+    "date": "2026-11-05",
+    "speaker": "Vicky Baranov",
+    "institution": "Melbourne",
+    "status": "TBA",
+    "time": "2:00–3:00pm",
+    "location": "IFS / online"
   },
   {
     "id": "econometrics-2026-11-10",
@@ -227,6 +397,16 @@
     "location": "Darwin Building, rm B15"
   },
   {
+    "id": "finance-2026-11-11",
+    "series": "finance",
+    "date": "2026-11-11",
+    "speaker": "Deniz Aydin",
+    "institution": "Massachusetts Institute of Technology",
+    "status": "Scheduled",
+    "time": "16:00",
+    "location": "Drayton 321"
+  },
+  {
     "id": "macroeconomics-2026-11-11",
     "series": "macro",
     "date": "2026-11-11",
@@ -235,6 +415,16 @@
     "status": "Scheduled",
     "time": "TBA",
     "location": "TBA"
+  },
+  {
+    "id": "ifs-development-2026-11-12",
+    "series": "ifs-development",
+    "date": "2026-11-12",
+    "speaker": "Linchuan Xu",
+    "institution": "University of Manchester/UCL",
+    "status": "TBA",
+    "time": "2:00–3:00pm",
+    "location": "IFS / online"
   },
   {
     "id": "econometrics-2026-11-17",
@@ -259,6 +449,16 @@
     "location": "Darwin Building, rm B15"
   },
   {
+    "id": "ifs-seminars-2026-11-18",
+    "series": "ifs",
+    "date": "2026-11-18",
+    "speaker": "David Jaeger",
+    "institution": "University of St Andrews",
+    "status": "TBA",
+    "time": "12:15–1:30pm",
+    "location": "IFS / online"
+  },
+  {
     "id": "macroeconomics-2026-11-18",
     "series": "macro",
     "date": "2026-11-18",
@@ -267,6 +467,16 @@
     "status": "Scheduled",
     "time": "TBA",
     "location": "TBA"
+  },
+  {
+    "id": "ifs-development-2026-11-19",
+    "series": "ifs-development",
+    "date": "2026-11-19",
+    "speaker": "Suphanit Piyapromdee",
+    "institution": "UCL",
+    "status": "TBA",
+    "time": "2:00–3:00pm",
+    "location": "IFS / online"
   },
   {
     "id": "econometrics-2026-11-24",
@@ -291,6 +501,16 @@
     "location": "Darwin Building, rm B15"
   },
   {
+    "id": "finance-2026-11-25",
+    "series": "finance",
+    "date": "2026-11-25",
+    "speaker": "Maxime Sauzet",
+    "institution": "Boston University",
+    "status": "Scheduled",
+    "time": "16:00",
+    "location": "Drayton 321"
+  },
+  {
     "id": "macroeconomics-2026-11-25",
     "series": "macro",
     "date": "2026-11-25",
@@ -299,6 +519,16 @@
     "status": "Scheduled",
     "time": "TBA",
     "location": "TBA"
+  },
+  {
+    "id": "ifs-development-2026-11-26",
+    "series": "ifs-development",
+    "date": "2026-11-26",
+    "speaker": "Elif Kubilay",
+    "institution": "University of Essex",
+    "status": "TBA",
+    "time": "2:00–3:00pm",
+    "location": "IFS / online"
   },
   {
     "id": "econometrics-2026-12-01",
@@ -334,6 +564,16 @@
     "location": "TBA"
   },
   {
+    "id": "ifs-development-2026-12-03",
+    "series": "ifs-development",
+    "date": "2026-12-03",
+    "speaker": "Laura Munoz Blanco",
+    "institution": "University of Exeter",
+    "status": "TBA",
+    "time": "2:00–3:00pm",
+    "location": "IFS / online"
+  },
+  {
     "id": "econometrics-2026-12-08",
     "series": "econometrics",
     "date": "2026-12-08",
@@ -356,6 +596,26 @@
     "location": "Darwin Building, rm B15"
   },
   {
+    "id": "finance-2026-12-09",
+    "series": "finance",
+    "date": "2026-12-09",
+    "speaker": "Thierry Foucault",
+    "institution": "HEC Paris",
+    "status": "Scheduled",
+    "time": "16:00",
+    "location": "Drayton 321"
+  },
+  {
+    "id": "ifs-seminars-2026-12-09",
+    "series": "ifs",
+    "date": "2026-12-09",
+    "speaker": "Mathilde Munoz",
+    "institution": "University of California, Berkeley",
+    "status": "TBA",
+    "time": "12:15–1:30pm",
+    "location": "IFS / online"
+  },
+  {
     "id": "macroeconomics-2026-12-09",
     "series": "macro",
     "date": "2026-12-09",
@@ -376,6 +636,16 @@
     "status": "Scheduled",
     "time": "TBD",
     "location": "TBD"
+  },
+  {
+    "id": "ifs-development-2026-12-10",
+    "series": "ifs-development",
+    "date": "2026-12-10",
+    "speaker": "Raphaelle Soffe",
+    "institution": "Yale",
+    "status": "TBA",
+    "time": "2:00–3:00pm",
+    "location": "IFS / online"
   },
   {
     "id": "econometrics-2026-12-15",
@@ -401,6 +671,26 @@
     "location": "Darwin Building, rm B15"
   },
   {
+    "id": "ifs-development-2026-12-17",
+    "series": "ifs-development",
+    "date": "2026-12-17",
+    "speaker": "Karmini Sharma",
+    "institution": "Imperial",
+    "status": "TBA",
+    "time": "2:00–3:00pm",
+    "location": "IFS / online"
+  },
+  {
+    "id": "ifs-seminars-2027-02-22",
+    "series": "ifs",
+    "date": "2027-02-22",
+    "speaker": "Claudio Ferraz",
+    "institution": "University of British Columbia",
+    "status": "TBA",
+    "time": "12:15–1:30pm",
+    "location": "IFS / online"
+  },
+  {
     "id": "econometrics-2027-02-23",
     "series": "econometrics",
     "date": "2027-02-23",
@@ -409,6 +699,16 @@
     "status": "Scheduled",
     "time": "12:30–13:30",
     "location": "IFS seminar room"
+  },
+  {
+    "id": "ifs-seminars-2027-02-24",
+    "series": "ifs",
+    "date": "2027-02-24",
+    "speaker": "Jonathan Weigel",
+    "institution": "University of California, Berkeley",
+    "status": "TBA",
+    "time": "12:15–1:30pm",
+    "location": "IFS / online"
   },
   {
     "id": "macroeconomics-2027-02-24",
@@ -471,6 +771,16 @@
     "location": "IFS seminar room"
   },
   {
+    "id": "ifs-seminars-2027-03-17",
+    "series": "ifs",
+    "date": "2027-03-17",
+    "speaker": "Libertad Gonzalez",
+    "institution": "University Pompeu Fabra",
+    "status": "TBA",
+    "time": "12:15–1:30pm",
+    "location": "IFS / online"
+  },
+  {
     "id": "macroeconomics-2027-03-17",
     "series": "macro",
     "date": "2027-03-17",
@@ -491,6 +801,26 @@
     "location": "IFS seminar room"
   },
   {
+    "id": "finance-2027-03-24",
+    "series": "finance",
+    "date": "2027-03-24",
+    "speaker": "Marco Grotteria",
+    "institution": "London Business School",
+    "status": "Scheduled",
+    "time": "16:00",
+    "location": "Drayton 321"
+  },
+  {
+    "id": "ifs-seminars-2027-03-24",
+    "series": "ifs",
+    "date": "2027-03-24",
+    "speaker": "Arna Olafsson",
+    "institution": "Copenhagen Business School",
+    "status": "TBA",
+    "time": "12:15–1:30pm",
+    "location": "IFS / online"
+  },
+  {
     "id": "macroeconomics-2027-03-24",
     "series": "macro",
     "date": "2027-03-24",
@@ -499,6 +829,16 @@
     "status": "Scheduled",
     "time": "TBA",
     "location": "TBA"
+  },
+  {
+    "id": "ifs-seminars-2027-04-21",
+    "series": "ifs",
+    "date": "2027-04-21",
+    "speaker": "James Sallee",
+    "institution": "University of California, Berkeley",
+    "status": "TBA",
+    "time": "12:15–1:30pm",
+    "location": "IFS / online"
   },
   {
     "id": "econometrics-2027-04-27",
@@ -511,6 +851,16 @@
     "location": "IFS seminar room"
   },
   {
+    "id": "ifs-seminars-2027-04-28",
+    "series": "ifs",
+    "date": "2027-04-28",
+    "speaker": "Achyut Adhvaryu",
+    "institution": "University of California, San Diego",
+    "status": "TBA",
+    "time": "12:15–1:30pm",
+    "location": "IFS / online"
+  },
+  {
     "id": "macroeconomics-2027-04-28",
     "series": "macro",
     "date": "2027-04-28",
@@ -521,6 +871,16 @@
     "location": "TBA"
   },
   {
+    "id": "ifs-seminars-2027-04-29",
+    "series": "ifs",
+    "date": "2027-04-29",
+    "speaker": "Rebecca Diamond",
+    "institution": "Harvard University",
+    "status": "TBA",
+    "time": "12:15–1:30pm",
+    "location": "IFS / online"
+  },
+  {
     "id": "econometrics-2027-05-04",
     "series": "econometrics",
     "date": "2027-05-04",
@@ -529,6 +889,16 @@
     "status": "Scheduled",
     "time": "12:30–13:30",
     "location": "IFS seminar room"
+  },
+  {
+    "id": "finance-2027-05-05",
+    "series": "finance",
+    "date": "2027-05-05",
+    "speaker": "Marco Sammon",
+    "institution": "",
+    "status": "TBA",
+    "time": "16:00",
+    "location": "Drayton 321"
   },
   {
     "id": "macroeconomics-2027-05-05",
@@ -549,6 +919,26 @@
     "status": "Scheduled",
     "time": "12:30–13:30",
     "location": "IFS seminar room"
+  },
+  {
+    "id": "finance-2027-05-12",
+    "series": "finance",
+    "date": "2027-05-12",
+    "speaker": "Joel Shapiro",
+    "institution": "University of Oxford",
+    "status": "Scheduled",
+    "time": "16:00",
+    "location": "Drayton 321"
+  },
+  {
+    "id": "ifs-seminars-2027-05-12",
+    "series": "ifs",
+    "date": "2027-05-12",
+    "speaker": "Olivier Marie",
+    "institution": "Erasmus University Rotterdam",
+    "status": "TBA",
+    "time": "12:15–1:30pm",
+    "location": "IFS / online"
   },
   {
     "id": "macroeconomics-2027-05-12",
@@ -609,6 +999,16 @@
     "status": "Scheduled",
     "time": "12:30–13:30",
     "location": "IFS seminar room"
+  },
+  {
+    "id": "ifs-seminars-2027-06-09",
+    "series": "ifs",
+    "date": "2027-06-09",
+    "speaker": "Manasi Deshpande",
+    "institution": "University of Chicago",
+    "status": "TBA",
+    "time": "12:15–1:30pm",
+    "location": "IFS / online"
   },
   {
     "id": "macroeconomics-2027-06-09",

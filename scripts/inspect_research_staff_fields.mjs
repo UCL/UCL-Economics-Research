@@ -1,3 +1,4 @@
+import fs from 'node:fs/promises';
 import path from 'node:path';
 import { FileBlob, SpreadsheetFile } from '@oai/artifact-tool';
 
@@ -29,3 +30,5 @@ const check = await workbook.inspect({
 });
 console.log(JSON.stringify({ count: staffRows.length, invalid, targetRows, headers }));
 console.log(check.ndjson);
+const preview = await workbook.render({ sheetName: 'Research staff', range: 'A1:J74', scale: 0.9 });
+await fs.writeFile(path.join(root, 'outputs', '01a0719b-f374-7590-b5ae-261ff64e352b', 'research-staff-before-mother-tongue.png'), new Uint8Array(await preview.arrayBuffer()));

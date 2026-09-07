@@ -94,10 +94,11 @@ await saveWorkbook(
 const events = await readJson('site/data/events.json');
 const eventWorkbook = Workbook.create();
 const eventSheet = eventWorkbook.worksheets.add('Events');
-const eventHeaders = ['Event type', 'Title', 'Event URL', 'Date display', 'Start date', 'End date', 'Location', 'Location URL', 'Organisers', 'Booking URL'];
+const eventHeaders = ['Event type', 'Title', 'Speaker', 'Event URL', 'Date display', 'Start date', 'End date', 'Location', 'Location URL', 'Organisers', 'Booking URL'];
 const eventRows = events.map((event) => [
   event.type,
   event.title,
+  event.speaker || '',
   event.eventUrl,
   event.dates,
   toDate(event.startDate),
@@ -107,12 +108,12 @@ const eventRows = events.map((event) => [
   event.organisers.join('; '),
   event.bookingUrl,
 ]);
-eventSheet.getRange(`A1:J${eventRows.length + 1}`).values = [eventHeaders, ...eventRows];
-applyTableStyle(eventSheet, `A1:J${eventRows.length + 1}`, 'Events_2026_27', [110, 245, 250, 135, 105, 105, 155, 240, 230, 240]);
-eventSheet.getRange(`E2:F${eventRows.length + 1}`).setNumberFormat('d mmm yyyy');
-eventSheet.getRange(`C2:C${eventRows.length + 1}`).conditionalFormats.add('containsBlanks', { fill: '#FFF2CC' });
-eventSheet.getRange(`G2:G${eventRows.length + 1}`).conditionalFormats.add('containsText', { text: 'TBA', format: { fill: '#FFF2CC' } });
-eventSheet.getRange(`J2:J${eventRows.length + 1}`).conditionalFormats.add('containsBlanks', { fill: '#FFF2CC' });
+eventSheet.getRange(`A1:K${eventRows.length + 1}`).values = [eventHeaders, ...eventRows];
+applyTableStyle(eventSheet, `A1:K${eventRows.length + 1}`, 'Events_2026_27', [150, 245, 220, 250, 150, 105, 105, 155, 240, 230, 240]);
+eventSheet.getRange(`F2:G${eventRows.length + 1}`).setNumberFormat('d mmm yyyy');
+eventSheet.getRange(`D2:D${eventRows.length + 1}`).conditionalFormats.add('containsBlanks', { fill: '#FFF2CC' });
+eventSheet.getRange(`H2:H${eventRows.length + 1}`).conditionalFormats.add('containsText', { text: 'TBA', format: { fill: '#FFF2CC' } });
+eventSheet.getRange(`K2:K${eventRows.length + 1}`).conditionalFormats.add('containsBlanks', { fill: '#FFF2CC' });
 const eventNoteRow = eventRows.length + 3;
 eventSheet.getRange(`A${eventNoteRow}:B${eventNoteRow + 2}`).values = [
   ['Notes', 'This workbook is the manually maintained source for the Events webpage. Yellow cells need information.'],
@@ -123,7 +124,7 @@ eventSheet.getRange(`A${eventNoteRow}:A${eventNoteRow + 2}`).format.font = { nam
 eventSheet.getRange(`B${eventNoteRow}:B${eventNoteRow + 2}`).format.font = { name: 'Arial', size: 9, italic: true, color: '#4B5563' };
 eventSheet.getRange(`B${eventNoteRow}:B${eventNoteRow + 2}`).format.columnWidthPx = 600;
 
-const eventCheck = await eventWorkbook.inspect({ kind: 'table', range: `Events!A1:J${eventRows.length + 1}`, include: 'values,formulas', tableMaxRows: 8, tableMaxCols: 10 });
+const eventCheck = await eventWorkbook.inspect({ kind: 'table', range: `Events!A1:K${eventRows.length + 1}`, include: 'values,formulas', tableMaxRows: 8, tableMaxCols: 11 });
 const eventErrors = await eventWorkbook.inspect({ kind: 'match', searchTerm: '#REF!|#DIV/0!|#VALUE!|#NAME\\?|#N/A|#NUM!|#NULL!|#SPILL!|#CALC!', options: { useRegex: true, maxResults: 100 }, summary: 'final formula error scan' });
 await saveWorkbook(
   eventWorkbook,
@@ -131,7 +132,7 @@ await saveWorkbook(
   path.join(outputDir, 'events-2026-27.xlsx'),
   path.join(outputDir, 'events-preview.png'),
   'Events',
-  `A1:J${eventNoteRow + 2}`,
+  `A1:K${eventNoteRow + 2}`,
 );
 
 console.log(JSON.stringify({

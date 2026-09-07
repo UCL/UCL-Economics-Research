@@ -57,7 +57,6 @@ function PublicationGroup({ title, items }: { title: string; items: Publication[
     <section className="publication-group">
       <div className="publication-section-heading">
         <h2>{title}</h2>
-        <p>{items.length.toLocaleString('en-GB')}</p>
       </div>
       <div className="publication-list">
         {items.slice(0, visible).map((publication) => (
@@ -143,7 +142,7 @@ export default function PublicationsPage() {
             <YearPublications key={`${selectedField}-${selectedYear}`} year={selectedYear} items={selectedPublications} />
           )}
         </div>
-        <p className="publication-source">Each paper is classified using the primary field of its UCL author. Papers with multiple UCL authors appear under the union of their primary fields.</p>
+        <p className="publication-source">Records are drawn from UCL Profiles and classified using each UCL author’s primary field. Papers with multiple UCL authors appear under the union of their primary fields.</p>
       </main>
       <footer><div><strong>UCL Economics Research</strong><span>Prototype · publication data under review</span></div><a href="mailto:l.nesheim@ucl.ac.uk">Contact Professor Lars Nesheim</a></footer>
     </div>

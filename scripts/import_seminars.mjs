@@ -81,6 +81,68 @@ function parseMacroPlanningSheet(text) {
   return rows;
 }
 
+function parseFinancePlanningSheet(text) {
+  const institutions = {
+    Princeton: 'Princeton University', LBS: 'London Business School', Duke: 'Duke University',
+    Imperial: 'Imperial College London', MIT: 'Massachusetts Institute of Technology',
+    BU: 'Boston University', Oxford: 'University of Oxford',
+  };
+  const rows = [];
+  for (const cells of parseCsvMatrix(text)) {
+    const dateCell = (cells[0] || '').trim();
+    const match = dateCell.match(/^([A-Za-z]{3})\s+(\d{1,2})/);
+    if (!match) continue;
+    let speaker = (cells[1] || '').trim();
+    if (!speaker || /^\(offered/i.test(speaker)) continue;
+    const tentative = /likely|not fully confirmed/i.test(speaker);
+    speaker = speaker.replace(/\s*\(likely,?\s*not fully confirmed\)\s*/i, '').trim();
+    const month = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'].indexOf(match[1].toLowerCase()) + 1;
+    if (!month) continue;
+    const year = month >= 9 ? 2026 : 2027;
+    const affiliation = (cells[2] || '').trim();
+    rows.push({
+      Date: `${year}-${String(month).padStart(2, '0')}-${match[2].padStart(2, '0')}`,
+      Speaker: speaker,
+      Institution: institutions[affiliation] || affiliation,
+      Status: tentative ? 'TBA' : 'Scheduled',
+      'Special start time': (cells[6] || '').trim(),
+    });
+  }
+  return rows;
+}
+
+function parseIfsDate(value='') {
+  const match = value.trim().match(/^(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})$/);
+  if (!match) return '';
+  const month = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'].indexOf(match[2].slice(0,3).toLowerCase()) + 1;
+  return month ? `${match[3]}-${String(month).padStart(2,'0')}-${match[1].padStart(2,'0')}` : '';
+}
+
+function parseIfsFlourish(html, seriesFilter) {
+  const corrections = {
+    'Kartik Srivastava (Univeristy of Warwick': 'Kartik Srivastava (University of Warwick)',
+    'David Jaegar (St Andrews)': 'David Jaeger (University of St Andrews)',
+    'Claudio Ferraz (Univesity of British Columbia)': 'Claudio Ferraz (University of British Columbia)',
+    'Jonathan Weigel (University of Califonia, Berkeley)': 'Jonathan Weigel (University of California, Berkeley)',
+    'Arna Olafsson (Copenhagen Businees School)': 'Arna Olafsson (Copenhagen Business School)',
+    'Krishna Pendakur (Simon Fraser Univeristy)': 'Krishna Pendakur (Simon Fraser University)',
+  };
+  const match = html.match(/_Flourish_data\s*=\s*(\{"rows":\[.*?\]\})\s*,?\s*\n/);
+  if (!match) throw new Error('IFS schedule data was not found in the embedded table');
+  const rows = JSON.parse(match[1]).rows || [];
+  return rows
+    .map(row => row.columns || [])
+    .filter(cells => (cells[3] || '').trim().toLowerCase() === seriesFilter.trim().toLowerCase())
+    .map(cells => ({
+      Date: parseIfsDate(cells[1] || ''),
+      Speaker: corrections[(cells[4] || '').trim()] || (cells[4] || '').trim(),
+      Title: /^(TBC|TBA)$/i.test((cells[5] || '').trim()) ? '' : (cells[5] || '').trim(),
+      Status: /^(TBC|TBA)$/i.test((cells[5] || '').trim()) ? 'TBA' : 'Scheduled',
+      Time: (cells[2] || '').trim(),
+    }))
+    .filter(row => row.Date && row.Speaker);
+}
+
 async function readSource(item) {
   const source = item.source;
   if (source.type === 'unconfigured') return [];
@@ -92,11 +154,17 @@ async function readSource(item) {
     const url = `https://docs.google.com/spreadsheets/d/${source.spreadsheetId}/export?format=csv&gid=${source.gid}`;
     const response = await fetch(url); if (!response.ok) throw new Error(`${item.name}: ${response.status}`);
     const text = await response.text();
-    return standardise(source.adapter === 'macro-planning-sheet' ? parseMacroPlanningSheet(text) : parseCsv(text));
+    const parsed = source.adapter === 'macro-planning-sheet'
+      ? parseMacroPlanningSheet(text)
+      : source.adapter === 'finance-planning-sheet'
+        ? parseFinancePlanningSheet(text)
+        : parseCsv(text);
+    return standardise(parsed);
   }
   if (source.type === 'html') {
-    const response = await fetch(source.url); if (!response.ok) throw new Error(`${item.name}: ${response.status}`);
+    const response = await fetch(source.embedUrl || source.url); if (!response.ok) throw new Error(`${item.name}: ${response.status}`);
     const html = await response.text();
+    if (source.adapter === 'ifs-flourish') return standardise(parseIfsFlourish(html, source.seriesFilter));
     const embeddedData = html.match(/const data = (\{.*?\});\s*\n\s*\/\/ Function/s);
     if (embeddedData) {
       const rows = JSON.parse(embeddedData[1]).seminars || [];
@@ -146,7 +214,7 @@ async function createWorkbook(item, records) {
 }
 
 const config = JSON.parse(await fs.readFile(path.join(root, 'seminars/config/series.json'), 'utf8'));
-const siteSeriesIds = {'applied-economics':'applied','econometrics':'econometrics','economic-theory':'theory','finance':'finance','macroeconomics':'macro','ifs-seminars':'ifs'};
+const siteSeriesIds = {'applied-economics':'applied','econometrics':'econometrics','economic-theory':'theory','finance':'finance','macroeconomics':'macro','ifs-seminars':'ifs','ifs-development':'ifs-development','ifs-labour':'ifs-labour'};
 const siteDataFile = path.join(root,'site/data/seminars.json');
 let siteRecords = [];
 if (selectedSeries) { try { siteRecords = JSON.parse(await fs.readFile(siteDataFile, 'utf8')); } catch {} }
@@ -167,3 +235,8 @@ for (const item of config) {
 siteRecords.sort((a,b) => a.date.localeCompare(b.date) || a.series.localeCompare(b.series));
 await fs.mkdir(path.join(root,'site/data'),{recursive:true});
 await fs.writeFile(siteDataFile,JSON.stringify(siteRecords,null,2)+'\n');
+const organiserData = Object.fromEntries(config.map((item) => [
+  siteSeriesIds[item.id],
+  (item.organisers || []).map((organiser) => organiser.name),
+]));
+await fs.writeFile(path.join(root, 'site/data/series-organisers.json'), JSON.stringify(organiserData, null, 2) + '\n');

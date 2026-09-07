@@ -30,6 +30,7 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { SiteNav } from '@/components/site-nav';
 import seminarData from '@/data/seminars.json';
+import organiserData from '@/data/series-organisers.json';
 
 type SeriesId =
   | 'all'
@@ -38,7 +39,9 @@ type SeriesId =
   | 'theory'
   | 'finance'
   | 'macro'
-  | 'ifs';
+  | 'ifs'
+  | 'ifs-development'
+  | 'ifs-labour';
 type Seminar = {
   id: string;
   series: Exclude<SeriesId, 'all'>;
@@ -53,16 +56,29 @@ type Seminar = {
   time: string;
 };
 
-const series: { id: SeriesId; label: string }[] = [
+const series: { id: SeriesId; label: string; tabLabel?: string }[] = [
   { id: 'all', label: 'All seminars' },
   { id: 'applied', label: 'Applied Economics' },
   { id: 'econometrics', label: 'CeMMAP' },
   { id: 'theory', label: 'THEBES' },
   { id: 'finance', label: 'Finance' },
   { id: 'macro', label: 'Macroeconomics' },
-  { id: 'ifs', label: 'IFS Seminars' },
+  { id: 'ifs', label: 'IFS Seminar' },
+  { id: 'ifs-development', label: 'IFS/UCL/LSE Development Seminar', tabLabel: 'Development' },
+  { id: 'ifs-labour', label: 'IFS/UCL Labour Seminar', tabLabel: 'Labour' },
 ];
+const standardSeries = series.filter((item) => !item.id.startsWith('ifs'));
+const ifsSeries = series.filter((item) => item.id.startsWith('ifs'));
 const seminars = seminarData as Seminar[];
+const organisers = organiserData as Record<Exclude<SeriesId, 'all'>, string[]>;
+const surname = (name: string) => name.trim().split(/\s+/).at(-1) || name;
+const terms = [
+  { id: 'autumn', label: 'Autumn Term', months: [9, 10, 11, 12] },
+  { id: 'winter', label: 'Winter Term', months: [1, 2, 3] },
+  { id: 'spring', label: 'Spring Term', months: [4, 5, 6] },
+] as const;
+const currentTerm = (month: number) =>
+  month >= 1 && month <= 3 ? 'winter' : month >= 4 && month <= 6 ? 'spring' : 'autumn';
 
 function Speaker({ s }: { s: Seminar }) {
   return (
@@ -184,6 +200,9 @@ function Series({
 }) {
   const items = seminars.filter((s) => s.series === id);
   const next = items.find((s) => !isBefore(parseISO(s.date), new Date()));
+  const seriesOrganisers = [...(organisers[id] || [])].sort((a, b) =>
+    surname(a).localeCompare(surname(b), 'en-GB'),
+  );
   return (
     <div className="stack">
       <header className="title-row">
@@ -201,31 +220,45 @@ function Series({
               label
             )}
           </h1>
+          <p className="series-organisers">
+            <strong>Organisers:</strong>{' '}
+            {seriesOrganisers.length ? seriesOrganisers.join(', ') : 'To be confirmed'}
+          </p>
         </div>
-        <p>Autumn term</p>
       </header>
       {next && <Next s={next} label={label} />}
       <section>
-        <header className="section-row">
-          <div>
-            <p className="eyebrow">Current term</p>
-            <h2>Seminar schedule</h2>
+        <Tabs defaultValue={currentTerm(new Date().getMonth() + 1)} className="term-tabs">
+          <div className="term-tab-scroll">
+            <TabsList variant="line" className="tabs term-tab-list">
+              {terms.map((term) => (
+                <TabsTrigger key={term.id} value={term.id}>{term.label}</TabsTrigger>
+              ))}
+            </TabsList>
           </div>
-          <p>{items.length} seminars</p>
-        </header>
-        {items.length ? (
-          <Schedule items={items} nextId={next?.id} />
-        ) : (
-          <Empty
-            title="Schedule coming soon"
-            text="The 2026–27 programme has not yet been confirmed."
-          />
-        )}
-      </section>
-      <section className="organisers">
-        <p className="eyebrow">Contact</p>
-        <h2>Seminar organisers</h2>
-        <p>Organisers to be confirmed</p>
+          {terms.map((term) => {
+            const termItems = items.filter((seminar) => {
+              const month = parseISO(seminar.date).getMonth() + 1;
+              return term.months.some((termMonth) => termMonth === month);
+            });
+            return (
+              <TabsContent key={term.id} value={term.id}>
+                <header className="section-row term-schedule-heading">
+                  <h2>Seminar schedule</h2>
+                  <p>{termItems.length} seminars</p>
+                </header>
+                {termItems.length ? (
+                  <Schedule items={termItems} nextId={next?.id} />
+                ) : (
+                  <Empty
+                    title={`${term.label} schedule coming soon`}
+                    text="The programme for this term has not yet been confirmed."
+                  />
+                )}
+              </TabsContent>
+            );
+          })}
+        </Tabs>
       </section>
     </div>
   );
@@ -356,14 +389,24 @@ export default function Home() {
       </header>
       <SiteNav active="/" />
       <main>
-        <Tabs defaultValue="all">
+        <Tabs defaultValue="all" className="seminar-tabs">
           <div className="tab-scroll">
             <TabsList variant="line" className="tabs">
-              {series.map((x) => (
+              {standardSeries.map((x) => (
                 <TabsTrigger key={x.id} value={x.id}>
                   {x.label}
                 </TabsTrigger>
               ))}
+              <div className="ifs-tab-group" role="presentation">
+                <span className="ifs-tab-heading" aria-hidden="true">IFS</span>
+                <div className="ifs-subtabs" role="presentation">
+                  {ifsSeries.map((x) => (
+                    <TabsTrigger key={x.id} value={x.id} aria-label={x.label}>
+                      {x.tabLabel || x.label}
+                    </TabsTrigger>
+                  ))}
+                </div>
+              </div>
             </TabsList>
           </div>
           <TabsContent value="all">

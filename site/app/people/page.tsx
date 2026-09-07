@@ -1,11 +1,14 @@
 'use client';
 
+import Link from 'next/link';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { SiteNav } from '@/components/site-nav';
 import peopleData from '@/data/people.json';
+import publicationIndexData from '@/data/people-publication-index.json';
 
 type Person = { name: string; title: string; email: string; profileUrl: string; personalUrl: string; surnameInitial: string };
 const people = peopleData as Person[];
+const publicationIndex = new Map((publicationIndexData as { name: string; slug: string; count: number }[]).map((item) => [item.name, item]));
 const groups = [
   { id: 'a-h', label: 'A–H', letters: 'ABCDEFGH' },
   { id: 'i-p', label: 'I–P', letters: 'IJKLMNOP' },
@@ -23,6 +26,8 @@ function PeopleGrid({ letters }: { letters: string }) {
           <div className="person-links">
             {person.profileUrl && <a href={person.profileUrl} target="_blank" rel="noreferrer">UCL profile</a>}
             <a href={`mailto:${person.email}`}>{person.email}</a>
+            {person.personalUrl && <a href={person.personalUrl} target="_blank" rel="noreferrer">Webpage</a>}
+            {publicationIndex.has(person.name) && <Link href={`/people/${publicationIndex.get(person.name)!.slug}`}>Publications</Link>}
           </div>
         </article>
       ))}
