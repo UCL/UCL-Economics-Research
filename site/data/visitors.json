@@ -5,7 +5,7 @@
     "webpage": "https://web.stanford.edu/~pista/",
     "startDate": "2026-09-15",
     "endDate": "2026-12-15",
-    "office": "Stephen Hansen's Office"
+    "office": "Drayton House 116"
   },
   {
     "name": "Philip Haile",
@@ -13,7 +13,7 @@
     "webpage": "",
     "startDate": "2026-09-21",
     "endDate": "2026-11-27",
-    "office": ""
+    "office": "Drayton House 106"
   },
   {
     "name": "Xiaosheng Mu",
@@ -427,9 +427,8 @@
     "name": "Robert Porter",
     "institution": "Northwestern University",
     "webpage": "",
-    "startDate": "",
-    "endDate": "",
-    "dateLabel": "November 2026 (dates TBA)",
+    "startDate": "2026-11-16",
+    "endDate": "2026-12-04",
     "office": ""
   }
 ]

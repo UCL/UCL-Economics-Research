@@ -30,6 +30,16 @@
     "location": "IFS / online"
   },
   {
+    "id": "applied-economics-2026-09-29",
+    "series": "applied",
+    "date": "2026-09-29",
+    "speaker": "Andrew Garin",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
     "id": "econometrics-2026-09-29",
     "series": "econometrics",
     "date": "2026-09-29",
@@ -80,6 +90,16 @@
     "status": "TBA",
     "time": "2:00–3:00pm",
     "location": "IFS / online"
+  },
+  {
+    "id": "applied-economics-2026-10-06",
+    "series": "applied",
+    "date": "2026-10-06",
+    "speaker": "Mitsuru Igami",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
   },
   {
     "id": "econometrics-2026-10-06",
@@ -142,6 +162,16 @@
     "status": "TBA",
     "time": "2:00–3:00pm",
     "location": "IFS / online"
+  },
+  {
+    "id": "applied-economics-2026-10-13",
+    "series": "applied",
+    "date": "2026-10-13",
+    "speaker": "Chris Neilson",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
   },
   {
     "id": "econometrics-2026-10-13",
@@ -260,6 +290,16 @@
     "location": "IFS / online"
   },
   {
+    "id": "applied-economics-2026-10-26",
+    "series": "applied",
+    "date": "2026-10-26",
+    "speaker": "Lawrence Schmidt",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
     "id": "econometrics-2026-10-27",
     "series": "econometrics",
     "date": "2026-10-27",
@@ -310,6 +350,16 @@
     "status": "TBA",
     "time": "2:00–3:00pm",
     "location": "IFS / online"
+  },
+  {
+    "id": "applied-economics-2026-11-03",
+    "series": "applied",
+    "date": "2026-11-03",
+    "speaker": "Benjamin M. Scuderi",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
   },
   {
     "id": "econometrics-2026-11-03",
@@ -531,6 +581,16 @@
     "location": "IFS / online"
   },
   {
+    "id": "applied-economics-2026-12-01",
+    "series": "applied",
+    "date": "2026-12-01",
+    "speaker": "Sebastian Otero",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
     "id": "econometrics-2026-12-01",
     "series": "econometrics",
     "date": "2026-12-01",
@@ -572,6 +632,16 @@
     "status": "TBA",
     "time": "2:00–3:00pm",
     "location": "IFS / online"
+  },
+  {
+    "id": "applied-economics-2026-12-08",
+    "series": "applied",
+    "date": "2026-12-08",
+    "speaker": "Tatiana Mocanu",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
   },
   {
     "id": "econometrics-2026-12-08",
@@ -648,6 +718,16 @@
     "location": "IFS / online"
   },
   {
+    "id": "applied-economics-2026-12-14",
+    "series": "applied",
+    "date": "2026-12-14",
+    "speaker": "Elena Simintzi",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
     "id": "econometrics-2026-12-15",
     "series": "econometrics",
     "date": "2026-12-15",
@@ -691,6 +771,16 @@
     "location": "IFS / online"
   },
   {
+    "id": "applied-economics-2027-02-23",
+    "series": "applied",
+    "date": "2027-02-23",
+    "speaker": "Enrico Moretti",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
     "id": "econometrics-2027-02-23",
     "series": "econometrics",
     "date": "2027-02-23",
@@ -721,6 +811,16 @@
     "location": "TBA"
   },
   {
+    "id": "applied-economics-2027-03-02",
+    "series": "applied",
+    "date": "2027-03-02",
+    "speaker": "Amanda Starc",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
     "id": "econometrics-2027-03-02",
     "series": "econometrics",
     "date": "2027-03-02",
@@ -741,6 +841,16 @@
     "location": "TBA"
   },
   {
+    "id": "applied-economics-2027-03-09",
+    "series": "applied",
+    "date": "2027-03-09",
+    "speaker": "Mathilde Munoz",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
     "id": "econometrics-2027-03-09",
     "series": "econometrics",
     "date": "2027-03-09",
@@ -756,6 +866,16 @@
     "date": "2027-03-10",
     "speaker": "Vivian Yue",
     "institution": "Emory University",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
+    "id": "applied-economics-2027-03-16",
+    "series": "applied",
+    "date": "2027-03-16",
+    "speaker": "Andrei Levchenko",
+    "institution": "",
     "status": "Scheduled",
     "time": "TBA",
     "location": "TBA"
@@ -786,6 +906,16 @@
     "date": "2027-03-17",
     "speaker": "Carolina Villegas-Sanchez",
     "institution": "ESADE",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
+    "id": "applied-economics-2027-03-21",
+    "series": "applied",
+    "date": "2027-03-21",
+    "speaker": "Paul Goldsmith-Pinkham",
+    "institution": "",
     "status": "Scheduled",
     "time": "TBA",
     "location": "TBA"
@@ -881,6 +1011,16 @@
     "location": "IFS / online"
   },
   {
+    "id": "applied-economics-2027-05-04",
+    "series": "applied",
+    "date": "2027-05-04",
+    "speaker": "Lance Lochner",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
     "id": "econometrics-2027-05-04",
     "series": "econometrics",
     "date": "2027-05-04",
@@ -906,6 +1046,16 @@
     "date": "2027-05-05",
     "speaker": "Sara Moreira",
     "institution": "Kellogg School of Management",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
+    "id": "applied-economics-2027-05-11",
+    "series": "applied",
+    "date": "2027-05-11",
+    "speaker": "Emily Breza",
+    "institution": "",
     "status": "Scheduled",
     "time": "TBA",
     "location": "TBA"
@@ -951,6 +1101,16 @@
     "location": "TBA"
   },
   {
+    "id": "applied-economics-2027-05-18",
+    "series": "applied",
+    "date": "2027-05-18",
+    "speaker": "Florian Ederer",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
     "id": "econometrics-2027-05-18",
     "series": "econometrics",
     "date": "2027-05-18",
@@ -961,11 +1121,31 @@
     "location": "IFS seminar room"
   },
   {
+    "id": "applied-economics-2027-05-25",
+    "series": "applied",
+    "date": "2027-05-25",
+    "speaker": "Oriana Bandiera",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
     "id": "macroeconomics-2027-05-26",
     "series": "macro",
     "date": "2027-05-26",
     "speaker": "Johannes Boehm",
     "institution": "University of Geneva",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
+    "id": "applied-economics-2027-06-01",
+    "series": "applied",
+    "date": "2027-06-01",
+    "speaker": "Chinhui Juhn",
+    "institution": "",
     "status": "Scheduled",
     "time": "TBA",
     "location": "TBA"
