@@ -5,43 +5,82 @@ priority is to make the prototype accessible to colleagues for structured
 review. Completed prototype work is recorded below; unchecked items are the
 remaining tasks.
 
-## Current status — 7 September 2026
+## Current status — 8 September 2026
 
 - [x] Build a responsive UCL-inspired website prototype.
-- [x] Add top-level pages for Seminars, Visitors, Events, People, Recent
-  publications, Research Computing, Data, and Academic Partners.
-- [x] Add placeholder pages for Research Computing, Data, and Academic
-  Partners.
+- [x] Add top-level pages for Seminars, Visitors, Events, People,
+  Publications, Computing, Resources, Data, and Academic Partners.
+- [x] Add placeholder pages for Computing, Data, and Academic Partners.
 - [x] Add compact page titles, navigation, footer, desktop layouts, and mobile
   layouts.
 - [x] Store the source and generated files in the UCL GitHub repository.
-- [ ] Publish a shared review version that colleagues can access without using
-  the local development server.
+- [x] Publish a shared GitHub Pages review version that colleagues can access
+  without using the local development server.
 - [ ] Appoint editors and reviewers.
 - [ ] Complete stakeholder review and record decisions.
 - [ ] Obtain approval from Professor Lars Nesheim before public launch.
 
-## Next task — publish a reviewer-accessible preview
+## Next phase — invite colleagues to review
 
-Use **Firebase Hosting preview channels** rather than GitHub Pages. This keeps
-the review environment aligned with the agreed production platform and avoids
-maintaining two hosting configurations.
+The reviewer-accessible site is now published with GitHub Pages. Use GitHub
+issues as the authoritative record of comments, decisions, and completed
+changes. Email may be used to invite reviewers and receive comments, but
+actionable feedback should be transferred into GitHub issues.
 
-### Initial shared review site
+### Immediate tasks
 
-- [] Not sure firebase is allowed yet so starting with Pages
-- [ ] Confirm or create an institutionally owned Firebase project and identify
-  its UCL administrators.
-- [ ] Confirm whether the review site may be publicly accessible to anyone with
-  its URL. Firebase preview URLs are public even though they are difficult to
-  guess.
-- [ ] Add the Firebase Hosting configuration for the generated static site.
-- [ ] Build the site and deploy a named preview channel, for example
-  `stakeholder-review`.
-- [ ] Set a suitable preview expiry date and record who can renew or replace
-  the preview.
-- [ ] Test the shared URL in a private browser window and on a phone.
-- [ ] Send the preview URL and review instructions to the appointed reviewers.
+- [ ] Draft an email inviting colleagues to review the website. Include the
+  review URL, deadline, scope, known limitations, and instructions for sending
+  comments or creating GitHub issues.
+- [ ] Decide whether reviewers should create issues directly or send comments
+  by email for the project owner to enter into GitHub.
+- [ ] Identify and invite the first group of colleagues, including at least one
+  reviewer for content, design/usability, accessibility, and data accuracy.
+- [ ] Create a main GitHub issue for the review round and include the review
+  URL, deadline, scope, and named approver.
+- [ ] Test the published site in a private browser window and on a phone before
+  sending the invitation.
+- [ ] Create a spreadsheet for each seminar-organiser group using the standard
+  columns: Date, Speaker, Institution, Speaker URL, Title, Paper URL, Status,
+  Special start time, Special end time, and Special location.
+- [ ] Highlight missing required information in yellow and explain the series
+  defaults, overrides, source, owner, and return process in each spreadsheet.
+- [ ] Send each spreadsheet to the relevant seminar organisers for completion
+  and confirmation.
+
+### Email-to-issue workflow
+
+- [ ] Define a standard format for email review requests: page or URL,
+  problem, requested change, priority, and optional screenshot.
+- [ ] Begin with a manual process for converting actionable emails into GitHub
+  issues, retaining a link or reference to the original message.
+- [ ] Confirm UCL information-governance and account-permission requirements
+  before connecting an email inbox to an automated process.
+- [ ] Prototype automation that extracts proposed issue title, page, requested
+  change, sender, and attachments from review emails.
+- [ ] Require human confirmation before an extracted request creates or edits a
+  GitHub issue.
+- [ ] Test duplicate detection, personal-data handling, malformed emails, and
+  attachment handling before enabling the automation.
+
+### What comes next
+
+- [ ] Triage the first review round into corrections, enhancements, decisions,
+  and out-of-scope requests; assign an owner and target date to each issue.
+- [ ] Complete missing seminar, visitor, and event information and have each
+  asset owner approve their records.
+- [ ] Reconcile and quality-check People and Publications data, prioritising
+  missing and incorrectly attributed publications.
+- [ ] Complete accessibility, mobile, browser, broken-link, and data-validation
+  testing.
+- [ ] Agree a content freeze and launch acceptance checklist.
+- [ ] Resolve launch-blocking issues and obtain final approval from Professor
+  Lars Nesheim.
+- [ ] Decide whether GitHub Pages remains the production host or whether to
+  migrate the approved site to an institutionally owned Firebase project.
+- [ ] After the source formats and approval workflow are stable, automate daily
+  source checks, validation reports, preview generation, approval, deployment,
+  and rollback.
 
 ### GitHub review workflow
 
@@ -84,7 +123,8 @@ maintaining two hosting configurations.
 - [x] Create standard seminar workbooks with incomplete fields highlighted.
 - [x] Support default series times and locations plus special overrides.
 - [x] Import available CeMMAP, THEBES, Macroeconomics, Finance, and IFS data.
-- [ ] Add or confirm the authoritative Applied Economics schedule.
+- [x] Import the authoritative Applied Economics schedule and retain an offline
+  standard-format source file.
 - [ ] Confirm owners, organisers, locations, and defaults for every series.
 - [ ] Add meet-the-speaker sign-up links when the system and privacy rules are
   ready.
@@ -172,8 +212,10 @@ maintaining two hosting configurations.
 ## Decisions
 
 - [x] Project owner and approver: Professor Lars Nesheim.
-- [x] Initial hosting target: Firebase Hosting.
-- [x] Review feedback: GitHub issues linked to a shared Firebase preview.
+- [x] Initial review hosting: GitHub Pages.
+- [x] Review feedback: GitHub issues linked to the shared review site.
+- [ ] Production hosting decision: retain GitHub Pages or migrate to an
+  institutionally owned Firebase project.
 - [x] Initial public period: 2026–27, with provision for a private archive.
 - [x] Intended source-check frequency: daily, once sources and approvals are
   ready.
