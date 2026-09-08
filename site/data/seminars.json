@@ -30,16 +30,6 @@
     "location": "IFS / online"
   },
   {
-    "id": "applied-economics-2026-09-29",
-    "series": "applied",
-    "date": "2026-09-29",
-    "speaker": "Andrew Garin",
-    "institution": "",
-    "status": "Scheduled",
-    "time": "TBA",
-    "location": "TBA"
-  },
-  {
     "id": "econometrics-2026-09-29",
     "series": "econometrics",
     "date": "2026-09-29",
@@ -82,6 +72,16 @@
     "location": "TBA"
   },
   {
+    "id": "applied-economics-2026-10-01",
+    "series": "applied",
+    "date": "2026-10-01",
+    "speaker": "Luigi Pistaferri",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
     "id": "ifs-development-2026-10-01",
     "series": "ifs-development",
     "date": "2026-10-01",
@@ -90,16 +90,6 @@
     "status": "TBA",
     "time": "2:00–3:00pm",
     "location": "IFS / online"
-  },
-  {
-    "id": "applied-economics-2026-10-06",
-    "series": "applied",
-    "date": "2026-10-06",
-    "speaker": "Mitsuru Igami",
-    "institution": "",
-    "status": "Scheduled",
-    "time": "TBA",
-    "location": "TBA"
   },
   {
     "id": "econometrics-2026-10-06",
@@ -154,6 +144,16 @@
     "location": "TBA"
   },
   {
+    "id": "applied-economics-2026-10-08",
+    "series": "applied",
+    "date": "2026-10-08",
+    "speaker": "Jonathan Elliott",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
     "id": "ifs-development-2026-10-08",
     "series": "ifs-development",
     "date": "2026-10-08",
@@ -164,14 +164,14 @@
     "location": "IFS / online"
   },
   {
-    "id": "applied-economics-2026-10-13",
+    "id": "applied-economics-2026-10-12",
     "series": "applied",
-    "date": "2026-10-13",
-    "speaker": "Chris Neilson",
+    "date": "2026-10-12",
+    "speaker": "Matthew Nibloe",
     "institution": "",
     "status": "Scheduled",
-    "time": "TBA",
-    "location": "TBA"
+    "time": "12:00–13:30",
+    "location": "IFS"
   },
   {
     "id": "econometrics-2026-10-13",
@@ -216,6 +216,16 @@
     "location": "TBA"
   },
   {
+    "id": "applied-economics-2026-10-15",
+    "series": "applied",
+    "date": "2026-10-15",
+    "speaker": "Clara von Bismarck-Osten",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "14:00–15:30",
+    "location": "Archaeology 612"
+  },
+  {
     "id": "ifs-development-2026-10-15",
     "series": "ifs-development",
     "date": "2026-10-15",
@@ -224,6 +234,16 @@
     "status": "TBA",
     "time": "2:00–3:00pm",
     "location": "IFS / online"
+  },
+  {
+    "id": "applied-economics-2026-10-19",
+    "series": "applied",
+    "date": "2026-10-19",
+    "speaker": "Arthur Laroche",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
   },
   {
     "id": "econometrics-2026-10-20",
@@ -280,6 +300,16 @@
     "location": "TBD"
   },
   {
+    "id": "applied-economics-2026-10-22",
+    "series": "applied",
+    "date": "2026-10-22",
+    "speaker": "Emma Scandolo",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "12:30–13:45",
+    "location": "IFS conference room"
+  },
+  {
     "id": "ifs-development-2026-10-22",
     "series": "ifs-development",
     "date": "2026-10-22",
@@ -293,7 +323,7 @@
     "id": "applied-economics-2026-10-26",
     "series": "applied",
     "date": "2026-10-26",
-    "speaker": "Lawrence Schmidt",
+    "speaker": "Hikaru Kawarazaki",
     "institution": "",
     "status": "Scheduled",
     "time": "TBA",
@@ -342,6 +372,16 @@
     "location": "TBA"
   },
   {
+    "id": "applied-economics-2026-10-29",
+    "series": "applied",
+    "date": "2026-10-29",
+    "speaker": "Ruimin Ao",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
     "id": "ifs-development-2026-10-29",
     "series": "ifs-development",
     "date": "2026-10-29",
@@ -352,10 +392,10 @@
     "location": "IFS / online"
   },
   {
-    "id": "applied-economics-2026-11-03",
+    "id": "applied-economics-2026-11-02",
     "series": "applied",
-    "date": "2026-11-03",
-    "speaker": "Benjamin M. Scuderi",
+    "date": "2026-11-02",
+    "speaker": "Ararat Gocmen",
     "institution": "",
     "status": "Scheduled",
     "time": "TBA",
@@ -409,6 +449,16 @@
     "date": "2026-11-04",
     "speaker": "John Grigsby",
     "institution": "Princeton University",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
+    "id": "applied-economics-2026-11-05",
+    "series": "applied",
+    "date": "2026-11-05",
+    "speaker": "Yasuka Tateishi",
+    "institution": "",
     "status": "Scheduled",
     "time": "TBA",
     "location": "TBA"
@@ -477,6 +527,16 @@
     "location": "IFS / online"
   },
   {
+    "id": "applied-economics-2026-11-16",
+    "series": "applied",
+    "date": "2026-11-16",
+    "speaker": "Courtney Brell",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
     "id": "econometrics-2026-11-17",
     "series": "econometrics",
     "date": "2026-11-17",
@@ -529,6 +589,16 @@
     "location": "IFS / online"
   },
   {
+    "id": "applied-economics-2026-11-23",
+    "series": "applied",
+    "date": "2026-11-23",
+    "speaker": "Giuseppe Forte",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
     "id": "econometrics-2026-11-24",
     "series": "econometrics",
     "date": "2026-11-24",
@@ -571,6 +641,16 @@
     "location": "TBA"
   },
   {
+    "id": "applied-economics-2026-11-26",
+    "series": "applied",
+    "date": "2026-11-26",
+    "speaker": "Chao Fu",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
     "id": "ifs-development-2026-11-26",
     "series": "ifs-development",
     "date": "2026-11-26",
@@ -579,16 +659,6 @@
     "status": "TBA",
     "time": "2:00–3:00pm",
     "location": "IFS / online"
-  },
-  {
-    "id": "applied-economics-2026-12-01",
-    "series": "applied",
-    "date": "2026-12-01",
-    "speaker": "Sebastian Otero",
-    "institution": "",
-    "status": "Scheduled",
-    "time": "TBA",
-    "location": "TBA"
   },
   {
     "id": "econometrics-2026-12-01",
@@ -624,6 +694,16 @@
     "location": "TBA"
   },
   {
+    "id": "applied-economics-2026-12-03",
+    "series": "applied",
+    "date": "2026-12-03",
+    "speaker": "Isaac Sorkin",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
     "id": "ifs-development-2026-12-03",
     "series": "ifs-development",
     "date": "2026-12-03",
@@ -632,16 +712,6 @@
     "status": "TBA",
     "time": "2:00–3:00pm",
     "location": "IFS / online"
-  },
-  {
-    "id": "applied-economics-2026-12-08",
-    "series": "applied",
-    "date": "2026-12-08",
-    "speaker": "Tatiana Mocanu",
-    "institution": "",
-    "status": "Scheduled",
-    "time": "TBA",
-    "location": "TBA"
   },
   {
     "id": "econometrics-2026-12-08",
@@ -708,6 +778,16 @@
     "location": "TBD"
   },
   {
+    "id": "applied-economics-2026-12-10",
+    "series": "applied",
+    "date": "2026-12-10",
+    "speaker": "Deivy Houeix",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
     "id": "ifs-development-2026-12-10",
     "series": "ifs-development",
     "date": "2026-12-10",
@@ -716,16 +796,6 @@
     "status": "TBA",
     "time": "2:00–3:00pm",
     "location": "IFS / online"
-  },
-  {
-    "id": "applied-economics-2026-12-14",
-    "series": "applied",
-    "date": "2026-12-14",
-    "speaker": "Elena Simintzi",
-    "institution": "",
-    "status": "Scheduled",
-    "time": "TBA",
-    "location": "TBA"
   },
   {
     "id": "econometrics-2026-12-15",
@@ -751,6 +821,16 @@
     "location": "Darwin Building, rm B15"
   },
   {
+    "id": "applied-economics-2026-12-17",
+    "series": "applied",
+    "date": "2026-12-17",
+    "speaker": "Charles Hodgson",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
     "id": "ifs-development-2026-12-17",
     "series": "ifs-development",
     "date": "2026-12-17",
@@ -769,16 +849,6 @@
     "status": "TBA",
     "time": "12:15–1:30pm",
     "location": "IFS / online"
-  },
-  {
-    "id": "applied-economics-2027-02-23",
-    "series": "applied",
-    "date": "2027-02-23",
-    "speaker": "Enrico Moretti",
-    "institution": "",
-    "status": "Scheduled",
-    "time": "TBA",
-    "location": "TBA"
   },
   {
     "id": "econometrics-2027-02-23",
@@ -811,10 +881,10 @@
     "location": "TBA"
   },
   {
-    "id": "applied-economics-2027-03-02",
+    "id": "applied-economics-2027-02-25",
     "series": "applied",
-    "date": "2027-03-02",
-    "speaker": "Amanda Starc",
+    "date": "2027-02-25",
+    "speaker": "Mert Demirer",
     "institution": "",
     "status": "Scheduled",
     "time": "TBA",
@@ -841,10 +911,10 @@
     "location": "TBA"
   },
   {
-    "id": "applied-economics-2027-03-09",
+    "id": "applied-economics-2027-03-04",
     "series": "applied",
-    "date": "2027-03-09",
-    "speaker": "Mathilde Munoz",
+    "date": "2027-03-04",
+    "speaker": "Mathias Reynaert",
     "institution": "",
     "status": "Scheduled",
     "time": "TBA",
@@ -871,10 +941,10 @@
     "location": "TBA"
   },
   {
-    "id": "applied-economics-2027-03-16",
+    "id": "applied-economics-2027-03-11",
     "series": "applied",
-    "date": "2027-03-16",
-    "speaker": "Andrei Levchenko",
+    "date": "2027-03-11",
+    "speaker": "Ryan Kellogg",
     "institution": "",
     "status": "Scheduled",
     "time": "TBA",
@@ -906,16 +976,6 @@
     "date": "2027-03-17",
     "speaker": "Carolina Villegas-Sanchez",
     "institution": "ESADE",
-    "status": "Scheduled",
-    "time": "TBA",
-    "location": "TBA"
-  },
-  {
-    "id": "applied-economics-2027-03-21",
-    "series": "applied",
-    "date": "2027-03-21",
-    "speaker": "Paul Goldsmith-Pinkham",
-    "institution": "",
     "status": "Scheduled",
     "time": "TBA",
     "location": "TBA"
@@ -1001,6 +1061,16 @@
     "location": "TBA"
   },
   {
+    "id": "applied-economics-2027-04-29",
+    "series": "applied",
+    "date": "2027-04-29",
+    "speaker": "Rebecca Diamond",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
     "id": "ifs-seminars-2027-04-29",
     "series": "ifs",
     "date": "2027-04-29",
@@ -1009,16 +1079,6 @@
     "status": "TBA",
     "time": "12:15–1:30pm",
     "location": "IFS / online"
-  },
-  {
-    "id": "applied-economics-2027-05-04",
-    "series": "applied",
-    "date": "2027-05-04",
-    "speaker": "Lance Lochner",
-    "institution": "",
-    "status": "Scheduled",
-    "time": "TBA",
-    "location": "TBA"
   },
   {
     "id": "econometrics-2027-05-04",
@@ -1051,10 +1111,10 @@
     "location": "TBA"
   },
   {
-    "id": "applied-economics-2027-05-11",
+    "id": "applied-economics-2027-05-06",
     "series": "applied",
-    "date": "2027-05-11",
-    "speaker": "Emily Breza",
+    "date": "2027-05-06",
+    "speaker": "Simon Franklin",
     "institution": "",
     "status": "Scheduled",
     "time": "TBA",
@@ -1101,10 +1161,10 @@
     "location": "TBA"
   },
   {
-    "id": "applied-economics-2027-05-18",
+    "id": "applied-economics-2027-05-13",
     "series": "applied",
-    "date": "2027-05-18",
-    "speaker": "Florian Ederer",
+    "date": "2027-05-13",
+    "speaker": "Jesse Bruhn",
     "institution": "",
     "status": "Scheduled",
     "time": "TBA",
@@ -1121,10 +1181,10 @@
     "location": "IFS seminar room"
   },
   {
-    "id": "applied-economics-2027-05-25",
+    "id": "applied-economics-2027-05-20",
     "series": "applied",
-    "date": "2027-05-25",
-    "speaker": "Oriana Bandiera",
+    "date": "2027-05-20",
+    "speaker": "Pierre Bodere",
     "institution": "",
     "status": "Scheduled",
     "time": "TBA",
@@ -1141,10 +1201,10 @@
     "location": "TBA"
   },
   {
-    "id": "applied-economics-2027-06-01",
+    "id": "applied-economics-2027-05-27",
     "series": "applied",
-    "date": "2027-06-01",
-    "speaker": "Chinhui Juhn",
+    "date": "2027-05-27",
+    "speaker": "Garima Sharma",
     "institution": "",
     "status": "Scheduled",
     "time": "TBA",
@@ -1166,6 +1226,26 @@
     "date": "2027-06-02",
     "speaker": "Kunal Sangani",
     "institution": "Columbia Business School",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
+    "id": "applied-economics-2027-06-03",
+    "series": "applied",
+    "date": "2027-06-03",
+    "speaker": "Mushfiq Mobarak",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
+    "id": "applied-economics-2027-06-08",
+    "series": "applied",
+    "date": "2027-06-08",
+    "speaker": "Pat Kline",
+    "institution": "",
     "status": "Scheduled",
     "time": "TBA",
     "location": "TBA"
@@ -1196,6 +1276,16 @@
     "date": "2027-06-09",
     "speaker": "Joseph Vavra",
     "institution": "Chicago Booth",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
+    "id": "applied-economics-2027-06-10",
+    "series": "applied",
+    "date": "2027-06-10",
+    "speaker": "Myrto Kalouptsidi",
+    "institution": "",
     "status": "Scheduled",
     "time": "TBA",
     "location": "TBA"
