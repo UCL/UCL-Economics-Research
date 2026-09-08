@@ -119,30 +119,58 @@ function parseAppliedPlanningSheet(text) {
     jul: 7, aug: 8, sep: 9, oct: 10, nov: 11, dec: 12,
   };
 
+  function normalisePlanningTime(hourText, minuteText = '', meridiem = '') {
+    let hour = Number(hourText);
+    const suffix = meridiem.toLowerCase();
+    if (suffix === 'pm' && hour < 12) hour += 12;
+    if (suffix === 'am' && hour === 12) hour = 0;
+    if (!suffix && hour < 8) hour += 12;
+    return `${String(hour).padStart(2, '0')}:${minuteText || '00'}`;
+  }
+
   for (const cells of parseCsvMatrix(text)) {
     const dateCell = (cells[0] || '').trim();
     if (/^term\s*1/i.test(dateCell)) { term = 1; continue; }
     if (/^term\s*2/i.test(dateCell)) { term = 2; continue; }
     if (/^term\s*3/i.test(dateCell)) { term = 3; continue; }
 
-    const dateMatch = dateCell.match(/^([A-Za-z]+)\s+(\d{1,2})$/);
+    const monthFirst = dateCell.match(/^([A-Za-z]+)\s+(\d{1,2})$/);
+    const dayFirst = dateCell.match(/^(\d{1,2})\s+([A-Za-z]+)$/);
+    const dateMatch = monthFirst || dayFirst;
     if (!dateMatch) continue;
-    const month = monthNumbers[dateMatch[1].slice(0, 3).toLowerCase()];
+    const monthName = monthFirst ? dateMatch[1] : dateMatch[2];
+    const day = monthFirst ? dateMatch[2] : dateMatch[1];
+    const month = monthNumbers[monthName.slice(0, 3).toLowerCase()];
     if (!month) continue;
 
     let speaker = (cells[1] || '').trim();
-    if (!speaker || /reading week|practice job talks/i.test(speaker)) continue;
+    if (!speaker || /reading week|open job market practice talk slot|practice job talks/i.test(speaker)) continue;
 
-    const planningNotes = [cells[3], cells[4]].filter(Boolean).join(' ');
+    const planningNotes = cells.slice(3).filter(Boolean).join(' ');
     const cancelled = /cancelled|canceled/i.test(`${speaker} ${planningNotes}`);
-    speaker = speaker.replace(/\s*\((?:cancelled|canceled)\)\s*$/i, '').trim();
+    speaker = speaker
+      .replace(/\s*\((?:cancelled|canceled|no hotel needed)\)\s*$/i, '')
+      .replace(/\*+$/, '')
+      .trim();
     if (!speaker) continue;
+
+    const timeMatch = planningNotes.match(/(\d{1,2}):(\d{2})\s*(am|pm)?\s*[-–]\s*(\d{1,2}):(\d{2})\s*(am|pm)?/i);
+    const specialLocation = /archaeology\s*612/i.test(planningNotes)
+      ? 'Archaeology 612'
+      : /ifs conference room/i.test(planningNotes)
+        ? 'IFS conference room'
+        : /at the ifs/i.test(planningNotes)
+          ? 'IFS'
+          : '';
 
     const year = term === 1 || month >= 9 ? 2026 : 2027;
     rows.push({
-      Date: `${year}-${String(month).padStart(2, '0')}-${dateMatch[2].padStart(2, '0')}`,
+      Date: `${year}-${String(month).padStart(2, '0')}-${day.padStart(2, '0')}`,
       Speaker: speaker,
       Status: cancelled ? 'Cancelled' : 'Scheduled',
+      'Special start time': timeMatch ? normalisePlanningTime(timeMatch[1], timeMatch[2], timeMatch[3]) : '',
+      'Special end time': timeMatch ? normalisePlanningTime(timeMatch[4], timeMatch[5], timeMatch[6]) : '',
+      'Special location': specialLocation,
     });
   }
   return rows;

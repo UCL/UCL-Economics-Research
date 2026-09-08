@@ -22,7 +22,42 @@ type Event = {
   bookingUrl: string;
 };
 
-const events = eventData as Event[];
+const monthNumbers: Record<string, number> = {
+  january: 0,
+  february: 1,
+  march: 2,
+  april: 3,
+  may: 4,
+  june: 5,
+  july: 6,
+  august: 7,
+  september: 8,
+  october: 9,
+  november: 10,
+  december: 11,
+  spring: 2,
+  summer: 5,
+  autumn: 8,
+  winter: 11,
+};
+
+function eventSortKey(event: Event) {
+  if (event.startDate) return Date.parse(`${event.startDate}T00:00:00Z`);
+
+  const approximateDate = event.dates.toLowerCase().match(
+    /\b(january|february|march|april|may|june|july|august|september|october|november|december|spring|summer|autumn|winter)\s+(\d{4})\b/,
+  );
+  if (approximateDate) {
+    return Date.UTC(Number(approximateDate[2]), monthNumbers[approximateDate[1]], 1);
+  }
+
+  return Number.POSITIVE_INFINITY;
+}
+
+const events = (eventData as Event[])
+  .map((event, sourceIndex) => ({ event, sourceIndex }))
+  .sort((a, b) => eventSortKey(a.event) - eventSortKey(b.event) || a.sourceIndex - b.sourceIndex)
+  .map(({ event }) => event);
 
 function ExternalLink({ href, children }: { href: string; children: React.ReactNode }) {
   return <a href={href} target="_blank" rel="noreferrer">{children}</a>;
