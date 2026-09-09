@@ -453,6 +453,14 @@ main {
   margin-bottom: 12px;
   border-bottom: 1px solid var(--border);
 }
+.field-tab-list,
+.surname-tab-list {
+  max-width: 100%;
+  overflow-x: auto;
+}
+.surname-tabs > [data-slot='tabs-list'] {
+  margin-bottom: 12px;
+}
 .people-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -461,12 +469,12 @@ main {
 }
 .person-card {
   min-width: 0;
-  padding: 13px 14px;
+  padding: 9px 11px;
   border-right: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
 .person-card h2 {
-  margin: 0 0 3px;
+  margin: 0 0 2px;
   font-size: 0.98rem;
   line-height: 1.25;
 }
@@ -477,11 +485,19 @@ main {
   font-size: 0.78rem;
   line-height: 1.2;
 }
+.person-card .research-keywords {
+  margin-top: 5px;
+  margin-bottom: 0;
+  color: #344655;
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
 .person-links {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 2px;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 1px 10px;
+  margin-top: 3px;
   min-width: 0;
   font-size: 0.78rem;
 }
