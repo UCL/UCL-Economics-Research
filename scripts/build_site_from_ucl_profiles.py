@@ -52,6 +52,12 @@ staff = json.loads((RESEARCH / "staff.json").read_text())
 profile_records = json.loads((RESEARCH / "ucl_profile_publications.json").read_text())
 staff_by_name = {person["name"]: person for person in staff}
 
+# Editorial field assignments that intentionally differ from a staff member's
+# primary field. Key these by DOI so regenerating the site preserves the review.
+publication_field_overrides = {
+    norm("10.1111/obes.70001"): ["Applied"],
+}
+
 # The People page uses the same reviewed staff data as the workbook.
 (SITE_DATA / "people.json").write_text(json.dumps(staff, indent=2, ensure_ascii=False) + "\n")
 
@@ -77,13 +83,14 @@ publications = []
 for item in combined.values():
     if item["category"] not in {"Journal article", "Book"}:
         continue
+    paper_fields = publication_field_overrides.get(norm(item.get("doi", "")), item["paperFields"])
     publications.append({
         "id": item["id"], "title": item["title"], "year": item.get("year", 0),
         "date": item.get("dateDisplay", ""), "authors": item.get("authors", []),
         "venue": journal_name(item.get("venue", "")), "doi": item.get("doi", ""), "url": item.get("url", ""),
         "type": item.get("outputType", ""), "sourceType": "UCL Profiles", "topicField": "",
         "isEconomics": True, "category": item["category"], "staff": sorted(item["staff"]),
-        "fields": sorted(item["paperFields"]), "paperFields": sorted(item["paperFields"]),
+        "fields": sorted(paper_fields), "paperFields": sorted(paper_fields),
     })
 publications.sort(key=lambda p: (-p["year"], p["title"].lower()))
 (SITE_PUBLIC / "publications.json").write_text(json.dumps(publications, indent=2, ensure_ascii=False) + "\n")

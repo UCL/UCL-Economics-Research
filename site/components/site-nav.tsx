@@ -6,10 +6,9 @@ const links = [
   ['/events', 'Events'],
   ['/publications', 'Publications'],
   ['/people', 'People'],
-  ['/research-computing', 'Computing'],
-  ['/data', 'Data'],
+  ['/phd-students', 'PhD students'],
   ['/resources', 'Resources'],
-  ['/academic-partners', 'Academic Partners'],
+  ['/academic-partners', 'Research Centres'],
 ] as const;
 
 export function SiteNav({ active }: { active: string }) {

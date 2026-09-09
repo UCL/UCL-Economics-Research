@@ -1,2 +1,2 @@
 import { ComingSoonPage } from '@/components/coming-soon-page';
-export default function Page() { return <ComingSoonPage title="Academic Partners" path="/academic-partners" />; }
+export default function Page() { return <ComingSoonPage title="Research Centres" path="/academic-partners" />; }
