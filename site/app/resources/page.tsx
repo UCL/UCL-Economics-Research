@@ -1,6 +1,17 @@
 import { SiteNav } from '@/components/site-nav';
+import { sitePath } from '@/lib/site-path';
 
 const resources = [
+  {
+    name: 'Research Computing',
+    description: 'computing resources for research staff and students',
+    href: '/research-computing',
+  },
+  {
+    name: 'Data',
+    description: 'data resources for economic research',
+    href: '/data',
+  },
   {
     name: 'Econ Brief',
     description: 'executive summaries of recent publications',
@@ -24,7 +35,11 @@ export default function ResourcesPage() {
         </header>
         <div className="resource-list">
           {resources.map((resource) => (
-            <a href={resource.href} key={resource.name} target="_blank" rel="noreferrer">
+            <a
+              href={resource.href.startsWith('/') ? sitePath(`${resource.href}/`) : resource.href}
+              key={resource.name}
+              {...(!resource.href.startsWith('/') && { target: '_blank', rel: 'noreferrer' })}
+            >
               <strong>{resource.name}</strong>
               {'description' in resource && <span>{resource.description}</span>}
             </a>
