@@ -61,7 +61,7 @@ titles = {
 }
 
 initials = {
-    "Aureo De Paula Neto": "D", "Duarte Goncalves Dias Da Silva": "G",
+    "Aureo De Paula Neto": "P", "Duarte Goncalves Dias Da Silva": "G",
     "Joao Granja De Almeida": "G", "Rodrigo Paiva Guimaraes": "P",
     "Marcos Angel Vera-Hernandez": "V",
 }
