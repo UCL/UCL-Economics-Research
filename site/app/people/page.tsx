@@ -44,6 +44,10 @@ function PeopleGrid({ matches }: { matches: Person[] }) {
     <div className="people-grid">
       {matches.map((person) => {
         const webpage = person.personalUrl || person.profileUrl;
+        const researchKeywords = person.researchKeywords?.filter(Boolean) ?? [];
+        const researchAreas = researchKeywords.length
+          ? researchKeywords
+          : [person.primaryField, person.secondaryField].filter(Boolean);
         return <article className="person-card" key={person.email}>
           <h2>{webpage ? <a href={webpage} target="_blank" rel="noreferrer">{person.name}</a> : person.name}</h2>
           <p>{person.title}</p>
@@ -53,7 +57,7 @@ function PeopleGrid({ matches }: { matches: Person[] }) {
             {publicationIndex.has(person.name) && <a href={sitePath(`/people/${publicationIndex.get(person.name)!.slug}/`)}>Publications</a>}
           </div>
           <p className="research-keywords">
-            <span>{person.researchKeywords?.join(' · ') || 'Not yet available'}</span>
+            <span>{researchAreas.join(' · ')}</span>
           </p>
         </article>;
       })}
