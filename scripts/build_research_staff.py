@@ -69,7 +69,7 @@ STAFF = [
     ("Ran Spiegler", "r.spiegler@ucl.ac.uk", "https://profiles.ucl.ac.uk/2004-ran-spiegler", 2004),
     ("Vincent Sterk", "v.sterk@ucl.ac.uk", "https://profiles.ucl.ac.uk/31657-vincent-sterk", 31657),
     ("Liyang Sun", "liyang.sun@ucl.ac.uk", "https://profiles.ucl.ac.uk/94418-liyang-sun", 94418),
-    ("Alessia Testa", "alessia.testa@ucl.ac.uk", "https://www.researchgate.net/profile/Alessia-Testa", None),
+    ("Alessia Testa", "alessia.testa@ucl.ac.uk", "https://profiles.ucl.ac.uk/102591-alessia-testa", 102591),
     ("Michael Thaler", "michael.thaler@ucl.ac.uk", "https://profiles.ucl.ac.uk/90096-michael-thaler", 90096),
     ("Michela Tincani", "m.tincani@ucl.ac.uk", "https://profiles.ucl.ac.uk/36036-michela-tincani", 36036),
     ("Gabriel Ulyssea", "g.ulyssea@ucl.ac.uk", "https://profiles.ucl.ac.uk/79556-gabriel-ulyssea", 79556),
