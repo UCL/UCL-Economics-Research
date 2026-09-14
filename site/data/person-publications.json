@@ -36270,6 +36270,31 @@
     }
   },
   {
+    "slug": "alessia-testa",
+    "name": "Alessia Testa",
+    "title": "Lecturer (Teaching)",
+    "profileUrl": "https://profiles.ucl.ac.uk/102591-alessia-testa",
+    "email": "alessia.testa@ucl.ac.uk",
+    "publications": {
+      "journal": [
+        {
+          "id": "10-1007-s00199-018-1102-3",
+          "title": "Path-dependent behavior and information leakage in financial markets",
+          "year": 2019,
+          "date": "Jun 2019",
+          "authors": [
+            "Alessia Testa"
+          ],
+          "venue": "ECONOMIC THEORY",
+          "url": "https://dx.doi.org/10.1007/s00199-018-1102-3",
+          "type": "Journal Article"
+        }
+      ],
+      "working": [],
+      "other": []
+    }
+  },
+  {
     "slug": "michael-thaler",
     "name": "Michael Thaler",
     "title": "Lecturer",

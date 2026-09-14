@@ -155,7 +155,7 @@ actionable feedback should be transferred into GitHub issues.
   Other tabs.
 - [x] Create the research-staff workbook with classifications, contact details,
   biographies, research keywords, teaching, links, identifiers, and status.
-- [x] Download 2,835 records from available UCL Profiles into
+- [x] Download 2,836 records from available UCL Profiles into
   `research_staff/publications_ucl_profile.xlsx`.
 - [x] Inspect personal webpages for working-paper lists and save review
   candidates in `research_staff/working_papers.xlsx`.
@@ -166,8 +166,8 @@ actionable feedback should be transferred into GitHub issues.
 - [x] Classify a publication using the union of its UCL authors' primary fields.
 - [x] Bold UCL authors and display only journal names for journal articles.
 - [ ] Review yellow working-paper candidates before publishing them.
-- [ ] Resolve staff without a working UCL Profile and add authoritative sources
-  for them, including Alessia Testa.
+- [ ] Resolve remaining staff without a working UCL Profile and add
+  authoritative sources for them.
 - [ ] Reconcile UCL Profile records with ORCID and OpenAlex by DOI or normalized
   title; never publish unmatched OpenAlex records automatically.
 - [ ] Review duplicates, missing dates and links, language rules, and

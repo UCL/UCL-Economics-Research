@@ -19,7 +19,9 @@ type Person = {
 };
 type FieldId = 'all' | 'Applied' | 'Econometrics' | 'Theory' | 'Finance' | 'Macroeconomics';
 
-const surname = (name: string) => name.trim().split(/\s+/).at(-1) || name;
+const surname = (name: string) => name === 'Aureo De Paula Neto'
+  ? 'Paula'
+  : name.trim().split(/\s+/).at(-1) || name;
 const people = (peopleData as Person[]).toSorted((a, b) =>
   surname(a.name).localeCompare(surname(b.name), 'en-GB') || a.name.localeCompare(b.name, 'en-GB'),
 );
