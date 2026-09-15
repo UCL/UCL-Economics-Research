@@ -1,4 +1,5 @@
 import { SiteNav } from '@/components/site-nav';
+import { BrandHeader } from '@/components/brand-header';
 import { sitePath } from '@/lib/site-path';
 
 const resources = [
@@ -26,7 +27,7 @@ const resources = [
 export default function ResourcesPage() {
   return (
     <div className="site">
-      <header className="brand"><div><b aria-label="UCL">UCL</b><span>Economics Research</span></div></header>
+      <BrandHeader />
       <SiteNav active="/resources" />
       <main>
         <header className="resources-heading">

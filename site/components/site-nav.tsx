@@ -2,13 +2,13 @@ import { sitePath } from '@/lib/site-path';
 
 const links = [
   ['/', 'Seminars'],
-  ['/visitors', 'Visitors'],
   ['/events', 'Events'],
+  ['/visitors', 'Visitors'],
   ['/publications', 'Publications'],
   ['/people', 'People'],
   ['/phd-students', 'PhD students'],
-  ['/resources', 'Resources'],
   ['/academic-partners', 'Research Centres'],
+  ['/resources', 'Resources'],
 ] as const;
 
 export function SiteNav({ active }: { active: string }) {

@@ -2,6 +2,7 @@
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { SiteNav } from '@/components/site-nav';
+import { BrandHeader } from '@/components/brand-header';
 import peopleData from '@/data/people.json';
 import publicationIndexData from '@/data/people-publication-index.json';
 import { sitePath } from '@/lib/site-path';
@@ -92,7 +93,7 @@ function FieldPeople({ field }: { field: FieldId }) {
 export default function PeoplePage() {
   return (
     <div className="site">
-      <header className="brand"><div><b aria-label="UCL">UCL</b><span>Economics Research</span></div></header>
+      <BrandHeader />
       <SiteNav active="/people" />
       <main>
         <header className="people-heading"><h1>People</h1><p>{people.length} academic and teaching staff</p></header>

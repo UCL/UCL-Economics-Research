@@ -35,6 +35,7 @@ const visitors = visitorRows.map((row) => ({
   name: String(row['Name']),
   institution: String(row['Institution']),
   webpage: String(row['Webpage']),
+  email: String(row['Email']),
   startDate: isoDate(row['Start date']),
   endDate: isoDate(row['End date']),
   ...(row['Date display'] ? { dateLabel: String(row['Date display']) } : {}),

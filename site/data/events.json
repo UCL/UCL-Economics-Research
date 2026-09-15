@@ -48,18 +48,34 @@
     "bookingUrl": ""
   },
   {
-    "id": "the-end-of-the-pax-dollar-era",
+    "id": "2026-annual-lecture-by-professor-kenneth-rogoff-harvard",
     "type": "Centre for Finance Annual Lecture",
-    "title": "The End of the Pax Dollar Era",
-    "speaker": "Kenneth Rogoff (Harvard University)",
-    "eventUrl": "",
-    "dates": "4 November 2026, 18:00",
+    "title": "2026 Annual Lecture by Professor Kenneth Rogoff (Harvard)",
+    "speaker": "Kenneth Rogoff (Harvard)",
+    "eventUrl": "https://centreforfinance.org/workshops-seminars-conferences-detail.htm?event=561",
+    "dates": "4 November 2026, 18:00–19:30",
     "startDate": "2026-11-04",
     "endDate": "2026-11-04",
-    "location": "TBA",
+    "location": "UCL Bloomsbury Campus",
     "locationUrl": "",
     "organisers": [
       "Centre for Finance"
+    ],
+    "bookingUrl": ""
+  },
+  {
+    "id": "stone-centre-annual-public-lecture-2026-with-stephen-machin",
+    "type": "Stone Centre Annual Public Lecture",
+    "title": "Stone Centre Annual Public Lecture 2026 with Stephen Machin",
+    "speaker": "Stephen Machin",
+    "eventUrl": "https://billetto.co.uk/e/stone-centre-annual-public-lecture-2026-with-stephen-machin-tickets-1989787",
+    "dates": "21 October 2026, 16:30–18:15",
+    "startDate": "2026-10-21",
+    "endDate": "2026-10-21",
+    "location": "Woburn Hall, Woburn House, 20–24 Tavistock Square, London WC1H 9HQ",
+    "locationUrl": "",
+    "organisers": [
+      "Stone Centre at UCL"
     ],
     "bookingUrl": ""
   }

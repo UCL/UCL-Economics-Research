@@ -115,8 +115,8 @@ part of the standard schedule spreadsheet.
 
 The Visitors page is maintained from `visitors/visitors-2026-27.xlsx`. Its
 fields are name, institution, webpage, start date, end date, optional date
-display text, and office. The separate date-display field is used only when
-exact dates are not yet known.
+display text, office, and optional email. The separate date-display field is
+used only when exact dates are not yet known.
 
 The Events page follows the same pattern using
 `events/events-2026-27.xlsx`. Its fields are event type, title, event URL, date
@@ -199,6 +199,11 @@ purpose and appropriate permission.
 - Follow UCL visual identity guidance and agree the relationship to the main UCL
   website before implementation. The initial visual reference is the UCL
   Economics website: <https://www.ucl.ac.uk/social-historical-sciences/economics>.
+- Order the primary navigation by user need rather than alphabetically:
+  time-sensitive and frequently used pages first; research outputs next; people
+  pages next; and institutional and reference pages last. Within each group,
+  place the page with the broader or more frequent use first. Keep the order
+  stable unless evidence from usage or user research supports changing it.
 - Design mobile-first and meet WCAG 2.2 AA accessibility requirements.
 - Use semantic HTML, keyboard-accessible navigation, useful page titles, and
   descriptive link text.

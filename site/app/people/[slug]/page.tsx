@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import { SiteNav } from '@/components/site-nav';
+import { BrandHeader } from '@/components/brand-header';
 import { PersonPublications } from '@/components/person-publications';
 import publicationPages from '@/data/person-publications.json';
 
@@ -15,7 +16,7 @@ export default async function Page({ params }: PageProps) {
   if (!person) notFound();
   return (
     <div className="site">
-      <header className="brand"><div><b aria-label="UCL">UCL</b><span>Economics Research</span></div></header>
+      <BrandHeader />
       <SiteNav active="/people" />
       <main><PersonPublications person={person} /></main>
       <footer><div><strong>UCL Economics Research</strong><span>Prototype · publication data under review</span></div><a href="mailto:l.nesheim@ucl.ac.uk">Contact Professor Lars Nesheim</a></footer>

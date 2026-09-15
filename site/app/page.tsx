@@ -28,6 +28,7 @@ import {
 } from '@/components/ui/table';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { SiteNav } from '@/components/site-nav';
+import { BrandHeader } from '@/components/brand-header';
 import { sitePath } from '@/lib/site-path';
 import seminarData from '@/data/seminars.json';
 import organiserData from '@/data/series-organisers.json';
@@ -381,12 +382,7 @@ function All() {
 export default function Home() {
   return (
     <div className="site">
-      <header className="brand">
-        <div>
-          <b aria-label="UCL">UCL</b>
-          <span>Economics Research</span>
-        </div>
-      </header>
+      <BrandHeader />
       <SiteNav active="/" />
       <main>
         <Tabs defaultValue="all" className="seminar-tabs">
