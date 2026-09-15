@@ -109,6 +109,15 @@ main {
   padding-right: 24px;
   border-right: 1px solid #ffffff73;
 }
+.brand a {
+  margin-left: auto;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+.brand a:hover {
+  color: #fff;
+}
 .primary {
   border-bottom: 1px solid var(--border);
 }
@@ -268,11 +277,16 @@ main {
   flex-direction: column;
   align-items: flex-start;
 }
-.visitor-name > a,
+.visitor-name > .visitor-webpage,
 .visitor-name > strong {
   font-weight: 700;
 }
 .visitor-name > span {
+  margin-top: 2px;
+  color: #52616e;
+  font-size: 0.88rem;
+}
+.visitor-name > .visitor-email {
   margin-top: 2px;
   color: #52616e;
   font-size: 0.88rem;
@@ -916,6 +930,55 @@ footer span {
 footer a {
   color: #fff;
 }
+.research-centres-heading {
+  margin-bottom: 24px;
+  padding-bottom: 18px;
+  border-bottom: 3px solid #001b44;
+}
+.research-centres-heading h1 {
+  font-size: clamp(1.75rem, 3vw, 2.55rem);
+}
+.research-centres-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.research-centre-card {
+  display: grid;
+  grid-template-columns: 116px minmax(0, 1fr);
+  align-items: center;
+  min-height: 112px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-top: 4px solid #005ea8;
+  background: #fff;
+}
+.research-centre-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  min-height: 108px;
+  padding: 15px 13px;
+  border-right: 1px solid #e0e5e9;
+  background: #f8fafb;
+}
+.research-centre-logo img {
+  display: block;
+  width: 100%;
+  max-width: 90px;
+  height: 68px;
+  object-fit: contain;
+}
+.research-centre-card h2 {
+  margin: 0;
+  padding: 15px;
+  font-size: 1.02rem;
+  line-height: 1.3;
+}
+.research-centre-card h2 a {
+  text-decoration-thickness: 1px;
+}
 @media (max-width: 760px) {
   .desktop-date {
     display: none;
@@ -933,6 +996,10 @@ footer a {
   }
   .brand b {
     font-size: 2.1rem;
+  }
+  .brand a {
+    font-size: 0.82rem;
+    text-align: right;
   }
   .primary {
     display: none;
@@ -986,9 +1053,15 @@ footer a {
   .people-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .research-centres-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 @media (max-width: 620px) {
   .people-grid {
+    grid-template-columns: 1fr;
+  }
+  .research-centres-grid {
     grid-template-columns: 1fr;
   }
   .publication-list article {

@@ -4,6 +4,7 @@ import { Fragment, useEffect, useMemo, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { SiteNav } from '@/components/site-nav';
+import { BrandHeader } from '@/components/brand-header';
 
 type Publication = {
   id: string;
@@ -117,7 +118,7 @@ export default function PublicationsPage() {
 
   return (
     <div className="site">
-      <header className="brand"><div><b aria-label="UCL">UCL</b><span>Economics Research</span></div></header>
+      <BrandHeader />
       <SiteNav active="/publications" />
       <main>
         <header className="publications-heading">

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import eventData from '@/data/events.json';
 import { SiteNav } from '@/components/site-nav';
+import { BrandHeader } from '@/components/brand-header';
 
 export const metadata: Metadata = {
   title: 'Events | UCL Economics Research',
@@ -66,12 +67,7 @@ function ExternalLink({ href, children }: { href: string; children: React.ReactN
 export default function EventsPage() {
   return (
     <div className="site">
-      <header className="brand">
-        <div>
-          <b aria-label="UCL">UCL</b>
-          <span>Economics Research</span>
-        </div>
-      </header>
+      <BrandHeader />
       <SiteNav active="/events" />
       <main>
         <header className="events-heading">
