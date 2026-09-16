@@ -579,6 +579,16 @@
     "location": "TBA"
   },
   {
+    "id": "applied-economics-2026-11-19",
+    "series": "applied",
+    "date": "2026-11-19",
+    "speaker": "Daiji Kawaguchi",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
     "id": "ifs-development-2026-11-19",
     "series": "ifs-development",
     "date": "2026-11-19",
@@ -976,6 +986,16 @@
     "date": "2027-03-17",
     "speaker": "Carolina Villegas-Sanchez",
     "institution": "ESADE",
+    "status": "Scheduled",
+    "time": "TBA",
+    "location": "TBA"
+  },
+  {
+    "id": "applied-economics-2027-03-18",
+    "series": "applied",
+    "date": "2027-03-18",
+    "speaker": "Andreas Moxnes",
+    "institution": "",
     "status": "Scheduled",
     "time": "TBA",
     "location": "TBA"
