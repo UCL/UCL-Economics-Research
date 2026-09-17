@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const centres = [
   {
     title: 'James M. and Cathleen D. Stone Centre on Wealth Concentration, Inequality and the Economy',
-    href: 'https://www.ucl.ac.uk/social-historical-sciences/economics/research-centres/james-m-and-cathleen-d-stone-centre-wealth-concentration-inequality-and-economy',
+    href: 'https://www.stone-econ.org',
     logo: 'https://www.ucl.ac.uk/social-historical-sciences/sites/social_historical_sciences/files/styles/content_cards_mobile/public/2025-08/Stone%20Centre.png.jpg?itok=iNPMia3A',
     alt: 'Stone Econ logo',
   },
@@ -58,7 +58,7 @@ const centres = [
   },
   {
     title: 'CORE Econ (Curriculum Open access Resources in Economics)',
-    href: 'https://www.ucl.ac.uk/social-historical-sciences/economics/study/core-econ',
+    href: 'https://www.core-econ.org',
     logo: 'https://www.ucl.ac.uk/social-historical-sciences/sites/social_historical_sciences/files/styles/content_cards_mobile/public/2025-08/Coreecon.png.jpg?itok=BwdHAfC0',
     alt: 'CORE Econ logo',
   },
