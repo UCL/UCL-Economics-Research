@@ -106,8 +106,8 @@ class Range {
 
 class Table {
   constructor(raw) { this.raw = raw; }
-  set style(value) { this.raw.style = { ...(this.raw.style || {}), theme: value }; }
-  set showBandedRows(value) { this.raw.style = { ...(this.raw.style || {}), showRowStripes: Boolean(value) }; }
+  set style(value) { this.raw.table.style = { ...(this.raw.table.style || {}), theme: value }; }
+  set showBandedRows(value) { this.raw.table.style = { ...(this.raw.table.style || {}), showRowStripes: Boolean(value) }; }
 }
 
 class Worksheet {
@@ -164,6 +164,10 @@ class WorkbookAdapter {
       }));
       return { ndjson: matches.map((match) => JSON.stringify(match)).join('\n') };
     }
+    if (!options.range) {
+      const sheets = this.raw.worksheets.map((sheet) => ({ sheet: sheet.name, rows: sheet.actualRowCount, columns: sheet.actualColumnCount }));
+      return { ndjson: sheets.map((sheet) => JSON.stringify(sheet)).join('\n') };
+    }
     const [sheetName, reference] = String(options.range || '').includes('!') ? String(options.range).split('!') : [this.raw.worksheets[0]?.name, options.range];
     const values = this.worksheets.getItem(sheetName).getRange(reference).values.slice(0, options.tableMaxRows || Infinity).map((row) => row.slice(0, options.tableMaxCols || Infinity));
     return { ndjson: values.map((row) => JSON.stringify(row)).join('\n') };
@@ -172,6 +176,7 @@ class WorkbookAdapter {
     console.warn('Workbook preview skipped: ExcelJS does not render worksheets to PNG.');
     return null;
   }
+  recalculate() { this.raw.calcProperties.fullCalcOnLoad = true; }
 }
 
 export class Workbook {
