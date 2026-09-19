@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { FileBlob, SpreadsheetFile } from '@oai/artifact-tool';
+import { FileBlob, SpreadsheetFile } from './lib/workbook.mjs';
 
 const root = path.resolve(process.argv[2] || process.cwd());
 const workbookPath = path.join(root, 'visitors', 'visitors-2026-27.xlsx');
@@ -72,7 +72,7 @@ const errors = await workbook.inspect({
 const preview = await workbook.render({ sheetName: 'Visitors', autoCrop: 'all', scale: 1 });
 
 await fs.mkdir(outputDir, { recursive: true });
-await fs.writeFile(path.join(outputDir, 'visitors-updated-preview.png'), new Uint8Array(await preview.arrayBuffer()));
+if (preview) await fs.writeFile(path.join(outputDir, 'visitors-updated-preview.png'), new Uint8Array(await preview.arrayBuffer()));
 const output = await SpreadsheetFile.exportXlsx(workbook);
 await output.save(outputPath);
 await fs.copyFile(outputPath, workbookPath);

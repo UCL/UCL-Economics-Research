@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { FileBlob, SpreadsheetFile } from '@oai/artifact-tool';
+import { FileBlob, SpreadsheetFile } from './lib/workbook.mjs';
 
 const root = path.resolve(process.argv[2] || process.cwd());
 const workbookPath = path.join(root, 'research_staff', 'research-staff.xlsx');
@@ -32,5 +32,5 @@ const output = await SpreadsheetFile.exportXlsx(workbook);
 await output.save(workbookPath);
 await output.save(outputPath);
 const preview = await workbook.render({ sheetName: 'Research staff', range: 'A1:K74', scale: 0.9 });
-await fs.writeFile(previewPath, new Uint8Array(await preview.arrayBuffer()));
+if (preview) await fs.writeFile(previewPath, new Uint8Array(await preview.arrayBuffer()));
 console.log(JSON.stringify({ check: check.ndjson, errors: errors.ndjson }));

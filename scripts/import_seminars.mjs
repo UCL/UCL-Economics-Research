@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { SpreadsheetFile, Workbook } from '@oai/artifact-tool';
+import { SpreadsheetFile, Workbook } from './lib/workbook.mjs';
 
 const columns = ['Date', 'Speaker', 'Institution', 'Speaker URL', 'Title', 'Paper URL', 'Status', 'Special start time', 'Special end time', 'Special location'];
 const args = new Map(process.argv.slice(2).map((value, index, all) => value.startsWith('--') ? [value, all[index + 1]?.startsWith('--') ? true : all[index + 1]] : [value, value]));
@@ -229,7 +229,18 @@ async function readSource(item) {
   if (source.type === 'unconfigured') return [];
   if (offline) {
     if (!source.offlineFile) return [];
-    return standardise(parseCsv(await fs.readFile(path.join(root, source.offlineFile), 'utf8')));
+    const text = await fs.readFile(path.join(root, source.offlineFile), 'utf8');
+    const headers = parseCsvMatrix(text)[0]?.map(value => value.trim()) || [];
+    const parsed = headers.includes('Date') && headers.includes('Speaker')
+      ? parseCsv(text)
+      : source.adapter === 'finance-planning-sheet'
+        ? parseFinancePlanningSheet(text)
+        : source.adapter === 'macro-planning-sheet'
+          ? parseMacroPlanningSheet(text)
+          : source.adapter === 'applied-planning-sheet'
+            ? parseAppliedPlanningSheet(text)
+            : parseCsv(text);
+    return standardise(parsed);
   }
   if (source.type === 'google-sheet') {
     const url = `https://docs.google.com/spreadsheets/d/${source.spreadsheetId}/export?format=csv&gid=${source.gid}`;
@@ -292,7 +303,7 @@ async function createWorkbook(item, records) {
   const inspect = await workbook.inspect({kind:'table',range:`Seminars!A1:J${Math.min(data.length+1,8)}`,include:'values,formulas',tableMaxRows:8,tableMaxCols:10});
   const errors = await workbook.inspect({kind:'match',searchTerm:'#REF!|#DIV/0!|#VALUE!|#NAME\\?|#N/A|#NUM!|#NULL!|#SPILL!|#CALC!',options:{useRegex:true,maxResults:50},summary:'formula error scan'});
   const previewEndRow = data.length + (item.source.url ? 4 : 3);
-  const preview = await workbook.render({sheetName:'Seminars',range:`A1:J${previewEndRow}`,scale:1.5}); await fs.writeFile(path.join(outputDir, `${item.id}-preview.png`), new Uint8Array(await preview.arrayBuffer()));
+  const preview = await workbook.render({sheetName:'Seminars',range:`A1:J${previewEndRow}`,scale:1.5}); if (preview) await fs.writeFile(path.join(outputDir, `${item.id}-preview.png`), new Uint8Array(await preview.arrayBuffer()));
   console.log(JSON.stringify({file,rows:records.length,inspect:inspect.ndjson,errorScan:errors.ndjson}));
 }
 
@@ -300,12 +311,13 @@ const config = JSON.parse(await fs.readFile(path.join(root, 'seminars/config/ser
 const siteSeriesIds = {'applied-economics':'applied','econometrics':'econometrics','economic-theory':'theory','finance':'finance','macroeconomics':'macro','ifs-seminars':'ifs','ifs-development':'ifs-development','ifs-labour':'ifs-labour'};
 const siteDataFile = path.join(root,'site/data/seminars.json');
 let siteRecords = [];
-if (selectedSeries) { try { siteRecords = JSON.parse(await fs.readFile(siteDataFile, 'utf8')); } catch {} }
+if (selectedSeries || offline) { try { siteRecords = JSON.parse(await fs.readFile(siteDataFile, 'utf8')); } catch {} }
 for (const item of config) {
   if (selectedSeries && !selectedSeries.has(item.id)) continue;
   let records=[]; try { records=await readSource(item); } catch(error) { console.error(String(error)); if (item.source.offlineFile) records=standardise(parseCsv(await fs.readFile(path.join(root,item.source.offlineFile),'utf8'))); }
   if (!offline) await saveOfflineSource(item, records);
   await createWorkbook(item, records);
+  if (offline && !item.source.offlineFile) continue;
   siteRecords = siteRecords.filter(record => record.series !== siteSeriesIds[item.id]);
   for (const record of records) {
     if (/^cancelled$/i.test(record.Status || '')) continue;

@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { SpreadsheetFile, Workbook } from '@oai/artifact-tool';
+import { SpreadsheetFile, Workbook } from './lib/workbook.mjs';
 
 const root = path.resolve(process.argv[2] || process.cwd());
 const researchDir = path.join(root, 'research_staff');
@@ -75,5 +75,5 @@ const xlsx = await SpreadsheetFile.exportXlsx(workbook);
 await xlsx.save(path.join(researchDir, 'publication-classification.xlsx'));
 await xlsx.save(path.join(outputDir, 'publication-classification.xlsx'));
 const preview = await workbook.render({ sheetName: 'Classification', range: 'A1:N40', scale: 1.05 });
-await fs.writeFile(path.join(outputDir, 'publication-classification-preview.png'), new Uint8Array(await preview.arrayBuffer()));
+if (preview) await fs.writeFile(path.join(outputDir, 'publication-classification-preview.png'), new Uint8Array(await preview.arrayBuffer()));
 console.log(JSON.stringify({ records: rows.length, check: check.ndjson, errors: errors.ndjson }));

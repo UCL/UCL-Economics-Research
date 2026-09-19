@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { SpreadsheetFile, Workbook } from '@oai/artifact-tool';
+import { SpreadsheetFile, Workbook } from './lib/workbook.mjs';
 
 const root = path.resolve(process.argv[2] || process.cwd());
 const outputDir = path.resolve(process.argv[3] || path.join(root, 'outputs', 'visitors'));
@@ -84,5 +84,5 @@ await output.save(outputPath);
 const check = await workbook.inspect({ kind: 'table', range: 'Visitors!A1:F12', include: 'values,formulas', tableMaxRows: 12, tableMaxCols: 6 });
 const errors = await workbook.inspect({ kind: 'match', searchTerm: '#REF!|#DIV/0!|#VALUE!|#NAME\\?|#N/A|#NUM!|#NULL!|#SPILL!|#CALC!', options: { useRegex: true, maxResults: 100 }, summary: 'final formula error scan' });
 const preview = await workbook.render({ sheetName: 'Visitors', range: `A1:F${noteRow + 4}`, scale: 1.25 });
-await fs.writeFile(path.join(outputDir, 'visitors-preview.png'), new Uint8Array(await preview.arrayBuffer()));
+if (preview) await fs.writeFile(path.join(outputDir, 'visitors-preview.png'), new Uint8Array(await preview.arrayBuffer()));
 console.log(JSON.stringify({ outputPath, visitors: visitors.length, check: check.ndjson, errors: errors.ndjson }));

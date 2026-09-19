@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { SpreadsheetFile, Workbook } from '@oai/artifact-tool';
+import { SpreadsheetFile, Workbook } from './lib/workbook.mjs';
 
 const root = path.resolve(process.argv[2] || process.cwd());
 const students = JSON.parse(await fs.readFile(path.join(root, 'phd_students', 'students.json'), 'utf8'));
@@ -65,5 +65,5 @@ const xlsx = await SpreadsheetFile.exportXlsx(workbook);
 const outputPath = path.join(outputDir, 'phd-students.xlsx');
 await xlsx.save(outputPath);
 const preview = await workbook.render({ sheetName: 'PhD students', range: `A1:E${lastRow}`, scale: 1.1 });
-await fs.writeFile(path.join(outputDir, 'phd-students-preview.png'), new Uint8Array(await preview.arrayBuffer()));
+if (preview) await fs.writeFile(path.join(outputDir, 'phd-students-preview.png'), new Uint8Array(await preview.arrayBuffer()));
 console.log(JSON.stringify({ outputPath, count: rows.length, check: check.ndjson, errors: errors.ndjson }));

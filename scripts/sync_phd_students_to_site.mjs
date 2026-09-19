@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { FileBlob, SpreadsheetFile } from '@oai/artifact-tool';
+import { FileBlob, SpreadsheetFile } from './lib/workbook.mjs';
 
 const root = path.resolve(process.argv[2] || process.cwd());
 const workbookPath = path.join(root, 'phd_students', 'phd-students.xlsx');
