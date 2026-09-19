@@ -61,3 +61,4 @@ const events = eventRows.map((row) => ({
 await fs.writeFile(path.join(root, 'site', 'data', 'visitors.json'), `${JSON.stringify(visitors, null, 2)}\n`);
 await fs.writeFile(path.join(root, 'site', 'data', 'events.json'), `${JSON.stringify(events, null, 2)}\n`);
 console.log(`Updated site data from ${visitors.length} visitors and ${events.length} events.`);
+await import('./sync_phd_students_to_site.mjs');

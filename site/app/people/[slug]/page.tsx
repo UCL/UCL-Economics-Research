@@ -19,7 +19,7 @@ export default async function Page({ params }: PageProps) {
       <BrandHeader />
       <SiteNav active="/people" />
       <main><PersonPublications person={person} /></main>
-      <footer><div><strong>UCL Economics Research</strong><span>Prototype · publication data under review</span></div><a href="mailto:l.nesheim@ucl.ac.uk">Contact Professor Lars Nesheim</a></footer>
+      <footer><div><strong>UCL Economics Research</strong><span>Publication data under review</span></div><a href="mailto:l.nesheim@ucl.ac.uk">Contact Professor Lars Nesheim</a></footer>
     </div>
   );
 }

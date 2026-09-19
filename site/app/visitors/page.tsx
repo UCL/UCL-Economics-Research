@@ -44,7 +44,7 @@ const shortTermVisitors = visitors
   .filter((visitor) => workingDays(visitor) <= 3)
   .sort(byStartDate);
 
-function VisitorsTable({ items }: { items: Visitor[] }) {
+function VisitorsTable({ items, roomNumberOnly = false }: { items: Visitor[]; roomNumberOnly?: boolean }) {
   if (!items.length) {
     return <div className="visitors-empty">No visitors currently listed.</div>;
   }
@@ -60,8 +60,11 @@ function VisitorsTable({ items }: { items: Visitor[] }) {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {items.map((visitor) => (
-            <TableRow key={`${visitor.name}-${visitor.startDate}`}>
+          {items.map((visitor) => {
+            const office = roomNumberOnly
+              ? visitor.office.replace(/^Drayton House\s*/i, '')
+              : visitor.office;
+            return <TableRow key={`${visitor.name}-${visitor.startDate}`}>
               <TableCell data-label="Name">
                 <span className="visitor-name">
                   {visitor.webpage ? (
@@ -86,9 +89,9 @@ function VisitorsTable({ items }: { items: Visitor[] }) {
                   </span>
                 )}
               </TableCell>
-              <TableCell data-label="Office">{visitor.office || <span className="not-available">—</span>}</TableCell>
-            </TableRow>
-          ))}
+              <TableCell data-label="Office">{office || <span className="not-available">—</span>}</TableCell>
+            </TableRow>;
+          })}
         </TableBody>
       </Table>
     </div>
@@ -114,13 +117,13 @@ export default function VisitorsPage() {
             <TabsTrigger value="long-term">Long-term visitors</TabsTrigger>
           </TabsList>
           <TabsContent value="short-term"><VisitorsTable items={shortTermVisitors} /></TabsContent>
-          <TabsContent value="long-term"><VisitorsTable items={longTermVisitors} /></TabsContent>
+          <TabsContent value="long-term"><VisitorsTable items={longTermVisitors} roomNumberOnly /></TabsContent>
         </Tabs>
       </main>
       <footer>
         <div>
           <strong>UCL Economics Research</strong>
-          <span>Prototype · 2026–27</span>
+          <span>2026–27</span>
         </div>
         <a href="mailto:l.nesheim@ucl.ac.uk">Contact Professor Lars Nesheim</a>
       </footer>

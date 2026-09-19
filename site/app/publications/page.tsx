@@ -152,7 +152,7 @@ export default function PublicationsPage() {
         </div>
         <p className="publication-source">Records are drawn from UCL Profiles and classified using each UCL author’s primary field. Papers with multiple UCL authors appear under the union of their primary fields.</p>
       </main>
-      <footer><div><strong>UCL Economics Research</strong><span>Prototype · publication data under review</span></div><a href="mailto:l.nesheim@ucl.ac.uk">Contact Professor Lars Nesheim</a></footer>
+      <footer><div><strong>UCL Economics Research</strong><span>Publication data under review</span></div><a href="mailto:l.nesheim@ucl.ac.uk">Contact Professor Lars Nesheim</a></footer>
     </div>
   );
 }
