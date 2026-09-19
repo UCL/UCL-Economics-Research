@@ -7,6 +7,7 @@ const links = [
   ['/publications', 'Publications'],
   ['/people', 'People'],
   ['/phd-students', 'PhD students'],
+  ['/job-market', 'Job market'],
   ['/academic-partners', 'Research Centres'],
   ['/resources', 'Resources'],
 ] as const;

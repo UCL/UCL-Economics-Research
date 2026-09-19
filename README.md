@@ -128,6 +128,24 @@ creates the website-ready visitor and event data. The workbooks are the
 manually maintained source; files under `site/data/` are generated copies for
 the website. Both content sources are owned by Professor Lars Nesheim.
 
+## PhD students
+
+The PhD Students page is maintained from `phd_students/phd-students.xlsx`.
+This workbook is the authoritative source for student names, email addresses,
+key research areas, main fields, and secondary fields. The allowed field values
+are **Applied Economics**, **Economic Theory**, **Macroeconomics**,
+**Econometrics**, and **Finance**.
+
+After editing and saving the workbook, run
+`scripts/sync_phd_students_to_site.mjs`. The script validates required cells,
+field names, and duplicate email addresses before replacing
+`site/data/phd-students.json`. Existing UCL profile links are retained by email
+address. The generated JSON file should not be edited manually.
+
+The general `scripts/sync_spreadsheets_to_site.mjs` workflow also includes the
+PhD student import, so the visitors, events, and PhD student website data can be
+refreshed together.
+
 ## Publication period and archive
 
 The public pages will initially show only the 2026–27 academic year. The system

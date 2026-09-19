@@ -7,7 +7,7 @@ export function ComingSoonPage({ title, path }: { title: string; path: string })
       <BrandHeader />
       <SiteNav active={path} />
       <main className="coming-soon"><h1>{title}</h1><p>Coming soon</p></main>
-      <footer><div><strong>UCL Economics Research</strong><span>Prototype · 2026–27</span></div><a href="mailto:l.nesheim@ucl.ac.uk">Contact Professor Lars Nesheim</a></footer>
+      <footer><div><strong>UCL Economics Research</strong><span>2026–27</span></div><a href="mailto:l.nesheim@ucl.ac.uk">Contact Professor Lars Nesheim</a></footer>
     </div>
   );
 }

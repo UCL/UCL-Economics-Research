@@ -14,11 +14,6 @@ const resources = [
     href: '/data',
   },
   {
-    name: 'Econ Brief',
-    description: 'executive summaries of recent publications',
-    href: 'https://ucleconbrief.co.uk',
-  },
-  {
     name: 'UCL Macro Monitor',
     href: 'https://www.macromonitor.org',
   },
@@ -47,7 +42,7 @@ export default function ResourcesPage() {
           ))}
         </div>
       </main>
-      <footer><div><strong>UCL Economics Research</strong><span>Prototype · 2026–27</span></div><a href="mailto:l.nesheim@ucl.ac.uk">Contact Professor Lars Nesheim</a></footer>
+      <footer><div><strong>UCL Economics Research</strong><span>2026–27</span></div><a href="mailto:l.nesheim@ucl.ac.uk">Contact Professor Lars Nesheim</a></footer>
     </div>
   );
 }

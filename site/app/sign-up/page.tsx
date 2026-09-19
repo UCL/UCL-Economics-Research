@@ -3,7 +3,6 @@ import { sitePath } from '@/lib/site-path';
 export default function SignUpPage() {
   return (
     <main>
-      <p className="eyebrow">Prototype</p>
       <h1>Meet the speaker</h1>
       <div className="empty" style={{ marginTop: '2rem', textAlign: 'left' }}>
         <h2>Sign-up list coming soon</h2>
