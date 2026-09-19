@@ -146,6 +146,40 @@ The general `scripts/sync_spreadsheets_to_site.mjs` workflow also includes the
 PhD student import, so the visitors, events, and PhD student website data can be
 refreshed together.
 
+## Running the data scripts
+
+Install Node.js 18 or newer, then install the data-script dependencies from the
+repository root:
+
+```sh
+npm install
+```
+
+Refresh all seminar sources and generate the website data, review workbooks,
+and local source snapshots with:
+
+```sh
+node scripts/import_seminars.mjs
+```
+
+Use `--series applied-economics` (or another series ID) to refresh only one
+series. Use `--offline` to rebuild from the versioned files under
+`seminars/sources/` without accessing the network. `--project-root` and
+`--output-dir` can override the default repository and `outputs/seminars/`
+locations.
+
+After editing the visitor, event, or PhD-student workbooks, regenerate their
+website JSON files with:
+
+```sh
+node scripts/sync_spreadsheets_to_site.mjs
+```
+
+Spreadsheet creation and update scripts always write `.xlsx` files. PNG
+previews are skipped because the portable ExcelJS implementation does not
+render worksheets; open the generated workbook in Excel or LibreOffice for
+visual review.
+
 ## Publication period and archive
 
 The public pages will initially show only the 2026–27 academic year. The system

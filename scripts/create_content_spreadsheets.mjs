@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { SpreadsheetFile, Workbook } from '@oai/artifact-tool';
+import { SpreadsheetFile, Workbook } from './lib/workbook.mjs';
 
 const root = path.resolve(process.argv[2] || process.cwd());
 const outputDir = path.join(root, 'outputs', '01a0719b-f374-7590-b5ae-261ff64e352b');
@@ -44,7 +44,7 @@ async function saveWorkbook(workbook, canonicalPath, outputPath, previewPath, sh
   await file.save(canonicalPath);
   await file.save(outputPath);
   const preview = await workbook.render({ sheetName, range: renderRange, scale: 1.15 });
-  await fs.writeFile(previewPath, new Uint8Array(await preview.arrayBuffer()));
+  if (preview) await fs.writeFile(previewPath, new Uint8Array(await preview.arrayBuffer()));
 }
 
 await fs.mkdir(outputDir, { recursive: true });

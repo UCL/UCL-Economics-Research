@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { FileBlob, SpreadsheetFile } from '@oai/artifact-tool';
+import { FileBlob, SpreadsheetFile } from './lib/workbook.mjs';
 
 const root = path.resolve(process.argv[2] || process.cwd());
 const outputDir = path.join(root, 'outputs', '01a0719b-f374-7590-b5ae-261ff64e352b');
@@ -18,6 +18,6 @@ for (const [relativePath, sheetName, previewName] of [
   });
   const preview = await workbook.render({ sheetName, autoCrop: 'all', scale: 1 });
   await fs.mkdir(outputDir, { recursive: true });
-  await fs.writeFile(path.join(outputDir, previewName), new Uint8Array(await preview.arrayBuffer()));
+  if (preview) await fs.writeFile(path.join(outputDir, previewName), new Uint8Array(await preview.arrayBuffer()));
   console.log(relativePath, summary.ndjson);
 }

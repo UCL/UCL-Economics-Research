@@ -331,6 +331,7 @@ TSWLatexianTemp*
 #*Notes.bib
 
 # Website dependencies and generated output
+node_modules/
 .pnpm-store/
 site/node_modules/
 site/dist/

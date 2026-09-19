@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { SpreadsheetFile, Workbook } from '@oai/artifact-tool';
+import { SpreadsheetFile, Workbook } from './lib/workbook.mjs';
 
 const root = path.resolve(process.argv[2] || process.cwd());
 const researchDir = path.join(root, 'research_staff');
@@ -36,7 +36,7 @@ async function save(workbook, filename, previewSheet, previewRange) {
   await xlsx.save(path.join(researchDir, filename));
   await xlsx.save(path.join(outputDir, filename));
   const preview = await workbook.render({ sheetName: previewSheet, range: previewRange, scale: 1 });
-  await fs.writeFile(path.join(outputDir, filename.replace('.xlsx', '-preview.png')), new Uint8Array(await preview.arrayBuffer()));
+  if (preview) await fs.writeFile(path.join(outputDir, filename.replace('.xlsx', '-preview.png')), new Uint8Array(await preview.arrayBuffer()));
   const errors = await workbook.inspect({ kind: 'match', searchTerm: '#REF!|#DIV/0!|#VALUE!|#NAME\\?|#N/A|#NUM!|#NULL!|#SPILL!|#CALC!', options: { useRegex: true, maxResults: 100 }, summary: 'formula error scan' });
   return errors.ndjson;
 }
