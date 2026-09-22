@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { SpreadsheetFile, Workbook } from './lib/workbook.mjs';
+import { SpreadsheetFile, Workbook } from '@oai/artifact-tool';
 
 const columns = ['Date', 'Speaker', 'Institution', 'Speaker URL', 'Title', 'Paper URL', 'Status', 'Special start time', 'Special end time', 'Special location'];
 const args = new Map(process.argv.slice(2).map((value, index, all) => value.startsWith('--') ? [value, all[index + 1]?.startsWith('--') ? true : all[index + 1]] : [value, value]));
@@ -299,6 +299,7 @@ async function createWorkbook(item, records) {
     sheet.getRange(`B${sourceRow}`).format.font = { name:'Arial', size:9, italic:true, color:'#4B5563' };
     sheet.getRange(`B${sourceRow}`).format.columnWidthPx = 180;
   }
+  workbook.recalculate();
   await fs.mkdir(outputDir, { recursive:true }); const out = await SpreadsheetFile.exportXlsx(workbook); const file = path.join(outputDir, `${item.id}-2026-27.xlsx`); await out.save(file);
   const inspect = await workbook.inspect({kind:'table',range:`Seminars!A1:J${Math.min(data.length+1,8)}`,include:'values,formulas',tableMaxRows:8,tableMaxCols:10});
   const errors = await workbook.inspect({kind:'match',searchTerm:'#REF!|#DIV/0!|#VALUE!|#NAME\\?|#N/A|#NUM!|#NULL!|#SPILL!|#CALC!',options:{useRegex:true,maxResults:50},summary:'formula error scan'});

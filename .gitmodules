@@ -1,0 +1,3 @@
+[submodule "research_computing"]
+	path = research_computing
+	url = git@github.com:UCL/Economics-Computing.git
