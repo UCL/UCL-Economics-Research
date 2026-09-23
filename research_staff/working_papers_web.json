@@ -152,4 +152,23 @@
     "source": "Personal webpage",
     "reviewStatus": "Review"
   }
+  ,
+  {
+    "staffName": "Valerie Lechene",
+    "title": "Gender inequality in expenditure: Great Britain 1978 to 2019",
+    "url": "https://ifs.org.uk/publications/gender-inequality-expenditure-great-britain-1978-2019",
+    "sectionHeading": "Working papers and current research",
+    "sourcePage": "https://www.valerielechene.com/home/research",
+    "source": "Personal webpage",
+    "reviewStatus": "Approved"
+  },
+  {
+    "staffName": "Valerie Lechene",
+    "title": "Documenting individual poverty in South Africa and Ethiopia",
+    "url": "",
+    "sectionHeading": "Working papers and current research",
+    "sourcePage": "https://www.valerielechene.com/home/research",
+    "source": "Personal webpage",
+    "reviewStatus": "Approved"
+  }
 ]

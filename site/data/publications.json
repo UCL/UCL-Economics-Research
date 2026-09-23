@@ -4450,9 +4450,7 @@
     "topicField": "Medicine",
     "isEconomics": false,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -5036,14 +5034,14 @@
     "authors": [
       "Richard Blundell",
       "Heidi Karjalainen",
-      "Valérie Lechêne",
+      "Valerie Lechene",
       "Krishna Pendakur"
     ],
-    "venue": "",
+    "venue": "IFS Working Paper 25/26",
     "doi": "10.1920/wp.ifs.2025.2625",
-    "url": "https://doi.org/10.1920/wp.ifs.2025.2625",
+    "url": "https://ifs.org.uk/publications/gender-inequality-expenditure-great-britain-1978-2019",
     "type": "report",
-    "sourceType": "",
+    "sourceType": "personal website",
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Other",
@@ -5055,23 +5053,23 @@
       "Applied",
       "Econometrics"
     ],
-    "source": "OpenAlex",
+    "source": "Valerie Lechene personal website",
     "paperPrimaryField": "Applied",
     "paperSecondaryField": "",
     "paperFields": [
       "Applied"
     ],
     "classificationConfidence": "High",
-    "classificationSource": "Primary field of UCL author(s)",
+    "classificationSource": "Author personal website",
     "classificationNeedsReview": false,
     "classificationScores": {
-      "Applied": 2
+      "Applied": 1
     },
     "classificationUclAuthors": [
-      "Richard Blundell",
       "Valerie Lechene"
     ],
-    "classificationUnresolvedAuthors": []
+    "classificationUnresolvedAuthors": [],
+    "sourceUrl": "https://www.valerielechene.com/home/research"
   },
   {
     "id": "10-2139-ssrn-5265622",
@@ -10241,9 +10239,7 @@
     "topicField": "Arts and Humanities",
     "isEconomics": false,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -10416,9 +10412,7 @@
     "topicField": "Engineering",
     "isEconomics": false,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -11699,9 +11693,7 @@
     "topicField": "Engineering",
     "isEconomics": false,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -11828,9 +11820,7 @@
     "topicField": "Social Sciences",
     "isEconomics": false,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -12635,9 +12625,7 @@
     "topicField": "Arts and Humanities",
     "isEconomics": false,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -12678,9 +12666,7 @@
     "topicField": "Social Sciences",
     "isEconomics": false,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -12721,9 +12707,7 @@
     "topicField": "Social Sciences",
     "isEconomics": false,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -13711,9 +13695,7 @@
     "topicField": "Social Sciences",
     "isEconomics": false,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -14052,9 +14034,7 @@
     "topicField": "Engineering",
     "isEconomics": false,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -14095,9 +14075,7 @@
     "topicField": "Arts and Humanities",
     "isEconomics": false,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -14338,9 +14316,7 @@
     "topicField": "Social Sciences",
     "isEconomics": false,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -16186,9 +16162,7 @@
     "topicField": "Arts and Humanities",
     "isEconomics": false,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -17124,9 +17098,7 @@
     "topicField": "Engineering",
     "isEconomics": false,
     "category": "Book",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -26498,9 +26470,7 @@
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Journal article",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -31318,34 +31288,36 @@
   },
   {
     "id": "10-1111-1475-5890-12298",
-    "title": "The decline of home‐cooked food",
+    "title": "The decline of home-cooked food",
     "year": 2022,
-    "date": "2022-04-01",
+    "date": "2022-06-01",
     "authors": [
       "Rachel Griffith",
-      "Wenchao Jin",
-      "Valérie Lechêne"
+      "Wenchao (Michelle) Jin",
+      "Valerie Lechene"
     ],
     "venue": "Fiscal Studies",
     "doi": "10.1111/1475-5890.12298",
     "url": "https://doi.org/10.1111/1475-5890.12298",
     "type": "article",
-    "sourceType": "journal",
+    "sourceType": "personal website",
     "topicField": "Medicine",
     "isEconomics": true,
     "category": "Journal article",
     "staff": [
       "Valerie Lechene"
     ],
-    "fields": [],
-    "source": "OpenAlex",
+    "fields": [
+      "Applied"
+    ],
+    "source": "Valerie Lechene personal website",
     "paperPrimaryField": "Applied",
     "paperSecondaryField": "",
     "paperFields": [
       "Applied"
     ],
     "classificationConfidence": "High",
-    "classificationSource": "Primary field of UCL author(s)",
+    "classificationSource": "Author personal website",
     "classificationNeedsReview": false,
     "classificationScores": {
       "Applied": 1
@@ -31353,7 +31325,8 @@
     "classificationUclAuthors": [
       "Valerie Lechene"
     ],
-    "classificationUnresolvedAuthors": []
+    "classificationUnresolvedAuthors": [],
+    "sourceUrl": "https://www.valerielechene.com/home/research"
   },
   {
     "id": "10-7302-22419",
@@ -31502,8 +31475,7 @@
     "isEconomics": true,
     "category": "Other",
     "staff": [
-      "Pedro Carneiro",
-      "Valerie Lechene"
+      "Pedro Carneiro"
     ],
     "fields": [
       "Econometrics",
@@ -33971,9 +33943,7 @@
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -35817,9 +35787,7 @@
     "topicField": "Economics, Econometrics and Finance",
     "isEconomics": true,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -35923,11 +35891,11 @@
   },
   {
     "id": "10-1086-717892",
-    "title": "Ordinary Least Squares Estimation of the Intrahousehold Distribution of Expenditure",
-    "year": 2021,
-    "date": "2021-10-28",
+    "title": "OLS estimation of the intra-household distribution of expenditure",
+    "year": 2022,
+    "date": "2022",
     "authors": [
-      "Valérie Lechêne",
+      "Valerie Lechene",
       "Krishna Pendakur",
       "Alex Wolf"
     ],
@@ -35935,22 +35903,24 @@
     "doi": "10.1086/717892",
     "url": "https://doi.org/10.1086/717892",
     "type": "article",
-    "sourceType": "journal",
+    "sourceType": "personal website",
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Journal article",
     "staff": [
       "Valerie Lechene"
     ],
-    "fields": [],
-    "source": "OpenAlex",
+    "fields": [
+      "Applied"
+    ],
+    "source": "Valerie Lechene personal website",
     "paperPrimaryField": "Applied",
     "paperSecondaryField": "",
     "paperFields": [
       "Applied"
     ],
     "classificationConfidence": "High",
-    "classificationSource": "Primary field of UCL author(s)",
+    "classificationSource": "Author personal website",
     "classificationNeedsReview": false,
     "classificationScores": {
       "Applied": 1
@@ -35958,7 +35928,8 @@
     "classificationUclAuthors": [
       "Valerie Lechene"
     ],
-    "classificationUnresolvedAuthors": []
+    "classificationUnresolvedAuthors": [],
+    "sourceUrl": "https://www.valerielechene.com/home/research"
   },
   {
     "id": "10-48550-arxiv-2109-09871",
@@ -38101,9 +38072,7 @@
     "topicField": "Medicine",
     "isEconomics": true,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -46580,9 +46549,7 @@
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -49101,18 +49068,18 @@
     "id": "10-1093-ej-ueaa056",
     "title": "The Effect of Gender-Targeted Conditional Cash Transfers on Household Expenditures: Evidence from a Randomized Experiment",
     "year": 2020,
-    "date": "2020-05-05",
+    "date": "2020-10-01",
     "authors": [
       "Alex Armand",
       "Orazio Attanasio",
       "Pedro Carneiro",
-      "Valérie Lechêne"
+      "Valerie Lechene"
     ],
     "venue": "The Economic Journal",
     "doi": "10.1093/ej/ueaa056",
     "url": "https://doi.org/10.1093/ej/ueaa056",
     "type": "article",
-    "sourceType": "journal",
+    "sourceType": "personal website",
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Journal article",
@@ -49124,23 +49091,23 @@
       "Econometrics",
       "Applied"
     ],
-    "source": "OpenAlex",
+    "source": "Valerie Lechene personal website",
     "paperPrimaryField": "Applied",
     "paperSecondaryField": "",
     "paperFields": [
       "Applied"
     ],
     "classificationConfidence": "High",
-    "classificationSource": "Primary field of UCL author(s)",
+    "classificationSource": "Author personal website",
     "classificationNeedsReview": false,
     "classificationScores": {
-      "Applied": 2
+      "Applied": 1
     },
     "classificationUclAuthors": [
-      "Pedro Carneiro",
       "Valerie Lechene"
     ],
-    "classificationUnresolvedAuthors": []
+    "classificationUnresolvedAuthors": [],
+    "sourceUrl": "https://www.valerielechene.com/home/research"
   },
   {
     "id": "10-1920-bn-ifs-2020-bn0298",
@@ -54022,9 +53989,7 @@
     "topicField": "Psychology",
     "isEconomics": false,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -55202,9 +55167,7 @@
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -67195,7 +67158,6 @@
     "isEconomics": true,
     "category": "Other",
     "staff": [
-      "Valerie Lechene",
       "Ian Preston"
     ],
     "fields": [
@@ -67534,9 +67496,7 @@
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -69373,7 +69333,6 @@
     "isEconomics": true,
     "category": "Other",
     "staff": [
-      "Valerie Lechene",
       "Ian Preston"
     ],
     "fields": [
@@ -71450,45 +71409,45 @@
   {
     "id": "10-1920-wp-ifs-2008-0814",
     "title": "Non cooperative household demand",
-    "year": 2017,
-    "date": "2017-08-10",
+    "year": 2011,
+    "date": "2011-03-01",
     "authors": [
-      "Valérie Lechêne",
-      "Ian Preston"
-    ],
-    "venue": "",
-    "doi": "10.1920/wp.ifs.2008.0814",
-    "url": "https://doi.org/10.1920/wp.ifs.2008.0814",
-    "type": "report",
-    "sourceType": "",
-    "topicField": "Economics, Econometrics and Finance",
-    "isEconomics": true,
-    "category": "Other",
-    "staff": [
       "Valerie Lechene",
       "Ian Preston"
+    ],
+    "venue": "Journal of Economic Theory",
+    "doi": "",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0022053110001910",
+    "type": "article",
+    "sourceType": "personal website",
+    "topicField": "Economics, Econometrics and Finance",
+    "isEconomics": true,
+    "category": "Journal article",
+    "staff": [
+      "Ian Preston",
+      "Valerie Lechene"
     ],
     "fields": [
       "Econometrics",
       "Applied"
     ],
-    "source": "OpenAlex",
+    "source": "Valerie Lechene personal website",
     "paperPrimaryField": "Applied",
     "paperSecondaryField": "",
     "paperFields": [
       "Applied"
     ],
     "classificationConfidence": "High",
-    "classificationSource": "Primary field of UCL author(s)",
+    "classificationSource": "Author personal website",
     "classificationNeedsReview": false,
     "classificationScores": {
-      "Applied": 2
+      "Applied": 1
     },
     "classificationUclAuthors": [
-      "Valerie Lechene",
-      "Ian Preston"
+      "Valerie Lechene"
     ],
-    "classificationUnresolvedAuthors": []
+    "classificationUnresolvedAuthors": [],
+    "sourceUrl": "https://www.valerielechene.com/home/research"
   },
   {
     "id": "10-1920-wp-ifs-2010-1018",
@@ -71508,7 +71467,6 @@
     "isEconomics": true,
     "category": "Other",
     "staff": [
-      "Valerie Lechene",
       "Ian Preston"
     ],
     "fields": [
@@ -74245,8 +74203,7 @@
     "isEconomics": true,
     "category": "Other",
     "staff": [
-      "Pedro Carneiro",
-      "Valerie Lechene"
+      "Pedro Carneiro"
     ],
     "fields": [
       "Econometrics",
@@ -83398,8 +83355,7 @@
     "isEconomics": true,
     "category": "Other",
     "staff": [
-      "Pedro Carneiro",
-      "Valerie Lechene"
+      "Pedro Carneiro"
     ],
     "fields": [
       "Econometrics",
@@ -83442,9 +83398,7 @@
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -84720,34 +84674,36 @@
   },
   {
     "id": "10-7208-chicago-9780226194714-003-0006",
-    "title": "5. Using the CE to Model Household Demand / Laura Blow, Valérie Lechene, and Peter Levell",
+    "title": "Using the CE to Model Household Demand",
     "year": 2015,
-    "date": "2015-01-01",
+    "date": "2015",
     "authors": [
       "Laura Blow",
-      "Valérie Lechêne",
+      "Valerie Lechene",
       "Peter Levell"
     ],
-    "venue": "",
+    "venue": "Improving the Measurement of Consumer Expenditures",
     "doi": "10.7208/chicago/9780226194714.003.0006",
-    "url": "https://doi.org/10.7208/chicago/9780226194714.003.0006",
+    "url": "https://discovery.ucl.ac.uk/id/eprint/10142975/",
     "type": "book-chapter",
-    "sourceType": "",
+    "sourceType": "personal website",
     "topicField": "Energy",
     "isEconomics": true,
-    "category": "Other",
+    "category": "Book",
     "staff": [
       "Valerie Lechene"
     ],
-    "fields": [],
-    "source": "OpenAlex",
+    "fields": [
+      "Applied"
+    ],
+    "source": "Valerie Lechene personal website",
     "paperPrimaryField": "Applied",
     "paperSecondaryField": "",
     "paperFields": [
       "Applied"
     ],
     "classificationConfidence": "High",
-    "classificationSource": "Primary field of UCL author(s)",
+    "classificationSource": "Author personal website",
     "classificationNeedsReview": false,
     "classificationScores": {
       "Applied": 1
@@ -84755,7 +84711,8 @@
     "classificationUclAuthors": [
       "Valerie Lechene"
     ],
-    "classificationUnresolvedAuthors": []
+    "classificationUnresolvedAuthors": [],
+    "sourceUrl": "https://www.valerielechene.com/home/research"
   },
   {
     "id": "https-openalex-org-w2206666576",
@@ -85327,9 +85284,7 @@
     "topicField": "Social Sciences",
     "isEconomics": false,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -85489,9 +85444,7 @@
     "topicField": "Social Sciences",
     "isEconomics": false,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -94685,31 +94638,33 @@
     "id": "10-1086-674968",
     "title": "Efficient Responses to Targeted Cash Transfers",
     "year": 2014,
-    "date": "2014-02-01",
+    "date": "2014",
     "authors": [
       "Orazio Attanasio",
-      "Valérie Lechêne"
+      "Valerie Lechene"
     ],
     "venue": "Journal of Political Economy",
     "doi": "10.1086/674968",
     "url": "https://doi.org/10.1086/674968",
     "type": "article",
-    "sourceType": "journal",
+    "sourceType": "personal website",
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Journal article",
     "staff": [
       "Valerie Lechene"
     ],
-    "fields": [],
-    "source": "OpenAlex",
+    "fields": [
+      "Applied"
+    ],
+    "source": "Valerie Lechene personal website",
     "paperPrimaryField": "Applied",
     "paperSecondaryField": "",
     "paperFields": [
       "Applied"
     ],
     "classificationConfidence": "High",
-    "classificationSource": "Primary field of UCL author(s)",
+    "classificationSource": "Author personal website",
     "classificationNeedsReview": false,
     "classificationScores": {
       "Applied": 1
@@ -94717,7 +94672,8 @@
     "classificationUclAuthors": [
       "Valerie Lechene"
     ],
-    "classificationUnresolvedAuthors": []
+    "classificationUnresolvedAuthors": [],
+    "sourceUrl": "https://www.valerielechene.com/home/research"
   },
   {
     "id": "10-1257-rct-300-3-0",
@@ -99161,9 +99117,7 @@
     "topicField": "Economics, Econometrics and Finance",
     "isEconomics": true,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -101510,9 +101464,7 @@
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -102551,31 +102503,33 @@
     "id": "10-1111-sjoe-12004",
     "title": "Health Selection and the Effect of Smoking on Mortality",
     "year": 2013,
-    "date": "2013-06-19",
+    "date": "2013-07-01",
     "authors": [
-      "Jérôme Adda",
-      "Valérie Lechêne"
+      "Jerome Adda",
+      "Valerie Lechene"
     ],
     "venue": "Scandinavian Journal of Economics",
     "doi": "10.1111/sjoe.12004",
     "url": "https://doi.org/10.1111/sjoe.12004",
     "type": "article",
-    "sourceType": "journal",
+    "sourceType": "personal website",
     "topicField": "Health Professions",
-    "isEconomics": false,
+    "isEconomics": true,
     "category": "Journal article",
     "staff": [
       "Valerie Lechene"
     ],
-    "fields": [],
-    "source": "OpenAlex",
+    "fields": [
+      "Applied"
+    ],
+    "source": "Valerie Lechene personal website",
     "paperPrimaryField": "Applied",
     "paperSecondaryField": "",
     "paperFields": [
       "Applied"
     ],
     "classificationConfidence": "High",
-    "classificationSource": "Primary field of UCL author(s)",
+    "classificationSource": "Author personal website",
     "classificationNeedsReview": false,
     "classificationScores": {
       "Applied": 1
@@ -102583,7 +102537,8 @@
     "classificationUclAuthors": [
       "Valerie Lechene"
     ],
-    "classificationUnresolvedAuthors": []
+    "classificationUnresolvedAuthors": [],
+    "sourceUrl": "https://www.valerielechene.com/home/research"
   },
   {
     "id": "10-1016-j-econlet-2013-04-040",
@@ -106216,35 +106171,37 @@
   },
   {
     "id": "10-1016-j-jdeveco-2013-03-009",
-    "title": "Welfare consequences of food prices increases: Evidence from rural Mexico",
+    "title": "Welfare consequences of food price increases: Evidence from rural Mexico",
     "year": 2013,
-    "date": "2013-04-04",
+    "date": "2013",
     "authors": [
       "Orazio Attanasio",
       "Vincenzo Di Maro",
-      "Valérie Lechêne",
+      "Valerie Lechene",
       "David Phillips"
     ],
     "venue": "Journal of Development Economics",
     "doi": "10.1016/j.jdeveco.2013.03.009",
     "url": "https://doi.org/10.1016/j.jdeveco.2013.03.009",
     "type": "article",
-    "sourceType": "journal",
+    "sourceType": "personal website",
     "topicField": "Economics, Econometrics and Finance",
     "isEconomics": true,
     "category": "Journal article",
     "staff": [
       "Valerie Lechene"
     ],
-    "fields": [],
-    "source": "OpenAlex",
+    "fields": [
+      "Applied"
+    ],
+    "source": "Valerie Lechene personal website",
     "paperPrimaryField": "Applied",
     "paperSecondaryField": "",
     "paperFields": [
       "Applied"
     ],
     "classificationConfidence": "High",
-    "classificationSource": "Primary field of UCL author(s)",
+    "classificationSource": "Author personal website",
     "classificationNeedsReview": false,
     "classificationScores": {
       "Applied": 1
@@ -106252,7 +106209,8 @@
     "classificationUclAuthors": [
       "Valerie Lechene"
     ],
-    "classificationUnresolvedAuthors": []
+    "classificationUnresolvedAuthors": [],
+    "sourceUrl": "https://www.valerielechene.com/home/research"
   },
   {
     "id": "10-1920-ps-ifs-2024-0109",
@@ -110680,9 +110638,7 @@
     "topicField": "Medicine",
     "isEconomics": true,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -114426,9 +114382,7 @@
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -116079,9 +116033,7 @@
     "topicField": "Health Professions",
     "isEconomics": false,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -116117,9 +116069,7 @@
     "topicField": "Medicine",
     "isEconomics": false,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -121924,9 +121874,7 @@
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -125962,7 +125910,6 @@
     "isEconomics": true,
     "category": "Journal article",
     "staff": [
-      "Valerie Lechene",
       "Ian Preston"
     ],
     "fields": [
@@ -130344,33 +130291,35 @@
   {
     "id": "10-1111-j-1468-0297-2009-02311-x",
     "title": "Distributional Effects in Household Models: Separate Spheres and Income Pooling",
-    "year": 2009,
-    "date": "2009-10-14",
+    "year": 2010,
+    "date": "2010-06-01",
     "authors": [
       "Martin Browning",
-      "Pierre‐André Chiappori",
-      "Valérie Lechêne"
+      "Pierre-Andre Chiappori",
+      "Valerie Lechene"
     ],
     "venue": "The Economic Journal",
     "doi": "10.1111/j.1468-0297.2009.02311.x",
     "url": "https://doi.org/10.1111/j.1468-0297.2009.02311.x",
     "type": "article",
-    "sourceType": "journal",
+    "sourceType": "personal website",
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Journal article",
     "staff": [
       "Valerie Lechene"
     ],
-    "fields": [],
-    "source": "OpenAlex",
+    "fields": [
+      "Applied"
+    ],
+    "source": "Valerie Lechene personal website",
     "paperPrimaryField": "Applied",
     "paperSecondaryField": "",
     "paperFields": [
       "Applied"
     ],
     "classificationConfidence": "High",
-    "classificationSource": "Primary field of UCL author(s)",
+    "classificationSource": "Author personal website",
     "classificationNeedsReview": false,
     "classificationScores": {
       "Applied": 1
@@ -130378,7 +130327,8 @@
     "classificationUclAuthors": [
       "Valerie Lechene"
     ],
-    "classificationUnresolvedAuthors": []
+    "classificationUnresolvedAuthors": [],
+    "sourceUrl": "https://www.valerielechene.com/home/research"
   },
   {
     "id": "10-1920-wp-cem-2009-0409",
@@ -143263,7 +143213,6 @@
     "isEconomics": true,
     "category": "Other",
     "staff": [
-      "Valerie Lechene",
       "Ian Preston"
     ],
     "fields": [
@@ -148058,32 +148007,34 @@
     "id": "10-1007-s11150-005-6694-2",
     "title": "Collective and Unitary Models: A Clarification",
     "year": 2006,
-    "date": "2006-03-01",
+    "date": "2006",
     "authors": [
       "Martin Browning",
-      "Pierre‐André Chiappori",
-      "Valérie Lechêne"
+      "Pierre-Andre Chiappori",
+      "Valerie Lechene"
     ],
     "venue": "Review of Economics of the Household",
     "doi": "10.1007/s11150-005-6694-2",
     "url": "https://doi.org/10.1007/s11150-005-6694-2",
     "type": "article",
-    "sourceType": "journal",
+    "sourceType": "personal website",
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Journal article",
     "staff": [
       "Valerie Lechene"
     ],
-    "fields": [],
-    "source": "OpenAlex",
+    "fields": [
+      "Applied"
+    ],
+    "source": "Valerie Lechene personal website",
     "paperPrimaryField": "Applied",
     "paperSecondaryField": "",
     "paperFields": [
       "Applied"
     ],
     "classificationConfidence": "High",
-    "classificationSource": "Primary field of UCL author(s)",
+    "classificationSource": "Author personal website",
     "classificationNeedsReview": false,
     "classificationScores": {
       "Applied": 1
@@ -148091,32 +148042,34 @@
     "classificationUclAuthors": [
       "Valerie Lechene"
     ],
-    "classificationUnresolvedAuthors": []
+    "classificationUnresolvedAuthors": [],
+    "sourceUrl": "https://www.valerielechene.com/home/research"
   },
   {
     "id": "10-1007-s11150-006-0002-7",
     "title": "Collective Models of Labor Supply with Nonconvex Budget Sets and Nonparticipation: A Calibration Approach",
     "year": 2006,
-    "date": "2006-05-13",
+    "date": "2006",
     "authors": [
-      "Frédéric Vermeulen",
       "Olivier Bargain",
       "Miriam Beblo",
       "Denis Beninger",
       "Richard Blundell",
       "Raquel Carrasco",
       "Maria-Concetta Chiuri",
-      "François Laisney",
-      "Valérie Lechêne",
+      "Francois Laisney",
+      "Valerie Lechene",
+      "Ernesto Longobardi",
       "Nicolas Moreau",
-      "Michał Myck",
-      "Javier Ruiz‐Castillo"
+      "Michal Myck",
+      "Javier Ruiz-Castillo",
+      "Frederic Vermeulen"
     ],
     "venue": "Review of Economics of the Household",
     "doi": "10.1007/s11150-006-0002-7",
     "url": "https://doi.org/10.1007/s11150-006-0002-7",
     "type": "article",
-    "sourceType": "journal",
+    "sourceType": "personal website",
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Journal article",
@@ -148128,23 +148081,23 @@
       "Applied",
       "Econometrics"
     ],
-    "source": "OpenAlex",
+    "source": "Valerie Lechene personal website",
     "paperPrimaryField": "Applied",
     "paperSecondaryField": "",
     "paperFields": [
       "Applied"
     ],
     "classificationConfidence": "High",
-    "classificationSource": "Primary field of UCL author(s)",
+    "classificationSource": "Author personal website",
     "classificationNeedsReview": false,
     "classificationScores": {
-      "Applied": 2
+      "Applied": 1
     },
     "classificationUclAuthors": [
-      "Richard Blundell",
       "Valerie Lechene"
     ],
-    "classificationUnresolvedAuthors": []
+    "classificationUnresolvedAuthors": [],
+    "sourceUrl": "https://www.valerielechene.com/home/research"
   },
   {
     "id": "https-openalex-org-w2796985497",
@@ -148174,8 +148127,7 @@
     "isEconomics": true,
     "category": "Other",
     "staff": [
-      "Richard Blundell",
-      "Valerie Lechene"
+      "Richard Blundell"
     ],
     "fields": [
       "Applied",
@@ -148694,7 +148646,7 @@
     "id": "10-1007-s11150-006-0001-8",
     "title": "Does the Representation of Household Behavior Matter for Welfare Analysis of Tax-benefit Policies? An Introduction",
     "year": 2006,
-    "date": "2006-05-13",
+    "date": "2006",
     "authors": [
       "Olivier Bargain",
       "Miriam Beblo",
@@ -148702,18 +148654,19 @@
       "Richard Blundell",
       "Raquel Carrasco",
       "Maria-Concetta Chiuri",
-      "François Laisney",
-      "Valérie Lechêne",
+      "Francois Laisney",
+      "Valerie Lechene",
+      "Ernesto Longobardi",
       "Nicolas Moreau",
-      "Michał Myck",
-      "Javier Ruiz‐Castillo",
-      "Frédéric Vermeulen"
+      "Michal Myck",
+      "Javier Ruiz-Castillo",
+      "Frederic Vermeulen"
     ],
     "venue": "Review of Economics of the Household",
     "doi": "10.1007/s11150-006-0001-8",
     "url": "https://doi.org/10.1007/s11150-006-0001-8",
     "type": "article",
-    "sourceType": "journal",
+    "sourceType": "personal website",
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Journal article",
@@ -148725,23 +148678,23 @@
       "Applied",
       "Econometrics"
     ],
-    "source": "OpenAlex",
+    "source": "Valerie Lechene personal website",
     "paperPrimaryField": "Applied",
     "paperSecondaryField": "",
     "paperFields": [
       "Applied"
     ],
     "classificationConfidence": "High",
-    "classificationSource": "Primary field of UCL author(s)",
+    "classificationSource": "Author personal website",
     "classificationNeedsReview": false,
     "classificationScores": {
-      "Applied": 2
+      "Applied": 1
     },
     "classificationUclAuthors": [
-      "Richard Blundell",
       "Valerie Lechene"
     ],
-    "classificationUnresolvedAuthors": []
+    "classificationUnresolvedAuthors": [],
+    "sourceUrl": "https://www.valerielechene.com/home/research"
   },
   {
     "id": "https-openalex-org-w2899069014",
@@ -148771,8 +148724,7 @@
     "isEconomics": true,
     "category": "Other",
     "staff": [
-      "Richard Blundell",
-      "Valerie Lechene"
+      "Richard Blundell"
     ],
     "fields": [
       "Applied",
@@ -148824,8 +148776,7 @@
     "isEconomics": true,
     "category": "Other",
     "staff": [
-      "Richard Blundell",
-      "Valerie Lechene"
+      "Richard Blundell"
     ],
     "fields": [
       "Applied",
@@ -149396,7 +149347,7 @@
     "id": "10-1007-s11150-006-0004-5",
     "title": "Evaluating the Move to a Linear Tax System in Germany and Other European Countries",
     "year": 2006,
-    "date": "2006-05-13",
+    "date": "2006",
     "authors": [
       "Denis Beninger",
       "Olivier Bargain",
@@ -149404,19 +149355,19 @@
       "Richard Blundell",
       "Raquel Carrasco",
       "Maria-Concetta Chiuri",
-      "François Laisney",
-      "Valérie Lechêne",
+      "Francois Laisney",
+      "Valerie Lechene",
       "Ernesto Longobardi",
       "Nicolas Moreau",
-      "Michał Myck",
-      "Javier Ruiz‐Castillo",
-      "Frédéric Vermeulen"
+      "Michal Myck",
+      "Javier Ruiz-Castillo",
+      "Frederic Vermeulen"
     ],
     "venue": "Review of Economics of the Household",
     "doi": "10.1007/s11150-006-0004-5",
     "url": "https://doi.org/10.1007/s11150-006-0004-5",
     "type": "article",
-    "sourceType": "journal",
+    "sourceType": "personal website",
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Journal article",
@@ -149428,23 +149379,23 @@
       "Applied",
       "Econometrics"
     ],
-    "source": "OpenAlex",
+    "source": "Valerie Lechene personal website",
     "paperPrimaryField": "Applied",
     "paperSecondaryField": "",
     "paperFields": [
       "Applied"
     ],
     "classificationConfidence": "High",
-    "classificationSource": "Primary field of UCL author(s)",
+    "classificationSource": "Author personal website",
     "classificationNeedsReview": false,
     "classificationScores": {
-      "Applied": 2
+      "Applied": 1
     },
     "classificationUclAuthors": [
-      "Richard Blundell",
       "Valerie Lechene"
     ],
-    "classificationUnresolvedAuthors": []
+    "classificationUnresolvedAuthors": [],
+    "sourceUrl": "https://www.valerielechene.com/home/research"
   },
   {
     "id": "https-openalex-org-w3125881767",
@@ -149474,8 +149425,7 @@
     "isEconomics": true,
     "category": "Other",
     "staff": [
-      "Richard Blundell",
-      "Valerie Lechene"
+      "Richard Blundell"
     ],
     "fields": [
       "Applied",
@@ -151713,8 +151663,7 @@
     "isEconomics": true,
     "category": "Other",
     "staff": [
-      "Richard Blundell",
-      "Valerie Lechene"
+      "Richard Blundell"
     ],
     "fields": [
       "Applied",
@@ -152431,8 +152380,7 @@
     "isEconomics": true,
     "category": "Other",
     "staff": [
-      "Richard Blundell",
-      "Valerie Lechene"
+      "Richard Blundell"
     ],
     "fields": [
       "Applied",
@@ -152484,8 +152432,7 @@
     "isEconomics": true,
     "category": "Other",
     "staff": [
-      "Richard Blundell",
-      "Valerie Lechene"
+      "Richard Blundell"
     ],
     "fields": [
       "Applied",
@@ -152511,29 +152458,29 @@
   },
   {
     "id": "10-1007-s11150-006-0003-6",
-    "title": "The Working Families’ Tax Credit and Some European Tax Reforms in A Collective Setting",
+    "title": "The Working Families’ Tax Credit and Some European Tax Reforms in a Collective Setting",
     "year": 2006,
-    "date": "2006-05-13",
+    "date": "2006",
     "authors": [
-      "Michał Myck",
       "Olivier Bargain",
       "Miriam Beblo",
       "Denis Beninger",
       "Richard Blundell",
       "Raquel Carrasco",
       "Maria-Concetta Chiuri",
-      "François Laisney",
-      "Valérie Lechêne",
+      "Francois Laisney",
+      "Valerie Lechene",
       "Ernesto Longobardi",
       "Nicolas Moreau",
-      "Javier Ruiz‐Castillo",
-      "Frédéric Vermeulen"
+      "Michal Myck",
+      "Javier Ruiz-Castillo",
+      "Frederic Vermeulen"
     ],
     "venue": "Review of Economics of the Household",
     "doi": "10.1007/s11150-006-0003-6",
     "url": "https://doi.org/10.1007/s11150-006-0003-6",
     "type": "article",
-    "sourceType": "journal",
+    "sourceType": "personal website",
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Journal article",
@@ -152545,23 +152492,23 @@
       "Applied",
       "Econometrics"
     ],
-    "source": "OpenAlex",
+    "source": "Valerie Lechene personal website",
     "paperPrimaryField": "Applied",
     "paperSecondaryField": "",
     "paperFields": [
       "Applied"
     ],
     "classificationConfidence": "High",
-    "classificationSource": "Primary field of UCL author(s)",
+    "classificationSource": "Author personal website",
     "classificationNeedsReview": false,
     "classificationScores": {
-      "Applied": 2
+      "Applied": 1
     },
     "classificationUclAuthors": [
-      "Richard Blundell",
       "Valerie Lechene"
     ],
-    "classificationUnresolvedAuthors": []
+    "classificationUnresolvedAuthors": [],
+    "sourceUrl": "https://www.valerielechene.com/home/research"
   },
   {
     "id": "https-openalex-org-w3122190158",
@@ -154784,7 +154731,6 @@
     "isEconomics": true,
     "category": "Book",
     "staff": [
-      "Valerie Lechene",
       "Ian Preston"
     ],
     "fields": [
@@ -155677,30 +155623,32 @@
     "id": "https-openalex-org-w2244911352",
     "title": "Labour Market Participation of Women and Fertility: the Effect of Social Policies – Comments",
     "year": 2005,
-    "date": "2005-01-01",
+    "date": "2005",
     "authors": [
-      "Valérie Lechêne"
+      "Valerie Lechene"
     ],
-    "venue": "UCL Discovery (University College London)",
+    "venue": "Women at Work: An Economic Perspective",
     "doi": "",
     "url": "http://discovery.ucl.ac.uk/83302/",
     "type": "book-chapter",
-    "sourceType": "repository",
+    "sourceType": "personal website",
     "topicField": "Arts and Humanities",
     "isEconomics": true,
-    "category": "Other",
+    "category": "Book",
     "staff": [
       "Valerie Lechene"
     ],
-    "fields": [],
-    "source": "OpenAlex",
+    "fields": [
+      "Applied"
+    ],
+    "source": "Valerie Lechene personal website",
     "paperPrimaryField": "Applied",
     "paperSecondaryField": "",
     "paperFields": [
       "Applied"
     ],
     "classificationConfidence": "High",
-    "classificationSource": "Primary field of UCL author(s)",
+    "classificationSource": "Author personal website",
     "classificationNeedsReview": false,
     "classificationScores": {
       "Applied": 1
@@ -155708,7 +155656,8 @@
     "classificationUclAuthors": [
       "Valerie Lechene"
     ],
-    "classificationUnresolvedAuthors": []
+    "classificationUnresolvedAuthors": [],
+    "sourceUrl": "https://www.valerielechene.com/home/research"
   },
   {
     "id": "10-1017-s1365100505040101",
@@ -159425,9 +159374,7 @@
     "topicField": "Economics, Econometrics and Finance",
     "isEconomics": true,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -162230,9 +162177,7 @@
     "topicField": "Health Professions",
     "isEconomics": true,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -162268,9 +162213,7 @@
     "topicField": "Social Sciences",
     "isEconomics": false,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -165060,31 +165003,33 @@
     "id": "10-1023-a-1021895313920",
     "title": "Children and Demand: Direct and Non-Direct Effects",
     "year": 2003,
-    "date": "2003-01-01",
+    "date": "2003",
     "authors": [
       "Martin Browning",
-      "Valérie Lechêne"
+      "Valerie Lechene"
     ],
     "venue": "Review of Economics of the Household",
     "doi": "10.1023/a:1021895313920",
     "url": "https://doi.org/10.1023/a:1021895313920",
     "type": "article",
-    "sourceType": "journal",
+    "sourceType": "personal website",
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Journal article",
     "staff": [
       "Valerie Lechene"
     ],
-    "fields": [],
-    "source": "OpenAlex",
+    "fields": [
+      "Applied"
+    ],
+    "source": "Valerie Lechene personal website",
     "paperPrimaryField": "Applied",
     "paperSecondaryField": "",
     "paperFields": [
       "Applied"
     ],
     "classificationConfidence": "High",
-    "classificationSource": "Primary field of UCL author(s)",
+    "classificationSource": "Author personal website",
     "classificationNeedsReview": false,
     "classificationScores": {
       "Applied": 1
@@ -165092,7 +165037,8 @@
     "classificationUclAuthors": [
       "Valerie Lechene"
     ],
-    "classificationUnresolvedAuthors": []
+    "classificationUnresolvedAuthors": [],
+    "sourceUrl": "https://www.valerielechene.com/home/research"
   },
   {
     "id": "10-1007-s00148-003-0161-2",
@@ -169651,9 +169597,7 @@
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -169732,9 +169676,7 @@
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -172770,28 +172712,30 @@
     "date": "2002-10-01",
     "authors": [
       "Orazio Attanasio",
-      "Valérie Lechêne"
+      "Valerie Lechene"
     ],
     "venue": "Review of Economic Dynamics",
     "doi": "10.1006/redy.2002.0191",
     "url": "https://doi.org/10.1006/redy.2002.0191",
     "type": "article",
-    "sourceType": "journal",
+    "sourceType": "personal website",
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Journal article",
     "staff": [
       "Valerie Lechene"
     ],
-    "fields": [],
-    "source": "OpenAlex",
+    "fields": [
+      "Applied"
+    ],
+    "source": "Valerie Lechene personal website",
     "paperPrimaryField": "Applied",
     "paperSecondaryField": "",
     "paperFields": [
       "Applied"
     ],
     "classificationConfidence": "High",
-    "classificationSource": "Primary field of UCL author(s)",
+    "classificationSource": "Author personal website",
     "classificationNeedsReview": false,
     "classificationScores": {
       "Applied": 1
@@ -172799,7 +172743,8 @@
     "classificationUclAuthors": [
       "Valerie Lechene"
     ],
-    "classificationUnresolvedAuthors": []
+    "classificationUnresolvedAuthors": [],
+    "sourceUrl": "https://www.valerielechene.com/home/research"
   },
   {
     "id": "https-openalex-org-w3123430787",
@@ -172818,9 +172763,7 @@
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -176428,9 +176371,7 @@
     "topicField": "Social Sciences",
     "isEconomics": false,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -176466,9 +176407,7 @@
     "topicField": "Health Professions",
     "isEconomics": true,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -177608,9 +177547,7 @@
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -177687,7 +177624,6 @@
     "isEconomics": true,
     "category": "Other",
     "staff": [
-      "Valerie Lechene",
       "Ian Preston"
     ],
     "fields": [
@@ -178256,30 +178192,32 @@
     "id": "https-openalex-org-w2532705605",
     "title": "Income and Price Elasticities of Demand for Meat, Meat Products and Fish",
     "year": 2000,
-    "date": "2000-01-01",
+    "date": "2000",
     "authors": [
-      "Valérie Lechêne"
+      "Valerie Lechene"
     ],
-    "venue": "UCL Discovery (University College London)",
+    "venue": "Annual Report on Food Expenditure, Consumption and Nutrient Intakes",
     "doi": "",
     "url": "http://discovery.ucl.ac.uk/83289/",
-    "type": "book-chapter",
-    "sourceType": "repository",
+    "type": "report",
+    "sourceType": "personal website",
     "topicField": "Arts and Humanities",
     "isEconomics": true,
     "category": "Other",
     "staff": [
       "Valerie Lechene"
     ],
-    "fields": [],
-    "source": "OpenAlex",
+    "fields": [
+      "Applied"
+    ],
+    "source": "Valerie Lechene personal website",
     "paperPrimaryField": "Applied",
     "paperSecondaryField": "",
     "paperFields": [
       "Applied"
     ],
     "classificationConfidence": "High",
-    "classificationSource": "Primary field of UCL author(s)",
+    "classificationSource": "Author personal website",
     "classificationNeedsReview": false,
     "classificationScores": {
       "Applied": 1
@@ -178287,7 +178225,8 @@
     "classificationUclAuthors": [
       "Valerie Lechene"
     ],
-    "classificationUnresolvedAuthors": []
+    "classificationUnresolvedAuthors": [],
+    "sourceUrl": "https://www.valerielechene.com/home/research"
   },
   {
     "id": "https-openalex-org-w1590919249",
@@ -180983,18 +180922,18 @@
   },
   {
     "id": "10-1920-re-ifs-2024-0531",
-    "title": "Income and food expenditure 1987-1997",
-    "year": 1999,
-    "date": "1999-01-01",
+    "title": "Income and Food Expenditure 1987-1997",
+    "year": 1998,
+    "date": "1998",
     "authors": [
       "Andrew Chesher",
-      "Valérie Lechêne"
+      "Valerie Lechene"
     ],
-    "venue": "",
-    "doi": "10.1920/re.ifs.2024.0531",
-    "url": "https://doi.org/10.1920/re.ifs.2024.0531",
+    "venue": "Household Food Consumption and Expenditure 1997",
+    "doi": "",
+    "url": "",
     "type": "report",
-    "sourceType": "",
+    "sourceType": "personal website",
     "topicField": "Agricultural and Biological Sciences",
     "isEconomics": true,
     "category": "Other",
@@ -181006,25 +180945,23 @@
       "Econometrics",
       "Applied"
     ],
-    "source": "OpenAlex",
-    "paperPrimaryField": "Applied; Econometrics",
+    "source": "Valerie Lechene personal website",
+    "paperPrimaryField": "Applied",
     "paperSecondaryField": "",
     "paperFields": [
-      "Applied",
-      "Econometrics"
+      "Applied"
     ],
     "classificationConfidence": "High",
-    "classificationSource": "Primary field of UCL author(s)",
+    "classificationSource": "Author personal website",
     "classificationNeedsReview": false,
     "classificationScores": {
-      "Econometrics": 1,
       "Applied": 1
     },
     "classificationUclAuthors": [
-      "Andrew Chesher",
       "Valerie Lechene"
     ],
-    "classificationUnresolvedAuthors": []
+    "classificationUnresolvedAuthors": [],
+    "sourceUrl": "https://www.valerielechene.com/home/research"
   },
   {
     "id": "10-1920-wp-ifs-1999-9903",
@@ -188429,9 +188366,7 @@
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -189002,9 +188937,7 @@
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -191480,35 +191413,37 @@
   },
   {
     "id": "https-openalex-org-w4299123604",
-    "title": "Insertion des jeunes sur le marché du travail : outils d'analyse et analyses empiriques",
+    "title": "Insertion des jeunes sur le marché du travail: Outils d'analyse et analyses empiriques",
     "year": 1995,
-    "date": "1995-01-01",
+    "date": "1995-04-01",
     "authors": [
-      "Valérie Lechêne",
-      "T. Magnac",
-      "J.M. Robin",
-      "M. Visser"
+      "Valerie Lechene",
+      "Thierry Magnac",
+      "Jean-Marc Robin",
+      "Michael Visser"
     ],
-    "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+    "venue": "Report for the Délégation Interministérielle à l'Insertion des Jeunes",
     "doi": "",
     "url": "https://hal.inrae.fr/hal-02852409",
-    "type": "preprint",
-    "sourceType": "repository",
+    "type": "report",
+    "sourceType": "personal website",
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Other",
     "staff": [
       "Valerie Lechene"
     ],
-    "fields": [],
-    "source": "OpenAlex",
+    "fields": [
+      "Applied"
+    ],
+    "source": "Valerie Lechene personal website",
     "paperPrimaryField": "Applied",
     "paperSecondaryField": "",
     "paperFields": [
       "Applied"
     ],
     "classificationConfidence": "High",
-    "classificationSource": "Primary field of UCL author(s)",
+    "classificationSource": "Author personal website",
     "classificationNeedsReview": false,
     "classificationScores": {
       "Applied": 1
@@ -191516,7 +191451,8 @@
     "classificationUclAuthors": [
       "Valerie Lechene"
     ],
-    "classificationUnresolvedAuthors": []
+    "classificationUnresolvedAuthors": [],
+    "sourceUrl": "https://www.valerielechene.com/home/research"
   },
   {
     "id": "https-openalex-org-w564109602",
@@ -191537,9 +191473,7 @@
     "topicField": "Social Sciences",
     "isEconomics": false,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -192763,9 +192697,7 @@
     "topicField": "Economics, Econometrics and Finance",
     "isEconomics": true,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -193172,9 +193104,7 @@
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -193490,33 +193420,35 @@
     "id": "10-1086-261964",
     "title": "Income and Outcomes: A Structural Model of Intrahousehold Allocation",
     "year": 1994,
-    "date": "1994-12-01",
+    "date": "1994",
     "authors": [
       "Martin Browning",
-      "François Bourguignon",
-      "Pierre‐André Chiappori",
-      "Valérie Lechêne"
+      "Francois Bourguignon",
+      "Pierre-Andre Chiappori",
+      "Valerie Lechene"
     ],
     "venue": "Journal of Political Economy",
     "doi": "10.1086/261964",
     "url": "https://doi.org/10.1086/261964",
     "type": "article",
-    "sourceType": "journal",
+    "sourceType": "personal website",
     "topicField": "Social Sciences",
     "isEconomics": true,
     "category": "Journal article",
     "staff": [
       "Valerie Lechene"
     ],
-    "fields": [],
-    "source": "OpenAlex",
+    "fields": [
+      "Applied"
+    ],
+    "source": "Valerie Lechene personal website",
     "paperPrimaryField": "Applied",
     "paperSecondaryField": "",
     "paperFields": [
       "Applied"
     ],
     "classificationConfidence": "High",
-    "classificationSource": "Primary field of UCL author(s)",
+    "classificationSource": "Author personal website",
     "classificationNeedsReview": false,
     "classificationScores": {
       "Applied": 1
@@ -193524,7 +193456,8 @@
     "classificationUclAuthors": [
       "Valerie Lechene"
     ],
-    "classificationUnresolvedAuthors": []
+    "classificationUnresolvedAuthors": [],
+    "sourceUrl": "https://www.valerielechene.com/home/research"
   },
   {
     "id": "10-1920-wp-ifs-1994-9412",
@@ -194288,9 +194221,7 @@
     "topicField": "Health Professions",
     "isEconomics": true,
     "category": "Book",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -194575,9 +194506,7 @@
     "topicField": "Economics, Econometrics and Finance",
     "isEconomics": true,
     "category": "Other",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -194869,9 +194798,7 @@
     "topicField": "Social Sciences",
     "isEconomics": false,
     "category": "Book",
-    "staff": [
-      "Valerie Lechene"
-    ],
+    "staff": [],
     "fields": [],
     "source": "OpenAlex",
     "paperPrimaryField": "Applied",
@@ -199016,35 +198943,37 @@
   },
   {
     "id": "https-openalex-org-w3122886269",
-    "title": "Intra-household allocation of consumption : a model and some evidence from French data",
-    "year": 1991,
-    "date": "1991-10-03",
+    "title": "Intra-Household Allocation of Consumption: A Model and Some Evidence from French Data",
+    "year": 1993,
+    "date": "1993",
     "authors": [
-      "François Bourguignon",
+      "Francois Bourguignon",
+      "Pierre-Andre Chiappori",
       "Martin Browning",
-      "Pierre Chiappori",
-      "Valérie Lechêne"
+      "Valerie Lechene"
     ],
-    "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+    "venue": "Annales d'Economie et de Statistiques",
     "doi": "",
-    "url": "https://hal.inrae.fr/hal-02699685",
+    "url": "",
     "type": "article",
-    "sourceType": "repository",
+    "sourceType": "personal website",
     "topicField": "Social Sciences",
-    "isEconomics": false,
-    "category": "Other",
+    "isEconomics": true,
+    "category": "Journal article",
     "staff": [
       "Valerie Lechene"
     ],
-    "fields": [],
-    "source": "OpenAlex",
+    "fields": [
+      "Applied"
+    ],
+    "source": "Valerie Lechene personal website",
     "paperPrimaryField": "Applied",
     "paperSecondaryField": "",
     "paperFields": [
       "Applied"
     ],
     "classificationConfidence": "High",
-    "classificationSource": "Primary field of UCL author(s)",
+    "classificationSource": "Author personal website",
     "classificationNeedsReview": false,
     "classificationScores": {
       "Applied": 1
@@ -199052,7 +198981,8 @@
     "classificationUclAuthors": [
       "Valerie Lechene"
     ],
-    "classificationUnresolvedAuthors": []
+    "classificationUnresolvedAuthors": [],
+    "sourceUrl": "https://www.valerielechene.com/home/research"
   },
   {
     "id": "10-1177-1329878x9106200104",
@@ -199180,30 +199110,32 @@
     "id": "10-3406-ecop-1991-5223",
     "title": "Offre de travail des couples et fiscalité",
     "year": 1991,
-    "date": "1991-01-01",
+    "date": "1991",
     "authors": [
-      "Valérie Lechêne"
+      "Valerie Lechene"
     ],
-    "venue": "Économie & prévision",
+    "venue": "Economie et Prévision",
     "doi": "10.3406/ecop.1991.5223",
     "url": "https://doi.org/10.3406/ecop.1991.5223",
     "type": "article",
-    "sourceType": "journal",
+    "sourceType": "personal website",
     "topicField": "Social Sciences",
-    "isEconomics": false,
+    "isEconomics": true,
     "category": "Journal article",
     "staff": [
       "Valerie Lechene"
     ],
-    "fields": [],
-    "source": "OpenAlex",
+    "fields": [
+      "Applied"
+    ],
+    "source": "Valerie Lechene personal website",
     "paperPrimaryField": "Applied",
     "paperSecondaryField": "",
     "paperFields": [
       "Applied"
     ],
     "classificationConfidence": "High",
-    "classificationSource": "Primary field of UCL author(s)",
+    "classificationSource": "Author personal website",
     "classificationNeedsReview": false,
     "classificationScores": {
       "Applied": 1
@@ -199211,7 +199143,8 @@
     "classificationUclAuthors": [
       "Valerie Lechene"
     ],
-    "classificationUnresolvedAuthors": []
+    "classificationUnresolvedAuthors": [],
+    "sourceUrl": "https://www.valerielechene.com/home/research"
   },
   {
     "id": "https-openalex-org-w2100484170",
@@ -213602,5 +213535,462 @@
       "Imran Rasul"
     ],
     "classificationUnresolvedAuthors": []
+  },
+  {
+    "id": "valerie-lechene-documenting-individual-poverty-in-south-africa-and-ethiopia-undated",
+    "topicField": "",
+    "isEconomics": true,
+    "sourceType": "personal website",
+    "classificationConfidence": "High",
+    "classificationSource": "Author personal website",
+    "classificationNeedsReview": false,
+    "classificationScores": {
+      "Applied": 1
+    },
+    "classificationUclAuthors": [
+      "Valerie Lechene"
+    ],
+    "classificationUnresolvedAuthors": [],
+    "staff": [
+      "Valerie Lechene"
+    ],
+    "fields": [
+      "Applied"
+    ],
+    "title": "Documenting individual poverty in South Africa and Ethiopia",
+    "year": 0,
+    "date": "",
+    "authors": [
+      "Valerie Lechene",
+      "Tom Harris"
+    ],
+    "venue": "Current research",
+    "doi": "",
+    "url": "",
+    "type": "working paper",
+    "category": "Other",
+    "paperPrimaryField": "Applied",
+    "paperSecondaryField": "",
+    "paperFields": [
+      "Applied"
+    ],
+    "source": "Valerie Lechene personal website",
+    "sourceUrl": "https://www.valerielechene.com/home/research"
+  },
+  {
+    "id": "valerie-lechene-une-revue-de-la-litterature-sur-les-echelles-d-equivalence-1993",
+    "topicField": "",
+    "isEconomics": true,
+    "sourceType": "personal website",
+    "classificationConfidence": "High",
+    "classificationSource": "Author personal website",
+    "classificationNeedsReview": false,
+    "classificationScores": {
+      "Applied": 1
+    },
+    "classificationUclAuthors": [
+      "Valerie Lechene"
+    ],
+    "classificationUnresolvedAuthors": [],
+    "staff": [
+      "Valerie Lechene"
+    ],
+    "fields": [
+      "Applied"
+    ],
+    "title": "Une revue de la littérature sur les échelles d'équivalence",
+    "year": 1993,
+    "date": "1993",
+    "authors": [
+      "Valerie Lechene"
+    ],
+    "venue": "Economie et Prévision",
+    "doi": "",
+    "url": "",
+    "type": "article",
+    "category": "Journal article",
+    "paperPrimaryField": "Applied",
+    "paperSecondaryField": "",
+    "paperFields": [
+      "Applied"
+    ],
+    "source": "Valerie Lechene personal website",
+    "sourceUrl": "https://www.valerielechene.com/home/research"
+  },
+  {
+    "id": "valerie-lechene-comparing-poverty-rates-across-countries-a-case-study-of-france-and-the-united-kingdom-1998",
+    "topicField": "",
+    "isEconomics": true,
+    "sourceType": "personal website",
+    "classificationConfidence": "High",
+    "classificationSource": "Author personal website",
+    "classificationNeedsReview": false,
+    "classificationScores": {
+      "Applied": 1
+    },
+    "classificationUclAuthors": [
+      "Valerie Lechene"
+    ],
+    "classificationUnresolvedAuthors": [],
+    "staff": [
+      "Valerie Lechene"
+    ],
+    "fields": [
+      "Applied"
+    ],
+    "title": "Comparing Poverty Rates Across Countries: A Case Study of France and the United Kingdom",
+    "year": 1998,
+    "date": "1998",
+    "authors": [
+      "A. B. Atkinson",
+      "Karen Gardiner",
+      "Valerie Lechene",
+      "Holly Sutherland"
+    ],
+    "venue": "The Distribution of Welfare and Household Production: International Perspectives",
+    "doi": "",
+    "url": "",
+    "type": "book-chapter",
+    "category": "Book",
+    "paperPrimaryField": "Applied",
+    "paperSecondaryField": "",
+    "paperFields": [
+      "Applied"
+    ],
+    "source": "Valerie Lechene personal website",
+    "sourceUrl": "https://www.valerielechene.com/home/research"
+  },
+  {
+    "id": "valerie-lechene-salaires-experience-et-accidents-1996",
+    "topicField": "",
+    "isEconomics": true,
+    "sourceType": "personal website",
+    "classificationConfidence": "High",
+    "classificationSource": "Author personal website",
+    "classificationNeedsReview": false,
+    "classificationScores": {
+      "Applied": 1
+    },
+    "classificationUclAuthors": [
+      "Valerie Lechene"
+    ],
+    "classificationUnresolvedAuthors": [],
+    "staff": [
+      "Valerie Lechene"
+    ],
+    "fields": [
+      "Applied"
+    ],
+    "title": "Salaires, Expérience et Accidents",
+    "year": 1996,
+    "date": "1996",
+    "authors": [
+      "Valerie Lechene",
+      "Thierry Magnac"
+    ],
+    "venue": "Trajectoires Sociales, Inégalités et Conditions de Vie",
+    "doi": "",
+    "url": "",
+    "type": "book-chapter",
+    "category": "Book",
+    "paperPrimaryField": "Applied",
+    "paperSecondaryField": "",
+    "paperFields": [
+      "Applied"
+    ],
+    "source": "Valerie Lechene personal website",
+    "sourceUrl": "https://www.valerielechene.com/home/research"
+  },
+  {
+    "id": "valerie-lechene-all-in-the-family-estimating-resource-allocation-within-households-2019",
+    "topicField": "",
+    "isEconomics": true,
+    "sourceType": "personal website",
+    "classificationConfidence": "High",
+    "classificationSource": "Author personal website",
+    "classificationNeedsReview": false,
+    "classificationScores": {
+      "Applied": 1
+    },
+    "classificationUclAuthors": [
+      "Valerie Lechene"
+    ],
+    "classificationUnresolvedAuthors": [],
+    "staff": [
+      "Valerie Lechene"
+    ],
+    "fields": [
+      "Applied"
+    ],
+    "title": "All in the family: Estimating resource allocation within households",
+    "year": 2019,
+    "date": "2019-05-23",
+    "authors": [
+      "Isis Gaddis",
+      "Talip Kilic",
+      "Valerie Lechene",
+      "Alex Wolf"
+    ],
+    "venue": "World Bank blog",
+    "doi": "",
+    "url": "https://blogs.worldbank.org/en/developmenttalk/all-family-estimating-resource-allocation-within-households",
+    "type": "article",
+    "category": "Other",
+    "paperPrimaryField": "Applied",
+    "paperSecondaryField": "",
+    "paperFields": [
+      "Applied"
+    ],
+    "source": "Valerie Lechene personal website",
+    "sourceUrl": "https://www.valerielechene.com/home/research"
+  },
+  {
+    "id": "valerie-lechene-inside-the-household-poor-children-women-and-men-2018",
+    "topicField": "",
+    "isEconomics": true,
+    "sourceType": "personal website",
+    "classificationConfidence": "High",
+    "classificationSource": "Author personal website",
+    "classificationNeedsReview": false,
+    "classificationScores": {
+      "Applied": 1
+    },
+    "classificationUclAuthors": [
+      "Valerie Lechene"
+    ],
+    "classificationUnresolvedAuthors": [],
+    "staff": [
+      "Valerie Lechene"
+    ],
+    "fields": [
+      "Applied"
+    ],
+    "title": "Inside the Household: Poor children, women and men",
+    "year": 2018,
+    "date": "2018",
+    "authors": [
+      "Valerie Lechene"
+    ],
+    "venue": "Poverty and Shared Prosperity 2018",
+    "doi": "",
+    "url": "https://www.worldbank.org/en/publication/poverty-and-shared-prosperity-2018",
+    "type": "report",
+    "category": "Other",
+    "paperPrimaryField": "Applied",
+    "paperSecondaryField": "",
+    "paperFields": [
+      "Applied"
+    ],
+    "source": "Valerie Lechene personal website",
+    "sourceUrl": "https://www.valerielechene.com/home/research"
+  },
+  {
+    "id": "valerie-lechene-demand-analysis-of-the-national-food-survey-2002",
+    "topicField": "",
+    "isEconomics": true,
+    "sourceType": "personal website",
+    "classificationConfidence": "High",
+    "classificationSource": "Author personal website",
+    "classificationNeedsReview": false,
+    "classificationScores": {
+      "Applied": 1
+    },
+    "classificationUclAuthors": [
+      "Valerie Lechene"
+    ],
+    "classificationUnresolvedAuthors": [],
+    "staff": [
+      "Valerie Lechene"
+    ],
+    "fields": [
+      "Applied"
+    ],
+    "title": "Demand analysis of the National Food Survey",
+    "year": 2002,
+    "date": "2002",
+    "authors": [
+      "Andrew Chesher",
+      "Valerie Lechene"
+    ],
+    "venue": "Report prepared for the Food Standards Agency",
+    "doi": "",
+    "url": "",
+    "type": "report",
+    "category": "Other",
+    "paperPrimaryField": "Applied",
+    "paperSecondaryField": "",
+    "paperFields": [
+      "Applied"
+    ],
+    "source": "Valerie Lechene personal website",
+    "sourceUrl": "https://www.valerielechene.com/home/research"
+  },
+  {
+    "id": "valerie-lechene-income-and-price-elasticities-of-demand-for-food-2001",
+    "topicField": "",
+    "isEconomics": true,
+    "sourceType": "personal website",
+    "classificationConfidence": "High",
+    "classificationSource": "Author personal website",
+    "classificationNeedsReview": false,
+    "classificationScores": {
+      "Applied": 1
+    },
+    "classificationUclAuthors": [
+      "Valerie Lechene"
+    ],
+    "classificationUnresolvedAuthors": [],
+    "staff": [
+      "Valerie Lechene"
+    ],
+    "fields": [
+      "Applied"
+    ],
+    "title": "Income and Price Elasticities of Demand for Food",
+    "year": 2001,
+    "date": "2001",
+    "authors": [
+      "Valerie Lechene"
+    ],
+    "venue": "Annual Report on Food Expenditure, Consumption and Nutrient Intakes",
+    "doi": "",
+    "url": "",
+    "type": "report",
+    "category": "Other",
+    "paperPrimaryField": "Applied",
+    "paperSecondaryField": "",
+    "paperFields": [
+      "Applied"
+    ],
+    "source": "Valerie Lechene personal website",
+    "sourceUrl": "https://www.valerielechene.com/home/research"
+  },
+  {
+    "id": "valerie-lechene-l-evaluation-des-politiques-publiques-d-insertion-des-jeunes-sur-le-marche-du-travail-questions-microeconomiques-1996",
+    "topicField": "",
+    "isEconomics": true,
+    "sourceType": "personal website",
+    "classificationConfidence": "High",
+    "classificationSource": "Author personal website",
+    "classificationNeedsReview": false,
+    "classificationScores": {
+      "Applied": 1
+    },
+    "classificationUclAuthors": [
+      "Valerie Lechene"
+    ],
+    "classificationUnresolvedAuthors": [],
+    "staff": [
+      "Valerie Lechene"
+    ],
+    "fields": [
+      "Applied"
+    ],
+    "title": "L'évaluation des politiques publiques d'insertion des jeunes sur le marché du travail: questions microéconomiques",
+    "year": 1996,
+    "date": "1996",
+    "authors": [
+      "Valerie Lechene",
+      "Thierry Magnac"
+    ],
+    "venue": "Cahier Travail et Emploi",
+    "doi": "",
+    "url": "",
+    "type": "report",
+    "category": "Other",
+    "paperPrimaryField": "Applied",
+    "paperSecondaryField": "",
+    "paperFields": [
+      "Applied"
+    ],
+    "source": "Valerie Lechene personal website",
+    "sourceUrl": "https://www.valerielechene.com/home/research"
+  },
+  {
+    "id": "valerie-lechene-the-effects-of-differences-in-housing-and-health-care-systems-on-international-comparisons-of-income-distributions-1994",
+    "topicField": "",
+    "isEconomics": true,
+    "sourceType": "personal website",
+    "classificationConfidence": "High",
+    "classificationSource": "Author personal website",
+    "classificationNeedsReview": false,
+    "classificationScores": {
+      "Applied": 1
+    },
+    "classificationUclAuthors": [
+      "Valerie Lechene"
+    ],
+    "classificationUnresolvedAuthors": [],
+    "staff": [
+      "Valerie Lechene"
+    ],
+    "fields": [
+      "Applied"
+    ],
+    "title": "The effects of differences in housing and health care systems on international comparisons of income distributions",
+    "year": 1994,
+    "date": "1994",
+    "authors": [
+      "Jane Falkingham",
+      "Karen Gardiner",
+      "John Hills",
+      "Holly Sutherland",
+      "Valerie Lechene"
+    ],
+    "venue": "Eurostat Report",
+    "doi": "",
+    "url": "http://eprints.lse.ac.uk/5589/",
+    "type": "report",
+    "category": "Other",
+    "paperPrimaryField": "Applied",
+    "paperSecondaryField": "",
+    "paperFields": [
+      "Applied"
+    ],
+    "source": "Valerie Lechene personal website",
+    "sourceUrl": "https://www.valerielechene.com/home/research"
+  },
+  {
+    "id": "valerie-lechene-comparing-low-incomes-in-france-and-the-united-kingdom-evidence-from-household-expenditure-surveys-1994",
+    "topicField": "",
+    "isEconomics": true,
+    "sourceType": "personal website",
+    "classificationConfidence": "High",
+    "classificationSource": "Author personal website",
+    "classificationNeedsReview": false,
+    "classificationScores": {
+      "Applied": 1
+    },
+    "classificationUclAuthors": [
+      "Valerie Lechene"
+    ],
+    "classificationUnresolvedAuthors": [],
+    "staff": [
+      "Valerie Lechene"
+    ],
+    "fields": [
+      "Applied"
+    ],
+    "title": "Comparing Low Incomes in France and the United Kingdom: Evidence from Household Expenditure Surveys",
+    "year": 1994,
+    "date": "1994-06-01",
+    "authors": [
+      "A. B. Atkinson",
+      "Karen Gardiner",
+      "Holly Sutherland",
+      "Valerie Lechene"
+    ],
+    "venue": "Contemporary Issues in Income Distribution Research",
+    "doi": "",
+    "url": "",
+    "type": "report",
+    "category": "Other",
+    "paperPrimaryField": "Applied",
+    "paperSecondaryField": "",
+    "paperFields": [
+      "Applied"
+    ],
+    "source": "Valerie Lechene personal website",
+    "sourceUrl": "https://www.valerielechene.com/home/research"
   }
 ]

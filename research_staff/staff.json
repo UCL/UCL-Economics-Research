@@ -17,7 +17,8 @@
     "surnameInitial": "A",
     "motherTongue": "UNSURE",
     "uclProfileStatus": "No UCL Profiles ID",
-    "personalWebsiteWorkingPaperStatus": "No personal webpage"
+    "personalWebsiteWorkingPaperStatus": "No personal webpage",
+    "researchKeywords": []
   },
   {
     "name": "Beatriz Armendariz",
@@ -96,7 +97,10 @@
     "surnameInitial": "A",
     "motherTongue": "UNSURE",
     "uclProfileStatus": "No UCL Profiles ID",
-    "personalWebsiteWorkingPaperStatus": "No personal webpage"
+    "personalWebsiteWorkingPaperStatus": "No personal webpage",
+    "researchKeywords": [
+      "Applied economics"
+    ]
   },
   {
     "name": "Hadar Avivi",
@@ -560,7 +564,10 @@
     "surnameInitial": "G",
     "motherTongue": "UNSURE",
     "biography": "François Gerard is a Professor of Economics at University College London and the Research Director of the Center for Tax Analysis in Developing Countries (TaxDev). His primary research interests lie at the intersection of Public Economics and Development Economics. His work studies questions related to social insurance, taxation, inequality, and the correction of externalities in low- and middle-income countries. It has been published in leading economic journals such as the American Economic Review, the Journal of Political Economy, the American Economic Journal: Economic Policy, the Journal of Development Economics, and Quantitative Economics. François received his PhD in Economics from UC Berkeley and began his academic career in the Department of Economics at Columbia University and Queen Mary University of London. François is an Associate Editor at the Journal of the European Economic Association. He is also an Affiliate of BREAD (Bureau for Research and Economic Analysis of Development), a Research Affiliate of the Centre for Economic Policy Research (CEPR), a Research Associate of the Institute for Fiscal Studies (IFS) and a Research Affiliate of the International Growth Centre (IGC).",
-    "researchKeywords": [],
+    "researchKeywords": [
+      "Public economics",
+      "Development economics"
+    ],
     "researchSummary": "",
     "teaching": "",
     "uclProfileUpdated": "2026-09-04T05:59:26.1328421+01:00",
@@ -613,7 +620,10 @@
     "surnameInitial": "G",
     "motherTongue": "UNSURE",
     "uclProfileStatus": "No UCL Profiles ID",
-    "personalWebsiteWorkingPaperStatus": "No personal webpage"
+    "personalWebsiteWorkingPaperStatus": "No personal webpage",
+    "researchKeywords": [
+      "Economic theory"
+    ]
   },
   {
     "name": "Hugh Goodacre",
@@ -633,7 +643,10 @@
     "surnameInitial": "G",
     "motherTongue": "UNSURE",
     "uclProfileStatus": "No UCL Profiles ID",
-    "personalWebsiteWorkingPaperStatus": "No personal webpage"
+    "personalWebsiteWorkingPaperStatus": "No personal webpage",
+    "researchKeywords": [
+      "History of economic thought"
+    ]
   },
   {
     "name": "Alexander Gorbenko",
@@ -739,7 +752,9 @@
     "surnameInitial": "H",
     "motherTongue": "UNSURE",
     "biography": "My current research uses unstructured data to build new measures of economic activity and behavior across a variety of applications, most often related to organizational economics and monetary policy. I maintain a&nbsp;Github page&nbsp;where I share code and lecture slides related to methodologies for the analysis of unstructured and high-dimensional data. I co-organize the monthly&nbsp;AMLEDS webinar that explores economic applications of machine learning. My research is supported by an ERC Conslidator Grant.",
-    "researchKeywords": [],
+    "researchKeywords": [
+      "Econometrics, Machine learning, Unstructured data"
+    ],
     "researchSummary": "Machine Learning, Large Language Models, AI, Monetary Policy, Organizational Economics",
     "teaching": "MSc Data Science and Public Policy",
     "uclProfileUpdated": "2026-09-04T05:57:43.6425095+01:00",
@@ -764,7 +779,9 @@
     "surnameInitial": "H",
     "motherTongue": "UNSURE",
     "biography": "Professor Jonas Hjort teaches and conducts research on firms, organizations, and workers—production, broadly construed—in developing countries, at University College London. See jonashjort.com for more info",
-    "researchKeywords": [],
+    "researchKeywords": [
+      "Development economics"
+    ],
     "researchSummary": "Development economics",
     "teaching": "Hjort teaches development economics at MSc and PhD level",
     "uclProfileUpdated": "2026-09-04T05:56:01.5702674+01:00",
@@ -903,11 +920,14 @@
     "googleScholarStatus": "Automated export unavailable; verify manually",
     "sourceUrl": "https://www.ucl.ac.uk/social-historical-sciences/economics/our-staff/academic-and-teaching-staff",
     "title": "Professor",
-    "personalUrl": "",
+    "personalUrl": "https://www.valerielechene.com",
     "surnameInitial": "L",
     "motherTongue": "UNSURE",
     "uclProfileStatus": "HTTPError: HTTP Error 404: Not Found",
-    "personalWebsiteWorkingPaperStatus": "No personal webpage"
+    "personalWebsiteWorkingPaperStatus": "No personal webpage",
+    "researchKeywords": [
+      "Applied economics, Consumption, Economics of the household"
+    ]
   },
   {
     "name": "Daniel Lewis",
@@ -959,7 +979,10 @@
     "surnameInitial": "L",
     "motherTongue": "UNSURE",
     "uclProfileStatus": "No UCL Profiles ID",
-    "personalWebsiteWorkingPaperStatus": "No personal webpage"
+    "personalWebsiteWorkingPaperStatus": "No personal webpage",
+    "researchKeywords": [
+      "Economics of education"
+    ]
   },
   {
     "name": "Attila Lindner",
@@ -1096,7 +1119,9 @@
     "surnameInitial": "N",
     "motherTongue": "UNSURE",
     "biography": "-Member of Centre for Teaching and Learning Economics (CTaLE)-A contributor to the CORE Econ project, Videos (32 k views)-Royal Economic Society’s Schools Outreach Sub-Committee chair-The Advanced Fellowship of the Higher Education Academy.--------------------------------------------------------------------------------------------------------My CV: https://liveuclac-my.sharepoint.com/:b:/g/personal/uctpnas_ucl_ac_uk/Ea0pcQ782R5Epv1gK677WR4BYy0cazVDLnvT0St-cbLIOg?e=cz4Bb6",
-    "researchKeywords": [],
+    "researchKeywords": [
+      "Economics pedagogy"
+    ],
     "researchSummary": "My research interest is on economics pedagogy, particularly in the ways in which economists can better communicate their ideas to the public. I have presented my research in various conferences such as CTREE (AEA), Advanced HE, Southern Economic Association, TeachECONerence and UCL Education Conference.",
     "teaching": "I teach the World Economy (Econ0007) &amp; Economic History(Econ0121), Independent Research Project (Econ0042) and workshops on economic writing and presentations (Skills Labs).",
     "uclProfileUpdated": "2026-09-04T05:51:27.3242584+01:00",
@@ -1151,7 +1176,10 @@
     "surnameInitial": "O",
     "motherTongue": "UNSURE",
     "uclProfileStatus": "No UCL Profiles ID",
-    "personalWebsiteWorkingPaperStatus": "No personal webpage"
+    "personalWebsiteWorkingPaperStatus": "No personal webpage",
+    "researchKeywords": [
+      "Applied economics, Environmental Economics, Industrial organization"
+    ]
   },
   {
     "name": "Alan Olivi",
@@ -1171,7 +1199,9 @@
     "surnameInitial": "O",
     "motherTongue": "UNSURE",
     "biography": "",
-    "researchKeywords": [],
+    "researchKeywords": [
+      "Macroeconomics"
+    ],
     "researchSummary": "",
     "teaching": "",
     "uclProfileUpdated": "2026-09-04T05:52:46.4321405+01:00",
@@ -1224,7 +1254,10 @@
     "surnameInitial": "P",
     "motherTongue": "UNSURE",
     "uclProfileStatus": "No UCL Profiles ID",
-    "personalWebsiteWorkingPaperStatus": "No personal webpage"
+    "personalWebsiteWorkingPaperStatus": "No personal webpage",
+    "researchKeywords": [
+      "Financial Economics"
+    ]
   },
   {
     "name": "Suphanit Piyapromdee",
@@ -1476,7 +1509,9 @@
     "surnameInitial": "R",
     "motherTongue": "UNSURE",
     "biography": "Victor is a&nbsp; quantitative macroeconomists with wide interests from fluctuations to credit and banking to demographics and policy determination. He is a Professor at the University of Pennsylvania that visits UCL regularly in the late fall and the late Spring. His approach is to write explicit models, typically of the heternogenous agents variety, and addresses quantitative questions with those models. He has a large number of coauthors and students.&nbsp;",
-    "researchKeywords": [],
+    "researchKeywords": [
+      "Macroeconomics"
+    ],
     "researchSummary": "",
     "teaching": "In UCL he teaches one half of the heterogeneous agents macro course and advises MsC students on their dissertations and talks to all PhD students about their work. In Penn he teaches undergradute Macro Public Finance (including climate change), part of the first year Macro sequence and a topics course on Macro Labor and the Family, besides systematica",
     "uclProfileUpdated": "2026-09-04T05:48:55.8017527+01:00",
@@ -1612,7 +1647,10 @@
     "motherTongue": "UNSURE",
     "uclProfileUpdated": "2026-09-04T06:00:24.1061344+01:00",
     "uclProfileStatus": "Downloaded",
-    "personalWebsiteWorkingPaperStatus": "No personal webpage"
+    "personalWebsiteWorkingPaperStatus": "No personal webpage",
+    "researchKeywords": [
+      "Economic theory, Financial economics, Economics of information"
+    ]
   },
   {
     "name": "Michael Thaler",
@@ -1758,7 +1796,10 @@
     "surnameInitial": "W",
     "motherTongue": "UNSURE",
     "uclProfileStatus": "No UCL Profiles ID",
-    "personalWebsiteWorkingPaperStatus": "No personal webpage"
+    "personalWebsiteWorkingPaperStatus": "No personal webpage",
+    "researchKeywords": [
+      "Mathematical economics"
+    ]
   },
   {
     "name": "Ming Yang",
@@ -1808,7 +1849,9 @@
     "surnameInitial": "Y",
     "motherTongue": "UNSURE",
     "biography": "",
-    "researchKeywords": [],
+    "researchKeywords": [
+      "Financial Economics"
+    ],
     "researchSummary": "",
     "teaching": "",
     "uclProfileUpdated": "2026-09-04T05:58:21.4224716+01:00",
@@ -1863,7 +1906,9 @@
     "surnameInitial": "Z",
     "motherTongue": "UNSURE",
     "biography": "Andrei Zeleneev is a Lecturer (Assistant Professor) in Economics at UCL. He joined CeMMAP and UCL in fall 2020 after completing his PhD at Princeton University. His research interests lie broadly in Econometrics and Applied Econometrics. His current work includes research on unobserved heterogeneity in network and panel models, non-standard inference, and on models with errors-in-variables.",
-    "researchKeywords": [],
+    "researchKeywords": [
+      "Econometrics"
+    ],
     "researchSummary": "",
     "teaching": "",
     "uclProfileUpdated": "2026-09-04T05:54:19.3216065+01:00",
