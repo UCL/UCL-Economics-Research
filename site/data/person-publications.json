@@ -38573,5 +38573,539 @@
       ],
       "other": []
     }
+  },
+  {
+    "slug": "valerie-lechene",
+    "name": "Valerie Lechene",
+    "title": "Professor",
+    "profileUrl": "https://profiles.ucl.ac.uk/4027-valerie-lechene",
+    "email": "v.lechene@ucl.ac.uk",
+    "publications": {
+      "journal": [
+        {
+          "id": "10-1086-717892",
+          "title": "OLS estimation of the intra-household distribution of expenditure",
+          "year": 2022,
+          "date": "2022",
+          "authors": [
+            "Valerie Lechene",
+            "Krishna Pendakur",
+            "Alex Wolf"
+          ],
+          "venue": "Journal of Political Economy",
+          "url": "https://doi.org/10.1086/717892",
+          "type": "article"
+        },
+        {
+          "id": "10-1111-1475-5890-12298",
+          "title": "The decline of home-cooked food",
+          "year": 2022,
+          "date": "2022-06-01",
+          "authors": [
+            "Rachel Griffith",
+            "Wenchao (Michelle) Jin",
+            "Valerie Lechene"
+          ],
+          "venue": "Fiscal Studies",
+          "url": "https://doi.org/10.1111/1475-5890.12298",
+          "type": "article"
+        },
+        {
+          "id": "10-1093-ej-ueaa056",
+          "title": "The Effect of Gender-Targeted Conditional Cash Transfers on Household Expenditures: Evidence from a Randomized Experiment",
+          "year": 2020,
+          "date": "2020-10-01",
+          "authors": [
+            "Alex Armand",
+            "Orazio Attanasio",
+            "Pedro Carneiro",
+            "Valerie Lechene"
+          ],
+          "venue": "The Economic Journal",
+          "url": "https://doi.org/10.1093/ej/ueaa056",
+          "type": "article"
+        },
+        {
+          "id": "10-1086-674968",
+          "title": "Efficient Responses to Targeted Cash Transfers",
+          "year": 2014,
+          "date": "2014",
+          "authors": [
+            "Orazio Attanasio",
+            "Valerie Lechene"
+          ],
+          "venue": "Journal of Political Economy",
+          "url": "https://doi.org/10.1086/674968",
+          "type": "article"
+        },
+        {
+          "id": "10-1111-sjoe-12004",
+          "title": "Health Selection and the Effect of Smoking on Mortality",
+          "year": 2013,
+          "date": "2013-07-01",
+          "authors": [
+            "Jerome Adda",
+            "Valerie Lechene"
+          ],
+          "venue": "Scandinavian Journal of Economics",
+          "url": "https://doi.org/10.1111/sjoe.12004",
+          "type": "article"
+        },
+        {
+          "id": "10-1016-j-jdeveco-2013-03-009",
+          "title": "Welfare consequences of food price increases: Evidence from rural Mexico",
+          "year": 2013,
+          "date": "2013",
+          "authors": [
+            "Orazio Attanasio",
+            "Vincenzo Di Maro",
+            "Valerie Lechene",
+            "David Phillips"
+          ],
+          "venue": "Journal of Development Economics",
+          "url": "https://doi.org/10.1016/j.jdeveco.2013.03.009",
+          "type": "article"
+        },
+        {
+          "id": "10-1920-wp-ifs-2008-0814",
+          "title": "Non cooperative household demand",
+          "year": 2011,
+          "date": "2011-03-01",
+          "authors": [
+            "Valerie Lechene",
+            "Ian Preston"
+          ],
+          "venue": "Journal of Economic Theory",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0022053110001910",
+          "type": "article"
+        },
+        {
+          "id": "10-1111-j-1468-0297-2009-02311-x",
+          "title": "Distributional Effects in Household Models: Separate Spheres and Income Pooling",
+          "year": 2010,
+          "date": "2010-06-01",
+          "authors": [
+            "Martin Browning",
+            "Pierre-Andre Chiappori",
+            "Valerie Lechene"
+          ],
+          "venue": "The Economic Journal",
+          "url": "https://doi.org/10.1111/j.1468-0297.2009.02311.x",
+          "type": "article"
+        },
+        {
+          "id": "10-1007-s11150-005-6694-2",
+          "title": "Collective and Unitary Models: A Clarification",
+          "year": 2006,
+          "date": "2006",
+          "authors": [
+            "Martin Browning",
+            "Pierre-Andre Chiappori",
+            "Valerie Lechene"
+          ],
+          "venue": "Review of Economics of the Household",
+          "url": "https://doi.org/10.1007/s11150-005-6694-2",
+          "type": "article"
+        },
+        {
+          "id": "10-1007-s11150-006-0002-7",
+          "title": "Collective Models of Labor Supply with Nonconvex Budget Sets and Nonparticipation: A Calibration Approach",
+          "year": 2006,
+          "date": "2006",
+          "authors": [
+            "Olivier Bargain",
+            "Miriam Beblo",
+            "Denis Beninger",
+            "Richard Blundell",
+            "Raquel Carrasco",
+            "Maria-Concetta Chiuri",
+            "Francois Laisney",
+            "Valerie Lechene",
+            "Ernesto Longobardi",
+            "Nicolas Moreau",
+            "Michal Myck",
+            "Javier Ruiz-Castillo",
+            "Frederic Vermeulen"
+          ],
+          "venue": "Review of Economics of the Household",
+          "url": "https://doi.org/10.1007/s11150-006-0002-7",
+          "type": "article"
+        },
+        {
+          "id": "10-1007-s11150-006-0001-8",
+          "title": "Does the Representation of Household Behavior Matter for Welfare Analysis of Tax-benefit Policies? An Introduction",
+          "year": 2006,
+          "date": "2006",
+          "authors": [
+            "Olivier Bargain",
+            "Miriam Beblo",
+            "Denis Beninger",
+            "Richard Blundell",
+            "Raquel Carrasco",
+            "Maria-Concetta Chiuri",
+            "Francois Laisney",
+            "Valerie Lechene",
+            "Ernesto Longobardi",
+            "Nicolas Moreau",
+            "Michal Myck",
+            "Javier Ruiz-Castillo",
+            "Frederic Vermeulen"
+          ],
+          "venue": "Review of Economics of the Household",
+          "url": "https://doi.org/10.1007/s11150-006-0001-8",
+          "type": "article"
+        },
+        {
+          "id": "10-1007-s11150-006-0004-5",
+          "title": "Evaluating the Move to a Linear Tax System in Germany and Other European Countries",
+          "year": 2006,
+          "date": "2006",
+          "authors": [
+            "Denis Beninger",
+            "Olivier Bargain",
+            "Miriam Beblo",
+            "Richard Blundell",
+            "Raquel Carrasco",
+            "Maria-Concetta Chiuri",
+            "Francois Laisney",
+            "Valerie Lechene",
+            "Ernesto Longobardi",
+            "Nicolas Moreau",
+            "Michal Myck",
+            "Javier Ruiz-Castillo",
+            "Frederic Vermeulen"
+          ],
+          "venue": "Review of Economics of the Household",
+          "url": "https://doi.org/10.1007/s11150-006-0004-5",
+          "type": "article"
+        },
+        {
+          "id": "10-1007-s11150-006-0003-6",
+          "title": "The Working Families’ Tax Credit and Some European Tax Reforms in a Collective Setting",
+          "year": 2006,
+          "date": "2006",
+          "authors": [
+            "Olivier Bargain",
+            "Miriam Beblo",
+            "Denis Beninger",
+            "Richard Blundell",
+            "Raquel Carrasco",
+            "Maria-Concetta Chiuri",
+            "Francois Laisney",
+            "Valerie Lechene",
+            "Ernesto Longobardi",
+            "Nicolas Moreau",
+            "Michal Myck",
+            "Javier Ruiz-Castillo",
+            "Frederic Vermeulen"
+          ],
+          "venue": "Review of Economics of the Household",
+          "url": "https://doi.org/10.1007/s11150-006-0003-6",
+          "type": "article"
+        },
+        {
+          "id": "10-1023-a-1021895313920",
+          "title": "Children and Demand: Direct and Non-Direct Effects",
+          "year": 2003,
+          "date": "2003",
+          "authors": [
+            "Martin Browning",
+            "Valerie Lechene"
+          ],
+          "venue": "Review of Economics of the Household",
+          "url": "https://doi.org/10.1023/a:1021895313920",
+          "type": "article"
+        },
+        {
+          "id": "10-1006-redy-2002-0191",
+          "title": "Tests of Income Pooling in Household Decisions",
+          "year": 2002,
+          "date": "2002-10-01",
+          "authors": [
+            "Orazio Attanasio",
+            "Valerie Lechene"
+          ],
+          "venue": "Review of Economic Dynamics",
+          "url": "https://doi.org/10.1006/redy.2002.0191",
+          "type": "article"
+        },
+        {
+          "id": "10-1086-261964",
+          "title": "Income and Outcomes: A Structural Model of Intrahousehold Allocation",
+          "year": 1994,
+          "date": "1994",
+          "authors": [
+            "Martin Browning",
+            "Francois Bourguignon",
+            "Pierre-Andre Chiappori",
+            "Valerie Lechene"
+          ],
+          "venue": "Journal of Political Economy",
+          "url": "https://doi.org/10.1086/261964",
+          "type": "article"
+        },
+        {
+          "id": "https-openalex-org-w3122886269",
+          "title": "Intra-Household Allocation of Consumption: A Model and Some Evidence from French Data",
+          "year": 1993,
+          "date": "1993",
+          "authors": [
+            "Francois Bourguignon",
+            "Pierre-Andre Chiappori",
+            "Martin Browning",
+            "Valerie Lechene"
+          ],
+          "venue": "Annales d'Economie et de Statistiques",
+          "url": "",
+          "type": "article"
+        },
+        {
+          "id": "valerie-lechene-une-revue-de-la-litterature-sur-les-echelles-d-equivalence-1993",
+          "title": "Une revue de la littérature sur les échelles d'équivalence",
+          "year": 1993,
+          "date": "1993",
+          "authors": [
+            "Valerie Lechene"
+          ],
+          "venue": "Economie et Prévision",
+          "url": "",
+          "type": "article"
+        },
+        {
+          "id": "10-3406-ecop-1991-5223",
+          "title": "Offre de travail des couples et fiscalité",
+          "year": 1991,
+          "date": "1991",
+          "authors": [
+            "Valerie Lechene"
+          ],
+          "venue": "Economie et Prévision",
+          "url": "https://doi.org/10.3406/ecop.1991.5223",
+          "type": "article"
+        }
+      ],
+      "working": [
+        {
+          "id": "10-1920-wp-ifs-2025-2625",
+          "title": "Gender inequality in expenditure: Great Britain 1978 to 2019",
+          "year": 2025,
+          "date": "2025-07-23",
+          "authors": [
+            "Richard Blundell",
+            "Heidi Karjalainen",
+            "Valerie Lechene",
+            "Krishna Pendakur"
+          ],
+          "venue": "IFS Working Paper 25/26",
+          "url": "https://ifs.org.uk/publications/gender-inequality-expenditure-great-britain-1978-2019",
+          "type": "report"
+        },
+        {
+          "id": "valerie-lechene-documenting-individual-poverty-in-south-africa-and-ethiopia-undated",
+          "title": "Documenting individual poverty in South Africa and Ethiopia",
+          "year": 0,
+          "date": "",
+          "authors": [
+            "Valerie Lechene",
+            "Tom Harris"
+          ],
+          "venue": "Current research",
+          "url": "",
+          "type": "working paper"
+        }
+      ],
+      "other": [
+        {
+          "id": "valerie-lechene-all-in-the-family-estimating-resource-allocation-within-households-2019",
+          "title": "All in the family: Estimating resource allocation within households",
+          "year": 2019,
+          "date": "2019-05-23",
+          "authors": [
+            "Isis Gaddis",
+            "Talip Kilic",
+            "Valerie Lechene",
+            "Alex Wolf"
+          ],
+          "venue": "World Bank blog",
+          "url": "https://blogs.worldbank.org/en/developmenttalk/all-family-estimating-resource-allocation-within-households",
+          "type": "article"
+        },
+        {
+          "id": "valerie-lechene-inside-the-household-poor-children-women-and-men-2018",
+          "title": "Inside the Household: Poor children, women and men",
+          "year": 2018,
+          "date": "2018",
+          "authors": [
+            "Valerie Lechene"
+          ],
+          "venue": "Poverty and Shared Prosperity 2018",
+          "url": "https://www.worldbank.org/en/publication/poverty-and-shared-prosperity-2018",
+          "type": "report"
+        },
+        {
+          "id": "10-7208-chicago-9780226194714-003-0006",
+          "title": "Using the CE to Model Household Demand",
+          "year": 2015,
+          "date": "2015",
+          "authors": [
+            "Laura Blow",
+            "Valerie Lechene",
+            "Peter Levell"
+          ],
+          "venue": "Improving the Measurement of Consumer Expenditures",
+          "url": "https://discovery.ucl.ac.uk/id/eprint/10142975/",
+          "type": "book-chapter"
+        },
+        {
+          "id": "https-openalex-org-w2244911352",
+          "title": "Labour Market Participation of Women and Fertility: the Effect of Social Policies – Comments",
+          "year": 2005,
+          "date": "2005",
+          "authors": [
+            "Valerie Lechene"
+          ],
+          "venue": "Women at Work: An Economic Perspective",
+          "url": "http://discovery.ucl.ac.uk/83302/",
+          "type": "book-chapter"
+        },
+        {
+          "id": "valerie-lechene-demand-analysis-of-the-national-food-survey-2002",
+          "title": "Demand analysis of the National Food Survey",
+          "year": 2002,
+          "date": "2002",
+          "authors": [
+            "Andrew Chesher",
+            "Valerie Lechene"
+          ],
+          "venue": "Report prepared for the Food Standards Agency",
+          "url": "",
+          "type": "report"
+        },
+        {
+          "id": "valerie-lechene-income-and-price-elasticities-of-demand-for-food-2001",
+          "title": "Income and Price Elasticities of Demand for Food",
+          "year": 2001,
+          "date": "2001",
+          "authors": [
+            "Valerie Lechene"
+          ],
+          "venue": "Annual Report on Food Expenditure, Consumption and Nutrient Intakes",
+          "url": "",
+          "type": "report"
+        },
+        {
+          "id": "https-openalex-org-w2532705605",
+          "title": "Income and Price Elasticities of Demand for Meat, Meat Products and Fish",
+          "year": 2000,
+          "date": "2000",
+          "authors": [
+            "Valerie Lechene"
+          ],
+          "venue": "Annual Report on Food Expenditure, Consumption and Nutrient Intakes",
+          "url": "http://discovery.ucl.ac.uk/83289/",
+          "type": "report"
+        },
+        {
+          "id": "valerie-lechene-comparing-poverty-rates-across-countries-a-case-study-of-france-and-the-united-kingdom-1998",
+          "title": "Comparing Poverty Rates Across Countries: A Case Study of France and the United Kingdom",
+          "year": 1998,
+          "date": "1998",
+          "authors": [
+            "A. B. Atkinson",
+            "Karen Gardiner",
+            "Valerie Lechene",
+            "Holly Sutherland"
+          ],
+          "venue": "The Distribution of Welfare and Household Production: International Perspectives",
+          "url": "",
+          "type": "book-chapter"
+        },
+        {
+          "id": "10-1920-re-ifs-2024-0531",
+          "title": "Income and Food Expenditure 1987-1997",
+          "year": 1998,
+          "date": "1998",
+          "authors": [
+            "Andrew Chesher",
+            "Valerie Lechene"
+          ],
+          "venue": "Household Food Consumption and Expenditure 1997",
+          "url": "",
+          "type": "report"
+        },
+        {
+          "id": "valerie-lechene-l-evaluation-des-politiques-publiques-d-insertion-des-jeunes-sur-le-marche-du-travail-questions-microeconomiques-1996",
+          "title": "L'évaluation des politiques publiques d'insertion des jeunes sur le marché du travail: questions microéconomiques",
+          "year": 1996,
+          "date": "1996",
+          "authors": [
+            "Valerie Lechene",
+            "Thierry Magnac"
+          ],
+          "venue": "Cahier Travail et Emploi",
+          "url": "",
+          "type": "report"
+        },
+        {
+          "id": "valerie-lechene-salaires-experience-et-accidents-1996",
+          "title": "Salaires, Expérience et Accidents",
+          "year": 1996,
+          "date": "1996",
+          "authors": [
+            "Valerie Lechene",
+            "Thierry Magnac"
+          ],
+          "venue": "Trajectoires Sociales, Inégalités et Conditions de Vie",
+          "url": "",
+          "type": "book-chapter"
+        },
+        {
+          "id": "https-openalex-org-w4299123604",
+          "title": "Insertion des jeunes sur le marché du travail: Outils d'analyse et analyses empiriques",
+          "year": 1995,
+          "date": "1995-04-01",
+          "authors": [
+            "Valerie Lechene",
+            "Thierry Magnac",
+            "Jean-Marc Robin",
+            "Michael Visser"
+          ],
+          "venue": "Report for the Délégation Interministérielle à l'Insertion des Jeunes",
+          "url": "https://hal.inrae.fr/hal-02852409",
+          "type": "report"
+        },
+        {
+          "id": "valerie-lechene-comparing-low-incomes-in-france-and-the-united-kingdom-evidence-from-household-expenditure-surveys-1994",
+          "title": "Comparing Low Incomes in France and the United Kingdom: Evidence from Household Expenditure Surveys",
+          "year": 1994,
+          "date": "1994-06-01",
+          "authors": [
+            "A. B. Atkinson",
+            "Karen Gardiner",
+            "Holly Sutherland",
+            "Valerie Lechene"
+          ],
+          "venue": "Contemporary Issues in Income Distribution Research",
+          "url": "",
+          "type": "report"
+        },
+        {
+          "id": "valerie-lechene-the-effects-of-differences-in-housing-and-health-care-systems-on-international-comparisons-of-income-distributions-1994",
+          "title": "The effects of differences in housing and health care systems on international comparisons of income distributions",
+          "year": 1994,
+          "date": "1994",
+          "authors": [
+            "Jane Falkingham",
+            "Karen Gardiner",
+            "John Hills",
+            "Holly Sutherland",
+            "Valerie Lechene"
+          ],
+          "venue": "Eurostat Report",
+          "url": "http://eprints.lse.ac.uk/5589/",
+          "type": "report"
+        }
+      ]
+    }
   }
 ]

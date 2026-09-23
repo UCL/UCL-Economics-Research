@@ -33,6 +33,10 @@ for (const record of records) {
   person.personalUrl = String(record['Personal webpage'] || '').trim();
   person.primaryField = String(record['Primary field']).trim();
   person.secondaryField = String(record['Secondary field'] || '').trim();
+  person.researchKeywords = String(record['Research keywords'] || '')
+    .split(';')
+    .map((value) => value.trim())
+    .filter(Boolean);
   person.motherTongue = String(record['Mother tongue'] || 'UNSURE').trim();
   person.profileUrl = String(record['UCL profile'] || person.profileUrl || '').trim();
   person.classificationStatus = 'Edited in research staff workbook';
