@@ -56,8 +56,8 @@ function PeopleGrid({ matches }: { matches: Person[] }) {
           <p>{person.title}</p>
           <div className="person-links">
             {person.profileUrl && <a href={person.profileUrl} target="_blank" rel="noreferrer">UCL profile</a>}
-            <a href={`mailto:${person.email}`}>{person.email}</a>
             {publicationIndex.has(person.name) && <a href={sitePath(`/people/${publicationIndex.get(person.name)!.slug}/`)}>Publications</a>}
+            <a href={`mailto:${person.email}`}>{person.email}</a>
           </div>
           <p className="research-keywords">
             <span>{researchAreas.join(' · ')}</span>
