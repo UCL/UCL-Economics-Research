@@ -430,6 +430,28 @@ main {
 .resource-list a:hover strong {
   text-decoration-thickness: 2px;
 }
+.research-computing-heading { margin-bottom: 20px; }
+.research-computing-heading p,
+.research-computing-heading h1 { margin: 0; }
+.research-computing-title-row { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; }
+.research-computing-title-row h1 { font-size: clamp(1.55rem, 2.4vw, 2.15rem); }
+.research-computing-title-row > a { font-weight: 700; white-space: nowrap; }
+.research-computing-tabs { display: flex; overflow-x: auto; margin-bottom: 28px; border-bottom: 1px solid var(--border); }
+.research-computing-tabs a { flex: 0 0 auto; padding: 12px 16px; color: #455563; font-weight: 700; text-decoration: none; white-space: nowrap; }
+.research-computing-tabs a:hover { color: #001b44; background: #f3f5f6; }
+.research-computing-tabs a.active { color: #001b44; box-shadow: inset 0 -4px #005ea8; }
+.research-computing-content { max-width: 920px; }
+.research-computing-content > h2 { margin-bottom: 15px; font-size: clamp(1.2rem, 1.8vw, 1.55rem); }
+.research-computing-table-wrap { overflow-x: auto; border-top: 3px solid #001b44; border-left: 1px solid var(--border); }
+.research-computing-table { width: 100%; min-width: 620px; border-collapse: collapse; }
+.research-computing-table th,
+.research-computing-table td { padding: 12px 14px; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
+.research-computing-table th { background: #f3f5f6; color: #344655; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.055em; text-transform: uppercase; }
+.research-computing-table th:first-child,
+.research-computing-table td:first-child { width: 44%; }
+.research-computing-clusters-table th:first-child,
+.research-computing-clusters-table td:first-child { width: 30%; }
+.research-computing-coming-soon { margin: 0; color: #52616e; font-size: 1.1rem; }
 .publication-count,
 .publication-source {
   color: #52616e;
@@ -453,6 +475,9 @@ main {
 .coming-soon p {
   color: #52616e;
   font-size: 1.1rem;
+}
+@media (max-width: 620px) {
+  .research-computing-title-row { align-items: flex-start; flex-direction: column; gap: 7px; }
 }
 .people-heading {
   display: flex;
