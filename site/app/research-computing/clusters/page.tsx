@@ -21,11 +21,11 @@ export default function Page() {
             <tr>
               <td><strong><a href="https://ssh.condenser.arc.ucl.ac.uk" target="_blank" rel="noreferrer">Condenser</a></strong></td>
               <td>
-                <a href={sitePath('/research-computing/condenser/connect.md')}>Connect to VM</a>
+                <a href={sitePath('/research-computing/clusters/condenser/connect/')}>Connect to VM</a>
                 {' · '}
-                <a href={sitePath('/research-computing/condenser/software.md')}>Install software</a>
+                <a href={sitePath('/research-computing/clusters/condenser/software/')}>Install software</a>
                 {' · '}
-                <a href={sitePath('/research-computing/condenser/intel-nag-condenser.md')}>Intel oneAPI and NAG</a>
+                <a href={sitePath('/research-computing/clusters/condenser/intel-nag/')}>Intel oneAPI and NAG</a>
               </td>
             </tr>
             <tr><td><strong>Computer Science computing services</strong></td><td>Coming soon — available services and eligibility</td></tr>
