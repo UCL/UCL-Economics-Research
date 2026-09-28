@@ -1,6 +1,6 @@
-# R and RStudio
+# Stata: installation and licence
 
-Guidance for installing, licensing, and starting R and RStudio will be added for each supported environment.
+Choose the environment where you want to use Stata.
 
 ## Myriad
 
@@ -57,3 +57,4 @@ Coming soon.
 ### Startup
 
 Coming soon.
+

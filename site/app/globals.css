@@ -460,6 +460,8 @@ main {
 .research-computing-guide ol { margin: 12px 0 20px; padding-left: 1.75rem; list-style: decimal; }
 .research-computing-guide ul { margin: 12px 0 20px; padding-left: 1.75rem; list-style: disc; }
 .research-computing-guide li + li { margin-top: 5px; }
+.software-resource-list { margin: 16px 0 0; padding-left: 1.5rem; list-style: disc; }
+.software-resource-list li + li { margin-top: 8px; }
 .publication-count,
 .publication-source {
   color: #52616e;

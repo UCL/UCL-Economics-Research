@@ -1,6 +1,6 @@
-# Julia
+# R and RStudio: installation and licence
 
-Guidance for installing, licensing, and starting Julia will be added for each supported environment.
+Choose the environment where you want to use R and RStudio.
 
 ## Myriad
 
@@ -57,3 +57,4 @@ Coming soon.
 ### Startup
 
 Coming soon.
+
