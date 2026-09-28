@@ -14,7 +14,7 @@ const tabs: ReadonlyArray<{ label: ResearchComputingSection; path: string }> = [
   { label: 'FAQ', path: '/research-computing/faq/' },
 ];
 
-export function ResearchComputingPage({ active, children }: { active: ResearchComputingSection; children: ReactNode }) {
+export function ResearchComputingPage({ active, heading = active, children }: { active: ResearchComputingSection; heading?: string; children: ReactNode }) {
   return (
     <div className="site">
       <BrandHeader />
@@ -35,7 +35,7 @@ export function ResearchComputingPage({ active, children }: { active: ResearchCo
           ))}
         </nav>
         <section className="research-computing-content">
-          <h2>{active}</h2>
+          <h2>{heading}</h2>
           {children}
         </section>
       </main>
