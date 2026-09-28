@@ -18,7 +18,16 @@ export default function Page() {
               <td><strong><a href="https://www.rc.ucl.ac.uk/docs/Clusters/Kathleen" target="_blank" rel="noreferrer">Kathleen</a></strong></td>
               <td><a href={sitePath('/research-computing/clusters/myriad/')}>Getting started, file transfer, interactive jobs</a></td>
             </tr>
-            <tr><td><strong>Condenser</strong></td><td>Connect to a VM · Install software · Intel oneAPI and NAG · Create a VM (administrators)</td></tr>
+            <tr>
+              <td><strong><a href="https://ssh.condenser.arc.ucl.ac.uk" target="_blank" rel="noreferrer">Condenser</a></strong></td>
+              <td>
+                <a href={sitePath('/research-computing/condenser/connect.md')}>Connect to VM</a>
+                {' · '}
+                <a href={sitePath('/research-computing/condenser/software.md')}>Install software</a>
+                {' · '}
+                <a href={sitePath('/research-computing/condenser/intel-nag-condenser.md')}>Intel oneAPI and NAG</a>
+              </td>
+            </tr>
             <tr><td><strong>Computer Science computing services</strong></td><td>Coming soon — available services and eligibility</td></tr>
           </tbody>
         </table>
