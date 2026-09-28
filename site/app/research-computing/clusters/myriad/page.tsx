@@ -1,13 +1,13 @@
 import type { Metadata } from 'next';
 import { ResearchComputingPage } from '@/components/research-computing-page';
 
-export const metadata: Metadata = { title: 'Using Myriad | Research Computing | UCL Economics Research' };
+export const metadata: Metadata = { title: 'Using Myriad or Kathleen | Research Computing | UCL Economics Research' };
 
 const Code = ({ children }: { children: string }) => <pre><code>{children}</code></pre>;
 
 export default function Page() {
   return (
-    <ResearchComputingPage active="Clusters" heading="Using Myriad">
+    <ResearchComputingPage active="Clusters" heading="Using Myriad or Kathleen">
       <article className="research-computing-guide">
         <p>Myriad is UCL&apos;s Linux-based high-performance computing cluster. This page covers the Economics access point and a few common tasks.</p>
         <blockquote><strong>Needs service-owner review:</strong> migrated from the Economics-HPC wiki on 4 September 2026. Verify hostnames, commands, storage paths, and access rules against the <a href="https://www.rc.ucl.ac.uk/docs/">official Myriad documentation</a> before relying on them.</blockquote>

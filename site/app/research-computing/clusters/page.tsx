@@ -12,11 +12,11 @@ export default function Page() {
           <tbody>
             <tr>
               <td><strong><a href="https://www.rc.ucl.ac.uk/docs/Clusters/Myriad" target="_blank" rel="noreferrer">Myriad</a></strong></td>
-              <td><a href={sitePath('/research-computing/clusters/myriad/')}>Getting started, file transfer, interactive jobs</a>, and Stata</td>
+              <td><a href={sitePath('/research-computing/clusters/myriad/')}>Getting started, file transfer, interactive jobs</a></td>
             </tr>
             <tr>
               <td><strong><a href="https://www.rc.ucl.ac.uk/docs/Clusters/Kathleen" target="_blank" rel="noreferrer">Kathleen</a></strong></td>
-              <td>Coming soon — overview, access, login, storage, and jobs</td>
+              <td><a href={sitePath('/research-computing/clusters/myriad/')}>Getting started, file transfer, interactive jobs</a></td>
             </tr>
             <tr><td><strong>Condenser</strong></td><td>Connect to a VM · Install software · Intel oneAPI and NAG · Create a VM (administrators)</td></tr>
             <tr><td><strong>Computer Science computing services</strong></td><td>Coming soon — available services and eligibility</td></tr>
