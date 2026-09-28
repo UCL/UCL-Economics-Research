@@ -1,12 +1,5 @@
 # Intel oneAPI and NAG on Condenser
 
-This guide collects the Intel Fortran, MPI, and NAG notes migrated from the
-[UCL Condenser repository](https://github.com/UCL/Condenser) and its wiki on
-4 September 2026.
-
-> **Needs technical review:** installer names, compiler commands, library
-> versions, licence configuration, and compiler flags are version-sensitive.
-> Confirm them before using this guide for production work.
 
 ## Choose system-wide or user-space installation
 
@@ -125,17 +118,3 @@ aggressive, architecture-specific optimisation and deprecated diagnostic
 flags. Add compiler flags incrementally after first producing a correct,
 portable build.
 
-## Previously reported Condenser limitations
-
-The repository recorded the following issues without dates or resolutions:
-
-- Conda did not work, although `pip` did.
-- Large Jupyter notebooks—roughly 40–50 MB—could fail to save automatically.
-- Browser uploads were size-limited, with command-line downloads used as a
-  workaround.
-- Interactive oneAPI installers failed, leading users to use silent mode.
-
-These are historical reports, not confirmed current limitations. Re-test them
-and report reproducible failures through the current Condenser support route.
-
-Last reviewed: migration review pending.

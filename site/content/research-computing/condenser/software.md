@@ -1,13 +1,7 @@
 # Install software on a Condenser Ubuntu VM
 
-This administrator-oriented guide collects the software setup notes from the
-Economics-HPC wiki. It assumes Ubuntu 22.04 or 24.04 and an account with `sudo`
+This guide assumes Ubuntu 22.04 or 24.04 and an account with `sudo`
 access.
-
-> **Draft—not a copy-and-paste build script:** package versions and download
-> addresses change. Review every command, install only what the VM needs, and
-> follow UCL security and network policies. The original page was migrated on
-> 4 September 2026 and still needs technical verification.
 
 ## Base development tools
 
@@ -114,4 +108,3 @@ access-control design.
 - [ ] System and application updates have an identified owner.
 - [ ] A recovery or rebuild procedure has been recorded.
 
-Last reviewed: migration review pending.
