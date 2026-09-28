@@ -1,6 +1,4 @@
 import type { ReactNode } from 'react';
-import { readFileSync } from 'node:fs';
-import path from 'node:path';
 import { ResearchComputingPage } from '@/components/research-computing-page';
 
 const inlineHtml = (source: string) => source
@@ -70,8 +68,7 @@ function renderMarkdown(source: string) {
   return blocks;
 }
 
-export function MarkdownGuide({ file, heading }: { file: string; heading: string }) {
-  const source = readFileSync(path.join(process.cwd(), 'public', 'research-computing', 'condenser', file), 'utf8');
+export function MarkdownGuide({ source, heading }: { source: string; heading: string }) {
   return (
     <ResearchComputingPage active="Clusters" heading={heading}>
       <article className="research-computing-guide">{renderMarkdown(source)}</article>
