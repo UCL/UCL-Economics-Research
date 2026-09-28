@@ -10,6 +10,7 @@ const software = [
   ['Stata', 'stata'],
   ['R and RStudio', 'r-rstudio'],
   ['Python', 'python'],
+  ['VS Code', 'vscode'],
 ] as const;
 
 export default function Page() {
