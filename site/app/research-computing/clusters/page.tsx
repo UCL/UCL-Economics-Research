@@ -28,7 +28,6 @@ export default function Page() {
                 <a href={sitePath('/research-computing/clusters/condenser/intel-nag/')}>Intel oneAPI and NAG</a>
               </td>
             </tr>
-            <tr><td><strong>Computer Science computing services</strong></td><td>Coming soon — available services and eligibility</td></tr>
           </tbody>
         </table>
       </div>
