@@ -47,14 +47,22 @@ function renderMarkdown(source: string) {
 
     if (/^- /.test(line)) {
       const items: string[] = [];
-      while (index < lines.length && /^- /.test(lines[index])) items.push(lines[index++].replace(/^- /, '').replace(/^\[[ x]\]\s*/, ''));
+      while (index < lines.length && /^- /.test(lines[index])) {
+        const item = [lines[index++].replace(/^- /, '').replace(/^\[[ x]\]\s*/, '')];
+        while (index < lines.length && lines[index].trim() && !/^- |^\d+\. |^(#{2,4})\s|^```|^>/.test(lines[index])) item.push(lines[index++].trim());
+        items.push(item.join(' '));
+      }
       blocks.push(<ul key={`list-${index}`}>{items.map((item, itemIndex) => <li key={itemIndex}><Inline>{item}</Inline></li>)}</ul>);
       continue;
     }
 
     if (/^\d+\. /.test(line)) {
       const items: string[] = [];
-      while (index < lines.length && /^\d+\. /.test(lines[index])) items.push(lines[index++].replace(/^\d+\. /, ''));
+      while (index < lines.length && /^\d+\. /.test(lines[index])) {
+        const item = [lines[index++].replace(/^\d+\. /, '')];
+        while (index < lines.length && lines[index].trim() && !/^- |^\d+\. |^(#{2,4})\s|^```|^>/.test(lines[index])) item.push(lines[index++].trim());
+        items.push(item.join(' '));
+      }
       blocks.push(<ol key={`list-${index}`}>{items.map((item, itemIndex) => <li key={itemIndex}><Inline>{item}</Inline></li>)}</ol>);
       continue;
     }
