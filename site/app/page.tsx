@@ -52,6 +52,7 @@ type Seminar = {
   speakerUrl?: string;
   title?: string;
   paperUrl?: string;
+  signupUrl?: string;
   location: string;
   locationUrl?: string;
   time: string;
@@ -185,7 +186,7 @@ function Next({ s, label }: { s: Seminar; label: string }) {
           </div>
         </dl>
       </div>
-      <a className="signup" href={sitePath(`/sign-up/?seminar=${s.id}`)}>
+      <a className="signup" href={s.signupUrl || sitePath(`/sign-up/?seminar=${s.id}`)}>
         Sign up to meet the speaker <ArrowRight />
       </a>
     </section>
