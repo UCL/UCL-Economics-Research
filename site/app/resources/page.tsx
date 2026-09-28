@@ -6,7 +6,7 @@ const resources = [
   {
     name: 'Research Computing',
     description: 'computing resources for research staff and students',
-    href: '/research-computing',
+    href: '/research-computing/clusters',
   },
   {
     name: 'Data',
