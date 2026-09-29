@@ -237,6 +237,33 @@ main {
 .title-row h1 {
   font-size: clamp(1.2rem, 1.65vw, 1.55rem);
 }
+.calendar-subscribe {
+  flex: none;
+  border-color: #005ea8;
+  color: #005ea8;
+  font-weight: 700;
+}
+.calendar-menu {
+  min-width: 245px;
+  border: 1px solid #9cacb7;
+  background: #fff;
+  color: #17212b;
+  box-shadow: 0 10px 28px rgb(0 27 68 / 24%);
+}
+.calendar-menu-label {
+  margin: 0;
+  padding: 4px 6px;
+  color: #52616e;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+.calendar-menu-note {
+  max-width: 235px;
+  margin: 5px 6px 3px;
+  color: #52616e;
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
 .visitors-heading {
   display: flex;
   align-items: end;
