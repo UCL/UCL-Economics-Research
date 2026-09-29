@@ -1,14 +1,21 @@
-# Data storage
+# UCL Data storage
 
-Choose storage according to what the data is for. OneDrive is convenient personal and collaborative storage, the Research Data Storage Service is managed project storage, and Myriad Scratch is working space for computation.
+Options in addition to your local machine.
 
 ## Quick guide
 
-- **OneDrive:** everyday documents, small-to-medium research files, sharing, and collaborative editing.
-- **Research Data Storage Service (RDSS):** active research-project data, large datasets, controlled project membership, and managed backup.
-- **Myriad Scratch:** files needed while running jobs on Myriad and temporary computational outputs.
+- **OneDrive:** 100GB of cloud storage, easy to connect to Windows or Mac. Potentially slow
+for quick access to large datafiles (say 5GB+).
+- **[Research Data Storage Service](https://www.ucl.ac.uk/research-innovation/advanced-research-computing/platforms-and-services/research-data-storage-service):** Up to 1TB storage for active research-project data, large datasets. Managed backup. Controlled project membership for joint projects/confidential data. Can be mounted on any Windows/Mac/Linux machine on UCL's network. 
+- **Myriad or Kathleen Scratch:** Default 1TB storage on cluster for files/data needed while running jobs on cluster. Data is not backed up so should be copied to RDSS for backup.
 
-Do not keep the only copy of important research data in a computational working area. Sensitive or special-category data may require a different approved service, such as the Data Safe Haven.
+## Detailed guidance
+
+- [UCL OneDrive for Business](https://www.ucl.ac.uk/isd/services/file-storage-sharing/onedrive-business)
+- [UCL Research Data Storage Service](https://www.ucl.ac.uk/research-innovation/advanced-research-computing/platforms-and-services/research-data-storage-service)
+- [Managing RDSS usage and quota](https://www.ucl.ac.uk/research-innovation/advanced-research-computing/platforms-and-services/research-data-storage-service/managing-your-usage-and-quota-rdss)
+- [Myriad quotas](https://www.rc.ucl.ac.uk/docs/Clusters/Myriad/#quotas)
+- [UCL Research Computing data management](https://www.rc.ucl.ac.uk/docs/Data_Management/)
 
 ## OneDrive for Business at UCL
 
@@ -115,14 +122,6 @@ Myriad filesystems are not approved for special-category data. See the [UCL Rese
 4. Check and transfer valuable outputs back to RDSS.
 5. Use OneDrive for documents, small working files, and collaboration when its sharing model and data classification are suitable.
 6. Plan separately for publication or long-term preservation at the end of the project.
-
-## Further guidance
-
-- [UCL OneDrive for Business](https://www.ucl.ac.uk/isd/services/file-storage-sharing/onedrive-business)
-- [UCL Research Data Storage Service](https://www.ucl.ac.uk/research-innovation/advanced-research-computing/platforms-and-services/research-data-storage-service)
-- [Managing RDSS usage and quota](https://www.ucl.ac.uk/research-innovation/advanced-research-computing/platforms-and-services/research-data-storage-service/managing-your-usage-and-quota-rdss)
-- [Myriad quotas](https://www.rc.ucl.ac.uk/docs/Clusters/Myriad/#quotas)
-- [UCL Research Computing data management](https://www.rc.ucl.ac.uk/docs/Data_Management/)
 
 Last reviewed: 29 September 2026.
 

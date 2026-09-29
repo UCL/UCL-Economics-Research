@@ -10,10 +10,10 @@ export default function Page() {
     <ResearchComputingPage active="Clusters" heading="Using Myriad or Kathleen">
       <article className="research-computing-guide">
         <p>Myriad is UCL&apos;s Linux-based high-performance computing cluster. This page covers the Economics access point and a few common tasks.</p>
-        <blockquote><strong>Needs service-owner review:</strong> migrated from the Economics-HPC wiki on 4 September 2026. Verify hostnames, commands, storage paths, and access rules against the <a href="https://www.rc.ucl.ac.uk/docs/">official Myriad documentation</a> before relying on them.</blockquote>
+        <blockquote>Verify details against the <a href="https://www.rc.ucl.ac.uk/docs/">official Myriad documentation</a> before relying on them.</blockquote>
 
         <h3>Before you connect</h3>
-        <p>You need a UCL account with access to the service. When away from the UCL network, connect to the UCL VPN first.</p>
+        <p>You need a cluster account <a href="https://signup.rc.ucl.ac.uk/computing/requests/new">(account application).</a> When away from the UCL network, connect to the UCL VPN first.</p>
         <p>Common ways to use Myriad include:</p>
         <ol><li>SSH for command-line tools such as Stata, R, and MATLAB.</li><li>SFTP for transferring files.</li><li>The Economics RStudio Server in a web browser.</li></ol>
 
@@ -46,7 +46,7 @@ sftp live.rd.ucl.ac.uk`}</Code>
         <p>At the SFTP prompt, change to your project&apos;s RDSS directory and use <code>get</code> to download the required file. Project paths are specific to each allocation; do not copy example project identifiers into your own commands.</p>
 
         <h3>Request an interactive compute session</h3>
-        <p>Do not run computational work on a login node. The migrated guide used this example to request 24 hours and 4 GB of memory:</p>
+        <p>Do not run computational work on a login node. To launch an interactive job with 24 hours and 4 GB of memory:</p>
         <Code>{'qrsh -l h_rt=24:0:0,mem=4G'}</Code>
         <p>Requested resources should match the job. The job may wait in a queue until capacity is available. Check the current scheduler guidance and limits in the <a href="https://www.rc.ucl.ac.uk/docs/">official Myriad documentation</a>.</p>
 
@@ -65,9 +65,9 @@ cp source destination     # copy a file
 mv source destination     # move or rename a file`}</Code>
         <p>Be cautious with deletion commands: deletion on a remote Linux system may not be recoverable.</p>
 
-        <h3>Still to document</h3>
-        <ul><li>Requesting access and choosing a project allocation</li><li>Storage areas, quotas, backup status, and retention</li><li>Batch jobs, job arrays, and long-running work</li><li>R, MATLAB, and Stata batch examples</li><li>Modules and reproducible software environments</li><li>Troubleshooting and the correct support route</li></ul>
-        <p><em>Last reviewed: migration review pending.</em></p>
+        <h3>Further details</h3>
+        See <a href="https://www.rc.ucl.ac.uk/docs/">official Myriad documentation</a>.
+        <p><em>Last reviewed: 29 September 2026.</em></p>
       </article>
     </ResearchComputingPage>
   );
