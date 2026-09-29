@@ -1,0 +1,5 @@
+import type { Metadata } from 'next';
+import { SoftwarePackagePage } from '@/components/software-package-page';
+
+export const metadata: Metadata = { title: 'Julia | Research Computing | UCL Economics Research' };
+export default function Page() { return <SoftwarePackagePage name="Julia" slug="julia" />; }

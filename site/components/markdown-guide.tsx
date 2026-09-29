@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { ResearchComputingPage } from '@/components/research-computing-page';
+import { ResearchComputingPage, type ResearchComputingSection } from '@/components/research-computing-page';
 
 const inlineHtml = (source: string) => source
   .replaceAll('&', '&amp;')
@@ -76,9 +76,9 @@ function renderMarkdown(source: string) {
   return blocks;
 }
 
-export function MarkdownGuide({ source, heading }: { source: string; heading: string }) {
+export function MarkdownGuide({ source, heading, active = 'Clusters' }: { source: string; heading: string; active?: ResearchComputingSection }) {
   return (
-    <ResearchComputingPage active="Clusters" heading={heading}>
+    <ResearchComputingPage active={active} heading={heading}>
       <article className="research-computing-guide">{renderMarkdown(source)}</article>
     </ResearchComputingPage>
   );

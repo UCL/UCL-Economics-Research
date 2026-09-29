@@ -3,12 +3,13 @@ import { BrandHeader } from '@/components/brand-header';
 import { SiteNav } from '@/components/site-nav';
 import { sitePath } from '@/lib/site-path';
 
-export type ResearchComputingSection = 'Clusters' | 'Software' | 'Data storage' | 'Research' | 'Teaching' | 'FAQ';
+export type ResearchComputingSection = 'Clusters' | 'Software' | 'Data storage' | 'IT Support' | 'Research' | 'Teaching' | 'FAQ';
 
 const tabs: ReadonlyArray<{ label: ResearchComputingSection; path: string }> = [
   { label: 'Clusters', path: '/research-computing/clusters/' },
   { label: 'Software', path: '/research-computing/software/' },
   { label: 'Data storage', path: '/research-computing/data-storage/' },
+  { label: 'IT Support', path: '/research-computing/it-support/' },
   { label: 'Research', path: '/research-computing/research/' },
   { label: 'Teaching', path: '/research-computing/teaching/' },
   { label: 'FAQ', path: '/research-computing/faq/' },
