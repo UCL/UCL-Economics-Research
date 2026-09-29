@@ -123,7 +123,6 @@ export default function PublicationsPage() {
       <main>
         <header className="publications-heading">
           <div>
-            <p className="eyebrow">UCL Economics</p>
             <h1>Recent publications</h1>
           </div>
           <a className="econ-brief-link" href="https://ucleconbrief.co.uk" target="_blank" rel="noreferrer">

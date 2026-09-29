@@ -26,7 +26,6 @@ export default function ResourcesPage() {
       <SiteNav active="/resources" />
       <main>
         <header className="resources-heading">
-          <p className="eyebrow">UCL Economics</p>
           <h1>Resources</h1>
         </header>
         <div className="resource-list">
