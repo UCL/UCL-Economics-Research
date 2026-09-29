@@ -13,11 +13,22 @@ import {
 import {
   ArrowLeft,
   ArrowRight,
+  CalendarPlus,
   CalendarDays,
+  ChevronDown,
   Clock3,
+  Copy,
+  Download,
   MapPin,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
 import {
   Table,
   TableBody,
@@ -81,6 +92,53 @@ const terms = [
 ] as const;
 const currentTerm = (month: number) =>
   month >= 1 && month <= 3 ? 'winter' : month >= 4 && month <= 6 ? 'spring' : 'autumn';
+
+function CalendarSubscription({ id, label }: { id: Exclude<SeriesId, 'all'>; label: string }) {
+  const [copied, setCopied] = useState(false);
+  const feedPath = sitePath(`/calendars/${id}-2026-27.ics`);
+  const feedUrl = () => new URL(feedPath, window.location.origin).href;
+  const openProvider = (provider: 'google' | 'outlook') => {
+    const url = feedUrl();
+    const destination = provider === 'google'
+      ? `https://calendar.google.com/calendar/render?cid=${encodeURIComponent(url.replace(/^https:/, 'webcal:'))}`
+      : `https://outlook.office.com/calendar/0/addcalendar?url=${encodeURIComponent(url)}&name=${encodeURIComponent(`${label} seminars 2026–27`)}`;
+    window.open(destination, '_blank', 'noopener,noreferrer');
+  };
+  const copyUrl = async () => {
+    await navigator.clipboard.writeText(feedUrl());
+    setCopied(true);
+    window.setTimeout(() => setCopied(false), 2000);
+  };
+
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger render={<Button variant="outline" className="calendar-subscribe" />}>
+        <CalendarPlus />
+        Subscribe to calendar
+        <ChevronDown />
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end" className="calendar-menu">
+        <p className="calendar-menu-label">Keep this series in your calendar</p>
+        <DropdownMenuItem onClick={() => openProvider('google')}>
+          Google Calendar
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => openProvider('outlook')}>
+          Outlook Calendar
+        </DropdownMenuItem>
+        <DropdownMenuSeparator />
+        <DropdownMenuItem onClick={copyUrl}>
+          <Copy /> {copied ? 'Subscription link copied' : 'Copy subscription link'}
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => window.location.assign(feedPath)}>
+          <Download /> Download one-time copy
+        </DropdownMenuItem>
+        <p className="calendar-menu-note">
+          Subscriptions update automatically. A downloaded copy does not.
+        </p>
+      </DropdownMenuContent>
+    </DropdownMenu>
+  );
+}
 
 function Speaker({ s }: { s: Seminar }) {
   return (
@@ -227,6 +285,7 @@ function Series({
             {seriesOrganisers.length ? seriesOrganisers.join(', ') : 'To be confirmed'}
           </p>
         </div>
+        <CalendarSubscription id={id} label={label} />
       </header>
       {next && <Next s={next} label={label} />}
       <section>

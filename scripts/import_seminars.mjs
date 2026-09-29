@@ -327,7 +327,7 @@ for (const item of config) {
     const hasSpecialTime = Boolean(record['Special start time'] || record['Special end time']);
     const start = record['Special start time'] || (hasSpecialTime ? '' : defaultParts[0]) || 'TBA';
     const finish = record['Special end time'] || (hasSpecialTime ? '' : defaultParts[1]) || '';
-    siteRecords.push({id:`${item.id}-${record.Date}`,series:siteSeriesIds[item.id],date:record.Date,speaker:record.Speaker,institution:record.Institution,speakerUrl:record['Speaker URL']||undefined,title:record.Title||undefined,paperUrl:record['Paper URL']||undefined,signupUrl:override.signupUrl||undefined,status:record.Status||'Scheduled',time:finish ? `${start}–${finish}` : start,location:record['Special location']||override.location||record._location||item.defaultLocation});
+    siteRecords.push({id:`${item.id}-${record.Date}`,series:siteSeriesIds[item.id],date:record.Date,speaker:record.Speaker,institution:record.Institution,speakerUrl:record['Speaker URL']||undefined,title:record.Title||undefined,paperUrl:record['Paper URL']||undefined,signupUrl:override.signupUrl||item.signupUrl||undefined,status:record.Status||'Scheduled',time:finish ? `${start}–${finish}` : start,location:record['Special location']||override.location||record._location||item.defaultLocation});
   }
 }
 siteRecords.sort((a,b) => a.date.localeCompare(b.date) || a.series.localeCompare(b.series));
@@ -338,3 +338,4 @@ const organiserData = Object.fromEntries(config.map((item) => [
   (item.organisers || []).map((organiser) => organiser.name),
 ]));
 await fs.writeFile(path.join(root, 'site/data/series-organisers.json'), JSON.stringify(organiserData, null, 2) + '\n');
+await import('./generate_seminar_calendars.mjs');

@@ -89,6 +89,16 @@ the relevant entry on a separate sign-up-list page. The sign-up list and any
 personal information it collects must have appropriate access and privacy
 controls.
 
+Each seminar-series tab also provides a **Subscribe to calendar** menu for
+Google Calendar, Outlook, and other calendar applications. The public iCalendar
+feeds are generated from the same validated seminar data during imports and
+website builds. Their stable URLs are under `/calendars/`, with one feed per
+series and academic year. Calendar applications refresh subscriptions on their
+own schedule; downloading an `.ics` file is a one-time import and does not
+receive later changes. Seminars without a confirmed, parseable start time are
+omitted from the feed until their time is known. Where only a start time is
+published, the calendar event uses a one-hour duration.
+
 Required seminar data fields are therefore:
 
 - seminar series

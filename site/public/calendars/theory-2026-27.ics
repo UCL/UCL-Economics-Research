@@ -1,0 +1,158 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//UCL Economics Research//Seminar calendars//EN
+X-WR-CALNAME:THEBES seminars 2026-27
+X-WR-TIMEZONE:Europe/London
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:economic-theory-2026-09-29@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20260929T160000
+DTEND;TZID=Europe/London:20260929T173000
+SUMMARY:Xiaosheng Mu — Privacy Preserving Auctions
+DESCRIPTION:Princeton University\nSpeaker: https://www.xiaoshengmu.com/\nSe
+ minar series: THEBES
+LOCATION:Gordon House\, rm 106
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:economic-theory-2026-10-06@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20261006T160000
+DTEND;TZID=Europe/London:20261006T173000
+SUMMARY:Boli Xu — Robust Contracting for Sequential Search
+DESCRIPTION:Tippie College of Business\, University of Iowa\nSpeaker: https
+ ://www.bolixu.com\nSeminar series: THEBES
+LOCATION:Darwin Building\, rm B15
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:economic-theory-2026-10-13@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20261013T160000
+DTEND;TZID=Europe/London:20261013T173000
+SUMMARY:Andreas Ziegler — TBA
+DESCRIPTION:VU Amsterdam\nSpeaker: https://www.andreasziegler.eu\nSeminar s
+ eries: THEBES
+LOCATION:Darwin Building\, rm B15
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:economic-theory-2026-10-20@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20261020T160000
+DTEND;TZID=Europe/London:20261020T173000
+SUMMARY:Jacopo Perego — TBA
+DESCRIPTION:Columbia Business School\nSpeaker: https://www.jperego.com\nSem
+ inar series: THEBES
+LOCATION:Darwin Building\, rm B15
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:economic-theory-2026-10-27@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20261027T160000
+DTEND;TZID=Europe/London:20261027T173000
+SUMMARY:Julia Salmi — TBA
+DESCRIPTION:Hanken School of Economics\nSpeaker: https://sites.google.com/v
+ iew/juliasalmi\nSeminar series: THEBES
+LOCATION:Darwin Building\, rm B15
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:economic-theory-2026-11-03@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20261103T160000
+DTEND;TZID=Europe/London:20261103T173000
+SUMMARY:Eduardo Faingold — N-Player Continuous-Time Repeated Games with I
+ mperfect Public Information
+DESCRIPTION:Insper\nSpeaker: https://eduardofaingold.com\nSeminar series: T
+ HEBES
+LOCATION:Darwin Building\, rm B15
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:economic-theory-2026-11-10@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20261110T160000
+DTEND;TZID=Europe/London:20261110T173000
+SUMMARY:Jeffrey Mensch — Posterior-Separable Costs and Menu Preferences
+DESCRIPTION:Hebrew University of Jerusalem\nPaper: https://drive.google.com
+ /file/d/1XTpmPI_Wi6DfGlUYrEqrfYXYPHjcQ1Sn/view\nSpeaker: https://sites.goo
+ gle.com/site/jeffreyimensch/\nSeminar series: THEBES
+LOCATION:Darwin Building\, rm B15
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:economic-theory-2026-11-17@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20261117T160000
+DTEND;TZID=Europe/London:20261117T173000
+SUMMARY:Fernando Payró — TBA
+DESCRIPTION:Universitat Autònoma de Barcelona\nSpeaker: https://sites.goog
+ le.com/site/ferpayrochew/home\nSeminar series: THEBES
+LOCATION:Darwin Building\, rm B15
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:economic-theory-2026-11-24@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20261124T160000
+DTEND;TZID=Europe/London:20261124T173000
+SUMMARY:Paulo Natenzon — TBA
+DESCRIPTION:Washington University in St. Louis\, Olin Business School\nSpea
+ ker: https://paulonatenzon.com\nSeminar series: THEBES
+LOCATION:Darwin Building\, rm B15
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:economic-theory-2026-12-01@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20261201T160000
+DTEND;TZID=Europe/London:20261201T173000
+SUMMARY:Luca Braghieri — Meaningful Information
+DESCRIPTION:Bocconi University\nPaper: https://drive.google.com/file/d/1gLY
+ wh26mJ4nK73kVyTyOXZyKvJZph3h_/view?usp=sharing\nSpeaker: https://www.lucab
+ raghieri.com\nSeminar series: THEBES
+LOCATION:Darwin Building\, rm B15
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:economic-theory-2026-12-08@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20261208T160000
+DTEND;TZID=Europe/London:20261208T173000
+SUMMARY:Martino Banchio — TBA
+DESCRIPTION:Bocconi University\nSpeaker: https://martinobanchio.github.io\n
+ Seminar series: THEBES
+LOCATION:Darwin Building\, rm B15
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:economic-theory-2026-12-15@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20261215T160000
+DTEND;TZID=Europe/London:20261215T173000
+SUMMARY:Colin Stewart — Bayesian Persuasion without Commitment
+DESCRIPTION:University of Toronto\nPaper: https://arxiv.org/pdf/2511.18662\
+ nSpeaker: https://sites.google.com/view/colinstewart\nSeminar series: THEB
+ ES
+LOCATION:Darwin Building\, rm B15
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+END:VCALENDAR
