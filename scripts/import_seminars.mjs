@@ -1,8 +1,9 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { SpreadsheetFile, Workbook } from '@oai/artifact-tool';
+import ExcelJS from 'exceljs';
 
-const columns = ['Date', 'Speaker', 'Institution', 'Speaker URL', 'Title', 'Paper URL', 'Status', 'Special start time', 'Special end time', 'Special location'];
+const columns = ['Date', 'Speaker', 'Institution', 'Speaker URL', 'Title', 'Paper URL', 'Sign Up URL', 'Status', 'Special start time', 'Special end time', 'Special location'];
 const args = new Map(process.argv.slice(2).map((value, index, all) => value.startsWith('--') ? [value, all[index + 1]?.startsWith('--') ? true : all[index + 1]] : [value, value]));
 const root = path.resolve(String(args.get('--project-root') || process.cwd()));
 const outputDir = path.resolve(String(args.get('--output-dir') || path.join(root, 'outputs', 'seminars')));
@@ -50,7 +51,8 @@ function standardise(rows) {
       Date: normaliseDate(row.Date || row.date || ''), Speaker: speaker,
       Institution: row.Institution || row.Affiliation || row['speaker-affiliation'] || inferredInstitution,
       'Speaker URL': row['Speaker URL'] || row.SpeakerURL || row['speaker-website'] || '', Title: row.Title || row.title || '',
-      'Paper URL': row['Paper URL'] || row.PaperURL || row['paper-link'] || '', Status: row.Status || (row.Date || row.date ? 'Scheduled' : ''),
+      'Paper URL': row['Paper URL'] || row.PaperURL || row['paper-link'] || '', 'Sign Up URL': row['Sign Up URL'] || row.SignUpURL || row['signup-link'] || '',
+      Status: row.Status || (row.Date || row.date ? 'Scheduled' : ''),
       'Special start time': row['Special start time'] || '', 'Special end time': row['Special end time'] || '',
       'Special location': row['Special location'] || (/^Not at/i.test(row.Location || '') ? row.Location : ''),
       _time: row.Time || row.time || '', _location: row.location || '',
@@ -176,6 +178,57 @@ function parseAppliedPlanningSheet(text) {
   return rows;
 }
 
+function linkedCellValue(cell) {
+  const value = cell.value;
+  if (value && typeof value === 'object' && 'text' in value) {
+    return { text: String(value.text || '').trim(), url: String(value.hyperlink || '').trim() };
+  }
+  return { text: String(value || '').trim(), url: String(cell.hyperlink || '').trim() };
+}
+
+async function parseAppliedPlanningWorkbook(bytes, sheetName = '2026-27 schedule') {
+  const workbook = new ExcelJS.Workbook();
+  await workbook.xlsx.load(bytes);
+  const sheet = workbook.getWorksheet(sheetName);
+  if (!sheet) throw new Error(`Applied schedule tab not found: ${sheetName}`);
+  let term = 1;
+  const rows = [];
+  sheet.eachRow((row) => {
+    const first = linkedCellValue(row.getCell(1)).text;
+    if (/^term\s*1/i.test(first)) { term = 1; return; }
+    if (/^term\s*2/i.test(first)) { term = 2; return; }
+    if (/^term\s*3/i.test(first)) { term = 3; return; }
+    const rawDate = row.getCell(1).value;
+    if (!(rawDate instanceof Date)) return;
+    const year = term === 1 ? 2026 : 2027;
+    const date = `${year}-${String(rawDate.getUTCMonth() + 1).padStart(2, '0')}-${String(rawDate.getUTCDate()).padStart(2, '0')}`;
+    let speaker = linkedCellValue(row.getCell(4)).text
+      .replace(/\s*\(no hotel needed\)\s*$/i, '')
+      .replace(/\*+$/, '')
+      .trim();
+    if (!speaker) return;
+    const website = linkedCellValue(row.getCell(5));
+    const title = linkedCellValue(row.getCell(7));
+    const signup = linkedCellValue(row.getCell(8));
+    const time = linkedCellValue(row.getCell(2)).text;
+    const [start = '', finish = ''] = time.split(/\s*[-–]\s*/);
+    const rawLocation = linkedCellValue(row.getCell(3)).text;
+    rows.push({
+      Date: date,
+      Speaker: speaker,
+      'Speaker URL': website.url || website.text,
+      Title: title.text,
+      'Paper URL': title.url,
+      'Sign Up URL': signup.url,
+      Status: 'Scheduled',
+      'Special start time': start,
+      'Special end time': finish,
+      'Special location': /^IFS$/i.test(rawLocation) ? 'IFS seminar room' : rawLocation,
+    });
+  });
+  return rows;
+}
+
 function csvCell(value = '') {
   const text = String(value ?? '');
   return /[",\n\r]/.test(text) ? `"${text.replaceAll('"', '""')}"` : text;
@@ -224,6 +277,77 @@ function parseIfsFlourish(html, seriesFilter) {
     .filter(row => row.Date && row.Speaker);
 }
 
+function decodeHtml(text = '') {
+  return text
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&#038;|&amp;/g, '&')
+    .replace(/&#8211;|&ndash;/g, '–')
+    .replace(/&#8217;|&rsquo;/g, '’')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function parseCemmapDate(text = '') {
+  const matches = [...text.matchAll(/(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})/g)];
+  if (!matches.length) return '';
+  const chosen = matches.find(match => Number(match[3]) === 2027) || matches[0];
+  const month = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'].indexOf(chosen[2].slice(0, 3).toLowerCase()) + 1;
+  return month ? `${chosen[3]}-${String(month).padStart(2, '0')}-${chosen[1].padStart(2, '0')}` : '';
+}
+
+function parseCemmapPage(html) {
+  const cards = html.split('<div class="card-clear--wrapper card--stretch">').slice(1);
+  return cards.map((card) => {
+    const eventMatch = card.match(/<a href="([^"]+)" class="para--card-title headline">[\s\S]*?<span[^>]*>([\s\S]*?)<\/span>/i);
+    const dateMatch = card.match(/<p class="para--card-title">([\s\S]*?)<\/p>/i);
+    const speakerMatch = card.match(/Speaker:\s*([\s\S]*?)<\/div>/i);
+    const venueMatch = card.match(/Venue:\s*([\s\S]*?)<\/div>/i);
+    if (!eventMatch || !dateMatch || !speakerMatch) return null;
+    const dateText = decodeHtml(dateMatch[1]);
+    const [rawSpeaker, institution] = splitSpeaker(decodeHtml(speakerMatch[1]));
+    const speaker = rawSpeaker === 'Louis Laage' ? 'Louise Laage' : rawSpeaker;
+    const title = decodeHtml(eventMatch[2]);
+    const timeMatch = dateText.match(/,\s*(\d{1,2}:\d{2})\s*[-–]\s*(\d{1,2}:\d{2})/);
+    return {
+      Date: parseCemmapDate(dateText), Speaker: speaker, Institution: institution,
+      Title: /^(TBC|TBA)$/i.test(title) ? '' : title,
+      'Paper URL': /^(TBC|TBA)$/i.test(title) ? '' : eventMatch[1],
+      Status: /^(TBC|TBA)$/i.test(title) ? 'TBA' : 'Scheduled',
+      'Special start time': timeMatch?.[1] || '', 'Special end time': timeMatch?.[2] || '',
+      'Special location': decodeHtml(venueMatch?.[1] || '').replace(/^The Institute for Fiscal Studies$/i, 'IFS seminar room'),
+    };
+  }).filter(row => row?.Date && row.Speaker);
+}
+
+function speakerKey(value = '') {
+  return value.toLowerCase().replace(/[^a-z0-9]/g, '');
+}
+
+async function readCemmapSource(item) {
+  const oldRows = standardise(parseCsv(await fs.readFile(path.join(root, item.source.offlineFile), 'utf8')));
+  const pages = await Promise.all(item.source.pages.map(async (url) => {
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`${item.name}: ${response.status}`);
+    return parseCemmapPage(await response.text());
+  }));
+  const oldByDate = new Map(oldRows.map(row => [row.Date, row]));
+  const oldBySpeaker = new Map(oldRows.map(row => [speakerKey(row.Speaker), row]));
+  const records = new Map();
+  for (const row of pages.flat()) {
+    if (row.Date < item.source.dateFrom || row.Date > item.source.dateTo) continue;
+    const old = oldByDate.get(row.Date) || oldBySpeaker.get(speakerKey(row.Speaker)) || {};
+    records.set(row.Date, {
+      ...row,
+      Institution: row.Institution || old.Institution || '',
+      Title: row.Title || old.Title || '',
+      'Paper URL': row['Paper URL'] || old['Paper URL'] || '',
+      Status: old.Status || row.Status,
+    });
+  }
+  return standardise([...records.values()].sort((a, b) => a.Date.localeCompare(b.Date)));
+}
+
 async function readSource(item) {
   const source = item.source;
   if (source.type === 'unconfigured') return [];
@@ -243,6 +367,15 @@ async function readSource(item) {
     return standardise(parsed);
   }
   if (source.type === 'google-sheet') {
+    if (source.format === 'xlsx') {
+      const url = `https://docs.google.com/spreadsheets/d/${source.spreadsheetId}/export?format=xlsx`;
+      const response = await fetch(url); if (!response.ok) throw new Error(`${item.name}: ${response.status}`);
+      const bytes = Buffer.from(await response.arrayBuffer());
+      const parsed = source.adapter === 'applied-planning-sheet'
+        ? await parseAppliedPlanningWorkbook(bytes, source.sheetName)
+        : [];
+      return standardise(parsed);
+    }
     const url = `https://docs.google.com/spreadsheets/d/${source.spreadsheetId}/export?format=csv&gid=${source.gid}`;
     const response = await fetch(url); if (!response.ok) throw new Error(`${item.name}: ${response.status}`);
     const text = await response.text();
@@ -256,6 +389,7 @@ async function readSource(item) {
     return standardise(parsed);
   }
   if (source.type === 'html') {
+    if (source.adapter === 'cemmap-seminars') return readCemmapSource(item);
     const response = await fetch(source.embedUrl || source.url); if (!response.ok) throw new Error(`${item.name}: ${response.status}`);
     const html = await response.text();
     if (source.adapter === 'ifs-flourish') return standardise(parseIfsFlourish(html, source.seriesFilter));
@@ -273,21 +407,21 @@ async function readSource(item) {
 async function createWorkbook(item, records) {
   const workbook = Workbook.create(); const sheet = workbook.worksheets.add('Seminars');
   const data = records.length ? records : [Object.fromEntries(columns.map(column => [column, '']))];
-  sheet.getRange(`A1:J${data.length + 1}`).values = [columns, ...data.map(record => columns.map(column => column === 'Date' && record[column] ? new Date(`${record[column]}T00:00:00Z`) : record[column] || ''))];
+  sheet.getRange(`A1:K${data.length + 1}`).values = [columns, ...data.map(record => columns.map(column => column === 'Date' && record[column] ? new Date(`${record[column]}T00:00:00Z`) : record[column] || ''))];
   sheet.showGridLines = false; sheet.freezePanes.freezeRows(1);
-  const header = sheet.getRange('A1:J1'); header.format.fill = '#001B44'; header.format.font = { bold:true, color:'#FFFFFF' }; header.format.rowHeight = 42; header.format.horizontalAlignment = 'center'; header.format.verticalAlignment = 'center'; header.format.wrapText = true;
-  sheet.getRange('H1:J1').format.fill = '#7A4E00';
-  const body = sheet.getRange(`A2:J${data.length + 1}`); body.format.font = { name:'Arial', size:10 }; body.format.verticalAlignment = 'center'; body.format.wrapText = true; body.format.borders = { insideHorizontal:{style:'thin',color:'#D8DEE3'} };
+  const header = sheet.getRange('A1:K1'); header.format.fill = '#001B44'; header.format.font = { bold:true, color:'#FFFFFF' }; header.format.rowHeight = 42; header.format.horizontalAlignment = 'center'; header.format.verticalAlignment = 'center'; header.format.wrapText = true;
+  sheet.getRange('I1:K1').format.fill = '#7A4E00';
+  const body = sheet.getRange(`A2:K${data.length + 1}`); body.format.font = { name:'Arial', size:10 }; body.format.verticalAlignment = 'center'; body.format.wrapText = true; body.format.borders = { insideHorizontal:{style:'thin',color:'#D8DEE3'} };
   sheet.getRange(`A2:A${data.length + 1}`).setNumberFormat('yyyy-mm-dd');
-  [110,180,190,220,260,220,100,125,125,190].forEach((width, i) => sheet.getRangeByIndexes(0,i,data.length+1,1).format.columnWidthPx = width);
+  [110,180,190,220,260,220,240,100,125,125,190].forEach((width, i) => sheet.getRangeByIndexes(0,i,data.length+1,1).format.columnWidthPx = width);
   body.format.autofitRows();
-  sheet.getRange(`H2:J${data.length + 1}`).format.fill = '#EAF2F8';
+  sheet.getRange(`I2:K${data.length + 1}`).format.fill = '#EAF2F8';
   for (let r = 0; r < data.length; r++) {
-    for (let c = 0; c < 7; c++) if (!data[r][columns[c]] || String(data[r][columns[c]]).trim().toUpperCase() === 'TBA') sheet.getCell(r + 1, c).format.fill = '#FFF2CC';
-    for (let c = 7; c < 10; c++) if (data[r][columns[c]]) { sheet.getCell(r + 1, c).format.fill = '#F6BE00'; sheet.getCell(r + 1, c).format.font = {name:'Arial',size:10,bold:true,color:'#17212B'}; }
+    for (let c = 0; c < 8; c++) if (!data[r][columns[c]] || String(data[r][columns[c]]).trim().toUpperCase() === 'TBA') sheet.getCell(r + 1, c).format.fill = '#FFF2CC';
+    for (let c = 8; c < 11; c++) if (data[r][columns[c]]) { sheet.getCell(r + 1, c).format.fill = '#F6BE00'; sheet.getCell(r + 1, c).format.font = {name:'Arial',size:10,bold:true,color:'#17212B'}; }
   }
-  sheet.getRange(`G2:G${data.length + 1}`).dataValidation = { rule:{ type:'list', values:['Scheduled','JMC','Cancelled','Postponed','TBA'] } };
-  const table = sheet.tables.add(`A1:J${data.length + 1}`, true, `${item.id.replaceAll('-','_')}_seminars`); table.style = 'TableStyleMedium2'; table.showBandedRows = false;
+  sheet.getRange(`H2:H${data.length + 1}`).dataValidation = { rule:{ type:'list', values:['Scheduled','JMC','Cancelled','Postponed','TBA'] } };
+  const table = sheet.tables.add(`A1:K${data.length + 1}`, true, `${item.id.replaceAll('-','_')}_seminars`); table.style = 'TableStyleMedium2'; table.showBandedRows = false;
   const noteRow = data.length + 3;
   sheet.getRange(`A${noteRow}:B${noteRow}`).values = [['Overrides', 'Blue columns are optional. A gold value replaces the series default for that seminar.']];
   sheet.getRange(`A${noteRow}`).format.font = { name:'Arial', size:9, bold:true, color:'#4B5563' };
@@ -301,10 +435,10 @@ async function createWorkbook(item, records) {
   }
   workbook.recalculate();
   await fs.mkdir(outputDir, { recursive:true }); const out = await SpreadsheetFile.exportXlsx(workbook); const file = path.join(outputDir, `${item.id}-2026-27.xlsx`); await out.save(file);
-  const inspect = await workbook.inspect({kind:'table',range:`Seminars!A1:J${Math.min(data.length+1,8)}`,include:'values,formulas',tableMaxRows:8,tableMaxCols:10});
+  const inspect = await workbook.inspect({kind:'table',range:`Seminars!A1:K${Math.min(data.length+1,8)}`,include:'values,formulas',tableMaxRows:8,tableMaxCols:11});
   const errors = await workbook.inspect({kind:'match',searchTerm:'#REF!|#DIV/0!|#VALUE!|#NAME\\?|#N/A|#NUM!|#NULL!|#SPILL!|#CALC!',options:{useRegex:true,maxResults:50},summary:'formula error scan'});
   const previewEndRow = data.length + (item.source.url ? 4 : 3);
-  const preview = await workbook.render({sheetName:'Seminars',range:`A1:J${previewEndRow}`,scale:1.5}); if (preview) await fs.writeFile(path.join(outputDir, `${item.id}-preview.png`), new Uint8Array(await preview.arrayBuffer()));
+  const preview = await workbook.render({sheetName:'Seminars',range:`A1:K${previewEndRow}`,scale:1.5}); if (preview) await fs.writeFile(path.join(outputDir, `${item.id}-preview.png`), new Uint8Array(await preview.arrayBuffer()));
   console.log(JSON.stringify({file,rows:records.length,inspect:inspect.ndjson,errorScan:errors.ndjson}));
 }
 
@@ -316,6 +450,15 @@ if (selectedSeries || offline) { try { siteRecords = JSON.parse(await fs.readFil
 for (const item of config) {
   if (selectedSeries && !selectedSeries.has(item.id)) continue;
   let records=[]; try { records=await readSource(item); } catch(error) { console.error(String(error)); if (item.source.offlineFile) records=standardise(parseCsv(await fs.readFile(path.join(root,item.source.offlineFile),'utf8'))); }
+  records = records.map((record) => {
+    const override = item.overrides?.[record.Date] || {};
+    return {
+      ...record,
+      'Speaker URL': override.speakerUrl ?? record['Speaker URL'],
+      Title: override.title ?? record.Title,
+      'Paper URL': override.paperUrl ?? record['Paper URL'],
+    };
+  });
   if (!offline) await saveOfflineSource(item, records);
   await createWorkbook(item, records);
   if (offline && !item.source.offlineFile) continue;
@@ -327,7 +470,7 @@ for (const item of config) {
     const hasSpecialTime = Boolean(record['Special start time'] || record['Special end time']);
     const start = record['Special start time'] || (hasSpecialTime ? '' : defaultParts[0]) || 'TBA';
     const finish = record['Special end time'] || (hasSpecialTime ? '' : defaultParts[1]) || '';
-    siteRecords.push({id:`${item.id}-${record.Date}`,series:siteSeriesIds[item.id],date:record.Date,speaker:record.Speaker,institution:record.Institution,speakerUrl:record['Speaker URL']||undefined,title:record.Title||undefined,paperUrl:record['Paper URL']||undefined,signupUrl:override.signupUrl||item.signupUrl||undefined,status:record.Status||'Scheduled',time:finish ? `${start}–${finish}` : start,location:record['Special location']||override.location||record._location||item.defaultLocation});
+    siteRecords.push({id:`${item.id}-${record.Date}`,series:siteSeriesIds[item.id],date:record.Date,speaker:record.Speaker,institution:record.Institution,speakerUrl:record['Speaker URL']||undefined,title:record.Title||undefined,paperUrl:record['Paper URL']||undefined,signupUrl:record['Sign Up URL']||override.signupUrl||item.signupUrl||undefined,status:record.Status||'Scheduled',time:finish ? `${start}–${finish}` : start,location:record['Special location']||override.location||record._location||item.defaultLocation});
   }
 }
 siteRecords.sort((a,b) => a.date.localeCompare(b.date) || a.series.localeCompare(b.series));

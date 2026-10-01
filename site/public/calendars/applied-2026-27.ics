@@ -14,9 +14,9 @@ DTSTART;TZID=Europe/London:20261001T120000
 DTEND;TZID=Europe/London:20261001T131500
 SUMMARY:Luigi Pistaferri — Insuring Labor Income Shocks: The Role of the 
  Dynasty
-DESCRIPTION:Paper: https://www.nber.org/papers/w34253\nSeminar series: Appl
- ied Economics
-LOCATION:IFS Seminar room
+DESCRIPTION:Paper: https://www.nber.org/papers/w34253\nSpeaker: https://sit
+ es.google.com/view/pistaferri/home\nSeminar series: Applied Economics
+LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
@@ -25,9 +25,12 @@ UID:applied-economics-2026-10-08@economics.ucl.ac.uk
 DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261008T120000
 DTEND;TZID=Europe/London:20261008T131500
-SUMMARY:Jonathan Elliott
-DESCRIPTION:Seminar series: Applied Economics
-LOCATION:IFS Seminar room
+SUMMARY:Jonathan Elliott — Critical Minerals\, Geopolitics\, and the Gree
+ n Transition
+DESCRIPTION:Paper: https://jonathantelliott.com/files/critical_minerals.pdf
+ \nSpeaker: https://jonathantelliott.com/\nSeminar series: Applied Economic
+ s
+LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
@@ -36,9 +39,23 @@ UID:applied-economics-2026-10-12@economics.ucl.ac.uk
 DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261012T140000
 DTEND;TZID=Europe/London:20261012T153000
-SUMMARY:Matthew Nibloe
-DESCRIPTION:Seminar series: Applied Economics
+SUMMARY:Matthew Nibloe — The Labour Market Consequences of Trade Disinteg
+ ration: Evidence from Brexit
+DESCRIPTION:Speaker: https://mattnibloe.com/\nSeminar series: Applied Econo
+ mics
 LOCATION:Archaeology 612
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:applied-economics-2026-10-13@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20261013T123000
+DTEND;TZID=Europe/London:20261013T133000
+SUMMARY:Phil Haile
+DESCRIPTION:Speaker: https://sites.google.com/view/philhaile/home\nSeminar 
+ series: Applied Economics
+LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
@@ -46,10 +63,11 @@ BEGIN:VEVENT
 UID:applied-economics-2026-10-15@economics.ucl.ac.uk
 DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261015T120000
-DTEND;TZID=Europe/London:20261015T131500
+DTEND;TZID=Europe/London:20261015T133000
 SUMMARY:Clara von Bismarck-Osten
-DESCRIPTION:Seminar series: Applied Economics
-LOCATION:IFS Seminar room
+DESCRIPTION:Speaker: https://claravobi.github.io/\nSeminar series: Applied 
+ Economics
+LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
@@ -59,7 +77,8 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261019T140000
 DTEND;TZID=Europe/London:20261019T153000
 SUMMARY:Arthur Laroche
-DESCRIPTION:Seminar series: Applied Economics
+DESCRIPTION:Speaker: https://arthurlaroche.github.io/\nSeminar series: Appl
+ ied Economics
 LOCATION:Archaeology 612
 STATUS:CONFIRMED
 SEQUENCE:0
@@ -67,11 +86,12 @@ END:VEVENT
 BEGIN:VEVENT
 UID:applied-economics-2026-10-22@economics.ucl.ac.uk
 DTSTAMP:20260901T000000Z
-DTSTART;TZID=Europe/London:20261022T120000
-DTEND;TZID=Europe/London:20261022T131500
+DTSTART;TZID=Europe/London:20261022T123000
+DTEND;TZID=Europe/London:20261022T140000
 SUMMARY:Emma Scandolo
-DESCRIPTION:Seminar series: Applied Economics
-LOCATION:IFS Seminar room
+DESCRIPTION:Speaker: https://emmascandolo.github.io/\nSeminar series: Appli
+ ed Economics
+LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
@@ -81,7 +101,8 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261026T140000
 DTEND;TZID=Europe/London:20261026T153000
 SUMMARY:Hikaru Kawarazaki
-DESCRIPTION:Seminar series: Applied Economics
+DESCRIPTION:Speaker: https://sites.google.com/site/hikarukawara/\nSeminar s
+ eries: Applied Economics
 LOCATION:Archaeology 612
 STATUS:CONFIRMED
 SEQUENCE:0
@@ -90,10 +111,11 @@ BEGIN:VEVENT
 UID:applied-economics-2026-10-29@economics.ucl.ac.uk
 DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261029T120000
-DTEND;TZID=Europe/London:20261029T131500
+DTEND;TZID=Europe/London:20261029T133000
 SUMMARY:Ruimin Ao
-DESCRIPTION:Seminar series: Applied Economics
-LOCATION:IFS Seminar room
+DESCRIPTION:Speaker: https://ruiminao.com/\nSeminar series: Applied Economi
+ cs
+LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
@@ -103,7 +125,8 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261102T140000
 DTEND;TZID=Europe/London:20261102T153000
 SUMMARY:Ararat Gocmen
-DESCRIPTION:Seminar series: Applied Economics
+DESCRIPTION:Speaker: https://araratgocmen.com/\nSeminar series: Applied Eco
+ nomics
 LOCATION:Archaeology 612
 STATUS:CONFIRMED
 SEQUENCE:0
@@ -112,10 +135,11 @@ BEGIN:VEVENT
 UID:applied-economics-2026-11-05@economics.ucl.ac.uk
 DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261105T120000
-DTEND;TZID=Europe/London:20261105T131500
+DTEND;TZID=Europe/London:20261105T133000
 SUMMARY:Yasuka Tateishi
-DESCRIPTION:Seminar series: Applied Economics
-LOCATION:IFS Seminar room
+DESCRIPTION:Speaker: https://yasukatateishi.com/\nSeminar series: Applied E
+ conomics
+LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
@@ -125,7 +149,8 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261116T140000
 DTEND;TZID=Europe/London:20261116T153000
 SUMMARY:Courtney Brell
-DESCRIPTION:Seminar series: Applied Economics
+DESCRIPTION:Speaker: https://courtneybrell.com/\nSeminar series: Applied Ec
+ onomics
 LOCATION:Archaeology 612
 STATUS:CONFIRMED
 SEQUENCE:0
@@ -136,8 +161,9 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261119T120000
 DTEND;TZID=Europe/London:20261119T131500
 SUMMARY:Daiji Kawaguchi
-DESCRIPTION:Seminar series: Applied Economics
-LOCATION:IFS Seminar room
+DESCRIPTION:Speaker: https://sites.google.com/site/daijikawaguchi/\nSeminar
+  series: Applied Economics
+LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
@@ -147,7 +173,8 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261123T140000
 DTEND;TZID=Europe/London:20261123T153000
 SUMMARY:Giuseppe Forte
-DESCRIPTION:Seminar series: Applied Economics
+DESCRIPTION:Speaker: https://gfrt0.github.io/\nSeminar series: Applied Econ
+ omics
 LOCATION:Archaeology 612
 STATUS:CONFIRMED
 SEQUENCE:0
@@ -158,8 +185,21 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261126T120000
 DTEND;TZID=Europe/London:20261126T131500
 SUMMARY:Chao Fu
-DESCRIPTION:Seminar series: Applied Economics
-LOCATION:IFS Seminar room
+DESCRIPTION:Speaker: https://users.ssc.wisc.edu/~cfu9/\nSeminar series: App
+ lied Economics
+LOCATION:IFS seminar room
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:applied-economics-2026-11-30@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20261130T140000
+DTEND;TZID=Europe/London:20261130T153000
+SUMMARY:Stan de Ruijter
+DESCRIPTION:Speaker: https://profiles.ucl.ac.uk/58154-stan-de-ruijter-van-s
+ teveninck\nSeminar series: Applied Economics
+LOCATION:Archaeology 612
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
@@ -168,9 +208,11 @@ UID:applied-economics-2026-12-03@economics.ucl.ac.uk
 DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261203T120000
 DTEND;TZID=Europe/London:20261203T131500
-SUMMARY:Isaac Sorkin
-DESCRIPTION:Seminar series: Applied Economics
-LOCATION:IFS Seminar room
+SUMMARY:Isaac Sorkin — Paired Movers
+DESCRIPTION:Paper: https://drive.google.com/file/d/1m7OBnIYUriMpVryPKugZke9
+ 2-NjdF9QW/view\nSpeaker: https://sites.google.com/site/isaacsorkin/home\nS
+ eminar series: Applied Economics
+LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
@@ -179,9 +221,11 @@ UID:applied-economics-2026-12-10@economics.ucl.ac.uk
 DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261210T120000
 DTEND;TZID=Europe/London:20261210T131500
-SUMMARY:Deivy Houeix
-DESCRIPTION:Seminar series: Applied Economics
-LOCATION:IFS Seminar room
+SUMMARY:Deivy Houeix — Nationwide Diffusion of Technology: Cross-Industry
+  Learning Through Networks
+DESCRIPTION:Speaker: https://deivyhoueix.com/\nSeminar series: Applied Econ
+ omics
+LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
@@ -191,8 +235,9 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261217T120000
 DTEND;TZID=Europe/London:20261217T131500
 SUMMARY:Charles Hodgson
-DESCRIPTION:Seminar series: Applied Economics
-LOCATION:IFS Seminar room
+DESCRIPTION:Speaker: https://campuspress.yale.edu/hodgson/\nSeminar series:
+  Applied Economics
+LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
@@ -202,8 +247,9 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20270225T120000
 DTEND;TZID=Europe/London:20270225T131500
 SUMMARY:Mert Demirer
-DESCRIPTION:Seminar series: Applied Economics
-LOCATION:IFS Seminar room
+DESCRIPTION:Speaker: https://www.mertdemirer.com/\nSeminar series: Applied 
+ Economics
+LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
@@ -213,8 +259,9 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20270304T120000
 DTEND;TZID=Europe/London:20270304T131500
 SUMMARY:Mathias Reynaert
-DESCRIPTION:Seminar series: Applied Economics
-LOCATION:IFS Seminar room
+DESCRIPTION:Speaker: https://sites.google.com/site/mathiasreynaert/\nSemina
+ r series: Applied Economics
+LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
@@ -224,8 +271,9 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20270311T120000
 DTEND;TZID=Europe/London:20270311T131500
 SUMMARY:Ryan Kellogg
-DESCRIPTION:Seminar series: Applied Economics
-LOCATION:IFS Seminar room
+DESCRIPTION:Speaker: https://kelloggryan.com/\nSeminar series: Applied Econ
+ omics
+LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
@@ -235,8 +283,9 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20270318T120000
 DTEND;TZID=Europe/London:20270318T131500
 SUMMARY:Andreas Moxnes
-DESCRIPTION:Seminar series: Applied Economics
-LOCATION:IFS Seminar room
+DESCRIPTION:Speaker: https://sites.google.com/site/moxnes/home\nSeminar ser
+ ies: Applied Economics
+LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
@@ -246,8 +295,9 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20270429T120000
 DTEND;TZID=Europe/London:20270429T131500
 SUMMARY:Rebecca Diamond
-DESCRIPTION:Seminar series: Applied Economics
-LOCATION:IFS Seminar room
+DESCRIPTION:Speaker: https://www.rebecca-diamond.com/\nSeminar series: Appl
+ ied Economics
+LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
@@ -257,8 +307,9 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20270506T120000
 DTEND;TZID=Europe/London:20270506T131500
 SUMMARY:Simon Franklin
-DESCRIPTION:Seminar series: Applied Economics
-LOCATION:IFS Seminar room
+DESCRIPTION:Speaker: https://www.simonfranklin.co/\nSeminar series: Applied
+  Economics
+LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
@@ -268,8 +319,9 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20270513T120000
 DTEND;TZID=Europe/London:20270513T131500
 SUMMARY:Jesse Bruhn
-DESCRIPTION:Seminar series: Applied Economics
-LOCATION:IFS Seminar room
+DESCRIPTION:Speaker: https://www.jessebruhn.com/\nSeminar series: Applied E
+ conomics
+LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
@@ -279,8 +331,9 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20270520T120000
 DTEND;TZID=Europe/London:20270520T131500
 SUMMARY:Pierre Bodere
-DESCRIPTION:Seminar series: Applied Economics
-LOCATION:IFS Seminar room
+DESCRIPTION:Speaker: https://pierrebodere.github.io/\nSeminar series: Appli
+ ed Economics
+LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
@@ -290,8 +343,9 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20270527T120000
 DTEND;TZID=Europe/London:20270527T131500
 SUMMARY:Garima Sharma
-DESCRIPTION:Seminar series: Applied Economics
-LOCATION:IFS Seminar room
+DESCRIPTION:Speaker: https://garimasharma.com/\nSeminar series: Applied Eco
+ nomics
+LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
@@ -301,8 +355,21 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20270603T120000
 DTEND;TZID=Europe/London:20270603T131500
 SUMMARY:Mushfiq Mobarak
-DESCRIPTION:Seminar series: Applied Economics
-LOCATION:IFS Seminar room
+DESCRIPTION:Speaker: https://faculty.som.yale.edu/mushfiqmobarak/\nSeminar 
+ series: Applied Economics
+LOCATION:IFS seminar room
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:applied-economics-2027-06-08@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20270608T123000
+DTEND;TZID=Europe/London:20270608T133000
+SUMMARY:Pat Kline
+DESCRIPTION:Speaker: https://eml.berkeley.edu/~pkline/\nSeminar series: App
+ lied Economics
+LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
@@ -312,8 +379,9 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20270610T120000
 DTEND;TZID=Europe/London:20270610T131500
 SUMMARY:Myrto Kalouptsidi
-DESCRIPTION:Seminar series: Applied Economics
-LOCATION:IFS Seminar room
+DESCRIPTION:Speaker: https://sites.google.com/site/myrtokaloup/\nSeminar se
+ ries: Applied Economics
+LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
