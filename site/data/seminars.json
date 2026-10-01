@@ -35,6 +35,9 @@
     "date": "2026-09-29",
     "speaker": "Weisheng Zhang",
     "institution": "UCL",
+    "speakerUrl": "https://www.weisheng-zhang.com/home",
+    "title": "Causal Inference under Dynamic Selection and Latent Heterogeneity",
+    "paperUrl": "https://cemmap.ac.uk/event/tbc-51/",
     "status": "JMC",
     "time": "12:30–13:30",
     "location": "IFS seminar room"
@@ -104,9 +107,12 @@
     "date": "2026-10-06",
     "speaker": "Yuanqi Zhang",
     "institution": "UCL",
+    "speakerUrl": "https://cemmap.ac.uk/person/yuanqi-zhang/",
+    "title": "Designing Experiments for Policies Beyond the Experiment",
+    "paperUrl": "https://cemmap.ac.uk/event/tbc-52/",
     "status": "JMC",
     "time": "12:30–13:30",
-    "location": "Not at the IFS"
+    "location": "Gordon House 106"
   },
   {
     "id": "economic-theory-2026-10-06",
@@ -203,8 +209,11 @@
     "id": "econometrics-2026-10-13",
     "series": "econometrics",
     "date": "2026-10-13",
-    "speaker": "Phil Hale",
+    "speaker": "Philip Haile",
     "institution": "Yale",
+    "speakerUrl": "https://sites.google.com/view/philhaile/home",
+    "title": "Selective Turnout, Voting Policy, and Partisan Bias: Evidence from Multi-Level Data",
+    "paperUrl": "https://cemmap.ac.uk/event/tbc-53/",
     "status": "Scheduled",
     "time": "12:30–13:30",
     "location": "IFS seminar room"
@@ -281,6 +290,7 @@
     "date": "2026-10-20",
     "speaker": "Chen-Wei Hsiang",
     "institution": "UCL",
+    "speakerUrl": "https://chenweihsiang.github.io/",
     "status": "JMC",
     "time": "12:30–13:30",
     "location": "IFS seminar room"
@@ -516,16 +526,6 @@
     "location": "IFS / online"
   },
   {
-    "id": "econometrics-2026-11-10",
-    "series": "econometrics",
-    "date": "2026-11-10",
-    "speaker": "Ziyu Jiang",
-    "institution": "UCL",
-    "status": "JMC",
-    "time": "12:30–13:30",
-    "location": "IFS seminar room"
-  },
-  {
     "id": "economic-theory-2026-11-10",
     "series": "theory",
     "date": "2026-11-10",
@@ -585,8 +585,9 @@
     "id": "econometrics-2026-11-17",
     "series": "econometrics",
     "date": "2026-11-17",
-    "speaker": "Yad Selvakumar",
+    "speaker": "Ziyu Jiang",
     "institution": "UCL",
+    "speakerUrl": "https://ziyu-jiang.com/",
     "status": "JMC",
     "time": "12:30–13:30",
     "location": "IFS seminar room"
@@ -664,6 +665,7 @@
     "date": "2026-11-24",
     "speaker": "Sid Kankanala",
     "institution": "Chicago Booth",
+    "speakerUrl": "https://www.chicagobooth.edu/faculty/directory/k/sid-kankanala",
     "status": "Scheduled",
     "time": "12:30–13:30",
     "location": "IFS seminar room"
@@ -740,6 +742,7 @@
     "date": "2026-12-01",
     "speaker": "Juan Carlos Escanciano",
     "institution": "UC3M",
+    "speakerUrl": "https://sites.google.com/view/juancarlosescanciano/home",
     "status": "Scheduled",
     "time": "12:30–13:30",
     "location": "IFS seminar room"
@@ -799,6 +802,7 @@
     "date": "2026-12-08",
     "speaker": "Davide Viviano",
     "institution": "Harvard",
+    "speakerUrl": "https://dviviano.github.io/",
     "status": "Scheduled",
     "time": "12:30–13:30",
     "location": "IFS seminar room"
@@ -889,6 +893,7 @@
     "date": "2026-12-15",
     "speaker": "David Ritzwoller",
     "institution": "Harvard",
+    "speakerUrl": "https://davidritzwoller.github.io/",
     "status": "Scheduled",
     "time": "12:30–13:30",
     "location": "IFS seminar room"
@@ -945,6 +950,7 @@
     "date": "2027-02-23",
     "speaker": "Domenico Giannone",
     "institution": "Johns Hopkins University",
+    "speakerUrl": "https://econ.jhu.edu/directory/domenico-giannone/",
     "status": "Scheduled",
     "time": "12:30–13:30",
     "location": "IFS seminar room"
@@ -987,6 +993,7 @@
     "date": "2027-03-02",
     "speaker": "Cristina Gualdini",
     "institution": "Queen Mary University of London",
+    "speakerUrl": "https://www.cristinagualdani.com/",
     "status": "Scheduled",
     "time": "12:30–13:30",
     "location": "IFS seminar room"
@@ -1019,6 +1026,7 @@
     "date": "2027-03-09",
     "speaker": "Tetsuya Kaji",
     "institution": "Chicago Booth",
+    "speakerUrl": "https://kajitetsuya.github.io/",
     "status": "Scheduled",
     "time": "12:30–13:30",
     "location": "IFS seminar room"
@@ -1051,6 +1059,7 @@
     "date": "2027-03-16",
     "speaker": "Guido Kuersteiner",
     "institution": "University of Maryland",
+    "speakerUrl": "https://www.econ.umd.edu/facultyprofile/kuersteiner/guido",
     "status": "Scheduled",
     "time": "12:30–13:30",
     "location": "IFS seminar room"
@@ -1093,6 +1102,7 @@
     "date": "2027-03-23",
     "speaker": "Jing Kong",
     "institution": "University of Oxford",
+    "speakerUrl": "https://sites.google.com/view/jingkong/",
     "status": "Scheduled",
     "time": "12:30–13:30",
     "location": "IFS seminar room"
@@ -1144,6 +1154,7 @@
     "date": "2027-04-27",
     "speaker": "Koen Jochmans",
     "institution": "Toulouse School of Economics",
+    "speakerUrl": "https://jochmans.github.io/",
     "status": "Scheduled",
     "time": "12:30–13:30",
     "location": "IFS seminar room"
@@ -1196,6 +1207,7 @@
     "date": "2027-05-04",
     "speaker": "Xinyue Bei",
     "institution": "University of Texas at Austin",
+    "speakerUrl": "https://xinyuebei-econ.github.io/",
     "status": "Scheduled",
     "time": "12:30–13:30",
     "location": "IFS seminar room"
@@ -1238,6 +1250,7 @@
     "date": "2027-05-11",
     "speaker": "Jose Luis Montiel Olea",
     "institution": "Cornell University",
+    "speakerUrl": "https://joseluismontielolea.com/",
     "status": "Scheduled",
     "time": "12:30–13:30",
     "location": "IFS seminar room"
@@ -1288,8 +1301,9 @@
     "id": "econometrics-2027-05-18",
     "series": "econometrics",
     "date": "2027-05-18",
-    "speaker": "Louis Laage",
+    "speaker": "Louise Laage",
     "institution": "Georgetown University",
+    "speakerUrl": "https://www.llaage.com/",
     "status": "Scheduled",
     "time": "12:30–13:30",
     "location": "IFS seminar room"
@@ -1333,6 +1347,7 @@
     "date": "2027-06-01",
     "speaker": "Silvia Goncalves",
     "institution": "McGill University",
+    "speakerUrl": "https://silvia-goncalves.research.mcgill.ca/index.html",
     "status": "Scheduled",
     "time": "12:30–13:30",
     "location": "IFS seminar room"
@@ -1376,6 +1391,7 @@
     "date": "2027-06-08",
     "speaker": "Pat Kline",
     "institution": "University of California, Berkeley",
+    "speakerUrl": "https://emlab.berkeley.edu/~pkline/",
     "status": "Scheduled",
     "time": "12:30–13:30",
     "location": "IFS seminar room"

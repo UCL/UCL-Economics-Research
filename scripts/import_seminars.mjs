@@ -277,6 +277,77 @@ function parseIfsFlourish(html, seriesFilter) {
     .filter(row => row.Date && row.Speaker);
 }
 
+function decodeHtml(text = '') {
+  return text
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&#038;|&amp;/g, '&')
+    .replace(/&#8211;|&ndash;/g, '–')
+    .replace(/&#8217;|&rsquo;/g, '’')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function parseCemmapDate(text = '') {
+  const matches = [...text.matchAll(/(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})/g)];
+  if (!matches.length) return '';
+  const chosen = matches.find(match => Number(match[3]) === 2027) || matches[0];
+  const month = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'].indexOf(chosen[2].slice(0, 3).toLowerCase()) + 1;
+  return month ? `${chosen[3]}-${String(month).padStart(2, '0')}-${chosen[1].padStart(2, '0')}` : '';
+}
+
+function parseCemmapPage(html) {
+  const cards = html.split('<div class="card-clear--wrapper card--stretch">').slice(1);
+  return cards.map((card) => {
+    const eventMatch = card.match(/<a href="([^"]+)" class="para--card-title headline">[\s\S]*?<span[^>]*>([\s\S]*?)<\/span>/i);
+    const dateMatch = card.match(/<p class="para--card-title">([\s\S]*?)<\/p>/i);
+    const speakerMatch = card.match(/Speaker:\s*([\s\S]*?)<\/div>/i);
+    const venueMatch = card.match(/Venue:\s*([\s\S]*?)<\/div>/i);
+    if (!eventMatch || !dateMatch || !speakerMatch) return null;
+    const dateText = decodeHtml(dateMatch[1]);
+    const [rawSpeaker, institution] = splitSpeaker(decodeHtml(speakerMatch[1]));
+    const speaker = rawSpeaker === 'Louis Laage' ? 'Louise Laage' : rawSpeaker;
+    const title = decodeHtml(eventMatch[2]);
+    const timeMatch = dateText.match(/,\s*(\d{1,2}:\d{2})\s*[-–]\s*(\d{1,2}:\d{2})/);
+    return {
+      Date: parseCemmapDate(dateText), Speaker: speaker, Institution: institution,
+      Title: /^(TBC|TBA)$/i.test(title) ? '' : title,
+      'Paper URL': /^(TBC|TBA)$/i.test(title) ? '' : eventMatch[1],
+      Status: /^(TBC|TBA)$/i.test(title) ? 'TBA' : 'Scheduled',
+      'Special start time': timeMatch?.[1] || '', 'Special end time': timeMatch?.[2] || '',
+      'Special location': decodeHtml(venueMatch?.[1] || '').replace(/^The Institute for Fiscal Studies$/i, 'IFS seminar room'),
+    };
+  }).filter(row => row?.Date && row.Speaker);
+}
+
+function speakerKey(value = '') {
+  return value.toLowerCase().replace(/[^a-z0-9]/g, '');
+}
+
+async function readCemmapSource(item) {
+  const oldRows = standardise(parseCsv(await fs.readFile(path.join(root, item.source.offlineFile), 'utf8')));
+  const pages = await Promise.all(item.source.pages.map(async (url) => {
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`${item.name}: ${response.status}`);
+    return parseCemmapPage(await response.text());
+  }));
+  const oldByDate = new Map(oldRows.map(row => [row.Date, row]));
+  const oldBySpeaker = new Map(oldRows.map(row => [speakerKey(row.Speaker), row]));
+  const records = new Map();
+  for (const row of pages.flat()) {
+    if (row.Date < item.source.dateFrom || row.Date > item.source.dateTo) continue;
+    const old = oldByDate.get(row.Date) || oldBySpeaker.get(speakerKey(row.Speaker)) || {};
+    records.set(row.Date, {
+      ...row,
+      Institution: row.Institution || old.Institution || '',
+      Title: row.Title || old.Title || '',
+      'Paper URL': row['Paper URL'] || old['Paper URL'] || '',
+      Status: old.Status || row.Status,
+    });
+  }
+  return standardise([...records.values()].sort((a, b) => a.Date.localeCompare(b.Date)));
+}
+
 async function readSource(item) {
   const source = item.source;
   if (source.type === 'unconfigured') return [];
@@ -318,6 +389,7 @@ async function readSource(item) {
     return standardise(parsed);
   }
   if (source.type === 'html') {
+    if (source.adapter === 'cemmap-seminars') return readCemmapSource(item);
     const response = await fetch(source.embedUrl || source.url); if (!response.ok) throw new Error(`${item.name}: ${response.status}`);
     const html = await response.text();
     if (source.adapter === 'ifs-flourish') return standardise(parseIfsFlourish(html, source.seriesFilter));
@@ -382,6 +454,7 @@ for (const item of config) {
     const override = item.overrides?.[record.Date] || {};
     return {
       ...record,
+      'Speaker URL': override.speakerUrl ?? record['Speaker URL'],
       Title: override.title ?? record.Title,
       'Paper URL': override.paperUrl ?? record['Paper URL'],
     };

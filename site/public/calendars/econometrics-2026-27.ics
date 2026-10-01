@@ -12,8 +12,10 @@ UID:econometrics-2026-09-29@economics.ucl.ac.uk
 DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20260929T123000
 DTEND;TZID=Europe/London:20260929T133000
-SUMMARY:Weisheng Zhang
-DESCRIPTION:UCL\nSeminar series: CeMMAP
+SUMMARY:Weisheng Zhang — Causal Inference under Dynamic Selection and Lat
+ ent Heterogeneity
+DESCRIPTION:UCL\nPaper: https://cemmap.ac.uk/event/tbc-51/\nSpeaker: https:
+ //www.weisheng-zhang.com/home\nSeminar series: CeMMAP
 LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
@@ -23,9 +25,11 @@ UID:econometrics-2026-10-06@economics.ucl.ac.uk
 DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261006T123000
 DTEND;TZID=Europe/London:20261006T133000
-SUMMARY:Yuanqi Zhang
-DESCRIPTION:UCL\nSeminar series: CeMMAP
-LOCATION:Not at the IFS
+SUMMARY:Yuanqi Zhang — Designing Experiments for Policies Beyond the Expe
+ riment
+DESCRIPTION:UCL\nPaper: https://cemmap.ac.uk/event/tbc-52/\nSpeaker: https:
+ //cemmap.ac.uk/person/yuanqi-zhang/\nSeminar series: CeMMAP
+LOCATION:Gordon House 106
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
@@ -34,8 +38,10 @@ UID:econometrics-2026-10-13@economics.ucl.ac.uk
 DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261013T123000
 DTEND;TZID=Europe/London:20261013T133000
-SUMMARY:Phil Hale
-DESCRIPTION:Yale\nSeminar series: CeMMAP
+SUMMARY:Philip Haile — Selective Turnout\, Voting Policy\, and Partisan B
+ ias: Evidence from Multi-Level Data
+DESCRIPTION:Yale\nPaper: https://cemmap.ac.uk/event/tbc-53/\nSpeaker: https
+ ://sites.google.com/view/philhaile/home\nSeminar series: CeMMAP
 LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
@@ -46,7 +52,8 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261020T123000
 DTEND;TZID=Europe/London:20261020T133000
 SUMMARY:Chen-Wei Hsiang
-DESCRIPTION:UCL\nSeminar series: CeMMAP
+DESCRIPTION:UCL\nSpeaker: https://chenweihsiang.github.io/\nSeminar series:
+  CeMMAP
 LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
@@ -74,23 +81,12 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
-UID:econometrics-2026-11-10@economics.ucl.ac.uk
-DTSTAMP:20260901T000000Z
-DTSTART;TZID=Europe/London:20261110T123000
-DTEND;TZID=Europe/London:20261110T133000
-SUMMARY:Ziyu Jiang
-DESCRIPTION:UCL\nSeminar series: CeMMAP
-LOCATION:IFS seminar room
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENT
-BEGIN:VEVENT
 UID:econometrics-2026-11-17@economics.ucl.ac.uk
 DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261117T123000
 DTEND;TZID=Europe/London:20261117T133000
-SUMMARY:Yad Selvakumar
-DESCRIPTION:UCL\nSeminar series: CeMMAP
+SUMMARY:Ziyu Jiang
+DESCRIPTION:UCL\nSpeaker: https://ziyu-jiang.com/\nSeminar series: CeMMAP
 LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
@@ -101,7 +97,8 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261124T123000
 DTEND;TZID=Europe/London:20261124T133000
 SUMMARY:Sid Kankanala
-DESCRIPTION:Chicago Booth\nSeminar series: CeMMAP
+DESCRIPTION:Chicago Booth\nSpeaker: https://www.chicagobooth.edu/faculty/di
+ rectory/k/sid-kankanala\nSeminar series: CeMMAP
 LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
@@ -112,7 +109,8 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261201T123000
 DTEND;TZID=Europe/London:20261201T133000
 SUMMARY:Juan Carlos Escanciano
-DESCRIPTION:UC3M\nSeminar series: CeMMAP
+DESCRIPTION:UC3M\nSpeaker: https://sites.google.com/view/juancarlosescancia
+ no/home\nSeminar series: CeMMAP
 LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
@@ -123,7 +121,8 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261208T123000
 DTEND;TZID=Europe/London:20261208T133000
 SUMMARY:Davide Viviano
-DESCRIPTION:Harvard\nSeminar series: CeMMAP
+DESCRIPTION:Harvard\nSpeaker: https://dviviano.github.io/\nSeminar series: 
+ CeMMAP
 LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
@@ -134,7 +133,8 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261215T123000
 DTEND;TZID=Europe/London:20261215T133000
 SUMMARY:David Ritzwoller
-DESCRIPTION:Harvard\nSeminar series: CeMMAP
+DESCRIPTION:Harvard\nSpeaker: https://davidritzwoller.github.io/\nSeminar s
+ eries: CeMMAP
 LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
@@ -145,7 +145,8 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20270223T123000
 DTEND;TZID=Europe/London:20270223T133000
 SUMMARY:Domenico Giannone
-DESCRIPTION:Johns Hopkins University\nSeminar series: CeMMAP
+DESCRIPTION:Johns Hopkins University\nSpeaker: https://econ.jhu.edu/directo
+ ry/domenico-giannone/\nSeminar series: CeMMAP
 LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
@@ -156,7 +157,8 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20270302T123000
 DTEND;TZID=Europe/London:20270302T133000
 SUMMARY:Cristina Gualdini
-DESCRIPTION:Queen Mary University of London\nSeminar series: CeMMAP
+DESCRIPTION:Queen Mary University of London\nSpeaker: https://www.cristinag
+ ualdani.com/\nSeminar series: CeMMAP
 LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
@@ -167,7 +169,8 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20270309T123000
 DTEND;TZID=Europe/London:20270309T133000
 SUMMARY:Tetsuya Kaji
-DESCRIPTION:Chicago Booth\nSeminar series: CeMMAP
+DESCRIPTION:Chicago Booth\nSpeaker: https://kajitetsuya.github.io/\nSeminar
+  series: CeMMAP
 LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
@@ -178,7 +181,8 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20270316T123000
 DTEND;TZID=Europe/London:20270316T133000
 SUMMARY:Guido Kuersteiner
-DESCRIPTION:University of Maryland\nSeminar series: CeMMAP
+DESCRIPTION:University of Maryland\nSpeaker: https://www.econ.umd.edu/facul
+ typrofile/kuersteiner/guido\nSeminar series: CeMMAP
 LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
@@ -189,7 +193,8 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20270323T123000
 DTEND;TZID=Europe/London:20270323T133000
 SUMMARY:Jing Kong
-DESCRIPTION:University of Oxford\nSeminar series: CeMMAP
+DESCRIPTION:University of Oxford\nSpeaker: https://sites.google.com/view/ji
+ ngkong/\nSeminar series: CeMMAP
 LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
@@ -200,7 +205,8 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20270427T123000
 DTEND;TZID=Europe/London:20270427T133000
 SUMMARY:Koen Jochmans
-DESCRIPTION:Toulouse School of Economics\nSeminar series: CeMMAP
+DESCRIPTION:Toulouse School of Economics\nSpeaker: https://jochmans.github.
+ io/\nSeminar series: CeMMAP
 LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
@@ -211,7 +217,8 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20270504T123000
 DTEND;TZID=Europe/London:20270504T133000
 SUMMARY:Xinyue Bei
-DESCRIPTION:University of Texas at Austin\nSeminar series: CeMMAP
+DESCRIPTION:University of Texas at Austin\nSpeaker: https://xinyuebei-econ.
+ github.io/\nSeminar series: CeMMAP
 LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
@@ -222,7 +229,8 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20270511T123000
 DTEND;TZID=Europe/London:20270511T133000
 SUMMARY:Jose Luis Montiel Olea
-DESCRIPTION:Cornell University\nSeminar series: CeMMAP
+DESCRIPTION:Cornell University\nSpeaker: https://joseluismontielolea.com/\n
+ Seminar series: CeMMAP
 LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
@@ -232,8 +240,9 @@ UID:econometrics-2027-05-18@economics.ucl.ac.uk
 DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20270518T123000
 DTEND;TZID=Europe/London:20270518T133000
-SUMMARY:Louis Laage
-DESCRIPTION:Georgetown University\nSeminar series: CeMMAP
+SUMMARY:Louise Laage
+DESCRIPTION:Georgetown University\nSpeaker: https://www.llaage.com/\nSemina
+ r series: CeMMAP
 LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
@@ -244,7 +253,8 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20270601T123000
 DTEND;TZID=Europe/London:20270601T133000
 SUMMARY:Silvia Goncalves
-DESCRIPTION:McGill University\nSeminar series: CeMMAP
+DESCRIPTION:McGill University\nSpeaker: https://silvia-goncalves.research.m
+ cgill.ca/index.html\nSeminar series: CeMMAP
 LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
@@ -255,7 +265,8 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20270608T123000
 DTEND;TZID=Europe/London:20270608T133000
 SUMMARY:Pat Kline
-DESCRIPTION:University of California\, Berkeley\nSeminar series: CeMMAP
+DESCRIPTION:University of California\, Berkeley\nSpeaker: https://emlab.ber
+ keley.edu/~pkline/\nSeminar series: CeMMAP
 LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
