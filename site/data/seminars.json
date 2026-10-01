@@ -80,12 +80,13 @@
     "date": "2026-10-01",
     "speaker": "Luigi Pistaferri",
     "institution": "",
+    "speakerUrl": "https://sites.google.com/view/pistaferri/home",
     "title": "Insuring Labor Income Shocks: The Role of the Dynasty",
     "paperUrl": "https://www.nber.org/papers/w34253",
-    "signupUrl": "https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.google.com%2Fspreadsheets%2Fd%2F1ajj5o5ymknkQGVOdk7FFCd7SRi-SK5IFQ55NfcJGR8g%2Fedit%3Fgid%3D1328082453%23gid%3D1328082453&data=05%7C02%7Cl.nesheim%40ucl.ac.uk%7C3f3a17d6084244801e1208df1d4ad6e5%7C1faf88fea9984c5b93c9210a11d9a5c2%7C0%7C0%7C639261879408998149%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=Ok3A%2FoY5%2FtTYzrF4IcrJVpmeP%2FFy2FnglvavS94Wbzs%3D&reserved=0",
+    "signupUrl": "https://docs.google.com/spreadsheets/d/1ajj5o5ymknkQGVOdk7FFCd7SRi-SK5IFQ55NfcJGR8g/edit?gid=1328082453",
     "status": "Scheduled",
     "time": "12:00–13:15",
-    "location": "IFS Seminar room"
+    "location": "IFS seminar room"
   },
   {
     "id": "ifs-development-2026-10-01",
@@ -157,9 +158,13 @@
     "date": "2026-10-08",
     "speaker": "Jonathan Elliott",
     "institution": "",
+    "speakerUrl": "https://jonathantelliott.com/",
+    "title": "Critical Minerals, Geopolitics, and the Green Transition",
+    "paperUrl": "https://jonathantelliott.com/files/critical_minerals.pdf",
+    "signupUrl": "https://docs.google.com/spreadsheets/d/1ajj5o5ymknkQGVOdk7FFCd7SRi-SK5IFQ55NfcJGR8g/edit?gid=915436433",
     "status": "Scheduled",
     "time": "12:00–13:15",
-    "location": "IFS Seminar room"
+    "location": "IFS seminar room"
   },
   {
     "id": "ifs-development-2026-10-08",
@@ -177,9 +182,22 @@
     "date": "2026-10-12",
     "speaker": "Matthew Nibloe",
     "institution": "",
+    "speakerUrl": "https://mattnibloe.com/",
+    "title": "The Labour Market Consequences of Trade Disintegration: Evidence from Brexit",
     "status": "Scheduled",
     "time": "14:00–15:30",
     "location": "Archaeology 612"
+  },
+  {
+    "id": "applied-economics-2026-10-13",
+    "series": "applied",
+    "date": "2026-10-13",
+    "speaker": "Phil Haile",
+    "institution": "",
+    "speakerUrl": "https://sites.google.com/view/philhaile/home",
+    "status": "Scheduled",
+    "time": "12:30–13:30",
+    "location": "IFS seminar room"
   },
   {
     "id": "econometrics-2026-10-13",
@@ -231,9 +249,10 @@
     "date": "2026-10-15",
     "speaker": "Clara von Bismarck-Osten",
     "institution": "",
+    "speakerUrl": "https://claravobi.github.io/",
     "status": "Scheduled",
-    "time": "12:00–13:15",
-    "location": "IFS Seminar room"
+    "time": "12:00–13:30",
+    "location": "IFS seminar room"
   },
   {
     "id": "ifs-development-2026-10-15",
@@ -251,6 +270,7 @@
     "date": "2026-10-19",
     "speaker": "Arthur Laroche",
     "institution": "",
+    "speakerUrl": "https://arthurlaroche.github.io/",
     "status": "Scheduled",
     "time": "14:00–15:30",
     "location": "Archaeology 612"
@@ -318,9 +338,10 @@
     "date": "2026-10-22",
     "speaker": "Emma Scandolo",
     "institution": "",
+    "speakerUrl": "https://emmascandolo.github.io/",
     "status": "Scheduled",
-    "time": "12:00–13:15",
-    "location": "IFS Seminar room"
+    "time": "12:30–14:00",
+    "location": "IFS seminar room"
   },
   {
     "id": "ifs-development-2026-10-22",
@@ -338,6 +359,7 @@
     "date": "2026-10-26",
     "speaker": "Hikaru Kawarazaki",
     "institution": "",
+    "speakerUrl": "https://sites.google.com/site/hikarukawara/",
     "status": "Scheduled",
     "time": "14:00–15:30",
     "location": "Archaeology 612"
@@ -392,9 +414,10 @@
     "date": "2026-10-29",
     "speaker": "Ruimin Ao",
     "institution": "",
+    "speakerUrl": "https://ruiminao.com/",
     "status": "Scheduled",
-    "time": "12:00–13:15",
-    "location": "IFS Seminar room"
+    "time": "12:00–13:30",
+    "location": "IFS seminar room"
   },
   {
     "id": "ifs-development-2026-10-29",
@@ -412,6 +435,7 @@
     "date": "2026-11-02",
     "speaker": "Ararat Gocmen",
     "institution": "",
+    "speakerUrl": "https://araratgocmen.com/",
     "status": "Scheduled",
     "time": "14:00–15:30",
     "location": "Archaeology 612"
@@ -476,9 +500,10 @@
     "date": "2026-11-05",
     "speaker": "Yasuka Tateishi",
     "institution": "",
+    "speakerUrl": "https://yasukatateishi.com/",
     "status": "Scheduled",
-    "time": "12:00–13:15",
-    "location": "IFS Seminar room"
+    "time": "12:00–13:30",
+    "location": "IFS seminar room"
   },
   {
     "id": "ifs-development-2026-11-05",
@@ -551,6 +576,7 @@
     "date": "2026-11-16",
     "speaker": "Courtney Brell",
     "institution": "",
+    "speakerUrl": "https://courtneybrell.com/",
     "status": "Scheduled",
     "time": "14:00–15:30",
     "location": "Archaeology 612"
@@ -605,9 +631,11 @@
     "date": "2026-11-19",
     "speaker": "Daiji Kawaguchi",
     "institution": "",
+    "speakerUrl": "https://sites.google.com/site/daijikawaguchi/",
+    "signupUrl": "https://docs.google.com/spreadsheets/d/1ajj5o5ymknkQGVOdk7FFCd7SRi-SK5IFQ55NfcJGR8g/edit?gid=776885410",
     "status": "Scheduled",
     "time": "12:00–13:15",
-    "location": "IFS Seminar room"
+    "location": "IFS seminar room"
   },
   {
     "id": "ifs-development-2026-11-19",
@@ -625,6 +653,7 @@
     "date": "2026-11-23",
     "speaker": "Giuseppe Forte",
     "institution": "",
+    "speakerUrl": "https://gfrt0.github.io/",
     "status": "Scheduled",
     "time": "14:00–15:30",
     "location": "Archaeology 612"
@@ -679,9 +708,10 @@
     "date": "2026-11-26",
     "speaker": "Chao Fu",
     "institution": "",
+    "speakerUrl": "https://users.ssc.wisc.edu/~cfu9/",
     "status": "Scheduled",
     "time": "12:00–13:15",
-    "location": "IFS Seminar room"
+    "location": "IFS seminar room"
   },
   {
     "id": "ifs-development-2026-11-26",
@@ -692,6 +722,17 @@
     "status": "TBA",
     "time": "2:00–3:00pm",
     "location": "IFS / online"
+  },
+  {
+    "id": "applied-economics-2026-11-30",
+    "series": "applied",
+    "date": "2026-11-30",
+    "speaker": "Stan de Ruijter",
+    "institution": "",
+    "speakerUrl": "https://profiles.ucl.ac.uk/58154-stan-de-ruijter-van-steveninck",
+    "status": "Scheduled",
+    "time": "14:00–15:30",
+    "location": "Archaeology 612"
   },
   {
     "id": "econometrics-2026-12-01",
@@ -734,9 +775,13 @@
     "date": "2026-12-03",
     "speaker": "Isaac Sorkin",
     "institution": "",
+    "speakerUrl": "https://sites.google.com/site/isaacsorkin/home",
+    "title": "Paired Movers",
+    "paperUrl": "https://drive.google.com/file/d/1m7OBnIYUriMpVryPKugZke92-NjdF9QW/view",
+    "signupUrl": "https://docs.google.com/spreadsheets/d/1ajj5o5ymknkQGVOdk7FFCd7SRi-SK5IFQ55NfcJGR8g/edit?gid=1909061764",
     "status": "Scheduled",
     "time": "12:00–13:15",
-    "location": "IFS Seminar room"
+    "location": "IFS seminar room"
   },
   {
     "id": "ifs-development-2026-12-03",
@@ -821,9 +866,12 @@
     "date": "2026-12-10",
     "speaker": "Deivy Houeix",
     "institution": "",
+    "speakerUrl": "https://deivyhoueix.com/",
+    "title": "Nationwide Diffusion of Technology: Cross-Industry Learning Through Networks",
+    "signupUrl": "https://docs.google.com/spreadsheets/d/1ajj5o5ymknkQGVOdk7FFCd7SRi-SK5IFQ55NfcJGR8g/edit?gid=165824959",
     "status": "Scheduled",
     "time": "12:00–13:15",
-    "location": "IFS Seminar room"
+    "location": "IFS seminar room"
   },
   {
     "id": "ifs-development-2026-12-10",
@@ -865,9 +913,11 @@
     "date": "2026-12-17",
     "speaker": "Charles Hodgson",
     "institution": "",
+    "speakerUrl": "https://campuspress.yale.edu/hodgson/",
+    "signupUrl": "https://docs.google.com/spreadsheets/d/1ajj5o5ymknkQGVOdk7FFCd7SRi-SK5IFQ55NfcJGR8g/edit?gid=1940518058",
     "status": "Scheduled",
     "time": "12:00–13:15",
-    "location": "IFS Seminar room"
+    "location": "IFS seminar room"
   },
   {
     "id": "ifs-development-2026-12-17",
@@ -926,9 +976,10 @@
     "date": "2027-02-25",
     "speaker": "Mert Demirer",
     "institution": "",
+    "speakerUrl": "https://www.mertdemirer.com/",
     "status": "Scheduled",
     "time": "12:00–13:15",
-    "location": "IFS Seminar room"
+    "location": "IFS seminar room"
   },
   {
     "id": "econometrics-2027-03-02",
@@ -957,9 +1008,10 @@
     "date": "2027-03-04",
     "speaker": "Mathias Reynaert",
     "institution": "",
+    "speakerUrl": "https://sites.google.com/site/mathiasreynaert/",
     "status": "Scheduled",
     "time": "12:00–13:15",
-    "location": "IFS Seminar room"
+    "location": "IFS seminar room"
   },
   {
     "id": "econometrics-2027-03-09",
@@ -988,9 +1040,10 @@
     "date": "2027-03-11",
     "speaker": "Ryan Kellogg",
     "institution": "",
+    "speakerUrl": "https://kelloggryan.com/",
     "status": "Scheduled",
     "time": "12:00–13:15",
-    "location": "IFS Seminar room"
+    "location": "IFS seminar room"
   },
   {
     "id": "econometrics-2027-03-16",
@@ -1029,9 +1082,10 @@
     "date": "2027-03-18",
     "speaker": "Andreas Moxnes",
     "institution": "",
+    "speakerUrl": "https://sites.google.com/site/moxnes/home",
     "status": "Scheduled",
     "time": "12:00–13:15",
-    "location": "IFS Seminar room"
+    "location": "IFS seminar room"
   },
   {
     "id": "econometrics-2027-03-23",
@@ -1121,9 +1175,10 @@
     "date": "2027-04-29",
     "speaker": "Rebecca Diamond",
     "institution": "",
+    "speakerUrl": "https://www.rebecca-diamond.com/",
     "status": "Scheduled",
     "time": "12:00–13:15",
-    "location": "IFS Seminar room"
+    "location": "IFS seminar room"
   },
   {
     "id": "ifs-seminars-2027-04-29",
@@ -1172,9 +1227,10 @@
     "date": "2027-05-06",
     "speaker": "Simon Franklin",
     "institution": "",
+    "speakerUrl": "https://www.simonfranklin.co/",
     "status": "Scheduled",
     "time": "12:00–13:15",
-    "location": "IFS Seminar room"
+    "location": "IFS seminar room"
   },
   {
     "id": "econometrics-2027-05-11",
@@ -1223,9 +1279,10 @@
     "date": "2027-05-13",
     "speaker": "Jesse Bruhn",
     "institution": "",
+    "speakerUrl": "https://www.jessebruhn.com/",
     "status": "Scheduled",
     "time": "12:00–13:15",
-    "location": "IFS Seminar room"
+    "location": "IFS seminar room"
   },
   {
     "id": "econometrics-2027-05-18",
@@ -1243,9 +1300,10 @@
     "date": "2027-05-20",
     "speaker": "Pierre Bodere",
     "institution": "",
+    "speakerUrl": "https://pierrebodere.github.io/",
     "status": "Scheduled",
     "time": "12:00–13:15",
-    "location": "IFS Seminar room"
+    "location": "IFS seminar room"
   },
   {
     "id": "macroeconomics-2027-05-26",
@@ -1264,9 +1322,10 @@
     "date": "2027-05-27",
     "speaker": "Garima Sharma",
     "institution": "",
+    "speakerUrl": "https://garimasharma.com/",
     "status": "Scheduled",
     "time": "12:00–13:15",
-    "location": "IFS Seminar room"
+    "location": "IFS seminar room"
   },
   {
     "id": "econometrics-2027-06-01",
@@ -1295,9 +1354,10 @@
     "date": "2027-06-03",
     "speaker": "Mushfiq Mobarak",
     "institution": "",
+    "speakerUrl": "https://faculty.som.yale.edu/mushfiqmobarak/",
     "status": "Scheduled",
     "time": "12:00–13:15",
-    "location": "IFS Seminar room"
+    "location": "IFS seminar room"
   },
   {
     "id": "applied-economics-2027-06-08",
@@ -1305,9 +1365,10 @@
     "date": "2027-06-08",
     "speaker": "Pat Kline",
     "institution": "",
+    "speakerUrl": "https://eml.berkeley.edu/~pkline/",
     "status": "Scheduled",
-    "time": "TBA",
-    "location": "TBA"
+    "time": "12:30–13:30",
+    "location": "IFS seminar room"
   },
   {
     "id": "econometrics-2027-06-08",
@@ -1346,8 +1407,9 @@
     "date": "2027-06-10",
     "speaker": "Myrto Kalouptsidi",
     "institution": "",
+    "speakerUrl": "https://sites.google.com/site/myrtokaloup/",
     "status": "Scheduled",
     "time": "12:00–13:15",
-    "location": "IFS Seminar room"
+    "location": "IFS seminar room"
   }
 ]
