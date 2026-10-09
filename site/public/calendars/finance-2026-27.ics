@@ -22,8 +22,8 @@ BEGIN:VEVENT
 UID:finance-2026-10-14@economics.ucl.ac.uk
 DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261014T160000
-DTEND;TZID=Europe/London:20261014T170000
-SUMMARY:Quentin Vandeweyer
+DTEND;TZID=Europe/London:20261014T173000
+SUMMARY:Quentin Vandeweyer — The Fiscal Foundations of Safe Assets
 DESCRIPTION:London Business School\nSeminar series: Finance
 LOCATION:Drayton 321
 STATUS:CONFIRMED
@@ -47,18 +47,6 @@ DTSTART;TZID=Europe/London:20261028T160000
 DTEND;TZID=Europe/London:20261028T170000
 SUMMARY:Ali Uppal
 DESCRIPTION:Imperial College London\nSeminar series: Finance
-LOCATION:Drayton 321
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENT
-BEGIN:VEVENT
-UID:finance-2026-11-04@economics.ucl.ac.uk
-DTSTAMP:20260901T000000Z
-DTSTART;TZID=Europe/London:20261104T160000
-DTEND;TZID=Europe/London:20261104T170000
-SUMMARY:Kenneth Rogoff
-DESCRIPTION:Harvard (former chief economist at the IMF)\nSeminar series: Fi
- nance
 LOCATION:Drayton 321
 STATUS:CONFIRMED
 SEQUENCE:0

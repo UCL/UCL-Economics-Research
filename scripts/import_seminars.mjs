@@ -56,6 +56,7 @@ function standardise(rows) {
       'Special start time': row['Special start time'] || '', 'Special end time': row['Special end time'] || '',
       'Special location': row['Special location'] || (/^Not at/i.test(row.Location || '') ? row.Location : ''),
       _time: row.Time || row.time || '', _location: row.location || '',
+      _note: row.Note || row._note || '',
     };
   }).filter(row => row.Speaker);
 }
@@ -81,6 +82,21 @@ function parseMacroPlanningSheet(text) {
     rows.push({Date:date,Speaker:speakerCorrections[rawSpeaker] || rawSpeaker,Institution:institutions[rawInstitution] || rawInstitution,Status:'Scheduled'});
   }
   return rows;
+}
+
+function parsePhdPlanningSheet(text) {
+  return parseCsvMatrix(text).flatMap(cells => {
+    const match = (cells[0] || '').trim().match(/^([a-z]{3})\s+(\d{1,2})$/i);
+    const speaker = (cells[2] || '').trim();
+    if (!match || !speaker) return [];
+    const month = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'].indexOf(match[1].toLowerCase()) + 1;
+    if (!month) throw new Error('Invalid PhD seminar month');
+    const title = (cells[4] || '').trim();
+    const note = [cells[1], cells[7]].map(x => (x || '').trim()).filter(Boolean).join('. ');
+    return [{ Date: `${month >= 9 ? 2026 : 2027}-${String(month).padStart(2,'0')}-${match[2].padStart(2,'0')}`, Speaker: speaker,
+      Institution: /Mannheim/i.test(note) ? 'University of Mannheim' : /from TSE/i.test(note) ? 'Toulouse School of Economics' : 'University College London',
+      Title: /^(TBA|TBC|TBD)$/i.test(title) ? '' : title, Status: 'Scheduled', Note: note }];
+  });
 }
 
 function parseFinancePlanningSheet(text) {
@@ -237,9 +253,10 @@ function csvCell(value = '') {
 async function saveOfflineSource(item, records) {
   if (!item.source.offlineFile) return;
   const file = path.join(root, item.source.offlineFile);
+  const sourceColumns = records.some(record => record._note) ? [...columns, 'Note'] : columns;
   const text = [
-    columns.join(','),
-    ...records.map((record) => columns.map((column) => csvCell(record[column] || '')).join(',')),
+    sourceColumns.join(','),
+    ...records.map((record) => sourceColumns.map((column) => csvCell(column === 'Note' ? record._note : record[column] || '')).join(',')),
   ].join('\n') + '\n';
   await fs.mkdir(path.dirname(file), { recursive: true });
   await fs.writeFile(file, text);
@@ -357,7 +374,9 @@ async function readSource(item) {
     const headers = parseCsvMatrix(text)[0]?.map(value => value.trim()) || [];
     const parsed = headers.includes('Date') && headers.includes('Speaker')
       ? parseCsv(text)
-      : source.adapter === 'finance-planning-sheet'
+      : source.adapter === 'phd-planning-sheet'
+        ? parsePhdPlanningSheet(text)
+        : source.adapter === 'finance-planning-sheet'
         ? parseFinancePlanningSheet(text)
         : source.adapter === 'macro-planning-sheet'
           ? parseMacroPlanningSheet(text)
@@ -379,7 +398,9 @@ async function readSource(item) {
     const url = `https://docs.google.com/spreadsheets/d/${source.spreadsheetId}/export?format=csv&gid=${source.gid}`;
     const response = await fetch(url); if (!response.ok) throw new Error(`${item.name}: ${response.status}`);
     const text = await response.text();
-    const parsed = source.adapter === 'macro-planning-sheet'
+    const parsed = source.adapter === 'phd-planning-sheet'
+      ? parsePhdPlanningSheet(text)
+      : source.adapter === 'macro-planning-sheet'
       ? parseMacroPlanningSheet(text)
       : source.adapter === 'finance-planning-sheet'
         ? parseFinancePlanningSheet(text)
@@ -396,7 +417,10 @@ async function readSource(item) {
     const embeddedData = html.match(/const data = (\{.*?\});\s*\n\s*\/\/ Function/s);
     if (embeddedData) {
       const rows = JSON.parse(embeddedData[1]).seminars || [];
-      return standardise(rows.filter(row => (!source.dateFrom || row.date >= source.dateFrom) && (!source.dateTo || row.date <= source.dateTo)));
+      return standardise(rows.filter(row => (!source.dateFrom || row.date >= source.dateFrom) && (!source.dateTo || row.date <= source.dateTo)).map(row => {
+        const [start = '', finish = ''] = String(row.time || '').split(/\s*[-–]\s*/);
+        return { ...row, Speaker: row.speaker, 'Special start time': start, 'Special end time': finish, 'Special location': row.location || '' };
+      }));
     }
     const rows = [...html.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/gi)].map(match => [...match[1].matchAll(/<t[dh][^>]*>([\s\S]*?)<\/t[dh]>/gi)].map(cell => cell[1].replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim()));
     return standardise(rows.slice(1).map(cells => ({Date:cells[0],Speaker:cells[1],Title:cells[2],Status:'Scheduled'})));
@@ -443,14 +467,14 @@ async function createWorkbook(item, records) {
 }
 
 const config = JSON.parse(await fs.readFile(path.join(root, 'seminars/config/series.json'), 'utf8'));
-const siteSeriesIds = {'applied-economics':'applied','econometrics':'econometrics','economic-theory':'theory','finance':'finance','macroeconomics':'macro','ifs-seminars':'ifs','ifs-development':'ifs-development','ifs-labour':'ifs-labour'};
+const siteSeriesIds = {'applied-economics':'applied','econometrics':'econometrics','economic-theory':'theory','finance':'finance','macroeconomics':'macro','phd-seminar':'phd-seminar','ifs-seminars':'ifs','ifs-development':'ifs-development','ifs-labour':'ifs-labour'};
 const siteDataFile = path.join(root,'site/data/seminars.json');
 let siteRecords = [];
 if (selectedSeries || offline) { try { siteRecords = JSON.parse(await fs.readFile(siteDataFile, 'utf8')); } catch {} }
 for (const item of config) {
   if (selectedSeries && !selectedSeries.has(item.id)) continue;
   let records=[]; try { records=await readSource(item); } catch(error) { console.error(String(error)); if (item.source.offlineFile) records=standardise(parseCsv(await fs.readFile(path.join(root,item.source.offlineFile),'utf8'))); }
-  records = records.map((record) => {
+  records = records.filter(record => !(item.excludedDates || []).includes(record.Date)).map((record) => {
     const override = item.overrides?.[record.Date] || {};
     return {
       ...record,
@@ -471,6 +495,7 @@ for (const item of config) {
     const start = record['Special start time'] || (hasSpecialTime ? '' : defaultParts[0]) || 'TBA';
     const finish = record['Special end time'] || (hasSpecialTime ? '' : defaultParts[1]) || '';
     siteRecords.push({id:`${item.id}-${record.Date}`,series:siteSeriesIds[item.id],date:record.Date,speaker:record.Speaker,institution:record.Institution,speakerUrl:record['Speaker URL']||undefined,title:record.Title||undefined,paperUrl:record['Paper URL']||undefined,signupUrl:record['Sign Up URL']||override.signupUrl||item.signupUrl||undefined,status:record.Status||'Scheduled',time:finish ? `${start}–${finish}` : start,location:record['Special location']||override.location||record._location||item.defaultLocation});
+    if (override.note || record._note) siteRecords.at(-1).note = override.note || record._note;
   }
 }
 siteRecords.sort((a,b) => a.date.localeCompare(b.date) || a.series.localeCompare(b.series));

@@ -51,6 +51,7 @@ type SeriesId =
   | 'theory'
   | 'finance'
   | 'macro'
+  | 'phd-seminar'
   | 'ifs'
   | 'ifs-development'
   | 'ifs-labour';
@@ -62,6 +63,7 @@ type Seminar = {
   institution: string;
   speakerUrl?: string;
   title?: string;
+  note?: string;
   paperUrl?: string;
   signupUrl?: string;
   location: string;
@@ -76,6 +78,7 @@ const series: { id: SeriesId; label: string; tabLabel?: string }[] = [
   { id: 'theory', label: 'THEBES' },
   { id: 'finance', label: 'Finance' },
   { id: 'macro', label: 'Macroeconomics' },
+  { id: 'phd-seminar', label: 'PhD Student Seminar' },
   { id: 'ifs', label: 'IFS Seminar' },
   { id: 'ifs-development', label: 'IFS/UCL/LSE Development Seminar', tabLabel: 'Development' },
   { id: 'ifs-labour', label: 'IFS/UCL Labour Seminar', tabLabel: 'Labour' },
@@ -151,6 +154,7 @@ function Speaker({ s }: { s: Seminar }) {
         <strong>{s.speaker}</strong>
       )}
       <span>{s.institution}</span>
+      {s.note && <span>{s.note}</span>}
     </span>
   );
 }
@@ -259,7 +263,9 @@ function Series({
   label: string;
 }) {
   const items = seminars.filter((s) => s.series === id);
-  const next = items.find((s) => !isBefore(parseISO(s.date), new Date()));
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const next = items.find((s) => !isBefore(parseISO(s.date), today));
   const seriesOrganisers = [...(organisers[id] || [])].sort((a, b) =>
     surname(a).localeCompare(surname(b), 'en-GB'),
   );
@@ -447,8 +453,10 @@ export default function Home() {
       <main>
         <Tabs defaultValue="all" className="seminar-tabs">
           <div className="tab-scroll">
-            <TabsList variant="line" className="tabs">
-              {standardSeries.map((x) => (
+            <TabsList variant="line" className="tabs seminar-tab-list">
+              <TabsTrigger value="all">All seminars</TabsTrigger>
+              <div className="seminar-series-row" role="presentation">
+              {standardSeries.filter((x) => x.id !== 'all').map((x) => (
                 <TabsTrigger key={x.id} value={x.id}>
                   {x.label}
                 </TabsTrigger>
@@ -462,6 +470,7 @@ export default function Home() {
                     </TabsTrigger>
                   ))}
                 </div>
+              </div>
               </div>
             </TabsList>
           </div>

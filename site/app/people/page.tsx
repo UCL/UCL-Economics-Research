@@ -4,6 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { SiteNav } from '@/components/site-nav';
 import { BrandHeader } from '@/components/brand-header';
 import peopleData from '@/data/people.json';
+import photoData from '@/data/people-photos.json';
 import publicationIndexData from '@/data/people-publication-index.json';
 import { sitePath } from '@/lib/site-path';
 
@@ -40,7 +41,8 @@ const surnameGroups = [
   { id: 'i-p', label: 'I–P', letters: 'IJKLMNOP' },
   { id: 'q-z', label: 'Q–Z', letters: 'QRSTUVWXYZ' },
 ];
-const maxPeoplePerPage = 24;
+const maxPeoplePerPage = 12;
+const photos = photoData as Record<string, string>;
 
 function PeopleGrid({ matches }: { matches: Person[] }) {
   return (
@@ -52,6 +54,7 @@ function PeopleGrid({ matches }: { matches: Person[] }) {
           ? researchKeywords
           : [person.primaryField, person.secondaryField].filter(Boolean);
         return <article className="person-card" key={person.email}>
+          {photos[person.email] && <img className="person-photo" src={sitePath(photos[person.email])} alt="" width={72} height={72} loading="lazy" onError={(event) => { event.currentTarget.hidden = true; }} />}
           <h2>{webpage ? <a href={webpage} target="_blank" rel="noreferrer">{person.name}</a> : person.name}</h2>
           <p>{person.title}</p>
           <div className="person-links">
@@ -72,9 +75,21 @@ function FieldPeople({ field }: { field: FieldId }) {
   const matches = field === 'all'
     ? people
     : people.filter((person) => person.primaryField === field || person.secondaryField === field);
-  const pages = surnameGroups
-    .map((group) => ({ ...group, people: matches.filter((person) => group.letters.includes(person.surnameInitial)) }))
-    .filter((group) => group.people.length > 0);
+  const groups = field === 'all' || field === 'Applied'
+    ? [matches]
+    : surnameGroups.map((group) => matches.filter((person) => group.letters.includes(person.surnameInitial)));
+  const pages = groups.flatMap((members, groupIndex) =>
+    Array.from({ length: Math.ceil(members.length / maxPeoplePerPage) }, (_, index) => {
+      const pagePeople = members.slice(index * maxPeoplePerPage, (index + 1) * maxPeoplePerPage);
+      const first = surname(pagePeople[0].name).charAt(0).toUpperCase();
+      const last = surname(pagePeople[pagePeople.length - 1].name).charAt(0).toUpperCase();
+      return {
+        id: `group-${groupIndex}-${index}`,
+        label: first === last ? first : `${first}–${last}`,
+        people: pagePeople,
+      };
+    }),
+  );
 
   if (matches.length <= maxPeoplePerPage) return <PeopleGrid matches={matches} />;
 
