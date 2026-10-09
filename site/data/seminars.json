@@ -183,24 +183,14 @@
     "location": "IFS / online"
   },
   {
-    "id": "applied-economics-2026-10-12",
-    "series": "applied",
-    "date": "2026-10-12",
-    "speaker": "Matthew Nibloe",
-    "institution": "",
-    "speakerUrl": "https://mattnibloe.com/",
-    "title": "The Labour Market Consequences of Trade Disintegration: Evidence from Brexit",
-    "status": "Scheduled",
-    "time": "14:00–15:30",
-    "location": "Archaeology 612"
-  },
-  {
     "id": "applied-economics-2026-10-13",
     "series": "applied",
     "date": "2026-10-13",
     "speaker": "Phil Haile",
     "institution": "",
     "speakerUrl": "https://sites.google.com/view/philhaile/home",
+    "title": "Selective Turnout, Voting Policy, and Partisan Bias: Evidence from Multi-Level Data",
+    "paperUrl": "https://www.nber.org/papers/w34149",
     "status": "Scheduled",
     "time": "12:30–13:30",
     "location": "IFS seminar room"
@@ -274,17 +264,6 @@
     "location": "IFS / online"
   },
   {
-    "id": "applied-economics-2026-10-19",
-    "series": "applied",
-    "date": "2026-10-19",
-    "speaker": "Arthur Laroche",
-    "institution": "",
-    "speakerUrl": "https://arthurlaroche.github.io/",
-    "status": "Scheduled",
-    "time": "14:00–15:30",
-    "location": "Archaeology 612"
-  },
-  {
     "id": "econometrics-2026-10-20",
     "series": "econometrics",
     "date": "2026-10-20",
@@ -346,9 +325,10 @@
     "id": "applied-economics-2026-10-22",
     "series": "applied",
     "date": "2026-10-22",
-    "speaker": "Emma Scandolo",
+    "speaker": "Matthew Nibloe",
     "institution": "",
-    "speakerUrl": "https://emmascandolo.github.io/",
+    "speakerUrl": "https://mattnibloe.com/",
+    "title": "The Labour Market Consequences of Trade Disintegration: Evidence from Brexit",
     "status": "Scheduled",
     "time": "12:30–14:00",
     "location": "IFS seminar room"
@@ -370,6 +350,7 @@
     "speaker": "Hikaru Kawarazaki",
     "institution": "",
     "speakerUrl": "https://sites.google.com/site/hikarukawara/",
+    "title": "When Trouble Travels: Peer Effects of Criminal Exposure in Schools",
     "status": "Scheduled",
     "time": "14:00–15:30",
     "location": "Archaeology 612"
@@ -425,6 +406,7 @@
     "speaker": "Ruimin Ao",
     "institution": "",
     "speakerUrl": "https://ruiminao.com/",
+    "title": "Behaviour Under Addiction: Dynamic Choice Between Smoking and Vaping",
     "status": "Scheduled",
     "time": "12:00–13:30",
     "location": "IFS seminar room"
@@ -446,6 +428,7 @@
     "speaker": "Ararat Gocmen",
     "institution": "",
     "speakerUrl": "https://araratgocmen.com/",
+    "title": "Immigration and Firm Investment",
     "status": "Scheduled",
     "time": "14:00–15:30",
     "location": "Archaeology 612"
@@ -508,9 +491,11 @@
     "id": "applied-economics-2026-11-05",
     "series": "applied",
     "date": "2026-11-05",
-    "speaker": "Yasuka Tateishi",
+    "speaker": "Emma Scandolo",
     "institution": "",
-    "speakerUrl": "https://yasukatateishi.com/",
+    "speakerUrl": "https://emmascandolo.github.io/",
+    "title": "Less to Lose: How an earlier credential reshaped university choice and earnings",
+    "paperUrl": "https://emmascandolo.github.io/papers/BP_Portugal_Scandolo.pdf",
     "status": "Scheduled",
     "time": "12:00–13:30",
     "location": "IFS seminar room"
@@ -633,6 +618,7 @@
     "speaker": "Daiji Kawaguchi",
     "institution": "",
     "speakerUrl": "https://sites.google.com/site/daijikawaguchi/",
+    "title": "Electricity Supply Shocks and Manufacturing: Evidence from the Fukushima Nuclear Accident",
     "signupUrl": "https://docs.google.com/spreadsheets/d/1ajj5o5ymknkQGVOdk7FFCd7SRi-SK5IFQ55NfcJGR8g/edit?gid=776885410",
     "status": "Scheduled",
     "time": "12:00–13:15",
@@ -655,6 +641,7 @@
     "speaker": "Giuseppe Forte",
     "institution": "",
     "speakerUrl": "https://gfrt0.github.io/",
+    "title": "An Empirical Model of Online Ratings Supply and Demand",
     "status": "Scheduled",
     "time": "14:00–15:30",
     "location": "Archaeology 612"
@@ -795,6 +782,17 @@
     "status": "TBA",
     "time": "2:00–3:00pm",
     "location": "IFS / online"
+  },
+  {
+    "id": "applied-economics-2026-12-07",
+    "series": "applied",
+    "date": "2026-12-07",
+    "speaker": "Arthur Laroche",
+    "institution": "",
+    "speakerUrl": "https://arthurlaroche.github.io/",
+    "status": "Scheduled",
+    "time": "14:00–15:30",
+    "location": "Archaeology 612"
   },
   {
     "id": "econometrics-2026-12-08",
