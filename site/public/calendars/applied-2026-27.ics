@@ -35,26 +35,14 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
-UID:applied-economics-2026-10-12@economics.ucl.ac.uk
-DTSTAMP:20260901T000000Z
-DTSTART;TZID=Europe/London:20261012T140000
-DTEND;TZID=Europe/London:20261012T153000
-SUMMARY:Matthew Nibloe — The Labour Market Consequences of Trade Disinteg
- ration: Evidence from Brexit
-DESCRIPTION:Speaker: https://mattnibloe.com/\nSeminar series: Applied Econo
- mics
-LOCATION:Archaeology 612
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENT
-BEGIN:VEVENT
 UID:applied-economics-2026-10-13@economics.ucl.ac.uk
 DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261013T123000
 DTEND;TZID=Europe/London:20261013T133000
-SUMMARY:Phil Haile
-DESCRIPTION:Speaker: https://sites.google.com/view/philhaile/home\nSeminar 
- series: Applied Economics
+SUMMARY:Phil Haile — Selective Turnout\, Voting Policy\, and Partisan Bia
+ s: Evidence from Multi-Level Data
+DESCRIPTION:Paper: https://www.nber.org/papers/w34149\nSpeaker: https://sit
+ es.google.com/view/philhaile/home\nSeminar series: Applied Economics
 LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
@@ -72,25 +60,14 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
-UID:applied-economics-2026-10-19@economics.ucl.ac.uk
-DTSTAMP:20260901T000000Z
-DTSTART;TZID=Europe/London:20261019T140000
-DTEND;TZID=Europe/London:20261019T153000
-SUMMARY:Arthur Laroche
-DESCRIPTION:Speaker: https://arthurlaroche.github.io/\nSeminar series: Appl
- ied Economics
-LOCATION:Archaeology 612
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENT
-BEGIN:VEVENT
 UID:applied-economics-2026-10-22@economics.ucl.ac.uk
 DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261022T123000
 DTEND;TZID=Europe/London:20261022T140000
-SUMMARY:Emma Scandolo
-DESCRIPTION:Speaker: https://emmascandolo.github.io/\nSeminar series: Appli
- ed Economics
+SUMMARY:Matthew Nibloe — The Labour Market Consequences of Trade Disinteg
+ ration: Evidence from Brexit
+DESCRIPTION:Speaker: https://mattnibloe.com/\nSeminar series: Applied Econo
+ mics
 LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
@@ -100,7 +77,8 @@ UID:applied-economics-2026-10-26@economics.ucl.ac.uk
 DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261026T140000
 DTEND;TZID=Europe/London:20261026T153000
-SUMMARY:Hikaru Kawarazaki
+SUMMARY:Hikaru Kawarazaki — When Trouble Travels: Peer Effects of Crimina
+ l Exposure in Schools
 DESCRIPTION:Speaker: https://sites.google.com/site/hikarukawara/\nSeminar s
  eries: Applied Economics
 LOCATION:Archaeology 612
@@ -112,7 +90,8 @@ UID:applied-economics-2026-10-29@economics.ucl.ac.uk
 DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261029T120000
 DTEND;TZID=Europe/London:20261029T133000
-SUMMARY:Ruimin Ao
+SUMMARY:Ruimin Ao — Behaviour Under Addiction: Dynamic Choice Between Smo
+ king and Vaping
 DESCRIPTION:Speaker: https://ruiminao.com/\nSeminar series: Applied Economi
  cs
 LOCATION:IFS seminar room
@@ -124,7 +103,7 @@ UID:applied-economics-2026-11-02@economics.ucl.ac.uk
 DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261102T140000
 DTEND;TZID=Europe/London:20261102T153000
-SUMMARY:Ararat Gocmen
+SUMMARY:Ararat Gocmen — Immigration and Firm Investment
 DESCRIPTION:Speaker: https://araratgocmen.com/\nSeminar series: Applied Eco
  nomics
 LOCATION:Archaeology 612
@@ -136,9 +115,11 @@ UID:applied-economics-2026-11-05@economics.ucl.ac.uk
 DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261105T120000
 DTEND;TZID=Europe/London:20261105T133000
-SUMMARY:Yasuka Tateishi
-DESCRIPTION:Speaker: https://yasukatateishi.com/\nSeminar series: Applied E
- conomics
+SUMMARY:Emma Scandolo — Less to Lose: How an earlier credential reshaped 
+ university choice and earnings
+DESCRIPTION:Paper: https://emmascandolo.github.io/papers/BP_Portugal_Scando
+ lo.pdf\nSpeaker: https://emmascandolo.github.io/\nSeminar series: Applied 
+ Economics
 LOCATION:IFS seminar room
 STATUS:CONFIRMED
 SEQUENCE:0
@@ -160,7 +141,8 @@ UID:applied-economics-2026-11-19@economics.ucl.ac.uk
 DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261119T120000
 DTEND;TZID=Europe/London:20261119T131500
-SUMMARY:Daiji Kawaguchi
+SUMMARY:Daiji Kawaguchi — Electricity Supply Shocks and Manufacturing: Ev
+ idence from the Fukushima Nuclear Accident
 DESCRIPTION:Speaker: https://sites.google.com/site/daijikawaguchi/\nSeminar
   series: Applied Economics
 LOCATION:IFS seminar room
@@ -172,7 +154,8 @@ UID:applied-economics-2026-11-23@economics.ucl.ac.uk
 DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261123T140000
 DTEND;TZID=Europe/London:20261123T153000
-SUMMARY:Giuseppe Forte
+SUMMARY:Giuseppe Forte — An Empirical Model of Online Ratings Supply and 
+ Demand
 DESCRIPTION:Speaker: https://gfrt0.github.io/\nSeminar series: Applied Econ
  omics
 LOCATION:Archaeology 612
@@ -213,6 +196,18 @@ DESCRIPTION:Paper: https://drive.google.com/file/d/1m7OBnIYUriMpVryPKugZke9
  2-NjdF9QW/view\nSpeaker: https://sites.google.com/site/isaacsorkin/home\nS
  eminar series: Applied Economics
 LOCATION:IFS seminar room
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:applied-economics-2026-12-07@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20261207T140000
+DTEND;TZID=Europe/London:20261207T153000
+SUMMARY:Arthur Laroche
+DESCRIPTION:Speaker: https://arthurlaroche.github.io/\nSeminar series: Appl
+ ied Economics
+LOCATION:Archaeology 612
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
