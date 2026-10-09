@@ -12,6 +12,7 @@ const seriesNames = {
   theory: 'THEBES',
   finance: 'Finance',
   macro: 'Macroeconomics',
+  'phd-seminar': 'PhD Student Seminar',
   ifs: 'IFS Seminar',
   'ifs-development': 'IFS/UCL/LSE Development Seminar',
   'ifs-labour': 'IFS/UCL Labour Seminar',

@@ -186,7 +186,20 @@ main {
   gap: 5px;
 }
 .seminar-tabs > .tab-scroll > .tabs {
-  margin-left: auto;
+  margin-left: 0;
+}
+.seminar-tab-list {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.seminar-tab-list > [data-slot='tabs-trigger'] {
+  flex: none;
+  align-self: center;
+}
+.seminar-series-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 .term-tab-scroll {
   overflow-x: auto;
@@ -566,16 +579,28 @@ main {
 }
 .people-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   border-top: 3px solid #001b44;
   border-left: 1px solid var(--border);
 }
 .person-card {
+  display: flow-root;
   min-width: 0;
   padding: 9px 11px;
   border-right: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
+.person-photo {
+  float: right;
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  object-position: center top;
+  margin: 0 0 8px 12px;
+  border-radius: 3px;
+}
+.person-photo[hidden] { display: none; }
+.person-card .research-keywords { clear: both; }
 .person-card h2 {
   margin: 0 0 2px;
   font-size: 0.98rem;

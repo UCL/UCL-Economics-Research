@@ -52,7 +52,7 @@
     "title": "Privacy Preserving Auctions",
     "signupUrl": "https://liveuclac.sharepoint.com/:x:/s/UCL-THEBES/IQA8TrWBxpt0RqZRJK3dwTBbAXKKqwXBG9rj1kyjTLxiL9I",
     "status": "Scheduled",
-    "time": "16:00–17:30",
+    "time": "16:00–17:15",
     "location": "Gordon House, rm 106"
   },
   {
@@ -102,6 +102,17 @@
     "location": "IFS / online"
   },
   {
+    "id": "phd-seminar-2026-10-02",
+    "series": "phd-seminar",
+    "date": "2026-10-02",
+    "speaker": "Clara von Bismarck-Osten",
+    "institution": "University College London",
+    "title": "Mapping Tax Elasticities",
+    "status": "Scheduled",
+    "time": "12:00–13:00",
+    "location": "Drayton 321"
+  },
+  {
     "id": "econometrics-2026-10-06",
     "series": "econometrics",
     "date": "2026-10-06",
@@ -124,7 +135,7 @@
     "title": "Robust Contracting for Sequential Search",
     "signupUrl": "https://liveuclac.sharepoint.com/:x:/s/UCL-THEBES/IQA8TrWBxpt0RqZRJK3dwTBbAXKKqwXBG9rj1kyjTLxiL9I",
     "status": "Scheduled",
-    "time": "16:00–17:30",
+    "time": "16:00–17:15",
     "location": "Darwin Building, rm B15"
   },
   {
@@ -183,6 +194,17 @@
     "location": "IFS / online"
   },
   {
+    "id": "phd-seminar-2026-10-09",
+    "series": "phd-seminar",
+    "date": "2026-10-09",
+    "speaker": "Zihao Wang",
+    "institution": "University College London",
+    "title": "Skill Adjustment during and after College, Sorting, and Wages",
+    "status": "Scheduled",
+    "time": "12:00–13:00",
+    "location": "Drayton 321"
+  },
+  {
     "id": "applied-economics-2026-10-13",
     "series": "applied",
     "date": "2026-10-13",
@@ -215,10 +237,10 @@
     "speaker": "Andreas Ziegler",
     "institution": "VU Amsterdam",
     "speakerUrl": "https://www.andreasziegler.eu",
-    "title": "TBA",
+    "title": "Strategic Obliviousness",
     "signupUrl": "https://liveuclac.sharepoint.com/:x:/s/UCL-THEBES/IQA8TrWBxpt0RqZRJK3dwTBbAXKKqwXBG9rj1kyjTLxiL9I",
     "status": "Scheduled",
-    "time": "16:00–17:30",
+    "time": "16:00–17:15",
     "location": "Darwin Building, rm B15"
   },
   {
@@ -228,8 +250,10 @@
     "speaker": "Quentin Vandeweyer",
     "institution": "London Business School",
     "status": "Scheduled",
-    "time": "16:00",
-    "location": "Drayton 321"
+    "time": "16:00–17:30",
+    "location": "Drayton 321",
+    "title": "The Fiscal Foundations of Safe Assets",
+    "note": "Joint with the School of Management"
   },
   {
     "id": "macroeconomics-2026-10-14",
@@ -240,7 +264,10 @@
     "signupUrl": "https://liveuclac-my.sharepoint.com/:x:/g/personal/uctpcou_ucl_ac_uk/IQBdMXEp7ODGTIn7cEsITkU1AX3nASCnoTRbDCRdVT4b50A?xsdata=MDV8MDJ8bC5uZXNoZWltQHVjbC5hYy51a3w1MmI5MDc4MzBkYjM0YzViOWMwODA4ZGYxYWYyOWM1N3wxZmFmODhmZWE5OTg0YzViOTNjOTIxMGExMWQ5YTVjMnwwfDB8NjM5MjU5MzAxNTEyNTgwNDE1fFVua25vd258VFdGcGJHWnNiM2Q4ZXlKRmJYQjBlVTFoY0draU9uUnlkV1VzSWxZaU9pSXdMakF1TURBd01DSXNJbEFpT2lKWGFXNHpNaUlzSWtGT0lqb2lUV0ZwYkNJc0lsZFVJam95ZlE9PXwwfHx8&sdata=ZmZCSzRZd243RFRXUzR1OWhGVHBldHBLQWNzOW9qRXUraWpVanh4MExqZz0%3d",
     "status": "Scheduled",
     "time": "13:00–14:30",
-    "location": "LG01 Euston Road 222"
+    "location": "LG01 Euston Road 222",
+    "speakerUrl": "https://sites.google.com/site/corinaboar/",
+    "title": "Importers, Market Power and Optimal Tariffs",
+    "paperUrl": "https://drive.google.com/file/d/1P7gUekC-kj_r2uoXp09essHbAaO-G_jy/view?usp=drive_link"
   },
   {
     "id": "applied-economics-2026-10-15",
@@ -264,6 +291,17 @@
     "location": "IFS / online"
   },
   {
+    "id": "phd-seminar-2026-10-16",
+    "series": "phd-seminar",
+    "date": "2026-10-16",
+    "speaker": "Pedro Cubillos",
+    "institution": "University College London",
+    "title": "Specializing the State: Bureaucratic Organization and Public Service Delivery",
+    "status": "Scheduled",
+    "time": "12:00–13:00",
+    "location": "Drayton 321"
+  },
+  {
     "id": "econometrics-2026-10-20",
     "series": "econometrics",
     "date": "2026-10-20",
@@ -281,10 +319,11 @@
     "speaker": "Jacopo Perego",
     "institution": "Columbia Business School",
     "speakerUrl": "https://www.jperego.com",
-    "title": "TBA",
+    "title": "Privacy for Sale: Anarchy, Ban, or Market?",
+    "paperUrl": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7290620",
     "signupUrl": "https://liveuclac.sharepoint.com/:x:/s/UCL-THEBES/IQA8TrWBxpt0RqZRJK3dwTBbAXKKqwXBG9rj1kyjTLxiL9I",
     "status": "Scheduled",
-    "time": "16:00–17:30",
+    "time": "16:00–17:15",
     "location": "Darwin Building, rm B15"
   },
   {
@@ -318,8 +357,8 @@
     "title": "Providing Certainty",
     "signupUrl": "https://liveuclac.sharepoint.com/:x:/s/UCL-THEBES/IQA8TrWBxpt0RqZRJK3dwTBbAXKKqwXBG9rj1kyjTLxiL9I",
     "status": "Scheduled",
-    "time": "TBD",
-    "location": "TBD"
+    "time": "13:00–14:15",
+    "location": "Darwin Building, rm B20"
   },
   {
     "id": "applied-economics-2026-10-22",
@@ -342,6 +381,18 @@
     "status": "TBA",
     "time": "2:00–3:00pm",
     "location": "IFS / online"
+  },
+  {
+    "id": "phd-seminar-2026-10-23",
+    "series": "phd-seminar",
+    "date": "2026-10-23",
+    "speaker": "Siao Xu",
+    "institution": "University of Mannheim",
+    "title": "ML-Assisted Empirical Bayes Estimation for Regression on Network Data",
+    "status": "Scheduled",
+    "time": "12:00–13:00",
+    "location": "Drayton 321",
+    "note": "ENTER Seminar, Siao is joining us from Mannheim"
   },
   {
     "id": "applied-economics-2026-10-26",
@@ -372,10 +423,11 @@
     "speaker": "Julia Salmi",
     "institution": "Hanken School of Economics",
     "speakerUrl": "https://sites.google.com/view/juliasalmi",
-    "title": "TBA",
+    "title": "Dynamic Evidence Disclosure: Delay the Good to Accelerate the Bad",
+    "paperUrl": "https://arxiv.org/pdf/2406.11728",
     "signupUrl": "https://liveuclac.sharepoint.com/:x:/s/UCL-THEBES/IQA8TrWBxpt0RqZRJK3dwTBbAXKKqwXBG9rj1kyjTLxiL9I",
     "status": "Scheduled",
-    "time": "16:00–17:30",
+    "time": "16:00–17:15",
     "location": "Darwin Building, rm B15"
   },
   {
@@ -422,6 +474,17 @@
     "location": "IFS / online"
   },
   {
+    "id": "phd-seminar-2026-10-30",
+    "series": "phd-seminar",
+    "date": "2026-10-30",
+    "speaker": "Perinaz Alp",
+    "institution": "University College London",
+    "title": "Upskilling against the Machine: Firm Training and Worker Reallocation under Automation",
+    "status": "Scheduled",
+    "time": "12:00–13:00",
+    "location": "Drayton 321"
+  },
+  {
     "id": "applied-economics-2026-11-02",
     "series": "applied",
     "date": "2026-11-02",
@@ -453,18 +516,8 @@
     "title": "N-Player Continuous-Time Repeated Games with Imperfect Public Information",
     "signupUrl": "https://liveuclac.sharepoint.com/:x:/s/UCL-THEBES/IQA8TrWBxpt0RqZRJK3dwTBbAXKKqwXBG9rj1kyjTLxiL9I",
     "status": "Scheduled",
-    "time": "16:00–17:30",
+    "time": "16:00–17:15",
     "location": "Darwin Building, rm B15"
-  },
-  {
-    "id": "finance-2026-11-04",
-    "series": "finance",
-    "date": "2026-11-04",
-    "speaker": "Kenneth Rogoff",
-    "institution": "Harvard (former chief economist at the IMF)",
-    "status": "Scheduled",
-    "time": "16:00",
-    "location": "Drayton 321"
   },
   {
     "id": "ifs-seminars-2026-11-04",
@@ -511,6 +564,16 @@
     "location": "IFS / online"
   },
   {
+    "id": "phd-seminar-2026-11-06",
+    "series": "phd-seminar",
+    "date": "2026-11-06",
+    "speaker": "Matt Nibloe",
+    "institution": "University College London",
+    "status": "Scheduled",
+    "time": "12:00–13:00",
+    "location": "Drayton 321"
+  },
+  {
     "id": "economic-theory-2026-11-10",
     "series": "theory",
     "date": "2026-11-10",
@@ -521,7 +584,7 @@
     "paperUrl": "https://drive.google.com/file/d/1XTpmPI_Wi6DfGlUYrEqrfYXYPHjcQ1Sn/view",
     "signupUrl": "https://liveuclac.sharepoint.com/:x:/s/UCL-THEBES/IQA8TrWBxpt0RqZRJK3dwTBbAXKKqwXBG9rj1kyjTLxiL9I",
     "status": "Scheduled",
-    "time": "16:00–17:30",
+    "time": "16:00–17:15",
     "location": "Darwin Building, rm B15"
   },
   {
@@ -556,6 +619,17 @@
     "location": "IFS / online"
   },
   {
+    "id": "phd-seminar-2026-11-13",
+    "series": "phd-seminar",
+    "date": "2026-11-13",
+    "speaker": "Lorenzo Sinno",
+    "institution": "University College London",
+    "status": "Scheduled",
+    "time": "12:00–13:00",
+    "location": "Drayton 321",
+    "note": "Reading Week"
+  },
+  {
     "id": "applied-economics-2026-11-16",
     "series": "applied",
     "date": "2026-11-16",
@@ -584,10 +658,11 @@
     "speaker": "Fernando Payró",
     "institution": "Universitat Autònoma de Barcelona",
     "speakerUrl": "https://sites.google.com/site/ferpayrochew/home",
-    "title": "TBA",
+    "title": "Modeling the Modeler",
+    "paperUrl": "https://www.dropbox.com/scl/fi/040vbmtpzilwlm7xv8nnc/Modeling_the_Modeler_draft.pdf?rlkey=hqq1at042gu8juc9orgybk9nr&e=1&dl=0",
     "signupUrl": "https://liveuclac.sharepoint.com/:x:/s/UCL-THEBES/IQA8TrWBxpt0RqZRJK3dwTBbAXKKqwXBG9rj1kyjTLxiL9I",
     "status": "Scheduled",
-    "time": "16:00–17:30",
+    "time": "16:00–17:15",
     "location": "Darwin Building, rm B15"
   },
   {
@@ -635,6 +710,18 @@
     "location": "IFS / online"
   },
   {
+    "id": "phd-seminar-2026-11-20",
+    "series": "phd-seminar",
+    "date": "2026-11-20",
+    "speaker": "Guillem Foucalt",
+    "institution": "Toulouse School of Economics",
+    "title": "Funding Instruments and Effort Choices in Higher Education",
+    "status": "Scheduled",
+    "time": "12:00–13:00",
+    "location": "Drayton 321",
+    "note": "ENTER Seminar, Guillem is joining us from TSE"
+  },
+  {
     "id": "applied-economics-2026-11-23",
     "series": "applied",
     "date": "2026-11-23",
@@ -664,10 +751,10 @@
     "speaker": "Paulo Natenzon",
     "institution": "Washington University in St. Louis, Olin Business School",
     "speakerUrl": "https://paulonatenzon.com",
-    "title": "TBA",
+    "title": "Incomparable!",
     "signupUrl": "https://liveuclac.sharepoint.com/:x:/s/UCL-THEBES/IQA8TrWBxpt0RqZRJK3dwTBbAXKKqwXBG9rj1kyjTLxiL9I",
     "status": "Scheduled",
-    "time": "16:00–17:30",
+    "time": "16:00–17:15",
     "location": "Darwin Building, rm B15"
   },
   {
@@ -713,6 +800,16 @@
     "location": "IFS / online"
   },
   {
+    "id": "phd-seminar-2026-11-27",
+    "series": "phd-seminar",
+    "date": "2026-11-27",
+    "speaker": "Joaquín Urria",
+    "institution": "University College London",
+    "status": "Scheduled",
+    "time": "12:00–13:00",
+    "location": "Drayton 321"
+  },
+  {
     "id": "applied-economics-2026-11-30",
     "series": "applied",
     "date": "2026-11-30",
@@ -745,7 +842,7 @@
     "paperUrl": "https://drive.google.com/file/d/1gLYwh26mJ4nK73kVyTyOXZyKvJZph3h_/view?usp=sharing",
     "signupUrl": "https://liveuclac.sharepoint.com/:x:/s/UCL-THEBES/IQA8TrWBxpt0RqZRJK3dwTBbAXKKqwXBG9rj1kyjTLxiL9I",
     "status": "Scheduled",
-    "time": "16:00–17:30",
+    "time": "16:00–17:15",
     "location": "Darwin Building, rm B15"
   },
   {
@@ -784,6 +881,16 @@
     "location": "IFS / online"
   },
   {
+    "id": "phd-seminar-2026-12-04",
+    "series": "phd-seminar",
+    "date": "2026-12-04",
+    "speaker": "Toby Kenward",
+    "institution": "University College London",
+    "status": "Scheduled",
+    "time": "12:00–13:00",
+    "location": "Drayton 321"
+  },
+  {
     "id": "applied-economics-2026-12-07",
     "series": "applied",
     "date": "2026-12-07",
@@ -812,10 +919,10 @@
     "speaker": "Martino Banchio",
     "institution": "Bocconi University",
     "speakerUrl": "https://martinobanchio.github.io",
-    "title": "TBA",
+    "title": "TBD",
     "signupUrl": "https://liveuclac.sharepoint.com/:x:/s/UCL-THEBES/IQA8TrWBxpt0RqZRJK3dwTBbAXKKqwXBG9rj1kyjTLxiL9I",
     "status": "Scheduled",
-    "time": "16:00–17:30",
+    "time": "16:00–17:15",
     "location": "Darwin Building, rm B15"
   },
   {
@@ -859,8 +966,8 @@
     "title": "Dynamic Pricing with Unobservable Consumer Learning",
     "signupUrl": "https://liveuclac.sharepoint.com/:x:/s/UCL-THEBES/IQA8TrWBxpt0RqZRJK3dwTBbAXKKqwXBG9rj1kyjTLxiL9I",
     "status": "Scheduled",
-    "time": "TBD",
-    "location": "TBD"
+    "time": "13:00–14:15",
+    "location": "Drayton House, B20 Jevons LT"
   },
   {
     "id": "applied-economics-2026-12-10",
@@ -886,6 +993,16 @@
     "location": "IFS / online"
   },
   {
+    "id": "phd-seminar-2026-12-11",
+    "series": "phd-seminar",
+    "date": "2026-12-11",
+    "speaker": "Yikai Li",
+    "institution": "University College London",
+    "status": "Scheduled",
+    "time": "12:00–13:00",
+    "location": "Drayton 321"
+  },
+  {
     "id": "econometrics-2026-12-15",
     "series": "econometrics",
     "date": "2026-12-15",
@@ -907,7 +1024,7 @@
     "paperUrl": "https://arxiv.org/pdf/2511.18662",
     "signupUrl": "https://liveuclac.sharepoint.com/:x:/s/UCL-THEBES/IQA8TrWBxpt0RqZRJK3dwTBbAXKKqwXBG9rj1kyjTLxiL9I",
     "status": "Scheduled",
-    "time": "16:00–17:30",
+    "time": "16:00–17:15",
     "location": "Darwin Building, rm B15"
   },
   {
@@ -931,6 +1048,17 @@
     "status": "TBA",
     "time": "2:00–3:00pm",
     "location": "IFS / online"
+  },
+  {
+    "id": "phd-seminar-2026-12-18",
+    "series": "phd-seminar",
+    "date": "2026-12-18",
+    "speaker": "Kotaro Fujisaki",
+    "institution": "University College London",
+    "title": "Development by Concession? State-Led Expansion and Reversal of Plantation Agriculture",
+    "status": "Scheduled",
+    "time": "12:00–13:00",
+    "location": "Drayton 321"
   },
   {
     "id": "ifs-seminars-2027-02-22",

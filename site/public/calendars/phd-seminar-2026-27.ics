@@ -1,0 +1,149 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//UCL Economics Research//Seminar calendars//EN
+X-WR-CALNAME:PhD Student Seminar seminars 2026-27
+X-WR-TIMEZONE:Europe/London
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:phd-seminar-2026-10-02@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20261002T120000
+DTEND;TZID=Europe/London:20261002T130000
+SUMMARY:Clara von Bismarck-Osten — Mapping Tax Elasticities
+DESCRIPTION:University College London\nSeminar series: PhD Student Seminar
+LOCATION:Drayton 321
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:phd-seminar-2026-10-09@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20261009T120000
+DTEND;TZID=Europe/London:20261009T130000
+SUMMARY:Zihao Wang — Skill Adjustment during and after College\, Sorting\
+ , and Wages
+DESCRIPTION:University College London\nSeminar series: PhD Student Seminar
+LOCATION:Drayton 321
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:phd-seminar-2026-10-16@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20261016T120000
+DTEND;TZID=Europe/London:20261016T130000
+SUMMARY:Pedro Cubillos — Specializing the State: Bureaucratic Organizatio
+ n and Public Service Delivery
+DESCRIPTION:University College London\nSeminar series: PhD Student Seminar
+LOCATION:Drayton 321
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:phd-seminar-2026-10-23@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20261023T120000
+DTEND;TZID=Europe/London:20261023T130000
+SUMMARY:Siao Xu — ML-Assisted Empirical Bayes Estimation for Regression o
+ n Network Data
+DESCRIPTION:University of Mannheim\nSeminar series: PhD Student Seminar
+LOCATION:Drayton 321
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:phd-seminar-2026-10-30@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20261030T120000
+DTEND;TZID=Europe/London:20261030T130000
+SUMMARY:Perinaz Alp — Upskilling against the Machine: Firm Training and W
+ orker Reallocation under Automation
+DESCRIPTION:University College London\nSeminar series: PhD Student Seminar
+LOCATION:Drayton 321
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:phd-seminar-2026-11-06@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20261106T120000
+DTEND;TZID=Europe/London:20261106T130000
+SUMMARY:Matt Nibloe
+DESCRIPTION:University College London\nSeminar series: PhD Student Seminar
+LOCATION:Drayton 321
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:phd-seminar-2026-11-13@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20261113T120000
+DTEND;TZID=Europe/London:20261113T130000
+SUMMARY:Lorenzo Sinno
+DESCRIPTION:University College London\nSeminar series: PhD Student Seminar
+LOCATION:Drayton 321
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:phd-seminar-2026-11-20@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20261120T120000
+DTEND;TZID=Europe/London:20261120T130000
+SUMMARY:Guillem Foucalt — Funding Instruments and Effort Choices in Highe
+ r Education
+DESCRIPTION:Toulouse School of Economics\nSeminar series: PhD Student Semin
+ ar
+LOCATION:Drayton 321
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:phd-seminar-2026-11-27@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20261127T120000
+DTEND;TZID=Europe/London:20261127T130000
+SUMMARY:Joaquín Urria
+DESCRIPTION:University College London\nSeminar series: PhD Student Seminar
+LOCATION:Drayton 321
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:phd-seminar-2026-12-04@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20261204T120000
+DTEND;TZID=Europe/London:20261204T130000
+SUMMARY:Toby Kenward
+DESCRIPTION:University College London\nSeminar series: PhD Student Seminar
+LOCATION:Drayton 321
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:phd-seminar-2026-12-11@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20261211T120000
+DTEND;TZID=Europe/London:20261211T130000
+SUMMARY:Yikai Li
+DESCRIPTION:University College London\nSeminar series: PhD Student Seminar
+LOCATION:Drayton 321
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:phd-seminar-2026-12-18@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20261218T120000
+DTEND;TZID=Europe/London:20261218T130000
+SUMMARY:Kotaro Fujisaki — Development by Concession? State-Led Expansion 
+ and Reversal of Plantation Agriculture
+DESCRIPTION:University College London\nSeminar series: PhD Student Seminar
+LOCATION:Drayton 321
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+END:VCALENDAR
