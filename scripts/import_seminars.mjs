@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { SpreadsheetFile, Workbook } from '@oai/artifact-tool';
+import { SpreadsheetFile, Workbook } from './lib/workbook.mjs';
 import ExcelJS from 'exceljs';
 
 const columns = ['Date', 'Speaker', 'Institution', 'Speaker URL', 'Title', 'Paper URL', 'Sign Up URL', 'Status', 'Special start time', 'Special end time', 'Special location'];
