@@ -81,11 +81,13 @@ function eventLines(seminar) {
   const summary = [seminar.speaker, seminar.title].filter(Boolean).join(' — ') || `${seriesName} seminar`;
   const description = [
     seminar.institution,
+    seminar.note,
     seminar.paperUrl && `Paper: ${seminar.paperUrl}`,
     seminar.speakerUrl && `Speaker: ${seminar.speakerUrl}`,
     `Seminar series: ${seriesName}`,
   ].filter(Boolean).join('\n');
-  const status = /^cancelled$/i.test(seminar.status || '') ? 'CANCELLED' : 'CONFIRMED';
+  const status = /^cancelled$/i.test(seminar.status || '') ? 'CANCELLED'
+    : /^tentative$/i.test(seminar.status || '') ? 'TENTATIVE' : 'CONFIRMED';
   return [
     'BEGIN:VEVENT',
     `UID:${escapeText(seminar.id)}@economics.ucl.ac.uk`,

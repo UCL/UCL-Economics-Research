@@ -368,6 +368,7 @@ async function readCemmapSource(item) {
 async function readSource(item) {
   const source = item.source;
   if (source.type === 'unconfigured') return [];
+  if (source.type === 'csv') return standardise(parseCsv(await fs.readFile(path.join(root, source.offlineFile), 'utf8')));
   if (offline) {
     if (!source.offlineFile) return [];
     const text = await fs.readFile(path.join(root, source.offlineFile), 'utf8');
@@ -444,7 +445,7 @@ async function createWorkbook(item, records) {
     for (let c = 0; c < 8; c++) if (!data[r][columns[c]] || String(data[r][columns[c]]).trim().toUpperCase() === 'TBA') sheet.getCell(r + 1, c).format.fill = '#FFF2CC';
     for (let c = 8; c < 11; c++) if (data[r][columns[c]]) { sheet.getCell(r + 1, c).format.fill = '#F6BE00'; sheet.getCell(r + 1, c).format.font = {name:'Arial',size:10,bold:true,color:'#17212B'}; }
   }
-  sheet.getRange(`H2:H${data.length + 1}`).dataValidation = { rule:{ type:'list', values:['Scheduled','JMC','Cancelled','Postponed','TBA'] } };
+  sheet.getRange(`H2:H${data.length + 1}`).dataValidation = { rule:{ type:'list', values:['Scheduled','JMC','Cancelled','Postponed','TBA','Tentative'] } };
   const table = sheet.tables.add(`A1:K${data.length + 1}`, true, `${item.id.replaceAll('-','_')}_seminars`); table.style = 'TableStyleMedium2'; table.showBandedRows = false;
   const noteRow = data.length + 3;
   sheet.getRange(`A${noteRow}:B${noteRow}`).values = [['Overrides', 'Blue columns are optional. A gold value replaces the series default for that seminar.']];
