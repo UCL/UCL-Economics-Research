@@ -310,7 +310,19 @@
     "speakerUrl": "https://chenweihsiang.github.io/",
     "status": "JMC",
     "time": "12:30–13:30",
-    "location": "IFS seminar room"
+    "location": "IFS seminar room",
+    "title": "Synthetic Counterfactual Networks"
+  },
+  {
+    "id": "ifs-labour-2026-10-20",
+    "series": "ifs-labour",
+    "date": "2026-10-20",
+    "speaker": "Louis-Pierre Lepage",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "14:00–15:00",
+    "location": "IFS",
+    "title": "(Mis)Perceptions of the Labor Market"
   },
   {
     "id": "economic-theory-2026-10-20",
@@ -334,7 +346,8 @@
     "institution": "Duke University",
     "status": "Scheduled",
     "time": "16:00",
-    "location": "Drayton 321"
+    "location": "Drayton 321",
+    "title": "Informal Seniority"
   },
   {
     "id": "macroeconomics-2026-10-21",
@@ -342,10 +355,11 @@
     "date": "2026-10-21",
     "speaker": "Federico Kochen",
     "institution": "CEMFI",
-    "signupUrl": "https://liveuclac-my.sharepoint.com/:x:/g/personal/uctpcou_ucl_ac_uk/IQBdMXEp7ODGTIn7cEsITkU1AX3nASCnoTRbDCRdVT4b50A?xsdata=MDV8MDJ8bC5uZXNoZWltQHVjbC5hYy51a3w1MmI5MDc4MzBkYjM0YzViOWMwODA4ZGYxYWYyOWM1N3wxZmFmODhmZWE5OTg0YzViOTNjOTIxMGExMWQ5YTVjMnwwfDB8NjM5MjU5MzAxNTEyNTgwNDE1fFVua25vd258VFdGcGJHWnNiM2Q4ZXlKRmJYQjBlVTFoY0draU9uUnlkV1VzSWxZaU9pSXdMakF1TURBd01DSXNJbEFpT2lKWGFXNHpNaUlzSWtGT0lqb2lUV0ZwYkNJc0lsZFVJam95ZlE9PXwwfHx8&sdata=ZmZCSzRZd243RFRXUzR1OWhGVHBldHBLQWNzOW9qRXUraWpVanh4MExqZz0%3d",
+    "signupUrl": "https://liveuclac-my.sharepoint.com/:x:/g/personal/uctpcou_ucl_ac_uk/IQBdMXEp7ODGTIn7cEsITkU1AX3nASCnoTRbDCRdVT4b50A?xsdata=MDV8MDJ8bC5uZXNoZWltQHVjbC5hYy51a3w5ZWNkZGU3NjRmZmE0ZWQ3ODFlYzA4ZGYyYWNkN2Y0N3wxZmFmODhmZWE5OTg0YzViOTNjOTIxMGExMWQ5YTVjMnwwfDB8NjM5Mjc2NzM0MjQwNzQ1NjM3fFVua25vd258VFdGcGJHWnNiM2Q4ZXlKRmJYQjBlVTFoY0draU9uUnlkV1VzSWxZaU9pSXdMakF1TURBd01DSXNJbEFpT2lKWGFXNHpNaUlzSWtGT0lqb2lUV0ZwYkNJc0lsZFVJam95ZlE9PXwwfHx8&sdata=cFFIbXJoWVl4WEZMSUUxRjVKRVRaQURyOFhCc1N6U3ZjOTlyZExmMXp5az0%3d",
     "status": "Scheduled",
     "time": "13:00–14:30",
-    "location": "LG01 Euston Road 222"
+    "location": "LG01 Euston Road 222",
+    "title": "The Origins of Top Firms"
   },
   {
     "id": "economic-theory-2026-10-21",
@@ -507,6 +521,16 @@
     "location": "IFS seminar room"
   },
   {
+    "id": "ifs-labour-2026-11-03",
+    "series": "ifs-labour",
+    "date": "2026-11-03",
+    "speaker": "Fatima Najeeb",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "14:00–15:00",
+    "location": "IFS"
+  },
+  {
     "id": "economic-theory-2026-11-03",
     "series": "theory",
     "date": "2026-11-03",
@@ -652,6 +676,17 @@
     "location": "IFS seminar room"
   },
   {
+    "id": "ifs-labour-2026-11-17",
+    "series": "ifs-labour",
+    "date": "2026-11-17",
+    "speaker": "Greg Veramendi",
+    "institution": "",
+    "status": "Tentative",
+    "time": "14:00–15:00",
+    "location": "IFS",
+    "note": "To be confirmed"
+  },
+  {
     "id": "economic-theory-2026-11-17",
     "series": "theory",
     "date": "2026-11-17",
@@ -745,6 +780,16 @@
     "location": "IFS seminar room"
   },
   {
+    "id": "ifs-labour-2026-11-24",
+    "series": "ifs-labour",
+    "date": "2026-11-24",
+    "speaker": "Martina Uccioli",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "14:00–15:00",
+    "location": "IFS"
+  },
+  {
     "id": "economic-theory-2026-11-24",
     "series": "theory",
     "date": "2026-11-24",
@@ -830,6 +875,17 @@
     "status": "Scheduled",
     "time": "12:30–13:30",
     "location": "IFS seminar room"
+  },
+  {
+    "id": "ifs-labour-2026-12-01",
+    "series": "ifs-labour",
+    "date": "2026-12-01",
+    "speaker": "Jacob Spitz",
+    "institution": "",
+    "status": "Tentative",
+    "time": "14:00–15:00",
+    "location": "IFS",
+    "note": "To be confirmed"
   },
   {
     "id": "economic-theory-2026-12-01",
@@ -1012,6 +1068,16 @@
     "status": "Scheduled",
     "time": "12:30–13:30",
     "location": "IFS seminar room"
+  },
+  {
+    "id": "ifs-labour-2026-12-15",
+    "series": "ifs-labour",
+    "date": "2026-12-15",
+    "speaker": "David Zentler-Munro",
+    "institution": "",
+    "status": "Scheduled",
+    "time": "14:00–15:00",
+    "location": "IFS"
   },
   {
     "id": "economic-theory-2026-12-15",

@@ -24,7 +24,8 @@ DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261014T160000
 DTEND;TZID=Europe/London:20261014T173000
 SUMMARY:Quentin Vandeweyer — The Fiscal Foundations of Safe Assets
-DESCRIPTION:London Business School\nSeminar series: Finance
+DESCRIPTION:London Business School\nJoint with the School of Management\nSe
+ minar series: Finance
 LOCATION:Drayton 321
 STATUS:CONFIRMED
 SEQUENCE:0
@@ -34,7 +35,7 @@ UID:finance-2026-10-21@economics.ucl.ac.uk
 DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261021T160000
 DTEND;TZID=Europe/London:20261021T170000
-SUMMARY:Arthur Taburet
+SUMMARY:Arthur Taburet — Informal Seniority
 DESCRIPTION:Duke University\nSeminar series: Finance
 LOCATION:Drayton 321
 STATUS:CONFIRMED
