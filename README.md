@@ -178,6 +178,14 @@ series. Use `--offline` to rebuild from the versioned files under
 `--output-dir` can override the default repository and `outputs/seminars/`
 locations.
 
+The routine seminar refresh is also packaged as a Claude Code skill under
+`.claude/skills/seminar-update/`. Running `/seminar-update [series-id]` in an
+interactive session performs the preflight checks, creates a dated update
+branch, runs the importer for one series, writes a review of every change with
+anomaly flags, stops once for approval, and then commits, pushes, and opens a
+pull request against `main`. The importer's review workbooks under
+`outputs/seminars/` are regenerated on every run and are not committed.
+
 After editing the visitor, event, or PhD-student workbooks, regenerate their
 website JSON files with:
 
