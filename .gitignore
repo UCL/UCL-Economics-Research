@@ -337,3 +337,6 @@ site/node_modules/
 site/dist/
 site/.wrangler/
 .DS_Store
+
+# Seminar import review workbooks (regenerated on every import)
+outputs/seminars/
