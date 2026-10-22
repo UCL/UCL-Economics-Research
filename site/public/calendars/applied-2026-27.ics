@@ -52,7 +52,8 @@ UID:applied-economics-2026-10-15@economics.ucl.ac.uk
 DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261015T120000
 DTEND;TZID=Europe/London:20261015T133000
-SUMMARY:Clara von Bismarck-Osten
+SUMMARY:Clara von Bismarck-Osten — Estimating Tax Elasticities along the 
+ Income Distribution
 DESCRIPTION:Speaker: https://claravobi.github.io/\nSeminar series: Applied 
  Economics
 LOCATION:IFS seminar room
@@ -125,11 +126,24 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
+UID:applied-economics-2026-11-12@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20261112T120000
+DTEND;TZID=Europe/London:20261112T133000
+SUMMARY:Phil Haile
+DESCRIPTION:Speaker: https://sites.google.com/view/philhaile/home\nSeminar 
+ series: Applied Economics
+LOCATION:IFS seminar room
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
 UID:applied-economics-2026-11-16@economics.ucl.ac.uk
 DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261116T140000
 DTEND;TZID=Europe/London:20261116T153000
-SUMMARY:Courtney Brell
+SUMMARY:Courtney Brell — Routes to retirement: health\, occupation\, and 
+ pension design
 DESCRIPTION:Speaker: https://courtneybrell.com/\nSeminar series: Applied Ec
  onomics
 LOCATION:Archaeology 612
