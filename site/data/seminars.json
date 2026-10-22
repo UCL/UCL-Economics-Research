@@ -276,6 +276,7 @@
     "speaker": "Clara von Bismarck-Osten",
     "institution": "",
     "speakerUrl": "https://claravobi.github.io/",
+    "title": "Estimating Tax Elasticities along the Income Distribution",
     "status": "Scheduled",
     "time": "12:00–13:30",
     "location": "IFS seminar room"
@@ -633,6 +634,17 @@
     "location": "LG01 Euston Road 222"
   },
   {
+    "id": "applied-economics-2026-11-12",
+    "series": "applied",
+    "date": "2026-11-12",
+    "speaker": "Phil Haile",
+    "institution": "",
+    "speakerUrl": "https://sites.google.com/view/philhaile/home",
+    "status": "Scheduled",
+    "time": "12:00–13:30",
+    "location": "IFS seminar room"
+  },
+  {
     "id": "ifs-development-2026-11-12",
     "series": "ifs-development",
     "date": "2026-11-12",
@@ -660,6 +672,7 @@
     "speaker": "Courtney Brell",
     "institution": "",
     "speakerUrl": "https://courtneybrell.com/",
+    "title": "Routes to retirement: health, occupation, and pension design",
     "status": "Scheduled",
     "time": "14:00–15:30",
     "location": "Archaeology 612"
