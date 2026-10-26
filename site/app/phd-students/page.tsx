@@ -7,7 +7,7 @@ import studentsData from '@/data/phd-students.json';
 
 type Field = 'Applied Economics' | 'Economic Theory' | 'Macroeconomics' | 'Econometrics' | 'Finance';
 type FieldId = 'all' | Field;
-type Student = { name: string; email: string; researchAreas: string; profileUrl: string; mainField: Field; secondaryField: Field | '' };
+type Student = { name: string; email: string; researchAreas: string; profileUrl: string; mainField: Field | ''; secondaryField: Field | '' };
 
 const surname = (name: string) => name.trim().split(/\s+/).at(-1) || name;
 const students = (studentsData as Student[]).toSorted((a, b) =>

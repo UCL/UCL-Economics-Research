@@ -145,6 +145,8 @@ This workbook is the authoritative source for student names, email addresses,
 key research areas, main fields, and secondary fields. The allowed field values
 are **Applied Economics**, **Economic Theory**, **Macroeconomics**,
 **Econometrics**, and **Finance**.
+Research areas and both field classifications may be left blank for students
+whose fields are not yet known; these students appear under **All Fields** only.
 
 After editing and saving the workbook, run
 `scripts/sync_phd_students_to_site.mjs`. The script validates required cells,
