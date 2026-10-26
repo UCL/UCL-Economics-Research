@@ -1,0 +1,633 @@
+{
+  "2026-27": {
+    "status": "draft",
+    "candidates": [
+      {
+        "name": "Courtney Brell",
+        "sortName": "Brell",
+        "group": "phd",
+        "paper": "Routes to Retirement: Pension Design, Health, and Occupation",
+        "paperSource": "User supplied",
+        "research": "Labour Economics, Health Economics",
+        "email": "c.brell@ucl.ac.uk",
+        "website": "https://courtneybrell.com",
+        "photo": "/job-market-photos/2026-27/courtney-brell.jpg",
+        "currentPosition": "",
+        "categories": [
+          "Applied Economics"
+        ],
+        "paperUrl": "https://courtneybrell.com/jmp/",
+        "paperLinkNote": "Dedicated paper page; no download link",
+        "paperLinkChecked": "2026-10-26"
+      },
+      {
+        "name": "Weisheng Zhang",
+        "sortName": "Zhang, Weisheng",
+        "group": "phd",
+        "paper": "Causal Inference under Dynamic Selection and Latent Heterogeneity",
+        "paperSource": "https://www.weisheng-zhang.com/research",
+        "research": "Econometrics",
+        "email": "weisheng.zhang.21@ucl.ac.uk",
+        "website": "https://www.weisheng-zhang.com",
+        "photo": "/job-market-photos/2026-27/weisheng-zhang.jpg",
+        "currentPosition": "",
+        "categories": [
+          "Econometrics"
+        ],
+        "paperUrl": "https://arxiv.org/pdf/2609.17170",
+        "paperLinkNote": "Title updated to match the author’s current website; author-published paper link retained.",
+        "paperLinkChecked": "2026-10-26"
+      },
+      {
+        "name": "Justinas Markauskas",
+        "sortName": "Markauskas",
+        "group": "phd",
+        "paper": "No Amplification of Monetary Non-Neutrality in the Richer Structural Setting",
+        "paperSource": "User supplied",
+        "research": "Monetary Economics",
+        "email": "justinas.markauskas.09@ucl.ac.uk",
+        "website": "https://sites.google.com/view/justinasmarkauskas",
+        "photo": "/job-market-photos/2026-27/justinas-markauskas.jpg",
+        "currentPosition": "",
+        "categories": [
+          "Macroeconomics"
+        ],
+        "paperUrl": "https://1drv.ms/b/c/6c57d1dc07cd4fa0/IQBusGD1kB60QYXAxakmX7L-AdnXIRojxfIiOME8sUXVysM",
+        "paperLinkNote": "Author-linked manuscript",
+        "paperLinkChecked": "2026-10-26"
+      },
+      {
+        "name": "Yuanqi Zhang",
+        "sortName": "Zhang, Yuanqi",
+        "group": "phd",
+        "paper": "Designing Experiments for Policies Beyond the Experiment",
+        "paperSource": "https://yuanqizhang.com/",
+        "research": "Econometrics",
+        "email": "uctpyqz@ucl.ac.uk",
+        "website": "https://yuanqizhang.com",
+        "photo": "/job-market-photos/2026-27/yuanqi-zhang.jpg",
+        "currentPosition": "",
+        "categories": [
+          "Econometrics"
+        ]
+      },
+      {
+        "name": "Ruimin Ao",
+        "sortName": "Ao",
+        "group": "phd",
+        "paper": "Behaviour Under Addiction: Dynamic Choice Between Smoking and Vaping",
+        "paperSource": "https://ruiminao.com/research/",
+        "research": "Health Economics",
+        "email": "r.ao@ucl.ac.uk",
+        "website": "https://ruiminao.com",
+        "photo": "/job-market-photos/2026-27/ruimin-ao.jpg",
+        "currentPosition": "",
+        "categories": [
+          "Applied Economics"
+        ]
+      },
+      {
+        "name": "Hua Jin",
+        "sortName": "Jin",
+        "group": "phd",
+        "paper": "Estimation of BLP Models with High-dimensional Controls",
+        "paperSource": "User supplied",
+        "research": "Econometrics, Industrial Organization, Machine Learning",
+        "email": "uctphji@ucl.ac.uk",
+        "website": "https://huajin-econ.github.io",
+        "photo": "/job-market-photos/2026-27/hua-jin.jpg",
+        "currentPosition": "",
+        "categories": [
+          "Econometrics",
+          "Applied Economics"
+        ],
+        "paperUrl": "https://arxiv.org/pdf/2605.01594",
+        "paperLinkNote": "Author-linked paper",
+        "paperLinkChecked": "2026-10-26"
+      },
+      {
+        "name": "Giuseppe Forte",
+        "sortName": "Forte",
+        "group": "phd",
+        "paper": "In the Stars: Buyer and Seller Value of Online Ratings",
+        "paperSource": "https://gfrt0.github.io/",
+        "research": "Industrial Organization",
+        "email": "uctpgfo@ucl.ac.uk",
+        "website": "https://gfrt0.github.io",
+        "photo": "/job-market-photos/2026-27/giuseppe-forte.jpg",
+        "currentPosition": "",
+        "categories": [
+          "Applied Economics",
+          "Econometrics"
+        ]
+      },
+      {
+        "name": "Ziyu Jiang",
+        "sortName": "Jiang",
+        "group": "phd",
+        "paper": "Subjective Annotation Studies: Valid Inference and Annotation Design",
+        "paperSource": "https://ziyu-jiang.com/",
+        "research": "Econometrics",
+        "email": "uctpzji@ucl.ac.uk",
+        "website": "https://ziyu-jiang.com",
+        "photo": "/job-market-photos/2026-27/ziyu-jiang.jpg",
+        "currentPosition": "",
+        "categories": [
+          "Econometrics"
+        ]
+      },
+      {
+        "name": "Chen-Wei Hsiang",
+        "sortName": "Hsiang",
+        "group": "phd",
+        "paper": "Synthetic Counterfactual Networks",
+        "paperSource": "User supplied",
+        "research": "Econometrics",
+        "email": "chen-wei.hsiang.21@ucl.ac.uk",
+        "website": "https://chenweihsiang.github.io",
+        "photo": "/job-market-photos/2026-27/chen-wei-hsiang.jpg",
+        "currentPosition": "",
+        "categories": [
+          "Econometrics"
+        ]
+      },
+      {
+        "name": "Jiangnan Liao",
+        "sortName": "Liao",
+        "group": "phd",
+        "paper": "From Mother to Child Outcomes: the Role of Maternal Nurse-Led Mental Health Services",
+        "paperSource": "User supplied",
+        "research": "Health Economics",
+        "email": "jiangnan.liao.16@ucl.ac.uk",
+        "website": "https://sites.google.com/view/jiangnan-liao",
+        "photo": "/job-market-photos/2026-27/jiangnan-liao.jpg",
+        "currentPosition": "",
+        "categories": [
+          "Applied Economics"
+        ]
+      },
+      {
+        "name": "Joern Onken",
+        "sortName": "Onken",
+        "group": "phd",
+        "paper": "The Luxury Shift: Productivity Drag and Distributional Implications",
+        "paperSource": "https://joernonken.com/",
+        "research": "Macroeconomics",
+        "email": "joern.onken.20@ucl.ac.uk",
+        "website": "https://joernonken.com",
+        "photo": "/job-market-photos/2026-27/joern-onken.jpg",
+        "currentPosition": "",
+        "categories": [
+          "Macroeconomics"
+        ]
+      },
+      {
+        "name": "Elena Casanovas",
+        "sortName": "Casanovas",
+        "group": "phd",
+        "paper": "Multi-Market Firms and the Margins of Firm Growth",
+        "paperSource": "https://www.elenacasanovas.com/",
+        "research": "Macroeconomics, Firm Dynamics",
+        "email": "elena.casanovas.21@ucl.ac.uk",
+        "website": "https://www.elenacasanovas.com",
+        "photo": "/job-market-photos/2026-27/elena-casanovas.jpg",
+        "currentPosition": "",
+        "categories": [
+          "Macroeconomics"
+        ]
+      },
+      {
+        "name": "Fatima Najeeb",
+        "sortName": "Najeeb",
+        "group": "postdoc",
+        "paper": "Deepening Intrahousehold Inequalities? Evidence from Floods in Bangladesh",
+        "paperSource": "https://www.fatimanajeeb.com/research",
+        "research": "Development, Health Economics, Family Economics",
+        "email": "f.najeeb@ucl.ac.uk",
+        "website": "https://www.fatimanajeeb.com",
+        "photo": "/job-market-photos/2026-27/fatima-najeeb.jpg",
+        "currentPosition": "",
+        "categories": [
+          "Applied Economics"
+        ],
+        "paperUrl": "https://www.fatimanajeeb.com/s/Najeeb_Fatima_JMP_2026.pdf",
+        "paperLinkNote": "Author-linked latest draft",
+        "paperLinkChecked": "2026-10-26"
+      },
+      {
+        "name": "Yilun Allen Shen",
+        "sortName": "Shen",
+        "group": "phd",
+        "paper": "",
+        "paperSource": "",
+        "research": "Macroeconomics, Financial Intermediation",
+        "email": "allen.shen.16@ucl.ac.uk",
+        "website": "https://yilunallenshen.com",
+        "photo": "/job-market-photos/2026-27/yilun-allen-shen.jpg",
+        "currentPosition": "",
+        "categories": [
+          "Macroeconomics"
+        ]
+      },
+      {
+        "name": "Arthur Laroche",
+        "sortName": "Laroche",
+        "group": "phd",
+        "paper": "Progressivity, Fairness, and Tax Capacity: Evidence from the DR Congo",
+        "paperSource": "https://arthurlaroche.github.io/research.html",
+        "research": "Development, Political Economy, Public Economics",
+        "email": "arthur.laroche.21@ucl.ac.uk",
+        "website": "https://arthurlaroche.github.io",
+        "photo": "/job-market-photos/2026-27/arthur-laroche.jpg",
+        "currentPosition": "",
+        "categories": [
+          "Applied Economics"
+        ],
+        "paperUrl": "https://www.dropbox.com/scl/fi/o7zcqv83wgd89qqklj3rw/Progressivity_20260710.pdf?rlkey=1dzhn3ufqh7yi28mto7je67c7&e=1&dl=0",
+        "paperLinkNote": "Author-linked paper",
+        "paperLinkChecked": "2026-10-26"
+      },
+      {
+        "name": "Matthew Nibloe",
+        "sortName": "Nibloe",
+        "group": "phd",
+        "paper": "Trade Disintegration and Local Labour Markets: Evidence from Brexit",
+        "paperSource": "https://mattnibloe.com/",
+        "research": "Labour Economics",
+        "email": "matthew.nibloe.19@ucl.ac.uk",
+        "website": "https://www.mattnibloe.com",
+        "photo": "/job-market-photos/2026-27/matthew-nibloe.jpg",
+        "currentPosition": "",
+        "categories": [
+          "Applied Economics"
+        ]
+      },
+      {
+        "name": "Thomas Lazarowicz",
+        "sortName": "Lazarowicz",
+        "group": "phd",
+        "paper": "Demand-Driven Stagnation: Customer Acquisition and Firm Growth",
+        "paperSource": "User supplied",
+        "research": "Macroeconomics",
+        "email": "thomas.lazarowicz.16@ucl.ac.uk",
+        "website": "https://www.thomaslazarowicz.com",
+        "photo": "/job-market-photos/2026-27/thomas-lazarowicz.jpg",
+        "currentPosition": "",
+        "categories": [
+          "Macroeconomics"
+        ]
+      },
+      {
+        "name": "Emma Scandolo",
+        "sortName": "Scandolo",
+        "group": "phd",
+        "paper": "Less to Lose: How shorter and more flexible degrees shape university choice and earnings",
+        "paperSource": "https://emmascandolo.github.io/",
+        "research": "Economics of Education and Labour Economics",
+        "email": "emma.scandolo.21@ucl.ac.uk",
+        "website": "https://emmascandolo.github.io",
+        "photo": "/job-market-photos/2026-27/emma-scandolo.jpg",
+        "currentPosition": "",
+        "categories": [
+          "Applied Economics"
+        ],
+        "paperUrl": "https://emmascandolo.github.io/papers/BP_Portugal_Scandolo.pdf",
+        "paperLinkNote": "Author-linked paper",
+        "paperLinkChecked": "2026-10-26"
+      },
+      {
+        "name": "Clara von Bismarck-Osten",
+        "sortName": "von Bismarck-Osten",
+        "group": "phd",
+        "paper": "Estimating Tax Elasticities along the Income Distribution",
+        "paperSource": "job_market/candidates_job_papers.png",
+        "research": "Public Economics, Labour Economics",
+        "email": "clara.bismarck-osten@ucl.ac.uk",
+        "website": "https://claravobi.github.io/",
+        "photo": "/job-market-photos/2026-27/clara-von-bismarck-osten.jpeg",
+        "currentPosition": "",
+        "categories": [
+          "Applied Economics"
+        ]
+      },
+      {
+        "name": "Yanziyi William Zhang",
+        "sortName": "Zhang, Yanziyi William",
+        "group": "phd",
+        "paper": "Optimal Pilot Design",
+        "paperSource": "https://www.yanziyi-zhang.com/",
+        "research": "Microeconomic Theory, Information Economics, Learning",
+        "email": "yanziyi.zhang.19@ucl.ac.uk",
+        "website": "https://www.yanziyi-zhang.com/",
+        "photo": "/job-market-photos/2026-27/yanziyi-william-zhang.jpg",
+        "currentPosition": "",
+        "categories": [
+          "Economic Theory"
+        ]
+      },
+      {
+        "name": "Ararat Gocmen",
+        "sortName": "Gocmen",
+        "group": "phd",
+        "paper": "Immigration and Firm Investment",
+        "paperSource": "User supplied",
+        "research": "Labour Economics, Finance",
+        "email": "ararat.gocmen.19@ucl.ac.uk",
+        "website": "https://www.araratgocmen.com",
+        "photo": "/job-market-photos/2026-27/ararat-gocmen.jpg",
+        "currentPosition": "",
+        "categories": [
+          "Applied Economics"
+        ]
+      },
+      {
+        "name": "Hikaru Kawarazaki",
+        "sortName": "Kawarazaki",
+        "group": "postdoc",
+        "paper": "When Trouble Travels: Peer Effects of Criminal Exposure in Schools",
+        "paperSource": "job_market/candidates_job_papers.png",
+        "research": "Labour Economics, Economics of Education, Economics of Crime",
+        "email": "hikaru.kawarazaki.20@ucl.ac.uk",
+        "website": "https://www.hikarukawarazaki.com",
+        "photo": "/job-market-photos/2026-27/hikaru-kawarazaki.jpg",
+        "currentPosition": "",
+        "categories": [
+          "Applied Economics"
+        ]
+      },
+      {
+        "name": "Ruolei Zhu",
+        "sortName": "Zhu",
+        "group": "phd",
+        "paper": "Estimation of Rational Inattention–Additive Random Utility Models",
+        "paperSource": "https://sites.google.com/view/ruoleizhu",
+        "research": "Econometrics",
+        "email": "ruolei.zhu.19@ucl.ac.uk",
+        "website": "https://sites.google.com/view/ruoleizhu",
+        "photo": "/job-market-photos/2026-27/ruolei-zhu.jpg",
+        "currentPosition": "",
+        "categories": [
+          "Econometrics"
+        ],
+        "paperUrl": "https://arxiv.org/pdf/2610.16701",
+        "paperLinkNote": "PDF immediately following matching JMP",
+        "paperLinkChecked": "2026-10-26"
+      },
+      {
+        "name": "Mimosa Distefano",
+        "sortName": "Distefano",
+        "group": "postdoc",
+        "paper": "Female-targeted Hiring Subsidies, Firm Learning, and Women’s Employment",
+        "paperSource": "https://sites.google.com/view/mimosa-distefano/research",
+        "research": "Labour Economics, Personnel Economics, Urban Economics",
+        "email": "m.distefano@lse.ac.uk",
+        "website": "https://sites.google.com/view/mimosa-distefano/home-page",
+        "photo": "/job-market-photos/2026-27/mimosa-distefano.jpg",
+        "currentPosition": "",
+        "categories": [
+          "Applied Economics"
+        ],
+        "paperUrl": "https://www.rfberlin.com/wp-content/uploads/2026/08/26211.pdf",
+        "paperLinkNote": "Author-linked JMP",
+        "paperLinkChecked": "2026-10-26"
+      },
+      {
+        "name": "Stan de Ruijter",
+        "sortName": "de Ruijter",
+        "group": "phd",
+        "paper": "Displacing and Reinstating Technologies in Production Networks: Workers and Firms",
+        "paperSource": "User supplied",
+        "research": "Labour Economics",
+        "email": "uctpsld@ucl.ac.uk",
+        "website": "https://sderuijter.com",
+        "photo": "/job-market-photos/2026-27/stan-de-ruijter.jpg",
+        "currentPosition": "",
+        "categories": [
+          "Applied Economics"
+        ]
+      }
+    ]
+  },
+  "2025-26": {
+    "status": "draft",
+    "candidates": [
+      {
+        "name": "Brian Amorim Cabaco",
+        "sortName": "Amorim Cabaco",
+        "group": "phd",
+        "paper": "The Macroeconomic Effects of Mergers and Acquisitions in the United States",
+        "research": "Macroeconomics, Applied Macroeconometrics",
+        "email": "brian.cabaco.17@ucl.ac.uk",
+        "website": "https://brian-amorim-cabaco.github.io/",
+        "currentPosition": "European University Institute",
+        "photo": "https://www.ucl.ac.uk/social-historical-sciences/sites/social_historical_sciences/files/styles/large_thumbnail/public/2025-11/Brian%20Amorim%20Cabaco-19_pp.jpg.webp?itok=8DBts5Q7",
+        "categories": [
+          "Macroeconomics",
+          "Econometrics"
+        ],
+        "paperUrl": "https://brian-amorim-cabaco.github.io/AmorimCabaco2025_JMP.pdf",
+        "paperLinkNote": "Author-linked matching title",
+        "paperLinkChecked": "2026-10-26"
+      },
+      {
+        "name": "Javier Boncompte Guarda",
+        "sortName": "Boncompte Guarda",
+        "group": "phd",
+        "paper": "Shaping More Than Prices: Corrective Taxes with Product Reformulation",
+        "research": "Industrial Organization",
+        "email": "javier.boncompte.19@ucl.ac.uk",
+        "website": "https://jiboncom.github.io/",
+        "currentPosition": "Universidad de los Andes in Chile",
+        "photo": "https://www.ucl.ac.uk/social-historical-sciences/sites/social_historical_sciences/files/styles/large_thumbnail/public/2025-11/Javier%20Boncompte-05_pp.jpg.webp?itok=A-oXBVLG",
+        "categories": [
+          "Applied Economics",
+          "Econometrics"
+        ],
+        "paperUrl": "https://jiboncom.github.io/boncompte-jmp.pdf",
+        "paperLinkNote": "Author-linked matching title",
+        "paperLinkChecked": "2026-10-26"
+      },
+      {
+        "name": "Ertian Chen",
+        "sortName": "Chen",
+        "group": "phd",
+        "paper": "Robust Structural Estimation under Misspecified Latent-State Dynamics",
+        "research": "Econometrics, Empirical Industrial Organization, Computational Economics",
+        "email": "ertian.chen.19@ucl.ac.uk",
+        "website": "https://ertianchen.github.io/",
+        "currentPosition": "Xiamen University",
+        "photo": "https://www.ucl.ac.uk/social-historical-sciences/sites/social_historical_sciences/files/styles/large_thumbnail/public/2025-11/Ertian_Chen.jpeg.webp?itok=gD7pfSZn",
+        "categories": [
+          "Econometrics",
+          "Applied Economics"
+        ],
+        "paperUrl": "https://ertianchen.github.io/pdf/Distributional_Robustness.pdf",
+        "paperLinkNote": "Author-linked matching title",
+        "paperLinkChecked": "2026-10-26"
+      },
+      {
+        "name": "Sebastian Espinoza Rojas",
+        "sortName": "Espinoza Rojas",
+        "group": "phd",
+        "paper": "Market Power and Local Labor Markets",
+        "research": "Labour and Development Economics, Economics of Education, Social Mobility",
+        "email": "sebastian.espinoza@ucl.ac.uk",
+        "website": "https://www.sebastian-espinoza-rojas.com/",
+        "currentPosition": "Harvard Kennedy School (Postdoc)",
+        "photo": "https://www.ucl.ac.uk/social-historical-sciences/sites/social_historical_sciences/files/styles/large_thumbnail/public/2025-11/Sebastian%20Espinoza%20Rojas.jpg.webp?itok=0c8c5RFX",
+        "categories": [
+          "Applied Economics"
+        ],
+        "paperUrl": "https://www.dropbox.com/scl/fi/pmzfbbjyv3bp4snqtlf5q/Market-power-commuting-costs-and-local-labor-markets.pdf?rlkey=2gclrxfgdcxcp636i1vskfo5e&e=1&st=06nyp6mw&dl=0",
+        "paperLinkNote": "Title updated to match the author’s current website; author-published paper link retained.",
+        "paperLinkChecked": "2026-10-26",
+        "paperSource": "https://www.sebastian-espinoza-rojas.com/research"
+      },
+      {
+        "name": "Eric Klemm",
+        "sortName": "Klemm",
+        "group": "phd",
+        "paper": "Early Retirement, Capital Adjustment and Technology Adoption",
+        "research": "Labour Economics, Applied Microeconomics",
+        "email": "eric.klemm.20@ucl.ac.uk",
+        "website": "https://sites.google.com/view/eric-klemm/",
+        "currentPosition": "Hong Kong University",
+        "photo": "https://www.ucl.ac.uk/social-historical-sciences/sites/social_historical_sciences/files/styles/large_thumbnail/public/2025-11/eric_klemm_website.jpg.webp?itok=Ux9qz_er",
+        "categories": [
+          "Applied Economics"
+        ]
+      },
+      {
+        "name": "Chiara Lattanzio",
+        "sortName": "Lattanzio",
+        "group": "phd",
+        "paper": "Exploiting the Safety Net: Optimal Bank Contracting Under Risk-Weighted Capital Requirements",
+        "research": "Financial Intermediation Theory, Banking Regulation, Corporate Finance",
+        "email": "chiara.lattanzio.20@ucl.ac.uk",
+        "website": "https://www.chiaralattanzio.com/",
+        "currentPosition": "Bank for International Settlements (Economist)",
+        "photo": "https://www.ucl.ac.uk/social-historical-sciences/sites/social_historical_sciences/files/styles/large_thumbnail/public/2025-11/Chiara%20Lattanzio-20_pp.jpg.webp?itok=2iD3GwEa",
+        "categories": [
+          "Economic Theory"
+        ],
+        "paperUrl": "https://www.chiaralattanzio.com/banks_nonbanks_Lattanzio.pdf",
+        "paperLinkNote": "Website explicitly says this paper previously circulated under the displayed title; now Exploiting the Safety Net: Optimal Bank Contracting Under Risk-Weighted Capital Requirements.",
+        "paperLinkChecked": "2026-10-26",
+        "paperSource": "https://www.chiaralattanzio.com/research.html"
+      },
+      {
+        "name": "Gabriel Ruiz Radrigán",
+        "sortName": "Ruiz Radrigán",
+        "group": "phd",
+        "paper": "Corporate Deposit Rate Spread and Monetary Policy Transmission",
+        "research": "Macroeconomics, Banking (macro), Financial Frictions, Monetary Economics",
+        "email": "gabriel.radrigan.19@ucl.ac.uk",
+        "website": "https://www.gabrielruizradrigan.com/",
+        "currentPosition": "Central Bank of Chile (Economist)",
+        "photo": "https://www.ucl.ac.uk/social-historical-sciences/sites/social_historical_sciences/files/styles/large_thumbnail/public/2025-11/Gabriel%20Ruiz%20Radrigan-22.jpg.webp?itok=IxmwlJsT",
+        "categories": [
+          "Macroeconomics"
+        ],
+        "paperSource": "https://www.gabrielruizradrigan.com/research"
+      },
+      {
+        "name": "Andrea Smurra",
+        "sortName": "Smurra",
+        "group": "phd",
+        "paper": "The Suppression of Female Labor Supply in India: Evidence on the Roles of Bargaining and Expectations",
+        "research": "Development Economics",
+        "email": "andrea.smurra@ifs.org.uk",
+        "website": "https://www.andreasmurra.com/",
+        "currentPosition": "City St George University",
+        "photo": "https://www.ucl.ac.uk/social-historical-sciences/sites/social_historical_sciences/files/styles/large_thumbnail/public/2025-11/Andrea%20Smurra.jpg.webp?itok=nS09WCQO",
+        "categories": [
+          "Applied Economics"
+        ],
+        "paperUrl": "https://asmurra.github.io/website/Andrea_Smurra_JMP.pdf",
+        "paperLinkNote": "Author-linked matching JMP",
+        "paperLinkChecked": "2026-10-26",
+        "paperSource": "https://www.andreasmurra.com/research"
+      },
+      {
+        "name": "Tian Xie",
+        "sortName": "Xie",
+        "group": "phd",
+        "paper": "Automatic Inference for Value-Added Regressions",
+        "research": "Econometrics",
+        "email": "tian.xie.20@ucl.ac.uk",
+        "website": "https://tian-xie.com/",
+        "currentPosition": "University of Melbourne",
+        "photo": "https://www.ucl.ac.uk/social-historical-sciences/sites/social_historical_sciences/files/styles/large_thumbnail/public/2025-11/Tian%20Xie-14_pp.jpg.webp?itok=LrkEhM9I",
+        "categories": [
+          "Econometrics"
+        ],
+        "paperUrl": "https://tian-xie.com/papers/jmp.pdf",
+        "paperLinkNote": "Author-linked matching title",
+        "paperLinkChecked": "2026-10-26"
+      },
+      {
+        "name": "Si Xu",
+        "sortName": "Xu",
+        "group": "phd",
+        "paper": "Employment Persistence after Raising the Pensionable Age: Evidence from Japan",
+        "research": "Labour Economics and Public Policy, Economics of Aging",
+        "email": "si.xu.20@ucl.ac.uk",
+        "website": "https://sixu922.github.io/",
+        "currentPosition": "The Chinese University of Hong Kong, Shenzhen (Postdoc)",
+        "photo": "https://www.ucl.ac.uk/social-historical-sciences/sites/social_historical_sciences/files/styles/large_thumbnail/public/2025-11/Si%20Xu-15_pp.jpg.webp?itok=5WG_vJJX",
+        "categories": [
+          "Applied Economics"
+        ]
+      },
+      {
+        "name": "Davide Zufacchi",
+        "sortName": "Zufacchi",
+        "group": "phd",
+        "paper": "Competition and Violence in Illegal Markets: Theory and Evidence from Naples",
+        "research": "Development Economics, Empirical Industrial Organization, Applied Microeconomics",
+        "email": "davide.zufacchi.20@ucl.ac.uk",
+        "website": "https://www.davidezufacchi.com/",
+        "currentPosition": "Bologna University",
+        "photo": "https://www.ucl.ac.uk/social-historical-sciences/sites/social_historical_sciences/files/styles/large_thumbnail/public/2025-11/Davide%20Zufacchi.jpg.webp?itok=DH3MbsrU",
+        "categories": [
+          "Applied Economics"
+        ]
+      },
+      {
+        "name": "Jakob Brounstein",
+        "sortName": "Brounstein",
+        "group": "postdoc",
+        "paper": "The Transparency Tax: Discouraging firm ownership via tax havens",
+        "research": "Public Economics, Labour Economics",
+        "email": "jakob.brounstein@ifs.org.uk",
+        "website": "https://jakobbrounstein.github.io/",
+        "currentPosition": "Revelio Labs",
+        "photo": "https://www.ucl.ac.uk/social-historical-sciences/sites/social_historical_sciences/files/styles/large_thumbnail/public/2025-11/Jakob%20Brounstein.jpeg.webp?itok=wVn4VhE0",
+        "categories": [
+          "Applied Economics"
+        ],
+        "paperUrl": "https://jakobbrounstein.github.io/files/BrounsteinBachasBajana_wp_202605.pdf",
+        "paperLinkNote": "Website title omits in Ecuador; matching paper",
+        "paperLinkChecked": "2026-10-26",
+        "paperSource": "https://jakobbrounstein.github.io/research.html"
+      },
+      {
+        "name": "Weiguang Liu",
+        "sortName": "Liu",
+        "group": "postdoc",
+        "paper": "Prediction Sets and Conformal Inference with Interval Outcomes",
+        "research": "Econometrics",
+        "email": "lwg342@gmail.com",
+        "website": "https://lwg342.github.io/",
+        "currentPosition": "",
+        "photo": "https://www.ucl.ac.uk/social-historical-sciences/sites/social_historical_sciences/files/styles/large_thumbnail/public/2025-11/Weiguang%20Liu.jpg.webp?itok=nHKqILm5",
+        "categories": [
+          "Econometrics"
+        ],
+        "paperUrl": "https://arxiv.org/abs/2501.10117",
+        "paperLinkNote": "Author-linked matching paper",
+        "paperLinkChecked": "2026-10-26"
+      }
+    ]
+  }
+}

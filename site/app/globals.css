@@ -1532,3 +1532,32 @@ footer a {
     overflow: hidden;
   }
 }
+
+/* Compact job market profiles. */
+.job-market-years { display:flex; flex-wrap:wrap; gap:.5rem; margin:1.5rem 0; border-bottom:1px solid var(--border); }
+.job-market-years a { padding:.65rem 1rem; text-decoration:none; }
+.job-market-years a[aria-current="page"] { color:var(--primary); border-bottom:3px solid var(--primary); font-weight:bold; }
+.job-market-group { margin:2rem 0; }
+.job-market-group > h2 { border-bottom:2px solid var(--primary); padding-bottom:.5rem; }
+.job-market-group > h2 span { font:normal .9rem Arial,sans-serif; color:#52616e; margin-left:.5rem; }
+.job-market-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 1.75rem; }
+.job-market-candidate { display:grid; grid-template-columns:88px minmax(0,1fr); gap:1rem; padding:1.25rem 0; border-bottom:1px solid var(--border); align-content:start; }
+.job-market-candidate img { width:88px; height:110px; object-fit:cover; background:#f3f5f6; }
+.job-market-candidate h3 { font-size:1.25rem; margin:0 0 .5rem; }
+.job-market-candidate p { font-size:.9rem; margin:0 0 .5rem; }
+.job-market-candidate h3 a { color:var(--primary); }
+.job-market-position { border-left:3px solid #005ea8; padding-left:.6rem; }
+.job-market-contact { display:flex; flex-wrap:wrap; gap:.3rem 1rem; font-size:.85rem; overflow-wrap:anywhere; }
+.job-market-pending { padding:1.5rem; background:#f3f5f6; margin:2rem 0; }
+.job-market-source { font-size:.85rem; color:#52616e; }
+@media(max-width:850px) { .job-market-grid { grid-template-columns:1fr; } }
+@media(max-width:400px) { .job-market-candidate { grid-template-columns:64px minmax(0,1fr); gap:.7rem; } .job-market-candidate img { width:64px; height:80px; } }
+.job-market-photo-placeholder { width:88px; height:110px; background:#f3f5f6; color:#52616e; display:flex; align-items:center; justify-content:center; text-align:center; font-size:.8rem; padding:.3rem; }
+
+.job-market-field-tabs { display:flex !important; flex-wrap:wrap; justify-content:flex-start; width:100% !important; height:auto !important; gap:.3rem .5rem; margin: .75rem 0 0; }
+.job-market-field-tabs [data-slot="tabs-trigger"] { flex:0 0 auto; height:auto; white-space:normal; padding:.55rem .75rem; text-align:left; }
+.job-market-field-tabs [data-slot="tabs-trigger"][data-active] { color:var(--primary); font-weight:700; }
+
+/* Four broad research areas plus the complete list. */
+.job-market-field-tabs { flex-direction:row; align-items:stretch; }
+.job-market-field-tabs [data-slot="tabs-trigger"] { flex:1 1 auto; }
