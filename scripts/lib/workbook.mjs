@@ -122,8 +122,8 @@ class Worksheet {
   getRangeByIndexes(row, column, rowCount, columnCount) { return new Range(this, { row: row + 1, column: column + 1 }, { row: row + rowCount, column: column + columnCount }); }
   getCell(row, column) { return new Range(this, { row: row + 1, column: column + 1 }, { row: row + 1, column: column + 1 }); }
   getUsedRange() {
-    const rowCount = Math.max(this.raw.actualRowCount, 1);
-    const columnCount = Math.max(this.raw.actualColumnCount, 1);
+    const rowCount = Math.max(this.raw.rowCount, 1);
+    const columnCount = Math.max(this.raw.columnCount, 1);
     return new Range(this, { row: 1, column: 1 }, { row: rowCount, column: columnCount });
   }
   addTable(reference, hasHeaders, name) {

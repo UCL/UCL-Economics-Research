@@ -29,13 +29,13 @@ const students = records.map((record, index) => {
   const researchAreas = String(record['Key research areas'] || '').trim();
   const mainField = String(record['Main field'] || '').trim();
   const secondaryField = String(record['Secondary field'] || '').trim();
-  if (!name || !email || !researchAreas || !mainField) {
+  if (!name || !email) {
     throw new Error(`Missing required student data in workbook row ${rowNumber}.`);
   }
   const emailKey = email.toLowerCase();
   if (seenEmails.has(emailKey)) throw new Error(`Duplicate email in workbook: ${email}`);
   seenEmails.add(emailKey);
-  if (!validFields.has(mainField)) throw new Error(`Invalid Main field for ${name}: ${mainField}`);
+  if (mainField && !validFields.has(mainField)) throw new Error(`Invalid Main field for ${name}: ${mainField}`);
   if (secondaryField && !validFields.has(secondaryField)) throw new Error(`Invalid Secondary field for ${name}: ${secondaryField}`);
   return {
     name,
