@@ -11,7 +11,8 @@ The remaining 22 rows are PhD candidates. The screenshot does not provide paper
 titles or a website for Yanziyi William Zhang. Verified titles have paperSource
 URLs. Additional titles came from candidates_job_papers.png and the user;
 12 titles were subsequently updated to match the authors’ current websites.
-Only Yilun Allen Shen’s title remains awaiting confirmation. Yanziyi William
+All 2026–27 paper titles are populated; Jiangnan Liao’s and Yilun Allen Shen’s
+titles were most recently supplied by the user. Yanziyi William
 Zhang’s website was found during the paper-link review.
 
 23 portraits downloaded from the supplied Dropbox archive are stored under
