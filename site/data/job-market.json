@@ -410,8 +410,8 @@
         "name": "Yue Yuan",
         "sortName": "Yuan",
         "group": "postdoc",
-        "paper": "Security Design under Common-Value Competition",
-        "paperSource": "https://www.yue-yuan.com/ (paper selection confirmed by user)",
+        "paper": "(Non-)Binding Shareholder Voting and Trading",
+        "paperSource": "User supplied",
         "research": "Corporate Finance, Microeconomic Theory",
         "email": "yue.yuan@ucl.ac.uk",
         "website": "https://www.yue-yuan.com/",
@@ -419,10 +419,7 @@
         "currentPosition": "",
         "categories": [
           "Finance"
-        ],
-        "paperUrl": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4271432",
-        "paperLinkChecked": "2026-10-29",
-        "paperLinkNote": "SSRN link published on the author’s website; automated access to SSRN returned 403."
+        ]
       }
     ]
   },
