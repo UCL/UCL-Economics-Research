@@ -15,6 +15,12 @@ All 2026–27 paper titles are populated; Jiangnan Liao’s and Yilun Allen Shen
 titles were most recently supplied by the user. Yanziyi William
 Zhang’s website was found during the paper-link review.
 
+Yue Yuan was added as a fourth postdoc on 29 October 2026, using the author’s
+website (https://www.yue-yuan.com/) for contact details, research fields and photo.
+The user selected Security Design under Common-Value Competition as the paper.
+The author’s SSRN link is retained, although automated access returns HTTP 403.
+The 2026–27 page now contains 26 candidates.
+
 23 portraits downloaded from the supplied Dropbox archive are stored under
 site/public/job-market-photos/2026-27/. Fatima Najeeb and Arthur Laroche were not
 included in that archive; their public website portraits are stored locally.
@@ -34,3 +40,8 @@ and author-title-updates.md for availability and renamed papers.
 
 The source screenshots, workbook, and temporary website snapshots are local
 reference material; the versioned JSON contains the content used by the site.
+
+Oscar Perelló was added to the 2025–26 postdoc placements on 29 October 2026
+at the user’s request. His website supplies his portrait, IDB email, current
+position at the Inter-American Development Bank and research fields. The user
+supplied his paper title, which matches the Google Drive paper linked there.

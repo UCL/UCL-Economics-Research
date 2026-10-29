@@ -21,3 +21,7 @@ information economics and learning.
 2025–26 overlaps follow explicitly supplied econometrics and empirical IO fields.
 Chiara Lattanzio is under Economic Theory because financial intermediation theory
 is her stated main research. Detailed research text stays visible on all profiles.
+
+Finance was added at the user’s request on 29 October 2026. Yue Yuan is assigned
+to Finance only; her detailed research fields remain Corporate Finance and
+Microeconomic Theory.

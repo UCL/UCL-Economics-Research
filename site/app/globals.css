@@ -1561,3 +1561,6 @@ footer a {
 /* Four broad research areas plus the complete list. */
 .job-market-field-tabs { flex-direction:row; align-items:stretch; }
 .job-market-field-tabs [data-slot="tabs-trigger"] { flex:1 1 auto; }
+
+.job-market-group-tabs { margin-top:.75rem; }
+.job-market-group-tabs .job-market-group { margin-top:.5rem; }
