@@ -17,8 +17,8 @@ Zhang’s website was found during the paper-link review.
 
 Yue Yuan was added as a fourth postdoc on 29 October 2026, using the author’s
 website (https://www.yue-yuan.com/) for contact details, research fields and photo.
-The user selected Security Design under Common-Value Competition as the paper.
-The author’s SSRN link is retained, although automated access returns HTTP 403.
+The user subsequently selected (Non-)Binding Shareholder Voting and Trading
+as the paper, displayed as plain text without a hyperlink.
 The 2026–27 page now contains 26 candidates.
 
 23 portraits downloaded from the supplied Dropbox archive are stored under
