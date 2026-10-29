@@ -405,6 +405,24 @@
         "categories": [
           "Applied Economics"
         ]
+      },
+      {
+        "name": "Yue Yuan",
+        "sortName": "Yuan",
+        "group": "postdoc",
+        "paper": "Security Design under Common-Value Competition",
+        "paperSource": "https://www.yue-yuan.com/ (paper selection confirmed by user)",
+        "research": "Corporate Finance, Microeconomic Theory",
+        "email": "yue.yuan@ucl.ac.uk",
+        "website": "https://www.yue-yuan.com/",
+        "photo": "/job-market-photos/2026-27/yue-yuan.jpg",
+        "currentPosition": "",
+        "categories": [
+          "Finance"
+        ],
+        "paperUrl": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4271432",
+        "paperLinkChecked": "2026-10-29",
+        "paperLinkNote": "SSRN link published on the author’s website; automated access to SSRN returned 403."
       }
     ]
   },
@@ -627,6 +645,25 @@
         "paperUrl": "https://arxiv.org/abs/2501.10117",
         "paperLinkNote": "Author-linked matching paper",
         "paperLinkChecked": "2026-10-26"
+      },
+      {
+        "name": "Oscar Perelló",
+        "sortName": "Perelló",
+        "group": "postdoc",
+        "paper": "Trade intermediation and resilience in global sourcing",
+        "paperSource": "User supplied title; https://sites.google.com/view/oscarperellop/home",
+        "paperUrl": "https://drive.google.com/file/d/18aCzv-dLmakqSRxDq-sJ7kI9yKaP5qC_/view?usp=share_link",
+        "paperLinkNote": "Matching paper linked from the author’s website.",
+        "paperLinkChecked": "2026-10-29",
+        "research": "International Trade, Macroeconomic Development",
+        "email": "oscarpe@iadb.org",
+        "website": "https://sites.google.com/view/oscarperellop/home",
+        "currentPosition": "Inter-American Development Bank (Economist)",
+        "photo": "/job-market-photos/2025-26/oscar-perello.jpg",
+        "categories": [
+          "Applied Economics",
+          "Macroeconomics"
+        ]
       }
     ]
   }
