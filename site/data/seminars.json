@@ -532,7 +532,8 @@
     "institution": "",
     "status": "Scheduled",
     "time": "14:00–15:00",
-    "location": "IFS"
+    "location": "IFS",
+    "title": "Deepening Intrahousehold Inequalities? Evidence from Floods in Bangladesh"
   },
   {
     "id": "economic-theory-2026-11-03",
@@ -548,16 +549,6 @@
     "location": "Darwin Building, rm B15"
   },
   {
-    "id": "ifs-seminars-2026-11-04",
-    "series": "ifs",
-    "date": "2026-11-04",
-    "speaker": "Samantha Burn",
-    "institution": "Imperial",
-    "status": "TBA",
-    "time": "12:15–1:30pm",
-    "location": "IFS / online"
-  },
-  {
     "id": "macroeconomics-2026-11-04",
     "series": "macro",
     "date": "2026-11-04",
@@ -566,7 +557,8 @@
     "signupUrl": "https://liveuclac-my.sharepoint.com/:x:/g/personal/uctpcou_ucl_ac_uk/IQBdMXEp7ODGTIn7cEsITkU1AX3nASCnoTRbDCRdVT4b50A?xsdata=MDV8MDJ8bC5uZXNoZWltQHVjbC5hYy51a3w1MmI5MDc4MzBkYjM0YzViOWMwODA4ZGYxYWYyOWM1N3wxZmFmODhmZWE5OTg0YzViOTNjOTIxMGExMWQ5YTVjMnwwfDB8NjM5MjU5MzAxNTEyNTgwNDE1fFVua25vd258VFdGcGJHWnNiM2Q4ZXlKRmJYQjBlVTFoY0draU9uUnlkV1VzSWxZaU9pSXdMakF1TURBd01DSXNJbEFpT2lKWGFXNHpNaUlzSWtGT0lqb2lUV0ZwYkNJc0lsZFVJam95ZlE9PXwwfHx8&sdata=ZmZCSzRZd243RFRXUzR1OWhGVHBldHBLQWNzOW9qRXUraWpVanh4MExqZz0%3d",
     "status": "Scheduled",
     "time": "13:00–14:30",
-    "location": "LG01 Euston Road 222"
+    "location": "LG01 Euston Road 222",
+    "title": "How Do Rapid Sectoral Shifts Affect Workers? Theory and an Application to the Climate Transition"
   },
   {
     "id": "applied-economics-2026-11-05",
@@ -599,7 +591,8 @@
     "institution": "University College London",
     "status": "Scheduled",
     "time": "12:00–13:00",
-    "location": "Drayton 321"
+    "location": "Drayton 321",
+    "title": "Trade Disintegration and Labour Markets: Evidence from Brexit"
   },
   {
     "id": "economic-theory-2026-11-10",
@@ -666,7 +659,8 @@
     "status": "Scheduled",
     "time": "12:00–13:00",
     "location": "Drayton 321",
-    "note": "Reading Week"
+    "note": "Reading Week",
+    "title": "Cheaper Hires, Better Matches? Youth Payroll Tax Cuts, Mobility and Career Outcomes in Sweden"
   },
   {
     "id": "applied-economics-2026-11-16",
