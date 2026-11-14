@@ -718,6 +718,29 @@
     "location": "Darwin Building, rm B15"
   },
   {
+    "id": "finance-2026-11-18-practice",
+    "series": "finance",
+    "date": "2026-11-18",
+    "speaker": "Yue Yuan",
+    "institution": "UCL",
+    "title": "(Non-) Binding Shareholder Voting and Trading",
+    "note": "Finance Practice Talk",
+    "abstract": "We study whether binding or non-binding voting leads to higher expected firm value when shareholders with dispersed information can trade before voting. Non-binding voting allows the board to combine information from votes and from share prices. Holding trading strategies fixed, this yields an advantage. However, it also gives shareholders stronger incentives to take net short positions while retaining their voting rights. Their distorted voting makes votes less informative. In our model, this incentive effect dominates the direct informational advantage, so binding voting leads to higher expected firm value.",
+    "status": "Scheduled",
+    "time": "14:30–16:00",
+    "location": "Christopher Ingold XLG1"
+  },
+  {
+    "id": "finance-2026-11-18",
+    "series": "finance",
+    "date": "2026-11-18",
+    "speaker": "William Fuchs",
+    "institution": "UT Austin",
+    "status": "Scheduled",
+    "time": "16:00–17:30",
+    "location": "Drayton House Rm 321"
+  },
+  {
     "id": "ifs-seminars-2026-11-18",
     "series": "ifs",
     "date": "2026-11-18",

@@ -82,6 +82,7 @@ function eventLines(seminar) {
   const description = [
     seminar.institution,
     seminar.note,
+    seminar.abstract,
     seminar.paperUrl && `Paper: ${seminar.paperUrl}`,
     seminar.speakerUrl && `Speaker: ${seminar.speakerUrl}`,
     `Seminar series: ${seriesName}`,
