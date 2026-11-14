@@ -479,6 +479,8 @@ for (const item of config) {
     const override = item.overrides?.[record.Date] || {};
     return {
       ...record,
+      Speaker: override.speaker ?? record.Speaker,
+      Institution: override.institution ?? record.Institution,
       'Speaker URL': override.speakerUrl ?? record['Speaker URL'],
       Title: override.title ?? record.Title,
       'Paper URL': override.paperUrl ?? record['Paper URL'],
