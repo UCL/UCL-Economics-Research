@@ -64,6 +64,37 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
+UID:finance-2026-11-18-practice@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20261118T143000
+DTEND;TZID=Europe/London:20261118T160000
+SUMMARY:Yue Yuan — (Non-) Binding Shareholder Voting and Trading
+DESCRIPTION:UCL\nFinance Practice Talk\nWe study whether binding or non-bin
+ ding voting leads to higher expected firm value when shareholders with dis
+ persed information can trade before voting. Non-binding voting allows the 
+ board to combine information from votes and from share prices. Holding tra
+ ding strategies fixed\, this yields an advantage. However\, it also gives 
+ shareholders stronger incentives to take net short positions while retaini
+ ng their voting rights. Their distorted voting makes votes less informativ
+ e. In our model\, this incentive effect dominates the direct informational
+  advantage\, so binding voting leads to higher expected firm value.\nSemin
+ ar series: Finance
+LOCATION:Christopher Ingold XLG1
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:finance-2026-11-18@economics.ucl.ac.uk
+DTSTAMP:20260901T000000Z
+DTSTART;TZID=Europe/London:20261118T160000
+DTEND;TZID=Europe/London:20261118T173000
+SUMMARY:William Fuchs
+DESCRIPTION:UT Austin\nSeminar series: Finance
+LOCATION:Drayton House Rm 321
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
 UID:finance-2026-11-25@economics.ucl.ac.uk
 DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261125T160000

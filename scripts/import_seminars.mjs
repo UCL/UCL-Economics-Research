@@ -501,6 +501,12 @@ for (const item of config) {
     if (override.note || record._note) siteRecords.at(-1).note = override.note || record._note;
   }
 }
+for (const item of config) {
+  for (const seminar of item.additionalSeminars || []) {
+    siteRecords = siteRecords.filter(record => record.id !== seminar.id);
+    siteRecords.push(seminar);
+  }
+}
 siteRecords.sort((a,b) => a.date.localeCompare(b.date) || a.series.localeCompare(b.series));
 await fs.mkdir(path.join(root,'site/data'),{recursive:true});
 await fs.writeFile(siteDataFile,JSON.stringify(siteRecords,null,2)+'\n');

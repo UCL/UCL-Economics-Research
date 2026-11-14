@@ -63,6 +63,7 @@ type Seminar = {
   institution: string;
   speakerUrl?: string;
   title?: string;
+  abstract?: string;
   note?: string;
   paperUrl?: string;
   signupUrl?: string;
@@ -160,10 +161,20 @@ function Speaker({ s }: { s: Seminar }) {
 }
 function Title({ s }: { s: Seminar }) {
   const text = s.title || 'TBA';
-  return s.title && s.paperUrl ? (
-    <a href={s.paperUrl}>{text}</a>
-  ) : (
-    <span className={!s.title ? 'tba' : ''}>{text}</span>
+  return (
+    <>
+      {s.title && s.paperUrl ? (
+        <a href={s.paperUrl}>{text}</a>
+      ) : (
+        <span className={!s.title ? 'tba' : ''}>{text}</span>
+      )}
+      {s.abstract && (
+        <details>
+          <summary>Abstract</summary>
+          <p>{s.abstract}</p>
+        </details>
+      )}
+    </>
   );
 }
 
