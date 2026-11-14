@@ -114,8 +114,9 @@ UID:ifs-development-2026-11-19@economics.ucl.ac.uk
 DTSTAMP:20260901T000000Z
 DTSTART;TZID=Europe/London:20261119T140000
 DTEND;TZID=Europe/London:20261119T150000
-SUMMARY:Suphanit Piyapromdee
-DESCRIPTION:UCL\nSeminar series: IFS/UCL/LSE Development Seminar
+SUMMARY:Alice Mesnard
+DESCRIPTION:City St Georges\nSpeaker: https://sites.google.com/view/alice-m
+ esnard/bio\nSeminar series: IFS/UCL/LSE Development Seminar
 LOCATION:IFS / online
 STATUS:CONFIRMED
 SEQUENCE:0

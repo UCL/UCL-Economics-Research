@@ -688,7 +688,8 @@
     "speakerUrl": "https://ziyu-jiang.com/",
     "status": "JMC",
     "time": "12:30–13:30",
-    "location": "IFS seminar room"
+    "location": "IFS seminar room",
+    "title": "Subjective Annotation Studies: Valid Inference and Annotation Design"
   },
   {
     "id": "ifs-labour-2026-11-17",
@@ -699,7 +700,8 @@
     "status": "Tentative",
     "time": "14:00–15:00",
     "location": "IFS",
-    "note": "To be confirmed"
+    "note": "To be confirmed",
+    "title": "Smartphones and children's mental health"
   },
   {
     "id": "economic-theory-2026-11-17",
@@ -723,7 +725,8 @@
     "institution": "University of St Andrews",
     "status": "TBA",
     "time": "12:15–1:30pm",
-    "location": "IFS / online"
+    "location": "IFS / online",
+    "title": "Robustness? Range Tests for Equality and Equivalence Across Specifications"
   },
   {
     "id": "macroeconomics-2026-11-18",
@@ -743,7 +746,7 @@
     "speaker": "Daiji Kawaguchi",
     "institution": "",
     "speakerUrl": "https://sites.google.com/site/daijikawaguchi/",
-    "title": "Electricity Supply Shocks and Manufacturing: Evidence from the Fukushima Nuclear Accident",
+    "title": "Factory Automation, Labor Demand, and Market Dynamics",
     "signupUrl": "https://docs.google.com/spreadsheets/d/1ajj5o5ymknkQGVOdk7FFCd7SRi-SK5IFQ55NfcJGR8g/edit?gid=776885410",
     "status": "Scheduled",
     "time": "12:00–13:15",
@@ -753,11 +756,12 @@
     "id": "ifs-development-2026-11-19",
     "series": "ifs-development",
     "date": "2026-11-19",
-    "speaker": "Suphanit Piyapromdee",
-    "institution": "UCL",
+    "speaker": "Alice Mesnard",
+    "institution": "City St Georges",
     "status": "TBA",
     "time": "2:00–3:00pm",
-    "location": "IFS / online"
+    "location": "IFS / online",
+    "speakerUrl": "https://sites.google.com/view/alice-mesnard/bio"
   },
   {
     "id": "phd-seminar-2026-11-20",
